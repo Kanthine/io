@@ -1,0 +1,10 @@
+{
+  "name": "计算机基础学习",
+  "title": "打包title",
+  "description": "打包描述",
+  "version": ">=3.0.0",
+  "author": {
+    "name": "苏莫离",
+    "email": "774792381@qq.com"
+  }
+}
