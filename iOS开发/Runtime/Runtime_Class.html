@@ -1,0 +1,1446 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Runtime函数库中关于Class的函数使用 · 个人博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="苏沫漓">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Runtime_Method.html" />
+    
+    
+    <link rel="prev" href="Runtime_Instance.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="搜索🔍" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    计算机基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../计算机基础/README.md">
+            
+                <span>
+            
+                    
+                    计算机基础简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    第一部分 计算机的组成
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                    
+                    计算机概述篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                    
+                    计算机组成篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                    
+                    计算机计算篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                    
+                    第二部分 操作系统篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../计算机基础/操作系统篇/进程管理篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/进程管理篇.html">
+            
+                    
+                    进程管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../计算机基础/操作系统篇/内存管理篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/内存管理篇.html">
+            
+                    
+                    内存管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../计算机基础/操作系统篇/文件系统篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/文件系统篇.html">
+            
+                    
+                    文件系统篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                    
+                    操作系统提升篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../计算机基础/计算机网络/网络概述篇.html">
+            
+                <a href="../../计算机基础/计算机网络/网络概述篇.html">
+            
+                    
+                    第三部分 网络篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../计算机基础/计算机网络/计算机物理层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机物理层.html">
+            
+                    
+                    计算机物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                    
+                    计算机数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../../计算机基础/计算机网络/计算机网络层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机网络层.html">
+            
+                    
+                    计算机网络层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../../计算机基础/计算机网络/计算机传输层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机传输层.html">
+            
+                    
+                    计算机传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../../计算机基础/计算机网络/计算机应用层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机应用层.html">
+            
+                    
+                    计算机应用层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    iOS开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Runtime
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="OC之Blocks.html">
+            
+                <a href="OC之Blocks.html">
+            
+                    
+                    OC之Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="OC内存管理.html">
+            
+                <a href="OC内存管理.html">
+            
+                    
+                    OC内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="OC内存管理之引用计数.html">
+            
+                <a href="OC内存管理之引用计数.html">
+            
+                    
+                    OC内存管理之引用计数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="+load方法的调用历程.html">
+            
+                <a href="+load方法的调用历程.html">
+            
+                    
+                    +load方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="TaggedPointer.html">
+            
+                <a href="TaggedPointer.html">
+            
+                    
+                    TaggedPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="编译objc4.html">
+            
+                <a href="编译objc4.html">
+            
+                    
+                    编译objc4备忘录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="Runtime_Protocol.html">
+            
+                <a href="Runtime_Protocol.html">
+            
+                    
+                    Runtime函数库中关于协议Protocol的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="Runtime_Property.html">
+            
+                <a href="Runtime_Property.html">
+            
+                    
+                    Runtime函数库中关于属性与变量的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="Runtime_Instance.html">
+            
+                <a href="Runtime_Instance.html">
+            
+                    
+                    Runtime函数库中关于实例对象的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.10" data-path="Runtime_Class.html">
+            
+                <a href="Runtime_Class.html">
+            
+                    
+                    Runtime函数库中关于Class的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="Runtime_Method.html">
+            
+                <a href="Runtime_Method.html">
+            
+                    
+                    Runtime函数库中关于 Class 的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../CoreText/CoteText概述.html">
+            
+                <a href="../CoreText/CoteText概述.html">
+            
+                    
+                    CoreText
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../CoreText/CoteText排版与布局.html">
+            
+                <a href="../CoreText/CoteText排版与布局.html">
+            
+                    
+                    CoteText排版与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../CoreText/CTLineRef的函数库及使用.html">
+            
+                <a href="../CoreText/CTLineRef的函数库及使用.html">
+            
+                    
+                    CTLineRef的函数库及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../CoreText/CTRunRef与CTRunDelegate.html">
+            
+                <a href="../CoreText/CTRunRef与CTRunDelegate.html">
+            
+                    
+                    图文混排的关键：CTRunRef 与 CTRunDelegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    CoreImage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../CoreImage/图像特征CIFeature.html">
+            
+                <a href="../CoreImage/图像特征CIFeature.html">
+            
+                    
+                    图像特征CIFeature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../CoreImage/图片检测CIDetector.html">
+            
+                <a href="../CoreImage/图片检测CIDetector.html">
+            
+                    
+                    图片检测CIDetector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../CoreImage/CIContext.html">
+            
+                <a href="../CoreImage/CIContext.html">
+            
+                    
+                    上下文CIContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    杂记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../杂记/iOS渲染机制初窥.html">
+            
+                <a href="../杂记/iOS渲染机制初窥.html">
+            
+                    
+                    iOS渲染机制初窥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../杂记/响应链.html">
+            
+                <a href="../杂记/响应链.html">
+            
+                    
+                    响应链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../杂记/OC的深拷贝与浅拷贝.html">
+            
+                <a href="../杂记/OC的深拷贝与浅拷贝.html">
+            
+                    
+                    OC的深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../../其它/sdk_cocoapods.html">
+            
+                <a href="../../其它/sdk_cocoapods.html">
+            
+                    
+                    iOS 使用 cocoapods 创建组件化库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../杂记/CNCopyCurrentNetworkInfo内存泄漏.html">
+            
+                <a href="../杂记/CNCopyCurrentNetworkInfo内存泄漏.html">
+            
+                    
+                    CNCopyCurrentNetworkInfo() 引发的内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="../杂记/获取WIFI信息.html">
+            
+                <a href="../杂记/获取WIFI信息.html">
+            
+                    
+                    获取WIFI信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    C/C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../C_C++篇/C++学习入门篇.html">
+            
+                <a href="../../C_C++篇/C++学习入门篇.html">
+            
+                    
+                    C++学习入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../C_C++篇/C++学习封装篇.html">
+            
+                <a href="../../C_C++篇/C++学习封装篇.html">
+            
+                    
+                    C++学习封装篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../C_C++篇/C++学习继承篇.html">
+            
+                <a href="../../C_C++篇/C++学习继承篇.html">
+            
+                    
+                    C++学习继承篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../C_C++篇/C++学习多态篇.html">
+            
+                <a href="../../C_C++篇/C++学习多态篇.html">
+            
+                    
+                    C++学习多态篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    C
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../C_C++篇/C数组.html">
+            
+                <a href="../../C_C++篇/C数组.html">
+            
+                    
+                    C语言数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../C_C++篇/C结构.html">
+            
+                <a href="../../C_C++篇/C结构.html">
+            
+                    
+                    C语言结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../C_C++篇/C递归.html">
+            
+                <a href="../../C_C++篇/C递归.html">
+            
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../Git体系/Git常用命令.html">
+            
+                <a href="../../Git体系/Git常用命令.html">
+            
+                    
+                    Git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../Git体系/Github和SSH密钥.html">
+            
+                <a href="../../Git体系/Github和SSH密钥.html">
+            
+                    
+                    Github和SSH密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../Gitbook指导/">
+            
+                <a href="../../Gitbook指导/">
+            
+                    
+                    GitBook 使用教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../Gitbook指导/gitbook教程.html">
+            
+                <a href="../../Gitbook指导/gitbook教程.html">
+            
+                    
+                    GitBook 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../Gitbook指导/gitbook语法.html">
+            
+                <a href="../../Gitbook指导/gitbook语法.html">
+            
+                    
+                    GitBook 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.sumoli.work" target="blank" class="gitbook-link">
+            博客主页
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Runtime函数库中关于Class的函数使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#runtime&#x51FD;&#x6570;&#x5E93;&#x4E2D;&#x5173;&#x4E8E;-class-&#x7684;&#x51FD;&#x6570;&#x4F7F;&#x7528;"><b></b>Runtime&#x51FD;&#x6570;&#x5E93;&#x4E2D;&#x5173;&#x4E8E; Class &#x7684;&#x51FD;&#x6570;&#x4F7F;&#x7528;</a></li><li><span class="title-icon "></span><a href="#1&#x3001;&#x6839;&#x636E;&#x7C7B;&#x540D;&#x83B7;&#x53D6;&#x7C7B;"><b></b>1&#x3001;&#x6839;&#x636E;&#x7C7B;&#x540D;&#x83B7;&#x53D6;&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#2&#x3001;&#x4F7F;&#x7528;&#x7C7B;"><b></b>2&#x3001;&#x4F7F;&#x7528;&#x7C7B;</a></li><ul><li><span class="title-icon "></span><a href="#21&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x4FE1;&#x606F;"><b></b>2.1&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#22&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x53D8;&#x91CF;"><b></b>2.2&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x53D8;&#x91CF;</a></li><li><span class="title-icon "></span><a href="#23&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x5C5E;&#x6027;"><b></b>2.3&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x5C5E;&#x6027;</a></li><li><span class="title-icon "></span><a href="#24&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;"><b></b>2.4&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#25&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x534F;&#x8BAE;"><b></b>2.5&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x534F;&#x8BAE;</a></li></ul><li><span class="title-icon "></span><a href="#3&#x3001;&#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x7C7B;"><b></b>3&#x3001;&#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x7C7B;</a></li></ul></div><h1 id="runtime&#x51FD;&#x6570;&#x5E93;&#x4E2D;&#x5173;&#x4E8E;-class-&#x7684;&#x51FD;&#x6570;&#x4F7F;&#x7528;"><a name="runtime&#x51FD;&#x6570;&#x5E93;&#x4E2D;&#x5173;&#x4E8E;-class-&#x7684;&#x51FD;&#x6570;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#runtime&#x51FD;&#x6570;&#x5E93;&#x4E2D;&#x5173;&#x4E8E;-class-&#x7684;&#x51FD;&#x6570;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>Runtime&#x51FD;&#x6570;&#x5E93;&#x4E2D;&#x5173;&#x4E8E; Class &#x7684;&#x51FD;&#x6570;&#x4F7F;&#x7528;</h1>
+<p><a href="https://developer.apple.com/documentation/objectivec/objective-c_runtime?language=objc" target="_blank">Runtime</a> &#x51FD;&#x6570;&#x5E93;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x672C;&#x7BC7;&#x4E3B;&#x8981;&#x603B;&#x7ED3;&#x5173;&#x4E8E;&#x7C7B; <code>Class</code> &#x7684;&#x64CD;&#x4F5C;&#x51FD;&#x6570;&#xFF1A;</p>
+<h1 id="1&#x3001;&#x6839;&#x636E;&#x7C7B;&#x540D;&#x83B7;&#x53D6;&#x7C7B;"><a name="1&#x3001;&#x6839;&#x636E;&#x7C7B;&#x540D;&#x83B7;&#x53D6;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x6839;&#x636E;&#x7C7B;&#x540D;&#x83B7;&#x53D6;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x6839;&#x636E;&#x7C7B;&#x540D;&#x83B7;&#x53D6;&#x7C7B;</h1>
+<pre><code>/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x7684;&#x7C7B;&#xFF1A;
+ * @param name &#x8981;&#x67E5;&#x627E;&#x7684;&#x7C7B;&#x7684;&#x540D;&#x79F0;&#x3002;
+ * @return &#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x7684;&#x7C7B;&#xFF1B;
+ * @note &#x5982;&#x679C;&#x7C7B;&#x6CA1;&#x6709;&#x5728;Objective-C&#x8FD0;&#x884C;&#x65F6;&#x6CE8;&#x518C;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; nil&#x3002;
+ * @note &#x5982;&#x679C;&#x8BE5;&#x7C7B;&#x4E0D;&#x5B58;&#x5728;,&#x8C03;&#x7528; _objc_classLoader() &#x51FD;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x8C03;&#x7528;objc_classHandler() &#x51FD;&#x6570;&#xFF0C;&#x4E24;&#x8005;&#x90FD;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7C7B;&#x3002;
+ * @note objc_getClass() &#x4E0E;objc_lookUpClass() &#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#xFF0C;&#x5982;&#x679C;&#x7C7B;&#x6CA1;&#x6709;&#x6CE8;&#x518C;&#xFF0C;objc_getClass() &#x5C06;&#x8C03;&#x7528;&#x7C7B;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x56DE;&#x8C03;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6B21;&#x68C0;&#x67E5;&#x7C7B;&#x662F;&#x5426;&#x6CE8;&#x518C;&#x3002;objc_lookUpClass() &#x4E0D;&#x8C03;&#x7528;&#x7C7B;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x56DE;&#x8C03;&#x3002;
+ * @Warning: &#x5982;&#x679C;aClassName&#x662F;&#x4E3A;&#x7C7B;&#x7684; isa &#x8BBE;&#x7F6E;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x6267;&#x884C;!
+ */
+Class _Nullable objc_getClass(const char * _Nonnull name);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x7684;&#x7C7B;&#xFF1A;
+ * @note &#x8BE5;&#x51FD;&#x6570;&#x529F;&#x80FD;&#x57FA;&#x4E8E; objc_getClass() &#x51FD;&#x6570;&#xFF0C;&#x5185;&#x90E8;&#x9996;&#x5148;&#x8C03;&#x7528; objc_getClass() &#x51FD;&#x6570;&#x83B7;&#x53D6;&#x8FD4;&#x56DE;&#x503C;&#xFF1B;
+ *       &#x7136;&#x540E;&#x5224;&#x65AD;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x5426;&#x4E3A;&#x7A7A;&#xFF0C;&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x7EC8;&#x6B62;&#x8FDB;&#x7A0B;&#xFF1B;
+ * @note &#x6B64;&#x51FD;&#x6570;&#x7531; ZeroLink &#x4F7F;&#x7528;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709; ZeroLink&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x7C7B;&#x5C06;&#x662F;&#x7F16;&#x8BD1;&#x65F6;&#x94FE;&#x63A5;&#x9519;&#x8BEF;&#x3002;
+ */
+Class _Nonnull objc_getRequiredClass(const char * _Nonnull name);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x7684;&#x7C7B;
+ * @note &#x5982;&#x679C;&#x7C7B;&#x6CA1;&#x6709;&#x5728;Objective-C&#x8FD0;&#x884C;&#x65F6;&#x6CE8;&#x518C;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; nil&#x3002;
+ *       &#x5982;&#x679C;&#x8BE5;&#x7C7B;&#x4E0D;&#x5B58;&#x5728;, &#x8C03;&#x7528;_objc_classLoader() &#x51FD;&#x6570;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7C7B;&#x3002;
+ * @note objc_getClass() &#x4E0E;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#xFF0C;&#x5982;&#x679C;&#x7C7B;&#x6CA1;&#x6709;&#x6CE8;&#x518C;&#xFF0C;objc_getClass() &#x5C06;&#x8C03;&#x7528;&#x7C7B;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x7B2C;&#x4E8C;&#x6B21;&#x68C0;&#x67E5;&#x7C7B;&#x662F;&#x5426;&#x6CE8;&#x518C;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x4E0D;&#x8C03;&#x7528;&#x7C7B;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x56DE;&#x8C03;&#x3002;
+ */
+Class _Nullable objc_lookUpClass(const char * _Nonnull name);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x7684;&#x7C7B;&#x7684;&#x5143;&#x7C7B;
+ * @note &#x5982;&#x679C;&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x7684;&#x7C7B;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; nil &#x5E76;&#x4E14;&#x6253;&#x5370;&#x65E5;&#x5FD7; objc[3966]: class `aClassName&apos; not linked into application
+ * @note &#x5982;&#x679C;&#x547D;&#x540D;&#x7C7B;&#x7684;&#x5B9A;&#x4E49;&#x672A;&#x6CE8;&#x518C;&#xFF0C;&#x5219;&#x6B64;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7C7B;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x56DE;&#x8C03;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6B21;&#x68C0;&#x67E5;&#x7C7B;&#x662F;&#x5426;&#x6CE8;&#x518C;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x6BCF;&#x4E2A;&#x7C7B;&#x5B9A;&#x4E49;&#x90FD;&#x5FC5;&#x987B;&#x6709;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x5143;&#x7C7B;&#x5B9A;&#x4E49;&#xFF0C;&#x56E0;&#x6B64;&#x65E0;&#x8BBA;&#x5143;&#x7C7B;&#x5B9A;&#x4E49;&#x662F;&#x5426;&#x6709;&#x6548;&#xFF0C;&#x5B83;&#x603B;&#x662F;&#x8FD4;&#x56DE;&#x3002;
+ */
+Class _Nullable objc_getMetaClass(const char * _Nonnull name);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x5DF2;&#x6CE8;&#x518C;&#x7C7B;&#xFF0C;&#x83B7;&#x53D6;&#x7684;&#x7C7B;&#x5217;&#x8868;&#x4E3A;&#x4EFB;&#x610F;&#x5B50;&#x96C6;&#x3002;
+ * @param buffer &#x7528;&#x4E8E;&#x5199;&#x5165;&#x5DF2;&#x6CE8;&#x518C;&#x7C7B;&#x96C6;&#x7684;&#x7F13;&#x5B58;&#xFF1B;&#x6700;&#x591A;&#x6709; bufferCount &#x6216;&#x6CE8;&#x518C;&#x7C7B;&#x7684;&#x603B;&#x6570;&#x91CF;(&#x4EE5;&#x8F83;&#x5C11;&#x8005;&#x4E3A;&#x51C6;)&#x3002;
+ *               &#x53EF;&#x4EE5;&#x4F20;&#x9012;NULL&#x6765;&#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x603B;&#x6570;&#xFF1A;
+ * @param bufferCount &#x6307;&#x5B9A;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x6570;&#x91CF;&#xFF1B;
+ * @return &#x8FD4;&#x56DE;&#x5DF2;&#x6CE8;&#x518C;&#x7C7B;&#x7684;&#x603B;&#x6570;&#x91CF;&#x3002;
+ * @note  &#x8BE5;&#x6B21;&#x51FD;&#x6570;&#x6267;&#x884C; objc_getClassList(NULL, 0) &#x83B7;&#x53D6;&#x6240;&#x6709;&#x5DF2;&#x6CE8;&#x518C;&#x7C7B;&#x7684;&#x603B;&#x6570;&#x91CF;&#xFF1B;
+ * @note Objective-C &#x8FD0;&#x884C;&#x5E93;&#x81EA;&#x52A8;&#x6CE8;&#x518C;&#x5728;&#x6E90;&#x4EE3;&#x7801;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x6240;&#x6709;&#x7C7B;&#xFF1B;
+ *       &#x53EF;&#x4EE5;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x521B;&#x5EFA;&#x7C7B;&#x5B9A;&#x4E49;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x6CE8;&#x518C;&#x5230;objc_addClass() &#x51FD;&#x6570;&#x4E2D;&#x3002;
+ * @warning &#x8BE5;&#x51FD;&#x6570;&#x4E2D;&#x83B7;&#x5F97;&#x7684;&#x7C7B;&#x7684;&#x7236;&#x7C7B;&#x53EF;&#x80FD;&#x662F;&#x4EFB;&#x610F;&#x7C7B;&#xFF1B;&#x56E0;&#x6B64;&#x5982;&#x679C;&#x4E0D;&#x9996;&#x5148;&#x68C0;&#x6D4B;&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x5B89;&#x5168;&#x5730;&#x8C03;&#x7528;&#x8FD9;&#x4E9B;&#x7C7B;&#x4E0A;&#x7684;&#x4EFB;&#x4F55;&#x65B9;&#x6CD5;&#x3002;
+ */
+int objc_getClassList(Class _Nonnull * _Nullable buffer, int bufferCount);
+
+/* &#x83B7;&#x53D6;&#x6240;&#x6709;&#x5DF2;&#x6CE8;&#x518C;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x5217;&#x8868;&#x3002;
+ * @param outCount &#x6240;&#x6709;&#x5DF2;&#x6CE8;&#x518C;&#x7C7B;&#x6570;&#x91CF;
+ * @note &#x8BE5;&#x51FD;&#x6570;&#x4E0E; objc_getClassList() &#x51FD;&#x6570;&#x533A;&#x522B;&#x5728;&#x4E8E;&#xFF1A;
+ *       &#x8BE5;&#x51FD;&#x6570;&#x53EA;&#x80FD;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x5DF2;&#x6CE8;&#x518C;&#x7684;&#x7C7B;&#xFF1B;&#x4F46;&#x662F;&#x7528;&#x6CD5;&#x7B80;&#x5355;
+ *       objc_getClassList() &#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x6570;&#x91CF;&#x7684;&#x4EFB;&#x610F;&#x96C6;&#x5408;&#x7C7B;&#xFF1B;&#x7528;&#x6CD5;&#x7A0D;&#x5FAE;&#x590D;&#x6742;&#x4E9B;&#xFF1B;
+ */
+Class _Nonnull * _Nullable objc_copyClassList(unsigned int * _Nullable outCount);
+</code></pre><h1 id="2&#x3001;&#x4F7F;&#x7528;&#x7C7B;"><a name="2&#x3001;&#x4F7F;&#x7528;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x4F7F;&#x7528;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x4F7F;&#x7528;&#x7C7B;</h1>
+<h2 id="21&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x4FE1;&#x606F;"><a name="21&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#21&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x4FE1;&#x606F;</h2>
+<pre><code>/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x7C7B;&#x540D;
+ * @param cls &#x7C7B;.
+ * @return &#x5982;&#x679C; class &#x4E3A; nil&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;
+ */
+const char *class_getName(Class cls);
+
+/* &#x5224;&#x65AD;&#x6307;&#x5B9A;&#x7C7B;&#x662F;&#x5426;&#x662F;&#x5143;&#x7C7B;
+ */
+BOOL class_isMetaClass(Class cls) ;
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x7236;&#x7C7B;
+ * @note &#x5982;&#x679C;&#x8BE5;&#x7C7B;&#x662F; NSObject&#xFF0C;&#x5219;&#x8FD4;&#x56DE; nil&#xFF1B;&#x5982;&#x679C; cls&#x4E3A; nil&#xFF0C; &#x5219;&#x8FD4;&#x56DE; nil&#xFF1B;
+ */
+Class class_getSuperclass(Class cls);
+
+/* &#x8BBE;&#x7F6E;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x7236;&#x7C7B;
+ *
+ * @param cls &#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x6307;&#x5B9A;&#x7C7B;
+ * @param newSuper &#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x65B0;&#x7236;&#x7C7B;
+ * @return &#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x539F;&#x6709;&#x7236;&#x7C7B;
+ */
+Class class_setSuperclass(Class cls, Class newSuper);
+
+/* &#x83B7;&#x53D6;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x7248;&#x672C;&#x53F7;&#x3002;
+ */
+int class_getVersion(Class cls);
+
+/* &#x8BBE;&#x7F6E;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x7248;&#x672C;&#x53F7;&#x3002;
+ * @param version &#x65B0;&#x7684;&#x7248;&#x672C;&#x53F7;&#xFF0C;int &#x578B;&#x6570;&#x636E;&#x7C7B;&#x578B;
+ * @note &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7C7B;&#x5B9A;&#x4E49;&#x7684;&#x7248;&#x672C;&#x53F7;&#x6765;&#x63D0;&#x4F9B;&#x7C7B;&#x8868;&#x793A;&#x7ED9;&#x5176;&#x4ED6;&#x7C7B;&#x7684;&#x63A5;&#x53E3;&#x7684;&#x7248;&#x672C;&#x63A7;&#x5236;&#x3002;
+ *       &#x8FD9;&#x5BF9;&#x4E8E;&#x5BF9;&#x8C61;&#x5E8F;&#x5217;&#x5316;&#x7279;&#x522B;&#x6709;&#x7528;&#xFF0C;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BC6;&#x522B;&#x4E0D;&#x540C;&#x7C7B;&#x5B9A;&#x4E49;&#x7248;&#x672C;&#x4E2D;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x5E03;&#x5C40;&#x7684;&#x66F4;&#x6539;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x3002;
+ */
+void class_setVersion(Class cls, int version);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5927;&#x5C0F;&#xFF08;&#x5B57;&#x8282;&#x6570;&#xFF09;
+ * @return &#x5982;&#x679C; cls &#x4E3A;nil&#xFF0C;&#x5219;&#x8FD4;&#x56DE; 0 &#x5B57;&#x8282;&#x3002;
+ */
+size_t class_getInstanceSize(Class cls);
+</code></pre><h2 id="22&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x53D8;&#x91CF;"><a name="22&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x53D8;&#x91CF;" class="anchor-navigation-ex-anchor" href="#22&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x53D8;&#x91CF;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x53D8;&#x91CF;</h2>
+<pre><code>/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x7684; &#x6307;&#x5B9A;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF; Ivar&#x3002;
+ * @param cls &#x6307;&#x5B9A;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x6240;&#x5C5E;&#x7684;&#x7C7B;
+ * @param name &#x8981;&#x83B7;&#x53D6;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x540D;&#x79F0;
+ * @return &#x4E00;&#x4E2A;&#x6307;&#x5411; Ivar &#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x6307;&#x9488;&#xFF0C;&#x8BE5;&#x7ED3;&#x6784;&#x5305;&#x542B;&#x5173;&#x4E8E;&#x7531;&#x540D;&#x79F0;&#x6307;&#x5B9A;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x7684;&#x4FE1;&#x606F;&#x3002;
+ */
+Ivar class_getInstanceVariable(Class cls, const char *name);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x7684; &#x6307;&#x5B9A;&#x7C7B;&#x53D8;&#x91CF; Ivar&#x3002;
+ * @param cls &#x6307;&#x5B9A;&#x7C7B;
+ * @param name &#x8981;&#x83B7;&#x53D6;&#x7684;&#x7C7B;&#x53D8;&#x91CF;&#x7684;&#x5B9A;&#x4E49;&#x540D;&#x79F0;
+ */
+Ivar class_getClassVariable(Class cls, const char *name);
+
+/* &#x83B7;&#x53D6;&#x7531;&#x6307;&#x5B9A;&#x7C7B;&#x58F0;&#x660E;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;
+ * @param cls &#x6307;&#x5B9A;&#x7684;&#x7C7B;&#x3002;
+ * @param outCount &#x8FD4;&#x56DE;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#xFF1B;&#x5982;&#x679C;&#x4E3A; NULL&#xFF0C;&#x5219;&#x4E0D;&#x8FD4;&#x56DE;&#x957F;&#x5EA6;&#x3002;
+ * @return &#x7C7B;&#x578B;&#x4E3A;Ivar&#x7684;&#x6307;&#x9488;&#x6570;&#x7EC4;&#xFF0C;&#x63CF;&#x8FF0;&#x7C7B;&#x58F0;&#x660E;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3002;
+ *         &#x4E0D;&#x5305;&#x62EC;&#x7531;&#x8D85;&#x7C7B;&#x58F0;&#x660E;&#x7684;&#x4EFB;&#x4F55;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3002;
+ *         &#x5FC5;&#x987B;&#x4F7F;&#x7528; free() &#x51FD;&#x6570;&#x91CA;&#x653E;&#x6570;&#x7EC4;&#x3002;
+ *
+ *  &#x5982;&#x679C;&#x7C7B;&#x58F0;&#x660E;&#x6CA1;&#x6709;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF0C;&#x6216;&#x8005; cls &#x4E3A;Nil&#xFF0C;&#x5219;&#x8FD4;&#x56DE; NULL &#x5E76; *outCount &#x503C;&#x4E3A; 0&#x3002;
+ */
+Ivar *class_copyIvarList(Class cls, unsigned int *outCount);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x53D8;&#x91CF; Ivar &#x5E03;&#x5C40;&#x7684;&#x63CF;&#x8FF0;&#x3002;
+ */
+const uint8_t *class_getIvarLayout(Class cls);
+
+/* &#x8BBE;&#x7F6E;&#x6307;&#x5B9A;&#x7C7B;&#x7684; Ivar &#x5E03;&#x5C40;&#x3002;
+ */
+void class_setIvarLayout(Class cls, const uint8_t *layout);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x5F31;&#x5F15;&#x7528;&#x53D8;&#x91CF; Ivars &#x5E03;&#x5C40;&#x7684;&#x63CF;&#x8FF0;&#x3002;
+ */
+const uint8_t *class_getWeakIvarLayout(Class cls);
+
+/* &#x8BBE;&#x7F6E;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x5F31;&#x5F15;&#x7528;&#x53D8;&#x91CF; Ivars &#x5E03;&#x5C40;&#x3002;
+ */
+void class_setWeakIvarLayout(Class cls, const uint8_t *layout);
+
+/* &#x5411;&#x6307;&#x5B9A;&#x7C7B;&#x6DFB;&#x52A0;&#x65B0;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3002;
+ * @return &#x5982;&#x679C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x8FD4;&#x56DE; YES&#xFF1B;&#x5219;&#x4E3A; NO &#x5982;&#x8BE5;&#x7C7B;&#x5DF2;&#x7ECF;&#x5305;&#x542B;&#x4E00;&#x4E2A;&#x540C;&#x540D;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;
+ * @note &#x6B64;&#x51FD;&#x6570;&#x53EA;&#x80FD;&#x5728; objc_allocateClassPair() &#x51FD;&#x6570;&#x4E4B;&#x540E;&#x548C; objc_registerClassPair() &#x51FD;&#x6570;&#x4E4B;&#x524D;&#x8C03;&#x7528;&#xFF1B;
+ *       &#x4E0D;&#x652F;&#x6301;&#x5411;&#x73B0;&#x6709;&#x7C7B;&#x4E2D;&#x6DFB;&#x52A0;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3002;
+ * @note &#x6307;&#x5B9A;&#x7C7B;&#x4E0D;&#x80FD;&#x662F;&#x5143;&#x7C7B;&#xFF1B;&#x4E0D;&#x652F;&#x6301;&#x5411;&#x5143;&#x7C7B;&#x4E2D;&#x6DFB;&#x52A0;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x3002;
+ * @note &#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x7684;&#x6700;&#x5C0F;&#x5B57;&#x8282;&#x5BF9;&#x9F50;&#x662F; 1&lt;&lt;align &#x3002;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x7684;&#x6700;&#x5C0F;&#x5BF9;&#x9F50;&#x53D6;&#x51B3;&#x4E8E;ivar&#x7684;&#x7C7B;&#x578B;&#x548C;&#x673A;&#x5668;&#x67B6;&#x6784;&#x3002;
+ *       &#x5BF9;&#x4E8E;&#x4EFB;&#x4F55;&#x6307;&#x9488;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x4F20;&#x9012;log2(sizeof(pointer_type))&#x3002;
+ */
+BOOL class_addIvar(Class cls, const char *name, size_t size,uint8_t alignment, const char *types);
+</code></pre><h2 id="23&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x5C5E;&#x6027;"><a name="23&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#23&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x5C5E;&#x6027;</h2>
+<pre><code>/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x6307;&#x5B9A;&#x540D;&#x79F0;&#x7684;&#x5C5E;&#x6027;&#x3002;
+ * @param name &#x6307;&#x5B9A;&#x5C5E;&#x6027;&#x7684;&#x540D;&#x79F0;&#x3002;
+ * @return &#x5982;&#x679C;&#x7C7B;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x8BE5;&#x540D;&#x79F0;&#x58F0;&#x660E;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; NULL&#xFF1B;&#x5982;&#x679C;cls&#x4E3A; Nil&#xFF0C;&#x5219;&#x8FD4;&#x56DE;NULL&#x3002;
+ */
+objc_property_t class_getProperty(Class cls, const char *name);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x58F0;&#x660E;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x3002;
+ * @param outCount &#x8FD4;&#x56DE;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#xFF1B;&#x5982;&#x679C;&#x4E3A; NULL&#xFF0C;&#x5219;&#x4E0D;&#x8FD4;&#x56DE;&#x957F;&#x5EA6;&#x3002;
+ * @return &#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E3A; objc_property_t &#x7684;&#x6307;&#x9488;&#x6570;&#x7EC4;&#xFF0C;&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x8BE5;&#x7C7B;&#x58F0;&#x660E;&#x7684;&#x5C5E;&#x6027;&#x3002;
+ *         &#x4E0D;&#x5305;&#x62EC;&#x7236;&#x7C7B;&#x58F0;&#x660E;&#x7684;&#x4EFB;&#x4F55;&#x5C5E;&#x6027;&#x3002;
+ *         &#x5FC5;&#x987B;&#x4F7F;&#x7528;free()&#x91CA;&#x653E;&#x6570;&#x7EC4;&#x3002;
+ * &#x5982;&#x679C;cls &#x58F0;&#x660E;&#x6CA1;&#x6709;&#x5C5E;&#x6027;&#xFF0C;&#x6216;&#x8005; cls &#x4E3A; Nil&#xFF0C;&#x5219;&#x8FD4;&#x56DE; NULL &#x4E14; *outCount &#x503C;&#x4E3A; 0&#x3002;
+ */
+objc_property_t *class_copyPropertyList(Class cls, unsigned int *outCount);
+
+/* &#x5411;&#x6307;&#x5B9A;&#x7C7B;&#x4E2D;&#x6DFB;&#x52A0;&#x5C5E;&#x6027;&#x3002;
+ * @param name &#x5C5E;&#x6027;&#x540D;&#x79F0;.
+ * @param attributes &#x5C5E;&#x6027;&#x7279;&#x5F81;&#x6570;&#x7EC4;.
+ * @param attributeCount &#x5C5E;&#x6027;&#x7279;&#x5F81;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x6570;&#x91CF;.
+ * @return &#x5982;&#x679C;&#x5C5E;&#x6027;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x8FD4;&#x56DE; YES&#xFF1B;&#x5219;&#x4E3A; NO &#x5982;&#x8BE5;&#x7C7B;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x8BE5;&#x5C5E;&#x6027;
+ */
+BOOL class_addProperty(Class cls, const char *name, const objc_property_attribute_t *attributes, unsigned int attributeCount);
+
+/* &#x66FF;&#x6362;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x3002;
+ * @param name &#x8981;&#x66FF;&#x6362;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x79F0;.
+ * @param attributes &#x5C5E;&#x6027;&#x7279;&#x5F81;&#x6570;&#x7EC4;.
+ * @param attributeCount &#x5C5E;&#x6027;&#x7279;&#x5F81;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x6570;&#x91CF;.
+ */
+void class_replaceProperty(Class cls, const char *name, const objc_property_attribute_t *attributes, unsigned int attributeCount);
+</code></pre><h2 id="24&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;"><a name="24&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#24&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.4&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;</h2>
+<pre><code>/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x6307;&#x5B9A;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x3002;
+ * @param name &#x8981;&#x83B7;&#x53D6;&#x65B9;&#x6CD5;&#x7684;&#x9009;&#x62E9;&#x5668;&#x7C7B;&#x578B;&#x3002;
+ * @return &#x5982;&#x679C;&#x6307;&#x5B9A;&#x7684;&#x7C7B;&#x6216;&#x5176;&#x7236;&#x7C7B;&#x4E0D;&#x5305;&#x542B;&#x5177;&#x6709;&#x6307;&#x5B9A;&#x9009;&#x62E9;&#x5668;&#x7684;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; NULL&#x3002;
+ * @note &#x8BE5;&#x51FD;&#x6570;&#x4F1A;&#x53BB;&#x7236;&#x7C7B;&#x4E2D;&#x641C;&#x7D22;&#xFF0C;&#x800C; class_copyMethodList() &#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x53BB;&#x7236;&#x7C7B;&#x4E2D;&#x641C;&#x7D22;&#x3002;
+ */
+Method class_getInstanceMethod(Class cls, SEL name);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x6307;&#x5B9A;&#x7C7B;&#x65B9;&#x6CD5;&#x3002;
+ * @return &#x5982;&#x679C;&#x6307;&#x5B9A;&#x7684;&#x7C7B;&#x6216;&#x5176;&#x7236;&#x7C7B;&#x4E0D;&#x5305;&#x542B;&#x5177;&#x6709;&#x6307;&#x5B9A;&#x9009;&#x62E9;&#x5668;&#x7684;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; NULL&#x3002;
+ * @note &#x8BE5;&#x51FD;&#x6570;&#x4F1A;&#x53BB;&#x7236;&#x7C7B;&#x4E2D;&#x641C;&#x7D22;&#xFF0C;&#x800C; class_copyMethodList() &#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x53BB;&#x7236;&#x7C7B;&#x4E2D;&#x641C;&#x7D22;&#x3002;
+ */
+Method class_getClassMethod(Class cls, SEL name);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x5B9E;&#x73B0;&#x7684;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x3002;
+ * @param outCount &#x8FD4;&#x56DE;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#xFF1B;&#x5982;&#x679C;&#x4E3A; NULL&#xFF0C;&#x5219;&#x4E0D;&#x8FD4;&#x56DE;&#x957F;&#x5EA6;&#x3002;
+ * @return &#x83B7;&#x53D6;&#x7C7B;&#x5B9E;&#x73B0;&#x7684;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x7684;&#x7C7B;&#x578B;&#x6307;&#x9488;&#x6570;&#x7EC4;&#xFF1B;
+ *         &#x4E0D;&#x5305;&#x62EC;&#x7531;&#x7236;&#x7C7B;&#x5B9E;&#x73B0;&#x7684;&#x4EFB;&#x4F55;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF1B;&#x5FC5;&#x987B;&#x4F7F;&#x7528; free() &#x51FD;&#x6570;&#x91CA;&#x653E;&#x6570;&#x7EC4;&#x3002;
+ * @note &#x5982;&#x679C; cls &#x6CA1;&#x6709;&#x5B9E;&#x73B0;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#xFF0C;&#x6216;&#x8005; cls &#x4E3A; Nil&#xFF0C;&#x5219;&#x8FD4;&#x56DE; NULL &#x4E14; *outCount &#x503C;&#x4E3A; 0&#x3002;
+ * @note &#x8981;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x4F7F;&#x7528; class_copyMethodList(object_getClass(cls), &amp;count).
+ * @note &#x8981;&#x83B7;&#x5F97;&#x7236;&#x7C7B;&#x53EF;&#x80FD;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; class_getInstanceMethod() &#x51FD;&#x6570; &#x6216;&#x8005; class_getClassMethod() &#x51FD;&#x6570;.
+ */
+Method *class_copyMethodList(Class cls, unsigned int *outCount);
+
+/* &#x83B7;&#x53D6;&#x5728;&#x5C06;&#x6307;&#x5B9A;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x5230;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x65F6;&#x5C06;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#x6307;&#x9488;&#x3002;
+ * @return &#x5982;&#x679C;cls&#x4E3A; nil&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7A7A;&#x6307;&#x9488; NULL
+ *
+ * @note  &#x8BE5;&#x51FD;&#x6570;&#x5728;&#x8FD0;&#x884C;&#x6548;&#x7387;&#x4E0A;&#x53EF;&#x80FD;&#x6BD4; method_getImplementation(class_getInstanceMethod(cls, name)) &#x66F4;&#x5FEB;
+ * @note &#x8FD4;&#x56DE;&#x7684;&#x51FD;&#x6570;&#x6307;&#x9488;&#x53EF;&#x80FD;&#x662F;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x5185;&#x90E8;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5B9E;&#x9645;&#x7684;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x3002;
+ *       &#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x4E0D;&#x54CD;&#x5E94; SEL&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x51FD;&#x6570;&#x6307;&#x9488;&#x5C06;&#x6210;&#x4E3A;&#x8FD0;&#x884C;&#x65F6;&#x6D88;&#x606F;&#x8F6C;&#x53D1;&#x673A;&#x5236;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;
+ */
+IMP class_getMethodImplementation(Class cls, SEL name);
+
+/* &#x83B7;&#x53D6;&#x5728;&#x5C06;&#x6307;&#x5B9A;&#x6D88;&#x606F;&#x53D1;&#x9001;&#x5230;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x65F6;&#x5C06;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#x6307;&#x9488;&#x3002;
+ * @return &#x5982;&#x679C;cls&#x4E3A; nil&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x7A7A;&#x6307;&#x9488; NULL
+ */
+IMP class_getMethodImplementation_stret(Class cls, SEL name);
+
+/* &#x5224;&#x65AD;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x80FD;&#x5426;&#x54CD;&#x5E94;&#x6307;&#x5B9A;&#x9009;&#x62E9;&#x5668;&#x3002;
+ * @prama cls &#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;
+ * @param sel &#x6307;&#x5B9A;&#x9009;&#x62E9;&#x5668;
+ * @return &#x5982;&#x679C;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x54CD;&#x5E94;&#x9009;&#x62E9;&#x5668;&#xFF0C;&#x5219;&#x4E3A;YES&#xFF0C;&#x5426;&#x5219;&#x4E3A;NO&#x3002;
+ * @note &#x4E00;&#x822C;&#x4F7F;&#x7528; NSObject &#x7684; -respondsToSelector: &#x65B9;&#x6CD5;&#x6216;&#x8005; +instancesRespondToSelector: &#x65B9;&#x6CD5;&#x6765;&#x66FF;&#x4EE3;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;
+ */
+BOOL class_respondsToSelector(Class cls, SEL sel);
+
+/* &#x5411;&#x6307;&#x5B9A;&#x7C7B;&#x6DFB;&#x52A0;&#x65B0;&#x65B9;&#x6CD5;
+ * @param cls &#x8981;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x7684;&#x7C7B;&#x3002;
+ * @param name &#x6307;&#x5B9A;&#x8981;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x7684;&#x9009;&#x62E9;&#x5668; SEL&#x3002;
+ * @param imp &#x51FD;&#x6570;&#x6307;&#x9488;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x5FC5;&#x987B;&#x5177;&#x6709;&#x81F3;&#x5C11;&#x4E24;&#x4E2A;&#x53C2;&#x6570; self &#x548C; _cmd &#x3002;
+ * @param types &#x63CF;&#x8FF0;&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#x3002;
+ * @return &#x5982;&#x679C;&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#xFF0C;&#x5219;&#x4E3A;YES&#xFF1B;&#x5426;&#x5219;&#x4E3A; NO&#xFF0C;&#x5982;&#x6DFB;&#x52A0;&#x8BE5;&#x7C7B;&#x5DF2;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;&#x5219;&#x5931;&#x8D25;
+ * @note &#x8BE5;&#x51FD;&#x6570;&#x5C06;&#x91CD;&#x5199;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x66FF;&#x6362;&#x8BE5;&#x7C7B;&#x4E2D;&#x7684;&#x73B0;&#x6709;&#x65B9;&#x6CD5;&#x3002;&#x8981;&#x66F4;&#x6539;&#x73B0;&#x6709;&#x7684;&#x5B9E;&#x73B0;&#xFF0C;&#x4F7F;&#x7528; method_setImplementation() &#x51FD;&#x6570;&#x3002;
+ */
+BOOL class_addMethod(Class cls, SEL name, IMP imp,const char *types);
+
+/* &#x66FF;&#x6362;&#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x3002;
+ * @param name &#x8981;&#x66FF;&#x6362;&#x5176;&#x5B9E;&#x73B0;&#x65B9;&#x6CD5;&#x7684;&#x9009;&#x62E9;&#x5668; SEL
+ * @param imp &#x65B0;&#x7684;&#x51FD;&#x6570;&#x5730;&#x5740;
+ * @param types &#x63CF;&#x8FF0;&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#x3002;
+ * @return &#x6307;&#x5B9A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x539F;&#x6709;&#x5B9E;&#x73B0;&#xFF1B;
+ * @note &#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6709;&#x4E24;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x884C;&#x4E3A;&#x65B9;&#x5F0F;:
+ *  - &#x5982;&#x679C;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD8;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x50CF;&#x8C03;&#x7528; class_addMethod() &#x51FD;&#x6570;&#x4E00;&#x6837;&#x6DFB;&#x52A0;&#x5B83;&#xFF1B;types &#x5C06;&#x6309;&#x7ED9;&#x5B9A;&#x7684;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;&#x3002;
+ *  - &#x5982;&#x679C;&#x8BE5;&#x65B9;&#x6CD5;&#x5DF2;&#x7ECF;&#x5B9E;&#x73B0;&#xFF0C;&#x5219;&#x66FF;&#x6362;&#x5176;IMP&#xFF0C;&#x5C31;&#x50CF;&#x8C03;&#x7528; method_setImplementation() &#x51FD;&#x6570;&#x4E00;&#x6837;&#xFF1B;&#x5FFD;&#x7565; types&#x3002;
+ */
+IMP class_replaceMethod(Class cls, SEL name, IMP imp,const char *types);
+</code></pre><h2 id="25&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x534F;&#x8BAE;"><a name="25&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x534F;&#x8BAE;" class="anchor-navigation-ex-anchor" href="#25&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x534F;&#x8BAE;"><i class="fa fa-link" aria-hidden="true"></i></a>2.5&#x3001;&#x83B7;&#x53D6;&#x7C7B;&#x7684;&#x534F;&#x8BAE;</h2>
+<pre><code>/* &#x5224;&#x65AD;&#x6307;&#x5B9A;&#x7C7B;&#x662F;&#x5426;&#x5B9E;&#x73B0;&#x4E86;&#x6307;&#x5B9A;&#x7684;&#x534F;&#x8BAE;&#x3002;
+ * @param cls &#x6307;&#x5B9A;&#x7C7B;
+ * @param protocol &#x6307;&#x5B9A;&#x7684;&#x534F;&#x8BAE;.
+ * @return &#x5982;&#x679C;cls &#x5B9E;&#x73B0;&#x534F;&#x8BAE;&#xFF0C;&#x5219;&#x4E3A;YES&#xFF0C;&#x5426;&#x5219;&#x4E3A;NO&#x3002;
+ * @note &#x4E00;&#x822C;&#x4F7F;&#x7528; NSObject &#x7684; -conformsToProtocol: &#x65B9;&#x6CD5;&#x6765;&#x66FF;&#x4EE3;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;
+ */
+BOOL class_conformsToProtocol(Class cls, Protocol *protocol);
+
+/* &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7C7B;&#x6240;&#x58F0;&#x660E;&#x7684;&#x6240;&#x6709;&#x534F;&#x8BAE;
+ * @param outCount &#x8FD4;&#x56DE;&#x6570;&#x7EC4;&#x7684;&#x957F;&#x5EA6;&#xFF1B;&#x5982;&#x679C;&#x4E3A; NULL&#xFF0C;&#x5219;&#x4E0D;&#x8FD4;&#x56DE;&#x957F;&#x5EA6;&#x3002;
+ * @return &#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x4E3A; Protocol* &#x7684;&#x6307;&#x9488;&#x6570;&#x7EC4;&#xFF0C;&#x63CF;&#x8FF0;&#x7C7B;&#x6240;&#x58F0;&#x660E;&#x7684;&#x534F;&#x8BAE;&#x3002;
+ *         &#x4E0D;&#x5305;&#x62EC;&#x7236;&#x7C7B;&#x6216;&#x5176;&#x4ED6;&#x534F;&#x8BAE;&#x6240;&#x58F0;&#x660E;&#x7684;&#x4EFB;&#x4F55;&#x534F;&#x8BAE;&#xFF1B;
+ *         &#x5FC5;&#x987B;&#x4F7F;&#x7528; free() &#x51FD;&#x6570;&#x91CA;&#x653E;&#x6570;&#x7EC4;&#xFF1B;
+ *  &#x5982;&#x679C; cls &#x4E0D;&#x91C7;&#x7528;&#x534F;&#x8BAE;&#xFF0C;&#x6216;&#x8005; cls &#x4E3A; Nil&#xFF0C;&#x5219;&#x8FD4;&#x56DE; NULL &#x4E14; *outCount &#x503C;&#x4E3A; 0&#x3002;
+ */
+Protocol * __unsafe_unretained *class_copyProtocolList(Class cls, unsigned int *outCount);
+
+/* &#x5411;&#x6307;&#x5B9A;&#x7C7B;&#x4E2D;&#x6DFB;&#x52A0;&#x534F;&#x8BAE;&#x3002;
+ * @return &#x5982;&#x679C;&#x534F;&#x8BAE;&#x6DFB;&#x52A0;&#x6210;&#x529F;&#x8FD4;&#x56DE; YES&#xFF1B;&#x5219;&#x4E3A; NO &#x5982;&#x8BE5;&#x7C7B;&#x5DF2;&#x7ECF;&#x58F0;&#x660E;&#x8BE5;&#x534F;&#x8BAE;
+ */
+BOOL class_addProtocol(Class cls, Protocol *protocol);
+
+/* &#x7528;&#x4E8E;CoreFoundation&#x7684;&#x6865;&#x63A5;&#x3002;
+ * @warning &#x4E0D;&#x8981;&#x81EA;&#x5DF1;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;
+ */
+Class _Nonnull objc_getFutureClass(const char * _Nonnull name);
+</code></pre><h1 id="3&#x3001;&#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x7C7B;"><a name="3&#x3001;&#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x7C7B;</h1>
+<pre><code>/* &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7C7B;&#x548C;&#x5143;&#x7C7B;&#x3002;
+ * @param superclass &#x8981;&#x7528;&#x4F5C;&#x65B0;&#x7C7B;&#x7684;&#x7236;&#x7C7B;&#xFF1B;&#x5982;&#x679C;&#x4E3A; nil &#x5219;&#x521B;&#x5EFA;&#x6839;&#x7C7B;&#x3002;
+ * @param name &#x7528;&#x4F5C;&#x65B0;&#x7C7B;&#x540D;&#x79F0;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF1B;&#x5B57;&#x7B26;&#x4E32;&#x5C06;&#x88AB;&#x590D;&#x5236;&#x3002;
+ * @param extraBytes &#x5728;&#x7C7B;&#x548C;&#x5143;&#x7C7B;&#x5BF9;&#x8C61;&#x7684;&#x672B;&#x5C3E;&#x4E3A;&#x7D22;&#x5F15;ivars&#x5206;&#x914D;&#x7684;&#x5B57;&#x8282;&#x6570;&#x3002;&#x8FD9;&#x901A;&#x5E38;&#x662F;0&#x3002;
+ * @return &#x8FD4;&#x56DE;&#x65B0;&#x7C7B;&#xFF1B;&#x5982;&#x679C;&#x65E0;&#x6CD5;&#x521B;&#x5EFA;&#x7C7B;&#x5219;&#x4E3A;Nil(&#x4F8B;&#x5982;&#xFF0C;&#x6240;&#x9700;&#x7684;&#x540D;&#x79F0;&#x5DF2;&#x7ECF;&#x5728;&#x4F7F;&#x7528;&#x4E2D;)&#x3002;
+ * @note &#x901A;&#x8FC7;&#x8C03;&#x7528; object_getClass(newClass) &#x6765;&#x83B7;&#x5F97;&#x6307;&#x5411;&#x65B0;&#x5143;&#x7C7B;&#x7684;&#x6307;&#x9488;&#x3002;
+ * @note &#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7C7B;&#xFF0C;&#x9996;&#x5148;&#x8C03;&#x7528; objc_allocateClassPair() &#x3002;
+ *       &#x7136;&#x540E;&#x4F7F;&#x7528;class_addMethod() &#x548C;class_addIvar() &#x7B49;&#x51FD;&#x6570;&#x8BBE;&#x7F6E;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x3002;
+ *       &#x6784;&#x5EFA;&#x5B8C;&#x7C7B;&#x540E;&#xFF0C;&#x8C03;&#x7528; objc_registerClassPair() &#x6CE8;&#x518C;&#x7C7B;&#x3002;
+ *       &#x65B0;&#x7C7B;&#x73B0;&#x5728;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E86;&#x3002;
+ * @note &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x548C;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#x5E94;&#x8BE5;&#x6DFB;&#x52A0;&#x5230;&#x7C7B;&#x672C;&#x8EAB;&#xFF1B;&#x7C7B;&#x65B9;&#x6CD5;&#x5E94;&#x8BE5;&#x6DFB;&#x52A0;&#x5230;&#x5143;&#x7C7B;&#x4E2D;&#x3002;
+ */
+Class _Nullable objc_allocateClassPair(Class _Nullable superclass, const char * _Nonnull name,size_t extraBytes);
+
+/* &#x6CE8;&#x518C;&#x4F7F;&#x7528; objc_allocateClassPair() &#x521B;&#x5EFA;&#x7684;&#x7C7B;&#x3002;
+ */
+void objc_registerClassPair(Class _Nonnull cls);
+
+/* &#x7528;&#x4E8E;Foundation&#x7684;&#x952E;&#x503C;&#x89C2;&#x5BDF;&#x3002;
+ * @warning &#x4E0D;&#x8981;&#x81EA;&#x5DF1;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x3002;
+ */
+Class _Nonnull objc_duplicateClass(Class _Nonnull original, const char * _Nonnull name,size_t extraBytes);
+
+/* &#x9500;&#x6BC1;&#x4E00;&#x4E2A;&#x7C7B;&#x53CA;&#x5176;&#x5173;&#x8054;&#x7684;&#x5143;&#x7C7B;&#xFF1B;
+ * @param cls &#x8981;&#x9500;&#x6BC1;&#x7684;&#x7C7B;&#x5FC5;&#x987B;&#x662F;&#x7528;objc_allocateClassPair() &#x521B;&#x5EFA;&#x7684;&#xFF1B;
+ * @warning &#x5982;&#x679C;&#x5B58;&#x5728;&#x6B64;&#x7C7B;&#x6216;&#x5B50;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5219;&#x4E0D;&#x8981;&#x8C03;&#x7528;&#x3002;
+ */
+void objc_disposeClassPair(Class _Nonnull cls);
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-09-04 11:33:43
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> 搜索结果 "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有搜索结果 "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Runtime_Instance.html" class="navigation navigation-prev " aria-label="Previous page: Runtime函数库中关于实例对象的函数使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Runtime_Method.html" class="navigation navigation-next " aria-label="Next page: Runtime函数库中关于 Class 的函数使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Runtime函数库中关于Class的函数使用","level":"1.3.1.10","depth":3,"next":{"title":"Runtime函数库中关于 Class 的函数使用","level":"1.3.1.11","depth":3,"path":"iOS开发/Runtime/Runtime_Method.md","ref":"iOS开发/Runtime/Runtime_Method.md","articles":[]},"previous":{"title":"Runtime函数库中关于实例对象的函数使用","level":"1.3.1.9","depth":3,"path":"iOS开发/Runtime/Runtime_Instance.md","ref":"iOS开发/Runtime/Runtime_Instance.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","pageview-count","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"pageview-count":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"iOS开发/Runtime/Runtime_Class.md","mtime":"2021-09-04T03:33:43.655Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-04T03:47:56.847Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

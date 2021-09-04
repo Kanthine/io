@@ -1,0 +1,1523 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>编译objc4备忘录 · 个人博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="苏沫漓">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Runtime_Protocol.html" />
+    
+    
+    <link rel="prev" href="TaggedPointer.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="搜索🔍" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    计算机基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../计算机基础/README.md">
+            
+                <span>
+            
+                    
+                    计算机基础简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" >
+            
+                <span>
+            
+                    
+                    第一部分 计算机的组成
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                    
+                    计算机概述篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                    
+                    计算机组成篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                    
+                    计算机计算篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                    
+                    第二部分 操作系统篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../计算机基础/操作系统篇/进程管理篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/进程管理篇.html">
+            
+                    
+                    进程管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../计算机基础/操作系统篇/内存管理篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/内存管理篇.html">
+            
+                    
+                    内存管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../计算机基础/操作系统篇/文件系统篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/文件系统篇.html">
+            
+                    
+                    文件系统篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                    
+                    操作系统提升篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../计算机基础/计算机网络/网络概述篇.html">
+            
+                <a href="../../计算机基础/计算机网络/网络概述篇.html">
+            
+                    
+                    第三部分 网络篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../计算机基础/计算机网络/计算机物理层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机物理层.html">
+            
+                    
+                    计算机物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                    
+                    计算机数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../../计算机基础/计算机网络/计算机网络层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机网络层.html">
+            
+                    
+                    计算机网络层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../../计算机基础/计算机网络/计算机传输层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机传输层.html">
+            
+                    
+                    计算机传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../../计算机基础/计算机网络/计算机应用层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机应用层.html">
+            
+                    
+                    计算机应用层
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    iOS开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Runtime
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="OC之Blocks.html">
+            
+                <a href="OC之Blocks.html">
+            
+                    
+                    OC之Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="OC内存管理.html">
+            
+                <a href="OC内存管理.html">
+            
+                    
+                    OC内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="OC内存管理之引用计数.html">
+            
+                <a href="OC内存管理之引用计数.html">
+            
+                    
+                    OC内存管理之引用计数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="+load方法的调用历程.html">
+            
+                <a href="+load方法的调用历程.html">
+            
+                    
+                    +load方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="TaggedPointer.html">
+            
+                <a href="TaggedPointer.html">
+            
+                    
+                    TaggedPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.1.6" data-path="编译objc4.html">
+            
+                <a href="编译objc4.html">
+            
+                    
+                    编译objc4备忘录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="Runtime_Protocol.html">
+            
+                <a href="Runtime_Protocol.html">
+            
+                    
+                    Runtime函数库中关于协议Protocol的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="Runtime_Property.html">
+            
+                <a href="Runtime_Property.html">
+            
+                    
+                    Runtime函数库中关于属性与变量的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="Runtime_Instance.html">
+            
+                <a href="Runtime_Instance.html">
+            
+                    
+                    Runtime函数库中关于实例对象的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="Runtime_Class.html">
+            
+                <a href="Runtime_Class.html">
+            
+                    
+                    Runtime函数库中关于Class的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="Runtime_Method.html">
+            
+                <a href="Runtime_Method.html">
+            
+                    
+                    Runtime函数库中关于 Class 的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../CoreText/CoteText概述.html">
+            
+                <a href="../CoreText/CoteText概述.html">
+            
+                    
+                    CoreText
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../CoreText/CoteText排版与布局.html">
+            
+                <a href="../CoreText/CoteText排版与布局.html">
+            
+                    
+                    CoteText排版与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../CoreText/CTLineRef的函数库及使用.html">
+            
+                <a href="../CoreText/CTLineRef的函数库及使用.html">
+            
+                    
+                    CTLineRef的函数库及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../CoreText/CTRunRef与CTRunDelegate.html">
+            
+                <a href="../CoreText/CTRunRef与CTRunDelegate.html">
+            
+                    
+                    图文混排的关键：CTRunRef 与 CTRunDelegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    CoreImage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../CoreImage/图像特征CIFeature.html">
+            
+                <a href="../CoreImage/图像特征CIFeature.html">
+            
+                    
+                    图像特征CIFeature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../CoreImage/图片检测CIDetector.html">
+            
+                <a href="../CoreImage/图片检测CIDetector.html">
+            
+                    
+                    图片检测CIDetector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../CoreImage/CIContext.html">
+            
+                <a href="../CoreImage/CIContext.html">
+            
+                    
+                    上下文CIContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    杂记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../杂记/iOS渲染机制初窥.html">
+            
+                <a href="../杂记/iOS渲染机制初窥.html">
+            
+                    
+                    iOS渲染机制初窥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../杂记/响应链.html">
+            
+                <a href="../杂记/响应链.html">
+            
+                    
+                    响应链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../杂记/OC的深拷贝与浅拷贝.html">
+            
+                <a href="../杂记/OC的深拷贝与浅拷贝.html">
+            
+                    
+                    OC的深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../../其它/sdk_cocoapods.html">
+            
+                <a href="../../其它/sdk_cocoapods.html">
+            
+                    
+                    iOS 使用 cocoapods 创建组件化库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../杂记/CNCopyCurrentNetworkInfo内存泄漏.html">
+            
+                <a href="../杂记/CNCopyCurrentNetworkInfo内存泄漏.html">
+            
+                    
+                    CNCopyCurrentNetworkInfo() 引发的内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="../杂记/获取WIFI信息.html">
+            
+                <a href="../杂记/获取WIFI信息.html">
+            
+                    
+                    获取WIFI信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    C/C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../C_C++篇/C++学习入门篇.html">
+            
+                <a href="../../C_C++篇/C++学习入门篇.html">
+            
+                    
+                    C++学习入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../C_C++篇/C++学习封装篇.html">
+            
+                <a href="../../C_C++篇/C++学习封装篇.html">
+            
+                    
+                    C++学习封装篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../C_C++篇/C++学习继承篇.html">
+            
+                <a href="../../C_C++篇/C++学习继承篇.html">
+            
+                    
+                    C++学习继承篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../C_C++篇/C++学习多态篇.html">
+            
+                <a href="../../C_C++篇/C++学习多态篇.html">
+            
+                    
+                    C++学习多态篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    C
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../C_C++篇/C数组.html">
+            
+                <a href="../../C_C++篇/C数组.html">
+            
+                    
+                    C语言数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../C_C++篇/C结构.html">
+            
+                <a href="../../C_C++篇/C结构.html">
+            
+                    
+                    C语言结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../C_C++篇/C递归.html">
+            
+                <a href="../../C_C++篇/C递归.html">
+            
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../Git体系/Git常用命令.html">
+            
+                <a href="../../Git体系/Git常用命令.html">
+            
+                    
+                    Git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../Git体系/Github和SSH密钥.html">
+            
+                <a href="../../Git体系/Github和SSH密钥.html">
+            
+                    
+                    Github和SSH密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../Gitbook指导/">
+            
+                <a href="../../Gitbook指导/">
+            
+                    
+                    GitBook 使用教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../Gitbook指导/gitbook教程.html">
+            
+                <a href="../../Gitbook指导/gitbook教程.html">
+            
+                    
+                    GitBook 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../Gitbook指导/gitbook语法.html">
+            
+                <a href="../../Gitbook指导/gitbook语法.html">
+            
+                    
+                    GitBook 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.sumoli.work" target="blank" class="gitbook-link">
+            博客主页
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >编译objc4备忘录</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7F16;&#x8BD1;-objc4-&#x5907;&#x5FD8;&#x5F55;"><b></b>&#x7F16;&#x8BD1; objc4 &#x5907;&#x5FD8;&#x5F55;</a></li><li><span class="title-icon "></span><a href="#1&#x3001;macosxinternal-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;"><b></b>1&#x3001;macosx.internal &#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;</a></li><ul><li><span class="title-icon "></span><a href="#11&#x3001;-unable-to-find-sdk-macosxinternal"><b></b>1.1&#x3001; unable to find sdk macosx.internal</a></li><li><span class="title-icon "></span><a href="#12&#x3001;macosxinternal-cannot-be-located"><b></b>1.2&#x3001;macosx.internal cannot be located</a></li></ul><li><span class="title-icon "></span><a href="#2&#x3001;h&#x6587;&#x4EF6;&#x7F3A;&#x5931;"><b></b>2&#x3001;.h&#x6587;&#x4EF6;&#x7F3A;&#x5931;</a></li><ul><li><span class="title-icon "></span><a href="#21&#x3001;-sysreasonh-file-not-found"><b></b>2.1&#x3001; sys/reason.h file not found</a></li><li><span class="title-icon "></span><a href="#22&#x3001;mach-odyldprivh-file-not-found"><b></b>2.2&#x3001;mach-o/dyld_priv.h file not found</a></li><ul><li><span class="title-icon "></span><a href="#221&#x3001;-bridgeos30-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;"><b></b>2.2.1&#x3001; bridgeos(3.0) &#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;</a></li></ul><li><span class="title-icon "></span><a href="#23&#x3001;oslockprivateh-file-not-found"><b></b>2.3&#x3001;os/lock_private.h file not found</a></li><ul><li><span class="title-icon "></span><a href="#231&#x3001;-bridgeos40-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;"><b></b>2.3.1&#x3001; bridgeos(4.0) &#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;</a></li></ul><li><span class="title-icon "></span><a href="#24&#x3001;osbaseprivateh-file-not-found"><b></b>2.4&#x3001;os/base_private.h file not found</a></li><li><span class="title-icon "></span><a href="#25&#x3001;pthreadtsdprivateh-file-not-found"><b></b>2.5&#x3001;pthread/tsd_private.h file not found</a></li><li><span class="title-icon "></span><a href="#26&#x3001;systemmachinecpucapabilitiesh-file-not-found"><b></b>2.6&#x3001;System/machine/cpu_capabilities.h file not found</a></li><li><span class="title-icon "></span><a href="#27&#x3001;ostsdh-file-not-found"><b></b>2.7&#x3001;os/tsd.h file not found</a></li><li><span class="title-icon "></span><a href="#28&#x3001;pthreadspinlockprivateh-file-not-found"><b></b>2.8&#x3001;pthread/spinlock_private.h file not found</a></li><li><span class="title-icon "></span><a href="#29&#x3001;systempthreadmachdeph-file-not-found"><b></b>2.9&#x3001;System/pthread_machdep.h file not found</a></li><li><span class="title-icon "></span><a href="#210&#x3001;crashreporterclienth-file-not-found"><b></b>2.10&#x3001;CrashReporterClient.h file not found</a></li><ul><li><span class="title-icon "></span><a href="#2101&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684;-crgetcrashlogmessage"><b></b>2.10.1&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684; CRGetCrashLogMessage()</a></li></ul><li><span class="title-icon "></span><a href="#211&#x3001;osfeatureprivateh-file-not-found"><b></b>2.11&#x3001;os/feature_private.h file not found</a></li><ul><li><span class="title-icon "></span><a href="#2111&#x3001;&#x672A;&#x58F0;&#x660E;&#x7684;&#x51FD;&#x6570;-osfeatureenabledsimple"><b></b>2.11.1&#x3001;&#x672A;&#x58F0;&#x660E;&#x7684;&#x51FD;&#x6570; os_feature_enabled_simple()</a></li></ul><li><span class="title-icon "></span><a href="#212&#x3001;objc-bp-assisth-file-not-found"><b></b>2.12&#x3001;objc-bp-assist.h file not found</a></li><ul><li><span class="title-icon "></span><a href="#2121&#x3001;&#x6CE8;&#x91CA;objc-bp-assisth-&#x5BFC;&#x81F4;&#x67D0;&#x4E9B;&#x5B8F;&#x5B9A;&#x4E49;&#x627E;&#x4E0D;&#x5230;"><b></b>2.12.1&#x3001;&#x6CE8;&#x91CA;objc-bp-assist.h &#x5BFC;&#x81F4;&#x67D0;&#x4E9B;&#x5B8F;&#x5B9A;&#x4E49;&#x627E;&#x4E0D;&#x5230;</a></li></ul><li><span class="title-icon "></span><a href="#213&#x3001;objc-shared-cacheh-file-not-found"><b></b>2.13&#x3001;objc-shared-cache.h file not found</a></li><li><span class="title-icon "></span><a href="#214&#x3001;oslinkerseth-file-not-found"><b></b>2.14&#x3001;os/linker_set.h file not found</a></li><ul><li><span class="title-icon "></span><a href="#2141&#x3001;&#x4E0D;&#x88AB;&#x8BC6;&#x522B;&#x7684;&#x5B8F;&#x5B9A;&#x4E49;-dyldplatformversion"><b></b>2.14.1&#x3001;&#x4E0D;&#x88AB;&#x8BC6;&#x522B;&#x7684;&#x5B8F;&#x5B9A;&#x4E49; dyld_platform_version_</a></li><li><span class="title-icon "></span><a href="#2142&#x3001;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x51FD;&#x6570;-dyldprogramsdkatleast"><b></b>2.14.2&#x3001;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x51FD;&#x6570; dyld_program_sdk_at_least()</a></li><li><span class="title-icon "></span><a href="#2143&#x3001;&#x6C34;&#x571F;&#x4E0D;&#x670D;&#x7684;&#x5B8F;&#x5B9A;&#x4E49;-sdkisatleast"><b></b>2.14.3&#x3001;&#x6C34;&#x571F;&#x4E0D;&#x670D;&#x7684;&#x5B8F;&#x5B9A;&#x4E49; sdkIsAtLeast()</a></li></ul><li><span class="title-icon "></span><a href="#215&#x3001;simpleh-file-not-found"><b></b>2.15&#x3001;_simple.h file not found</a></li><li><span class="title-icon "></span><a href="#216&#x3001;cambriatrapshh-file-not-found-&#x548C;-cambriacambriahh-file-not-found"><b></b>2.16&#x3001;Cambria/Traps.h.h file not found &#x548C; Cambria/Cambria.h.h file not found</a></li><li><span class="title-icon "></span><a href="#217&#x3001;blockprivateh-file-not-found"><b></b>2.17&#x3001;Block_private.h file not found</a></li><li><span class="title-icon "></span><a href="#218&#x3001;kernrestartableh-file-not-found"><b></b>2.18&#x3001;kern/restartable.h file not found</a></li><ul><li><span class="title-icon "></span><a href="#2181&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684;-oahiscurrentprocesstranslated"><b></b>2.18.1&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684; oah_is_current_process_translated()</a></li><li><span class="title-icon "></span><a href="#2182&#x3001;"><b></b>2.18.2&#x3001;</a></li></ul><li><span class="title-icon "></span><a href="#219&#x3001;osreasonprivateh-file-not-found"><b></b>2.19&#x3001;os/reason_private.h file not found</a></li><li><span class="title-icon "></span><a href="#220&#x3001;osvariantprivateh-file-not-found"><b></b>2.20&#x3001;os/variant_private.h file not found</a></li></ul><li><span class="title-icon "></span><a href="#3&#x3001;&#x94FE;&#x63A5;&#x914D;&#x7F6E;&#x6709;&#x8BEF;"><b></b>3&#x3001;&#x94FE;&#x63A5;&#x914D;&#x7F6E;&#x6709;&#x8BEF;</a></li><ul><li><span class="title-icon "></span><a href="#31&#x3001;&#x4E8C;&#x8FDB;&#x5236;&#x91CD;&#x6392;&#x6587;&#x4EF6;-order-&#x7684;&#x8DEF;&#x5F84;&#x9519;&#x8BEF;"><b></b>3.1&#x3001;&#x4E8C;&#x8FDB;&#x5236;&#x91CD;&#x6392;&#x6587;&#x4EF6; .order &#x7684;&#x8DEF;&#x5F84;&#x9519;&#x8BEF;</a></li><li><span class="title-icon "></span><a href="#32&#x3001;&#x5220;&#x9664;--lcrashreporterclient"><b></b>3.2&#x3001;&#x5220;&#x9664; -lCrashReporterClient</a></li><li><span class="title-icon "></span><a href="#33&#x3001;&#x5220;&#x9664;--loah"><b></b>3.3&#x3001;&#x5220;&#x9664; -loah</a></li></ul><li><span class="title-icon "></span><a href="#4&#x3001;&#x8C03;&#x8BD5;-objc"><b></b>4&#x3001;&#x8C03;&#x8BD5; objc</a></li></ul></div><h1 id="&#x7F16;&#x8BD1;-objc4-&#x5907;&#x5FD8;&#x5F55;"><a name="&#x7F16;&#x8BD1;-objc4-&#x5907;&#x5FD8;&#x5F55;" class="anchor-navigation-ex-anchor" href="#&#x7F16;&#x8BD1;-objc4-&#x5907;&#x5FD8;&#x5F55;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F16;&#x8BD1; objc4 &#x5907;&#x5FD8;&#x5F55;</h1>
+<p>&#x7B14;&#x8005;&#x4ECE;&#x82F9;&#x679C;&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;&#x7684;  <a href="https://opensource.apple.com/tarballs/objc4/objc4-818.2.tar.gz" target="_blank">objc4-818.2 &#x6E90;&#x7801;</a> &#x7531;&#x4E8E; <em>&#x7F3A;&#x5931;&#x67D0;&#x4E9B;<code>.h</code>&#x6587;&#x4EF6;</em> &#x3001;<em>&#x4EE3;&#x7801;&#x4E0D;&#x9002;&#x914D;&#x5F53;&#x524D;&#x7CFB;&#x7EDF;</em> &#x3001;<em><code>Build Settings</code> &#x67D0;&#x4E9B;&#x914D;&#x7F6E;&#x95EE;&#x9898;</em> &#x7B49;&#x8BF8;&#x591A;&#x539F;&#x56E0;&#xFF0C;&#x4E0D;&#x80FD;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x6210;&#x529F;&#xFF01;&#x56E0;&#x6B64;&#x7279;&#x522B;&#x5199;&#x4E0B;&#x6B64;&#x6587;&#xFF0C;&#x8BB0;&#x5F55;&#x7B14;&#x8005;&#x89E3;&#x51B3;&#x8FD9;&#x4E9B;&#x95EE;&#x9898;&#x7684;&#x8270;&#x8F9B;&#x5386;&#x7A0B;&#xFF01;</p>
+<h1 id="1&#x3001;macosxinternal-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;"><a name="1&#x3001;macosxinternal-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;" class="anchor-navigation-ex-anchor" href="#1&#x3001;macosxinternal-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;<code>macosx.internal</code> &#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;</h1>
+<h2 id="11&#x3001;-unable-to-find-sdk-macosxinternal"><a name="11&#x3001;-unable-to-find-sdk-macosxinternal" class="anchor-navigation-ex-anchor" href="#11&#x3001;-unable-to-find-sdk-macosxinternal"><i class="fa fa-link" aria-hidden="true"></i></a>1.1&#x3001; <code>unable to find sdk macosx.internal</code></h2>
+<p><img src="assets/Runtime_objc_macosx.png" alt="unable to find sdk macosx.internal"></p>
+<pre><code>error: unable to find sdk &apos;macosx.internal&apos; (in target &apos;objc&apos; from project &apos;objc&apos;)
+error: unable to find sdk &apos;macosx.internal&apos; (in target &apos;objc-trampolines&apos; from project &apos;objc&apos;)
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x914D;&#x7F6E; <code>TARGETS</code> -&gt; <code>objc/objc-trampolines</code> -&gt; <code>Build Settings</code> -&gt; <code>Architectures</code> -&gt; <code>Base SDK</code> &#x4E3A;&#x7CFB;&#x7EDF;&#x81EA;&#x9002;&#x914D; <code>macOS</code>&#xFF01;</p>
+<p><img src="assets/Runtime_objc_macosx_res.png" alt="&#x7CFB;&#x7EDF;&#x81EA;&#x9002;&#x914D;macOS"></p>
+<h2 id="12&#x3001;macosxinternal-cannot-be-located"><a name="12&#x3001;macosxinternal-cannot-be-located" class="anchor-navigation-ex-anchor" href="#12&#x3001;macosxinternal-cannot-be-located"><i class="fa fa-link" aria-hidden="true"></i></a>1.2&#x3001;<code>macosx.internal cannot be located</code></h2>
+<pre><code>xcodebuild: error: SDK &quot;macosx.internal&quot; cannot be located.
+xcrun: error: sh -c &apos;/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -sdk macosx.internal -find clang++ 2&gt; /dev/null&apos; failed with exit code 16384: (null) (errno=No such file or directory)
+xcrun: error: unable to find utility &quot;clang++&quot;, not a developer tool or in PATH
+</code></pre><p>&#x8FD9;&#x662F;&#x7531;&#x4E8E;  <code>TARGETS</code> -&gt; <code>objc</code> -&gt; <code>Build Phases</code> -&gt; <code>Run Script(markgc)</code>  &#x811A;&#x672C;&#x5F15;&#x8D77;&#x7684;&#xFF01;</p>
+<p><img src="assets/Runtime_objc_macosx_load.png" alt="macosx.internal cannot be located"></p>
+<h1 id="2&#x3001;h&#x6587;&#x4EF6;&#x7F3A;&#x5931;"><a name="2&#x3001;h&#x6587;&#x4EF6;&#x7F3A;&#x5931;" class="anchor-navigation-ex-anchor" href="#2&#x3001;h&#x6587;&#x4EF6;&#x7F3A;&#x5931;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;<code>.h</code>&#x6587;&#x4EF6;&#x7F3A;&#x5931;</h1>
+<p><code>objc</code> &#x76F8;&#x5173;&#x8054;&#x7684;&#x5E93;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="assets/Runtime_objc_code.png" alt="&#x76F8;&#x5173;&#x8054;&#x7684;&#x6E90;&#x7801;&#x5E93;"></p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> <a href="https://opensource.apple.com/tarballs/objc4/objc4-818.2.tar.gz" target="_blank">objc4-818.2</a> &#x7F3A;&#x5931;&#x7684;&#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x7B14;&#x8005;&#x7EDF;&#x4E00;&#x653E;&#x5728;&#x4E00;&#x4E2A;  <code>ThirdLib</code> &#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#xFF01;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong>  &#x9700;&#x8981;&#x4E3A;&#x6587;&#x4EF6;&#x5939; <code>ThirdLib</code> &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x8DEF;&#x5F84; <code>TARGETS</code> -&gt; <code>objc</code> -&gt; <code>Build Setting</code> -&gt; <code>Heard Search Path</code>&#xFF01;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x7F16;&#x8BD1;&#x62A5;&#x9519;&#x7F3A;&#x5931;&#x5934;&#x6587;&#x4EF6;&#xFF0C;&#x51E1;&#x662F;&#x591A;&#x5C42;&#x6587;&#x4EF6;&#x5939;&#xFF08;&#x5E26;&#x6709; <code>/</code> &#xFF09;&#xFF0C;&#x90FD;&#x5728; <code>ThirdLib</code> &#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x6839;&#x636E;&#x7F3A;&#x5931;&#x5934;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5939;&#x3002;</p>
+<p><img src="assets/Runtime_objc_code_menu.png" alt="&#x89E3;&#x51B3;&#x7F3A;&#x5931;&#x6587;&#x4EF6;&#x4E4B;&#x540E;&#x7684;&#x6548;&#x679C;&#x56FE;"></p>
+<h2 id="21&#x3001;-sysreasonh-file-not-found"><a name="21&#x3001;-sysreasonh-file-not-found" class="anchor-navigation-ex-anchor" href="#21&#x3001;-sysreasonh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.1&#x3001; <code>sys/reason.h file not found</code></h2>
+<p><img src="assets/Runtime_objc_syn_reason.png" alt="sys/reason.h file not found"></p>
+<pre><code>/objc4-818.2/runtime/objc-os.h:136:13: fatal error: &apos;sys/reason.h&apos; file not found
+#   include &lt;sys/reason.h&gt;
+            ^~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/xnu/xnu-7195.81.3.tar.gz" target="_blank">xnu-7195&#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>bsd</code> -&gt; <code>sys</code> &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>reason.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55; <code>ThirdLib/sys</code>&#xFF01;</p>
+<h2 id="22&#x3001;mach-odyldprivh-file-not-found"><a name="22&#x3001;mach-odyldprivh-file-not-found" class="anchor-navigation-ex-anchor" href="#22&#x3001;mach-odyldprivh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.2&#x3001;<code>mach-o/dyld_priv.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-os.h:144:13: fatal error: &apos;mach-o/dyld_priv.h&apos; file not found
+#   include &lt;mach-o/dyld_priv.h&gt;
+            ^~~~~~~~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/dyld/dyld-832.7.3.tar.gz" target="_blank">dyld-832 &#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>include</code> -&gt; <code>mach-o</code> &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>dyld_priv.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/mach-o</code>&#xFF01;</p>
+<h3 id="221&#x3001;-bridgeos30-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;"><a name="221&#x3001;-bridgeos30-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;" class="anchor-navigation-ex-anchor" href="#221&#x3001;-bridgeos30-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.1&#x3001; <code>bridgeos(3.0)</code> &#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;</h3>
+<p>&#x6DFB;&#x52A0;&#x7684;   <code>dyld_priv.h</code> &#x6587;&#x4EF6;&#x7684;&#x67D0;&#x4E9B;&#x4EE3;&#x7801;&#xFF0C;&#x4E0D;&#x88AB;&#x7B14;&#x8005;&#x7684;&#x7CFB;&#x7EDF;&#x6240;&#x517C;&#x5BB9;&#xFF1A;</p>
+<pre><code>/objc4-818.2/ThirdLib/mach-o/dyld_priv.h:130:130: error: expected &apos;,&apos;
+extern dyld_platform_t dyld_get_active_platform(void) __API_AVAILABLE(macos(10.14), ios(12.0), watchos(5.0), tvos(12.0), bridgeos(3.0));
+
+/objc4-818.2/ThirdLib/mach-o/dyld_priv.h:156:148: error: expected &apos;,&apos;
+extern dyld_platform_t dyld_get_base_platform(dyld_platform_t platform) __API_AVAILABLE(macos(10.14), ios(12.0), watchos(5.0), tvos(12.0), bridgeos(3.0));
+
+/objc4-818.2/ThirdLib/mach-o/dyld_priv.h:159:141: error: expected &apos;,&apos;
+extern bool dyld_is_simulator_platform(dyld_platform_t platform) __API_AVAILABLE(macos(10.14), ios(12.0), watchos(5.0), tvos(12.0), bridgeos(3.0));
+
+/objc4-818.2/ThirdLib/mach-o/dyld_priv.h:163:166: error: expected &apos;,&apos;
+extern bool dyld_sdk_at_least(const struct mach_header* mh, dyld_build_version_t version) __API_AVAILABLE(macos(10.14), ios(12.0), watchos(5.0), tvos(12.0), bridgeos(3.0));
+
+/objc4-818.2/ThirdLib/mach-o/dyld_priv.h:167:168: error: expected &apos;,&apos;
+extern bool dyld_minos_at_least(const struct mach_header* mh, dyld_build_version_t version) __API_AVAILABLE(macos(10.14), ios(12.0), watchos(5.0), tvos(12.0), bridgeos(3.0));
+
+/objc4-818.2/ThirdLib/mach-o/dyld_priv.h:170:144: error: expected &apos;,&apos;
+extern bool dyld_program_sdk_at_least(dyld_build_version_t version) __API_AVAILABLE(macos(10.14), ios(12.0), watchos(5.0), tvos(12.0), bridgeos(3.0));
+
+/objc4-818.2/ThirdLib/mach-o/dyld_priv.h:171:146: error: expected &apos;,&apos;
+extern bool dyld_program_minos_at_least(dyld_build_version_t version) __API_AVAILABLE(macos(10.14), ios(12.0), watchos(5.0), tvos(12.0), bridgeos(3.0));
+
+/objc4-818.2/ThirdLib/mach-o/dyld_priv.h:176:230: error: expected &apos;,&apos;
+extern void dyld_get_image_versions(const struct mach_header* mh, void (^callback)(dyld_platform_t platform, uint32_t sdk_version, uint32_t min_version)) __API_AVAILABLE(macos(10.14), ios(12.0), watchos(5.0), tvos(12.0), bridgeos(3.0));
+</code></pre><p>&#x5206;&#x6790;&#x4E0A;&#x8FF0;&#x7684;&#x62A5;&#x9519;&#x65E5;&#x5FD7;&#xFF0C;&#x51E0;&#x4E2A;<code>error</code> &#x90FD;&#x5F15;&#x7528;&#x4E86;&#x5B8F; <code>__API_AVAILABLE()</code> &#xFF1B;&#x7B14;&#x8005;&#x5728;&#x7CFB;&#x7EDF;&#x5E93; <code>usr/include/Availability.h</code> &#x53D1;&#x73B0;&#x4E86;&#x5B8F;&#x5B9A;&#x4E49;</p>
+<pre><code>/** &#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x7279;&#x5B9A;API&#x53EF;&#x7528;&#x7684;&#x53D1;&#x5E03;&#x7248;&#x672C;
+ * Platform names:  macos, ios, tvos, watchos
+ *
+ * Examples:
+ *    __API_AVAILABLE(macos(10.10))
+ *    __API_AVAILABLE(macos(10.9), ios(10.0))
+ *    __API_AVAILABLE(macos(10.4), ios(8.0), watchos(2.0), tvos(10.0))
+ *    __API_AVAILABLE(driverkit(19.0))
+ */
+#define __API_AVAILABLE(...) __API_AVAILABLE_GET_MACRO(__VA_ARGS__,__API_AVAILABLE7, __API_AVAILABLE6, __API_AVAILABLE5, __API_AVAILABLE4, __API_AVAILABLE3, __API_AVAILABLE2, __API_AVAILABLE1, 0)(__VA_ARGS__)
+</code></pre><p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x7B14;&#x8005;&#x7684;&#x5F00;&#x53D1;&#x7CFB;&#x7EDF;&#x5E76;&#x4E0D;&#x652F;&#x6301;  <code>Bridge OS</code>  &#x7CFB;&#x7EDF;&#xFF08;Apple&#x72EC;&#x7ACB;&#x7684;T2&#x5B89;&#x5168;&#x82AF;&#x7247;&#x4F7F;&#x7528;&#x7684;&#x5D4C;&#x5165;&#x5F0F;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#xFF09;&#xFF01;&#x6240;&#x4EE5;&#x5220;&#x6389; <code>bridgeos(3.0)</code> &#x5373;&#x53EF;&#xFF01;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x4E00;&#x53E5;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF08;&#x5F80;&#x540E;&#x78B0;&#x5230;&#x7684; <code>bridgeos error</code> &#x7686;&#x5982;&#x6B64;&#x5904;&#x7406; &#xFF09;&#xFF1A;</p>
+<pre><code>/// &#x4FEE;&#x6539;&#x524D;&#x7684;&#x4EE3;&#x7801;
+extern dyld_platform_t dyld_get_active_platform(void) __API_AVAILABLE(macos(10.14), ios(12.0), watchos(5.0), tvos(12.0), bridgeos(3.0));
+
+/// &#x4FEE;&#x6539;&#x540E;&#x7684;&#x4EE3;&#x7801;
+extern dyld_platform_t dyld_get_active_platform(void) __API_AVAILABLE(macos(10.14), ios(12.0), watchos(5.0), tvos(12.0));
+</code></pre><h2 id="23&#x3001;oslockprivateh-file-not-found"><a name="23&#x3001;oslockprivateh-file-not-found" class="anchor-navigation-ex-anchor" href="#23&#x3001;oslockprivateh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.3&#x3001;<code>os/lock_private.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-os.h:146:13: fatal error: &apos;os/lock_private.h&apos; file not found
+        #   include &lt;os/lock_private.h&gt;
+            ^~~~~~~~~~~~~~~~~~~
+1 errors generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/libplatform/libplatform-254.80.2.tar.gz" target="_blank">libplatform-254&#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>private</code> -&gt; <code>os</code> &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>lock_private.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/os</code>&#xFF01;</p>
+<h3 id="231&#x3001;-bridgeos40-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;"><a name="231&#x3001;-bridgeos40-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;" class="anchor-navigation-ex-anchor" href="#231&#x3001;-bridgeos40-&#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.1&#x3001; <code>bridgeos(4.0)</code> &#x5F15;&#x53D1;&#x7684;&#x9519;&#x8BEF;</h3>
+<p>&#x6DFB;&#x52A0;&#x7684;   <code>lock_private.h</code> &#x6587;&#x4EF6;&#x7684;&#x67D0;&#x4E9B;&#x4EE3;&#x7801;&#xFF0C;&#x4E0D;&#x88AB;&#x7B14;&#x8005;&#x7684;&#x7CFB;&#x7EDF;&#x6240;&#x517C;&#x5BB9;&#xFF1A;</p>
+<pre><code>/objc4-818.2/ThirdLib/os/lock_private.h:288:37: error: expected &apos;,&apos;
+                tvos(13.0), watchos(6.0), bridgeos(4.0)) = 0x00040000,
+</code></pre><p>&#x540C;&#x4E0A;&#x6587;&#x7684; <code>Bridge OS</code> &#x5904;&#x7406;&#x7C7B;&#x4F3C;&#xFF0C;&#x5220;&#x9664;  <code>bridgeos(4.0)</code>&#xFF1A;</p>
+<pre><code>OS_OPTIONS(os_unfair_lock_options, uint32_t,
+    OS_UNFAIR_LOCK_NONE OS_SWIFT_NAME(None)
+        OS_UNFAIR_LOCK_AVAILABILITY = 0x00000000,
+    OS_UNFAIR_LOCK_DATA_SYNCHRONIZATION OS_SWIFT_NAME(DataSynchronization)
+        OS_UNFAIR_LOCK_AVAILABILITY = 0x00010000,
+    OS_UNFAIR_LOCK_ADAPTIVE_SPIN OS_SWIFT_NAME(AdaptiveSpin)
+        __API_AVAILABLE(macos(10.15), ios(13.0),
+        tvos(13.0), watchos(6.0)) = 0x00040000,
+);
+</code></pre><h2 id="24&#x3001;osbaseprivateh-file-not-found"><a name="24&#x3001;osbaseprivateh-file-not-found" class="anchor-navigation-ex-anchor" href="#24&#x3001;osbaseprivateh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.4&#x3001;<code>os/base_private.h file not found</code></h2>
+<pre><code>/objc4-818.2/ThirdLib/os/lock_private.h:31:10: fatal error: &apos;os/base_private.h&apos; file not found
+#include &lt;os/base_private.h&gt;
+         ^~~~~~~~~~~~~~~~~~~
+1 errors generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/xnu/xnu-7195.81.3.tar.gz" target="_blank">xnu-7195&#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>libkern</code> -&gt; <code>os</code> &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>base_private.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/os</code>&#xFF01;</p>
+<h2 id="25&#x3001;pthreadtsdprivateh-file-not-found"><a name="25&#x3001;pthreadtsdprivateh-file-not-found" class="anchor-navigation-ex-anchor" href="#25&#x3001;pthreadtsdprivateh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.5&#x3001;<code>pthread/tsd_private.h file not found</code></h2>
+<pre><code>/objc4-818.2/ThirdLib/os/lock_private.h:579:10: fatal error: &apos;pthread/tsd_private.h&apos; file not found
+#include &lt;pthread/tsd_private.h&gt;
+         ^~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/libpthread/libpthread-416.100.3.tar.gz" target="_blank">libpthread-416.100.3 &#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>private</code>  &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>tsd_private.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/pthread</code>&#xFF01;</p>
+<h2 id="26&#x3001;systemmachinecpucapabilitiesh-file-not-found"><a name="26&#x3001;systemmachinecpucapabilitiesh-file-not-found" class="anchor-navigation-ex-anchor" href="#26&#x3001;systemmachinecpucapabilitiesh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.6&#x3001;<code>System/machine/cpu_capabilities.h file not found</code></h2>
+<pre><code>/objc4-818.2/ThirdLib/pthread/tsd_private.h:52:10: fatal error: &apos;System/machine/cpu_capabilities.h&apos; file not found
+#include &lt;System/machine/cpu_capabilities.h&gt;
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 errors generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/xnu/xnu-7195.81.3.tar.gz" target="_blank">xnu-7195&#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>osfmk</code> -&gt; <code>machine</code> &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>cpu_capabilities.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/System/machine</code>&#xFF01;</p>
+<h2 id="27&#x3001;ostsdh-file-not-found"><a name="27&#x3001;ostsdh-file-not-found" class="anchor-navigation-ex-anchor" href="#27&#x3001;ostsdh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.7&#x3001;<code>os/tsd.h file not found</code></h2>
+<pre><code>/objc4-818.2/ThirdLib/pthread/tsd_private.h:56:10: fatal error: &apos;os/tsd.h&apos; file not found
+#include &lt;os/tsd.h&gt;
+         ^~~~~~~~~~
+1 errors generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/xnu/xnu-7195.81.3.tar.gz" target="_blank">xnu-7195&#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>libsyscall</code> -&gt; <code>os</code> &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>tsd.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/os</code>&#xFF01;</p>
+<h2 id="28&#x3001;pthreadspinlockprivateh-file-not-found"><a name="28&#x3001;pthreadspinlockprivateh-file-not-found" class="anchor-navigation-ex-anchor" href="#28&#x3001;pthreadspinlockprivateh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.8&#x3001;<code>pthread/spinlock_private.h file not found</code></h2>
+<pre><code>/objc4-818.2/ThirdLib/pthread/tsd_private.h:57:10: fatal error: &apos;pthread/spinlock_private.h&apos; file not found
+#include &lt;pthread/spinlock_private.h&gt;
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/libpthread/libpthread-416.100.3.tar.gz" target="_blank">libpthread-416.100.3 &#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>private</code>  &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>spinlock_private.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/pthread</code>&#xFF01;</p>
+<h2 id="29&#x3001;systempthreadmachdeph-file-not-found"><a name="29&#x3001;systempthreadmachdeph-file-not-found" class="anchor-navigation-ex-anchor" href="#29&#x3001;systempthreadmachdeph-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.9&#x3001;<code>System/pthread_machdep.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-os.h:149:13: fatal error: &apos;System/pthread_machdep.h&apos; file not found
+#   include &lt;System/pthread_machdep.h&gt;
+^~~~~~~~~~~~~~~~~~~~~~~~~~
+1 errors generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/Libc/Libc-825.40.1.tar.gz" target="_blank">Libc-825.40 &#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>pthreads</code> &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>pthread_machdep.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/System</code>&#xFF01;</p>
+<h4 id="">#</h4>
+<pre><code>Showing All Errors Only
+
+/objc4-818.2/ThirdLib/System/pthread_machdep.h:214:13: error: typedef redefinition with different types (&apos;int&apos; vs &apos;volatile OSSpinLock&apos; (aka &apos;volatile int&apos;)) typedef int pthread_lock_t;
+
+/objc4-818.2/ThirdLib/System/pthread_machdep.h:217:1: error: static declaration of &apos;_pthread_has_direct_tsd&apos; follows non-static declaration _pthread_has_direct_tsd(void)
+
+/objc4-818.2/ThirdLib/System/pthread_machdep.h:244:1: error: static declaration of &apos;_pthread_getspecific_direct&apos; follows non-static declaration _pthread_getspecific_direct(unsigned long slot)
+
+/objc4-818.2/ThirdLib/System/pthread_machdep.h:268:1: error: static declaration of &apos;_pthread_setspecific_direct&apos; follows non-static declaration _pthread_setspecific_direct(unsigned long slot, void * val)
+
+4 errors generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x5C06; <code>pthread_machdep.h</code> &#x6587;&#x4EF6;&#x4E2D;&#x76F8;&#x5173;&#x51FD;&#x6570;&#x6CE8;&#x91CA;&#x5373;&#x53EF;&#xFF01; </p>
+<h2 id="210&#x3001;crashreporterclienth-file-not-found"><a name="210&#x3001;crashreporterclienth-file-not-found" class="anchor-navigation-ex-anchor" href="#210&#x3001;crashreporterclienth-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.10&#x3001;<code>CrashReporterClient.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-os.h:250:13: fatal error: &apos;CrashReporterClient.h&apos; file not found
+#   include &lt;CrashReporterClient.h&gt;
+            ^~~~~~~~~~~~~~~~~~~~~~~
+1 errors generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/Libc/Libc-825.40.1.tar.gz" target="_blank">Libc-825.40 &#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>include</code> &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>CrashReporterClient.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib</code>&#xFF01;</p>
+<h3 id="2101&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684;-crgetcrashlogmessage"><a name="2101&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684;-crgetcrashlogmessage" class="anchor-navigation-ex-anchor" href="#2101&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684;-crgetcrashlogmessage"><i class="fa fa-link" aria-hidden="true"></i></a>2.10.1&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684; <code>CRGetCrashLogMessage()</code></h3>
+<p>&#x5373;&#x4F7F;&#x6DFB;&#x52A0;&#x4E86;  <code>CrashReporterClient.h</code> &#x6587;&#x4EF6;&#xFF0C;&#x540E;&#x671F;&#x53EF;&#x80FD;&#x8FD8;&#x4F1A;&#x62A5;&#x9519;&#xFF1A;</p>
+<pre><code>/objc4-818.2/runtime/objc-errors.mm:105:28: error: use of undeclared identifier &apos;CRGetCrashLogMessage&apos;
+    char *oldmsg = (char *)CRGetCrashLogMessage();
+
+/objc4-818.2/runtime/objc-errors.mm:127:9: error: use of undeclared identifier &apos;CRSetCrashLogMessage&apos;
+        CRSetCrashLogMessage(newmsg);
+
+2 errors generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x5728;&#x6DFB;&#x52A0; <code>CrashReporterClient.h</code> &#x6587;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x5728; <code>TARGETS</code> -&gt; <code>objc</code> -&gt;  <code>Build Settings</code> -&gt; <code>Preprocessor Macros</code> &#x4E2D;&#x6DFB;&#x52A0; <code>LIBC_NO_LIBCRASHREPORTERCLIENT</code> &#x5B8F;&#x5B9A;&#x4E49;&#x3002;</p>
+<p><img src="assets/Runtime_objc_LIBC_NO_LIBCRASHREPORTERCLIENT.png" alt="LIBC_NO_LIBCRASHREPORTERCLIENT &#x5B8F;&#x5B9A;&#x4E49;"></p>
+<h2 id="211&#x3001;osfeatureprivateh-file-not-found"><a name="211&#x3001;osfeatureprivateh-file-not-found" class="anchor-navigation-ex-anchor" href="#211&#x3001;osfeatureprivateh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.11&#x3001;<code>os/feature_private.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-runtime.mm:36:10: fatal error: &apos;os/feature_private.h&apos; file not found
+#include &lt;os/feature_private.h&gt; // os_feature_enabled_simple()
+         ^~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x7531;&#x4E8E;&#x7B14;&#x8005;&#x65E0;&#x6CD5;&#x627E;&#x5230;&#x8BE5;&#x6587;&#x4EF6;&#xFF0C;&#x53EA;&#x80FD;&#x5728; <code>objc</code> &#x9879;&#x76EE;&#x7684; <code>objc-runtime.mm</code> &#x4E0E; <code>NSObject.mm</code> &#x6587;&#x4EF6;&#x4E2D;&#x6CE8;&#x91CA;&#x8BE5;&#x5F15;&#x7528;&#xFF01;</p>
+<pre><code>//#include &lt;os/feature_private.h&gt;
+</code></pre><h3 id="2111&#x3001;&#x672A;&#x58F0;&#x660E;&#x7684;&#x51FD;&#x6570;-osfeatureenabledsimple"><a name="2111&#x3001;&#x672A;&#x58F0;&#x660E;&#x7684;&#x51FD;&#x6570;-osfeatureenabledsimple" class="anchor-navigation-ex-anchor" href="#2111&#x3001;&#x672A;&#x58F0;&#x660E;&#x7684;&#x51FD;&#x6570;-osfeatureenabledsimple"><i class="fa fa-link" aria-hidden="true"></i></a>2.11.1&#x3001;&#x672A;&#x58F0;&#x660E;&#x7684;&#x51FD;&#x6570; <code>os_feature_enabled_simple()</code></h3>
+<p>&#x6CE8;&#x91CA;&#x4E86; <code>feature_private.h</code> &#x6587;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;&#x67D0;&#x4E9B;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#x7684;&#x8BE5;&#x6587;&#x4EF6;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4E5F;&#x5C06;&#x62A5;&#x9519;</p>
+<pre><code>/objc4-818.2/runtime/objc-runtime.mm:451:10: error: use of undeclared identifier &apos;os_feature_enabled_simple&apos;
+    if (!os_feature_enabled_simple(objc4, preoptimizedCaches, true)) {
+1 error generated.
+</code></pre><p>&#x5BF9;&#x4E8E;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684; <code>os_feature_enabled_simple()</code> &#x51FD;&#x6570;&#xFF0C;&#x53EA;&#x80FD;&#x6CE8;&#x91CA;&#xFF01;</p>
+<pre><code>///  objc-runtime.mm &#x6587;&#x4EF6;&#x7684; void environ_init(void) &#x51FD;&#x6570;&#x4E2D;
+//    if (!os_feature_enabled_simple(objc4, preoptimizedCaches, true)) {
+//        DisablePreoptCaches = true;
+//    }
+</code></pre><h2 id="212&#x3001;objc-bp-assisth-file-not-found"><a name="212&#x3001;objc-bp-assisth-file-not-found" class="anchor-navigation-ex-anchor" href="#212&#x3001;objc-bp-assisth-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.12&#x3001;<code>objc-bp-assist.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-os.mm:31:10: fatal error: &apos;objc-bp-assist.h&apos; file not found
+#include &quot;objc-bp-assist.h&quot;
+         ^~~~~~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x6587;&#x4EF6; <code>objc-bp-assist.h</code> &#x672C;&#x5E94;&#x5728;<a href="https://opensource.apple.com/tarballs/objc4/objc4-818.2.tar.gz" target="_blank"> objc4-818.2 &#x6E90;&#x7801;</a> &#x4E2D;&#xFF0C;&#x4F46;&#x5B98;&#x65B9;&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x80FD;&#x5728; <code>objc-os.mm</code> &#x6587;&#x4EF6;&#x4E2D;&#x6CE8;&#x91CA;&#x8BE5;&#x5F15;&#x7528;&#xFF01;</p>
+<pre><code>//#include &quot;objc-bp-assist.h&quot;
+</code></pre><h3 id="2121&#x3001;&#x6CE8;&#x91CA;objc-bp-assisth-&#x5BFC;&#x81F4;&#x67D0;&#x4E9B;&#x5B8F;&#x5B9A;&#x4E49;&#x627E;&#x4E0D;&#x5230;"><a name="2121&#x3001;&#x6CE8;&#x91CA;objc-bp-assisth-&#x5BFC;&#x81F4;&#x67D0;&#x4E9B;&#x5B8F;&#x5B9A;&#x4E49;&#x627E;&#x4E0D;&#x5230;" class="anchor-navigation-ex-anchor" href="#2121&#x3001;&#x6CE8;&#x91CA;objc-bp-assisth-&#x5BFC;&#x81F4;&#x67D0;&#x4E9B;&#x5B8F;&#x5B9A;&#x4E49;&#x627E;&#x4E0D;&#x5230;"><i class="fa fa-link" aria-hidden="true"></i></a>2.12.1&#x3001;&#x6CE8;&#x91CA;<code>objc-bp-assist.h</code> &#x5BFC;&#x81F4;&#x67D0;&#x4E9B;&#x5B8F;&#x5B9A;&#x4E49;&#x627E;&#x4E0D;&#x5230;</h3>
+<pre><code>/objc4-818.2/runtime/objc-runtime.mm:379:36: error: use of undeclared identifier &apos;dyld_fall_2020_os_versions&apos;
+    if (!dyld_program_sdk_at_least(dyld_fall_2020_os_versions))
+
+/objc4-818.2/runtime/objc-runtime.mm:444:36: error: use of undeclared identifier &apos;objc4&apos;
+    if (!os_feature_enabled_simple(objc4, preoptimizedCaches, true)) {
+
+/objc4-818.2/runtime/objc-runtime.mm:444:43: error: use of undeclared identifier &apos;preoptimizedCaches&apos;
+    if (!os_feature_enabled_simple(objc4, preoptimizedCaches, true)) {
+
+3 errors generated.
+</code></pre><p>&#x5728;&#x4E0A;&#x4E2A;&#x6B65;&#x9AA4;&#xFF0C;&#x6CE8;&#x91CA;&#x6389; <code>objc-bp-assist.h</code> &#x7684;&#x5F15;&#x7528;&#x540E;&#xFF0C;&#x5728; <code>objc-runtime.mm</code> &#x6587;&#x4EF6;&#x7684; <code>void environ_init(void)</code> &#x51FD;&#x6570;&#x4E2D;&#x627E;&#x4E0D;&#x5230; <code>dyld_fall_2020_os_versions</code> &#x3001;<code>objc4</code> &#x3001;<code>preoptimizedCaches</code> &#x4E09;&#x4E2A;&#x5B8F;&#x5B9A;&#x4E49;&#xFF01;</p>
+<p>&#x6211;&#x4EEC;&#x4E0D;&#x59A8;&#x73B0;&#x5728;  <code>objc-runtime.mm</code> &#x6587;&#x4EF6;&#x51FD;&#x6570;<code>void environ_init(void)</code>&#x7684;&#x4E0A;&#x9762;&#x58F0;&#x660E;&#x8FD9;&#x51E0;&#x4E2A;&#x5B8F;&#xFF01;</p>
+<pre><code>#define dyld_fall_2020_os_versions 
+#define objc4 preoptimizedCaches
+#define preoptimizedCaches
+</code></pre><h2 id="213&#x3001;objc-shared-cacheh-file-not-found"><a name="213&#x3001;objc-shared-cacheh-file-not-found" class="anchor-navigation-ex-anchor" href="#213&#x3001;objc-shared-cacheh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.13&#x3001;<code>objc-shared-cache.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-opt.mm:113:10: fatal error: &apos;objc-shared-cache.h&apos; file not found
+#include &lt;objc-shared-cache.h&gt;
+         ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/dyld/dyld-832.7.3.tar.gz" target="_blank">dyld-832 &#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>include</code>  &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>objc-shared-cache.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib</code>&#xFF01;</p>
+<h2 id="214&#x3001;oslinkerseth-file-not-found"><a name="214&#x3001;oslinkerseth-file-not-found" class="anchor-navigation-ex-anchor" href="#214&#x3001;oslinkerseth-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.14&#x3001;<code>os/linker_set.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-class.mm:163:10: fatal error: &apos;os/linker_set.h&apos; file not found
+#include &lt;os/linker_set.h&gt;
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/Libc/Libc-1439.40.11.tar.gz" target="_blank">Libc-1439&#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>os</code>  &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>linker_set.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/os</code>&#xFF01;</p>
+<h3 id="2141&#x3001;&#x4E0D;&#x88AB;&#x8BC6;&#x522B;&#x7684;&#x5B8F;&#x5B9A;&#x4E49;-dyldplatformversion"><a name="2141&#x3001;&#x4E0D;&#x88AB;&#x8BC6;&#x522B;&#x7684;&#x5B8F;&#x5B9A;&#x4E49;-dyldplatformversion" class="anchor-navigation-ex-anchor" href="#2141&#x3001;&#x4E0D;&#x88AB;&#x8BC6;&#x522B;&#x7684;&#x5B8F;&#x5B9A;&#x4E49;-dyldplatformversion"><i class="fa fa-link" aria-hidden="true"></i></a>2.14.1&#x3001;&#x4E0D;&#x88AB;&#x8BC6;&#x522B;&#x7684;&#x5B8F;&#x5B9A;&#x4E49; <code>dyld_platform_version_</code></h3>
+<pre><code>/objc4-818.2/runtime/objc-os.mm:567:40: error: use of undeclared identifier &apos;dyld_platform_version_macOS_10_13&apos;
+        if (!dyld_program_sdk_at_least(dyld_platform_version_macOS_10_13)) {
+1 error generated.
+</code></pre><p>&#x5206;&#x6790;&#x9519;&#x8BEF;&#x65E5;&#x5FD7;&#xFF1A;&#x53D1;&#x73B0;&#x662F;&#x627E;&#x4E0D;&#x5230;&#x5B9A;&#x4E49;&#x7684; <code>dyld_platform_version_macOS_10_13</code>&#xFF01;&#x7B14;&#x8005;&#x53D1;&#x73B0;&#xFF0C; <code>objc</code> &#x9879;&#x76EE;&#x4E2D;&#x5F88;&#x591A;&#x5730;&#x65B9;&#x90FD;&#x8981;&#x76F8;&#x5173;&#x7684;&#x5B8F;&#x5B9A;&#x4E49; <code>dyld_platform_version_</code> &#xFF0C;&#x90FD;&#x4F1A;&#x62A5;&#x9519; <code>use of undeclared identifier</code>&#xFF01; </p>
+<p>&#x7531;&#x4E8E;&#x4E00;&#x4E9B;&#x6587;&#x4EF6;&#x627E;&#x4E0D;&#x5230;&#x7684;&#x7F18;&#x6545;&#xFF0C;&#x7B14;&#x8005;&#x5728;&#x6B64;&#x5904;&#x4E0D;&#x5F97;&#x4E0D;&#x4F7F;&#x7528;&#x65E7;&#x7248;&#x672C;&#x7684;&#x4EE3;&#x7801;&#x6765;&#x5904;&#x7406;&#xFF0C;&#x5728; <code>dyld_priv.h</code> &#x6587;&#x4EF6;&#x5B9A;&#x4E49;&#x51E0;&#x4E2A;&#x76F8;&#x5173;&#x5B8F;&#xFF1A;</p>
+<pre><code>/// dyld_priv.h
+/// &#x6587;&#x4EF6;&#x8D77;&#x59CB;&#x5904;
+#define DYLD_MACOSX_VERSION_10_11 0x000A0B00
+#define DYLD_MACOSX_VERSION_10_12 0x000A0C00
+#define DYLD_MACOSX_VERSION_10_13 0x000A0D00
+#define DYLD_MACOSX_VERSION_10_14 0x000A0E00
+</code></pre><p>&#x5C06;&#x62A5;&#x9519;&#x5904;&#x7684;  <code>dyld_platform_version_macOS_10_13</code> &#x66FF;&#x6362;&#x4E3A; <code>DYLD_MACOSX_VERSION_10_13</code>&#xFF01;</p>
+<pre><code>///if (!dyld_program_sdk_at_least(dyld_platform_version_macOS_10_13)) {
+if (!dyld_program_sdk_at_least(DYLD_MACOSX_VERSION_10_13)) {
+</code></pre><h3 id="2142&#x3001;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x51FD;&#x6570;-dyldprogramsdkatleast"><a name="2142&#x3001;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x51FD;&#x6570;-dyldprogramsdkatleast" class="anchor-navigation-ex-anchor" href="#2142&#x3001;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x51FD;&#x6570;-dyldprogramsdkatleast"><i class="fa fa-link" aria-hidden="true"></i></a>2.14.2&#x3001;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x51FD;&#x6570; <code>dyld_program_sdk_at_least()</code></h3>
+<pre><code>/objc4-818.2/runtime/objc-runtime.mm:383:10: error: no matching function for call to &apos;dyld_program_sdk_at_least&apos;
+    if (!dyld_program_sdk_at_least(DYLD_MACOSX_VERSION_10_13))
+
+1 error generated.
+</code></pre><p>&#x65E2;&#x7136;  <code>dyld_program_sdk_at_least()</code> &#x51FD;&#x6570;&#x4E0D;&#x9002;&#x914D;&#xFF0C;&#x7B14;&#x8005;&#x7EE7;&#x7EED;&#x4F7F;&#x7528;&#x8001;&#x7248;&#x672C;&#x7684;&#x5224;&#x65AD;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code>/// if (!dyld_program_sdk_at_least(DYLD_MACOSX_VERSION_10_13)) {
+if (!(dyld_get_program_sdk_version() &gt;= DYLD_MACOSX_VERSION_10_13)) {
+
+
+/// if (!dyld_program_sdk_at_least(dyld_platform_version_macOS_10_11)) {
+if (!(dyld_get_program_sdk_version() &gt;= DYLD_MACOSX_VERSION_10_11)) {
+
+/// if (!DisableTaggedPointerObfuscation &amp;&amp; dyld_program_sdk_at_least(dyld_fall_2018_os_versions)) {
+if (!DisableTaggedPointerObfuscation &amp;&amp; (dyld_get_program_sdk_version() &gt;= dyld_fall_2018_os_versions)) {
+</code></pre><h3 id="2143&#x3001;&#x6C34;&#x571F;&#x4E0D;&#x670D;&#x7684;&#x5B8F;&#x5B9A;&#x4E49;-sdkisatleast"><a name="2143&#x3001;&#x6C34;&#x571F;&#x4E0D;&#x670D;&#x7684;&#x5B8F;&#x5B9A;&#x4E49;-sdkisatleast" class="anchor-navigation-ex-anchor" href="#2143&#x3001;&#x6C34;&#x571F;&#x4E0D;&#x670D;&#x7684;&#x5B8F;&#x5B9A;&#x4E49;-sdkisatleast"><i class="fa fa-link" aria-hidden="true"></i></a>2.14.3&#x3001;&#x6C34;&#x571F;&#x4E0D;&#x670D;&#x7684;&#x5B8F;&#x5B9A;&#x4E49; <code>sdkIsAtLeast()</code></h3>
+<pre><code>error: use of undeclared identifier &apos;dyld_platform_version_macOS_10_12&apos;
+error: use of undeclared identifier &apos;dyld_platform_version_iOS_10_0&apos;
+error: use of undeclared identifier &apos;dyld_platform_version_tvOS_10_0&apos;
+error: use of undeclared identifier &apos;dyld_platform_version_watchOS_3_0&apos;
+error: use of undeclared identifier &apos;dyld_platform_version_bridgeOS_2_0&apos;
+</code></pre><p>&#x4E0A;&#x8FF0;&#x51E0;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x4EC5;&#x4EC5;&#x662F;&#x7531;&#x4E8E; <code>sdkIsAtLeast(10_12, 10_0, 10_0, 3_0, 2_0)</code> &#x5F15;&#x8D77;&#x7684;&#xFF01;&#x7B14;&#x8005;&#x5728; <code>objc-os.h</code> &#x6587;&#x4EF6;&#x4E2D;&#x627E;&#x5230;&#x4E86;&#x5B83;&#x7684;&#x58F0;&#x660E;&#xFF1A;</p>
+<pre><code>#define sdkIsAtLeast(x, i, t, w, b)                                    \
+    (dyld_program_sdk_at_least(dyld_platform_version_macOS_ ## x)   || \
+     dyld_program_sdk_at_least(dyld_platform_version_iOS_ ## i)     || \
+     dyld_program_sdk_at_least(dyld_platform_version_tvOS_ ## t)    || \
+     dyld_program_sdk_at_least(dyld_platform_version_watchOS_ ## w) || \
+     dyld_program_sdk_at_least(dyld_platform_version_bridgeOS_ ## b))
+</code></pre><p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x7531;&#x4E8E;&#x4E0D;&#x88AB;&#x8BC6;&#x522B;&#x7684;&#x5B8F;&#x5B9A;&#x4E49; <code>dyld_platform_version_</code>  &#x4E0E;&#x4E0D;&#x5339;&#x914D;&#x7684;&#x51FD;&#x6570; <code>dyld_program_sdk_at_least()</code> &#xFF0C;&#x8FD9;&#x4E2A;&#x5B8F;  <code>sdkIsAtLeast()</code> &#x4E25;&#x91CD;&#x7684;&#x6C34;&#x571F;&#x4E0D;&#x670D;&#xFF01; </p>
+<p>&#x7B14;&#x8005;&#x5728;&#x6B64;&#x5904;&#xFF0C;&#x5C06; <code>sdkIsAtLeast()</code> &#x8FD8;&#x539F;&#x4E3A;&#x65E7;&#x7248;&#x672C;&#x7684;&#x5B9A;&#x4E49;&#xFF1A;</p>
+<pre><code>#if TARGET_OS_OSX
+#   define DYLD_OS_VERSION(x, i, t, w, b) DYLD_MACOSX_VERSION_##x
+#   define sdkVersion() dyld_get_program_sdk_version()
+#elif TARGET_OS_IOS
+#   define DYLD_OS_VERSION(x, i, t, w, b) DYLD_IOS_VERSION_##i
+#   define sdkVersion() dyld_get_program_sdk_version()
+#elif TARGET_OS_TV
+#   define DYLD_OS_VERSION(x, i, t, w, b) DYLD_IOS_VERSION_##t
+#   define sdkVersion() dyld_get_program_sdk_version()
+#elif TARGET_OS_BRIDGE
+#   if TARGET_OS_WATCH
+#       error bridgeOS 1.0 not supported
+#   endif
+#   define DYLD_OS_VERSION(x, i, t, w, b) DYLD_IOS_VERSION_##t
+#   define sdkVersion() dyld_get_program_sdk_bridge_os_version()
+#elif TARGET_OS_WATCH
+#   define DYLD_OS_VERSION(x, i, t, w, b) DYLD_WATCHOS_VERSION_##w
+#   define sdkVersion() dyld_get_program_sdk_watch_os_version()
+#else
+#   error unknown OS
+#endif
+
+#define sdkIsAtLeast(x, i, t, w, b)                             \
+(sdkVersion() &gt;= DYLD_OS_VERSION(x, i, t, w, b))
+</code></pre><h2 id="215&#x3001;simpleh-file-not-found"><a name="215&#x3001;simpleh-file-not-found" class="anchor-navigation-ex-anchor" href="#215&#x3001;simpleh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.15&#x3001;<code>_simple.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-errors.mm:77:10: fatal error: &apos;_simple.h&apos; file not found
+#include &lt;_simple.h&gt;
+         ^~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/libplatform/libplatform-254.80.2.tar.gz" target="_blank">libplatform-254&#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>private</code>  &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>_simple.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib</code>&#xFF01;</p>
+<h2 id="216&#x3001;cambriatrapshh-file-not-found-&#x548C;-cambriacambriahh-file-not-found"><a name="216&#x3001;cambriatrapshh-file-not-found-&#x548C;-cambriacambriahh-file-not-found" class="anchor-navigation-ex-anchor" href="#216&#x3001;cambriatrapshh-file-not-found-&#x548C;-cambriacambriahh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.16&#x3001;<code>Cambria/Traps.h.h file not found</code> &#x548C; <code>Cambria/Cambria.h.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-cache.mm:87:10: fatal error: &apos;Cambria/Traps.h&apos; file not found
+#include &lt;Cambria/Traps.h&gt;
+         ^~~~~~~~~~~~~~~~~
+/objc4-818.2/runtime/objc-cache.mm:88:10: fatal error: &apos;Cambria/Cambria.h&apos; file not found
+#include &lt;Cambria/Cambria.h&gt;
+        ^~~~~~~~~~~~~~~~~~~~~~
+2 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x5728; <code>objc-cache.mm</code> &#x6587;&#x4EF6;&#x4E2D;&#x6CE8;&#x91CA;&#x76F8;&#x5173;&#x5F15;&#x7528;&#xFF01;</p>
+<pre><code>#if TARGET_OS_OSX
+//#include &lt;Cambria/Traps.h&gt;
+//#include &lt;Cambria/Cambria.h&gt;
+#endif
+</code></pre><h2 id="217&#x3001;blockprivateh-file-not-found"><a name="217&#x3001;blockprivateh-file-not-found" class="anchor-navigation-ex-anchor" href="#217&#x3001;blockprivateh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.17&#x3001;<code>Block_private.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-block-trampolines.mm:36:10: fatal error: &apos;Block_private.h&apos; file not found
+#include &lt;Block_private.h&gt;
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D; <a href="https://opensource.apple.com/tarballs/libclosure/libclosure-78.tar.gz" target="_blank">libclosure-78&#x6E90;&#x7801;</a>&#xFF0C;&#x627E;&#x5230;&#x6587;&#x4EF6;  <code>Block_private.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib</code>&#xFF01;</p>
+<h2 id="218&#x3001;kernrestartableh-file-not-found"><a name="218&#x3001;kernrestartableh-file-not-found" class="anchor-navigation-ex-anchor" href="#218&#x3001;kernrestartableh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.18&#x3001;<code>kern/restartable.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/objc-cache.mm:1038:10: fatal error: &apos;kern/restartable.h&apos; file not found
+#include &lt;kern/restartable.h&gt;
+         ^~~~~~~~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/xnu/xnu-7195.81.3.tar.gz" target="_blank">xnu-7195&#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>osfmk</code> -&gt; <code>kern</code> &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>restartable.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/kern</code>&#xFF01;</p>
+<h3 id="2181&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684;-oahiscurrentprocesstranslated"><a name="2181&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684;-oahiscurrentprocesstranslated" class="anchor-navigation-ex-anchor" href="#2181&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684;-oahiscurrentprocesstranslated"><i class="fa fa-link" aria-hidden="true"></i></a>2.18.1&#x3001;&#x672A;&#x7ECF;&#x58F0;&#x660E;&#x7684; <code>oah_is_current_process_translated()</code></h3>
+<pre><code>/objc4-818.2/runtime/objc-cache.mm:1121:13: error: use of undeclared identifier &apos;oah_is_current_process_translated&apos;
+        if (oah_is_current_process_translated()) {
+/objc4-818.2/runtime/objc-cache.mm:1122:33: error: use of undeclared identifier &apos;objc_thread_get_rip&apos;
+            kern_return_t ret = objc_thread_get_rip(threads[count], (uint64_t*)&amp;pc);
+2 errors generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x5728; <code>objc-cache.mm</code> &#x6587;&#x4EF6;&#x4E2D;&#x6CE8;&#x91CA;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#xFF01;</p>
+<pre><code>if (oah_is_current_process_translated()) {
+    kern_return_t ret = objc_thread_get_rip(threads[count], (uint64_t*)&amp;pc);
+    if (ret != KERN_SUCCESS) {
+        pc = PC_SENTINEL;
+    }
+} else {
+    pc = _get_pc_for_thread (threads[count]);
+}
+</code></pre><h3 id="2182&#x3001;"><a name="2182&#x3001;" class="anchor-navigation-ex-anchor" href="#2182&#x3001;"><i class="fa fa-link" aria-hidden="true"></i></a>2.18.2&#x3001;</h3>
+<pre><code>/objc4-818.2/runtime/objc-runtime-new.mm:176:1: error: &apos;_static_assert&apos; declared as an array with a negative size
+STATIC_ASSERT((~ISA_MASK &amp; MACH_VM_MAX_ADDRESS) == 0  ||
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x5728; <code>objc-runtime-new.mm</code> &#x6587;&#x4EF6;&#x4E2D;&#x6CE8;&#x91CA;&#x76F8;&#x5173;&#x4EE3;&#x7801;&#xFF01;</p>
+<pre><code>//STATIC_ASSERT((~ISA_MASK &amp; MACH_VM_MAX_ADDRESS) == 0  ||  
+//              ISA_MASK + sizeof(void*) == MACH_VM_MAX_ADDRESS);
+</code></pre><h2 id="219&#x3001;osreasonprivateh-file-not-found"><a name="219&#x3001;osreasonprivateh-file-not-found" class="anchor-navigation-ex-anchor" href="#219&#x3001;osreasonprivateh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.19&#x3001;<code>os/reason_private.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/NSObject.mm:45:10: fatal error: &apos;os/reason_private.h&apos; file not found
+#include &lt;os/reason_private.h&gt;
+         ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/xnu/xnu-7195.81.3.tar.gz" target="_blank">xnu-7195&#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55; <code>libkern</code> -&gt; <code>os</code> &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>reason_private.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/os</code>&#xFF01;</p>
+<h2 id="220&#x3001;osvariantprivateh-file-not-found"><a name="220&#x3001;osvariantprivateh-file-not-found" class="anchor-navigation-ex-anchor" href="#220&#x3001;osvariantprivateh-file-not-found"><i class="fa fa-link" aria-hidden="true"></i></a>2.20&#x3001;<code>os/variant_private.h file not found</code></h2>
+<pre><code>/objc4-818.2/runtime/NSObject.mm:46:10: fatal error: &apos;os/variant_private.h&apos; file not found
+#include &lt;os/variant_private.h&gt;
+         ^~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x4E0B;&#x8F7D;<a href="https://opensource.apple.com/tarballs/Libc/Libc-1439.40.11.tar.gz" target="_blank">Libc-1439&#x6E90;&#x7801;</a>&#xFF0C;&#x5728;&#x6307;&#x5B9A;&#x76EE;&#x5F55;<code>os</code> &#x627E;&#x5230;&#x6587;&#x4EF6;  <code>variant_private.h</code> &#xFF0C;&#x6DFB;&#x52A0;&#x5230; <code>objc</code> &#x9879;&#x76EE;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x76EE;&#x5F55;<code>ThirdLib/os</code>&#xFF01;</p>
+<h1 id="3&#x3001;&#x94FE;&#x63A5;&#x914D;&#x7F6E;&#x6709;&#x8BEF;"><a name="3&#x3001;&#x94FE;&#x63A5;&#x914D;&#x7F6E;&#x6709;&#x8BEF;" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x94FE;&#x63A5;&#x914D;&#x7F6E;&#x6709;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x94FE;&#x63A5;&#x914D;&#x7F6E;&#x6709;&#x8BEF;</h1>
+<h2 id="31&#x3001;&#x4E8C;&#x8FDB;&#x5236;&#x91CD;&#x6392;&#x6587;&#x4EF6;-order-&#x7684;&#x8DEF;&#x5F84;&#x9519;&#x8BEF;"><a name="31&#x3001;&#x4E8C;&#x8FDB;&#x5236;&#x91CD;&#x6392;&#x6587;&#x4EF6;-order-&#x7684;&#x8DEF;&#x5F84;&#x9519;&#x8BEF;" class="anchor-navigation-ex-anchor" href="#31&#x3001;&#x4E8C;&#x8FDB;&#x5236;&#x91CD;&#x6392;&#x6587;&#x4EF6;-order-&#x7684;&#x8DEF;&#x5F84;&#x9519;&#x8BEF;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1&#x3001;&#x4E8C;&#x8FDB;&#x5236;&#x91CD;&#x6392;&#x6587;&#x4EF6; <code>.order</code> &#x7684;&#x8DEF;&#x5F84;&#x9519;&#x8BEF;</h2>
+<pre><code>ld: can&apos;t open order file: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/AppleInternal/OrderFiles/libobjc.order
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x5728; <code>TARGETS</code> -&gt; <code>objc</code> -&gt; <code>Build Settings</code> -&gt; <code>Linking</code> -&gt; <code>Order File</code> &#x4E3A;  <code>.order</code> &#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x8DEF;&#x5F84;&#xFF01;</p>
+<p><img src="assets/Runtime_objc_order_path.png" alt="order&#x8DEF;&#x5F84;&#x914D;&#x7F6E;"></p>
+<h2 id="32&#x3001;&#x5220;&#x9664;--lcrashreporterclient"><a name="32&#x3001;&#x5220;&#x9664;--lcrashreporterclient" class="anchor-navigation-ex-anchor" href="#32&#x3001;&#x5220;&#x9664;--lcrashreporterclient"><i class="fa fa-link" aria-hidden="true"></i></a>3.2&#x3001;&#x5220;&#x9664; <code>-lCrashReporterClient</code></h2>
+<pre><code>ld: library not found for -lCrashReporterClient
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x627E;&#x5230; <code>TARGETS</code> -&gt; <code>objc</code> -&gt; <code>Build Settings</code> -&gt; <code>Other Link Flags</code> &#x5220;&#x9664; <code>-lCrashReporterClient</code>&#x3002;</p>
+<p><img src="assets/Runtime_objc_lCrashReporterClient.png" alt="&#x5220;&#x9664;lCrashReporterClient"></p>
+<h2 id="33&#x3001;&#x5220;&#x9664;--loah"><a name="33&#x3001;&#x5220;&#x9664;--loah" class="anchor-navigation-ex-anchor" href="#33&#x3001;&#x5220;&#x9664;--loah"><i class="fa fa-link" aria-hidden="true"></i></a>3.3&#x3001;&#x5220;&#x9664; <code>-loah</code></h2>
+<pre><code>ld: library not found for -loah
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+</code></pre><p>&#x89E3;&#x51B3;&#xFF1A;&#x627E;&#x5230; <code>TARGETS</code> -&gt; <code>objc</code> -&gt; <code>Build Settings</code> -&gt; <code>Other Link Flags</code> &#x5220;&#x9664; <code>-loah</code>&#x3002;</p>
+<p><img src="assets/Runtime_objc_loah_delete.png" alt="&#x5220;&#x9664;loah"></p>
+<h1 id="4&#x3001;&#x8C03;&#x8BD5;-objc"><a name="4&#x3001;&#x8C03;&#x8BD5;-objc" class="anchor-navigation-ex-anchor" href="#4&#x3001;&#x8C03;&#x8BD5;-objc"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;&#x8C03;&#x8BD5; <code>objc</code></h1>
+<p>&#x82B1;&#x4E86;&#x8FD9;&#x4E48;&#x591A;&#x65F6;&#x95F4;&#xFF0C;&#x7EC8;&#x4E8E;&#x5C06;  <code>objc</code>  &#x7F16;&#x8BD1;&#x6210;&#x529F;&#xFF1B;&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8C03;&#x8BD5;&#x7A0B;&#x5E8F;&#x4E86;&#xFF01;
+&#x7B14;&#x8005;&#x5728;&#x8FD9;&#x91CC;&#x65B0;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; <code>target</code>&#xFF1A;<code>macOS -&gt; Command Line Tool</code></p>
+<p><img src="assets/Runtime_objc_demo.png" alt="&#x65B0;&#x5EFA;Command Line Tool"></p>
+<p>&#x7136;&#x540E;&#x6DFB;&#x52A0;&#x4F9D;&#x8D56; <code>objc</code>&#xFF1A; </p>
+<p><img src="assets/Runtime_objc_demo_add.png" alt="&#x6DFB;&#x52A0;&#x4F9D;&#x8D56; objc"></p>
+<p>&#x6B64;&#x65F6;&#xFF0C;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x65B0;&#x5EFA;&#x7684; <code>target</code> &#x8C03;&#x8BD5; <code>objc</code> &#x4E86;&#xFF01;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2021-09-04 11:33:43
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> 搜索结果 "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有搜索结果 "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="TaggedPointer.html" class="navigation navigation-prev " aria-label="Previous page: TaggedPointer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Runtime_Protocol.html" class="navigation navigation-next " aria-label="Next page: Runtime函数库中关于协议Protocol的函数使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"编译objc4备忘录","level":"1.3.1.6","depth":3,"next":{"title":"Runtime函数库中关于协议Protocol的函数使用","level":"1.3.1.7","depth":3,"path":"iOS开发/Runtime/Runtime_Protocol.md","ref":"iOS开发/Runtime/Runtime_Protocol.md","articles":[]},"previous":{"title":"TaggedPointer","level":"1.3.1.5","depth":3,"path":"iOS开发/Runtime/TaggedPointer.md","ref":"iOS开发/Runtime/TaggedPointer.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","pageview-count","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"pageview-count":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"iOS开发/Runtime/编译objc4.md","mtime":"2021-09-04T03:33:43.750Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-04T03:47:56.847Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
