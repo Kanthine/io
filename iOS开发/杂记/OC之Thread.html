@@ -1142,8 +1142,363 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-09-16 20:02:47
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#nsthread"><b></b>NSThread</a></li><li><span class="title-icon "></span><a href="#1&#x3001;nsthread-api"><b></b>1&#x3001;NSThread API</a></li><ul><li><span class="title-icon "></span><a href="#11&#x3001;&#x521B;&#x5EFA;&#x5206;&#x7EBF;&#x7A0B;"><b></b>1.1&#x3001;&#x521B;&#x5EFA;&#x5206;&#x7EBF;&#x7A0B;</a></li><li><span class="title-icon "></span><a href="#12&#x3001;&#x7EBF;&#x7A0B;&#x4F11;&#x7720;"><b></b>1.2&#x3001;&#x7EBF;&#x7A0B;&#x4F11;&#x7720;</a></li><li><span class="title-icon "></span><a href="#13&#x3001;&#x7EBF;&#x7A0B;&#x505C;&#x6B62;"><b></b>1.3&#x3001;&#x7EBF;&#x7A0B;&#x505C;&#x6B62;</a></li><li><span class="title-icon "></span><a href="#14&#x3001;&#x7EBF;&#x7A0B;&#x4E3B;&#x4F53;"><b></b>1.4&#x3001;&#x7EBF;&#x7A0B;&#x4E3B;&#x4F53;</a></li><li><span class="title-icon "></span><a href="#15&#x3001;-&#x7EBF;&#x7A0B;&#x72B6;&#x6001;"><b></b>1.5&#x3001; &#x7EBF;&#x7A0B;&#x72B6;&#x6001;</a></li><li><span class="title-icon "></span><a href="#16&#x3001;-&#x4E3B;&#x7EBF;&#x7A0B;&#x76F8;&#x5173;"><b></b>1.6&#x3001; &#x4E3B;&#x7EBF;&#x7A0B;&#x76F8;&#x5173;</a></li><li><span class="title-icon "></span><a href="#17&#x3001;-&#x67E5;&#x8BE2;&#x7EBF;&#x7A0B;&#x73AF;&#x5883;"><b></b>1.7&#x3001; &#x67E5;&#x8BE2;&#x7EBF;&#x7A0B;&#x73AF;&#x5883;</a></li><li><span class="title-icon "></span><a href="#18&#x3001;&#x4F18;&#x5148;&#x7EA7;"><b></b>1.8&#x3001;&#x4F18;&#x5148;&#x7EA7;</a></li><li><span class="title-icon "></span><a href="#19&#x3001;&#x76F8;&#x5173;&#x901A;&#x77E5;"><b></b>1.9&#x3001;&#x76F8;&#x5173;&#x901A;&#x77E5;</a></li></ul><li><span class="title-icon "></span><a href="#2&#x3001;&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;"><b></b>2&#x3001;&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;</a></li><ul><li><span class="title-icon "></span><a href="#21&#x3001;&#x56DE;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;"><b></b>2.1&#x3001;&#x56DE;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;</a></li><li><span class="title-icon "></span><a href="#22&#x3001;-&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;"><b></b>2.2&#x3001; &#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;</a></li></ul><li><span class="title-icon "></span><a href="#3&#x3001;runloop-&#x4E0E;-thread"><b></b>3&#x3001;RunLoop &#x4E0E; Thread</a></li><ul><li><span class="title-icon "></span><a href="#31&#x3001;&#x4E3A;&#x4EC0;&#x4E48;-main-&#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#xFF1F;"><b></b>3.1&#x3001;&#x4E3A;&#x4EC0;&#x4E48; main() &#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#xFF1F;</a></li><li><span class="title-icon "></span><a href="#32&#x3001;-runloop&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;"><b></b>3.2&#x3001; Runloop&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;</a></li><li><span class="title-icon "></span><a href="#33&#x3001;runloop-&#x7684;&#x521B;&#x5EFA;"><b></b>3.3&#x3001;RunLoop &#x7684;&#x521B;&#x5EFA;</a></li></ul></ul></div><h1 id="nsthread"><a name="nsthread" class="anchor-navigation-ex-anchor" href="#nsthread"><i class="fa fa-link" aria-hidden="true"></i></a>NSThread</h1>
+<p><a href="https://developer.apple.com/documentation/foundation/nsthread?changes=latest_minor&amp;language=objc" target="_blank">NSThread</a>  &#x9762;&#x5411;&#x5BF9;&#x8C61;&#xFF0C;&#x662F;&#x5BF9; <code>pthread</code>  &#x7684; OC &#x5C01;&#x88C5;&#xFF0C;&#x89E3;&#x51B3;&#x4E86; C &#x8BED;&#x8A00;&#x4F7F;&#x7528;&#x4E0D;&#x65B9;&#x4FBF;&#x7684;&#x95EE;&#x9898;,&#xFF0C;&#x4F46;&#x4ECD;&#x7136;&#x9700;&#x8981;&#x7A0B;&#x5E8F;&#x5458;&#x624B;&#x52A8;&#x7BA1;&#x7406;&#x7EBF;&#x7A0B;&#x751F;&#x547D;&#x5468;&#x671F;&#x3001;&#x5904;&#x7406;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;&#x7B49;&#x95EE;&#x9898;&#x3002;&#x662F;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x591A;&#x7EBF;&#x7A0B;&#x7F16;&#x7A0B;&#x65B9;&#x6CD5;&#xFF08;&#x76F8;&#x5BF9;<code>GCD</code> &#x548C; <code>NSOperation</code>&#xFF09;&#x3002;</p>
+<p><img src="assets/&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x4E4B;NSThread&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;.png" alt="NSThread &#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;"></p>
+<h1 id="1&#x3001;nsthread-api"><a name="1&#x3001;nsthread-api" class="anchor-navigation-ex-anchor" href="#1&#x3001;nsthread-api"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;<code>NSThread API</code></h1>
+<h2 id="11&#x3001;&#x521B;&#x5EFA;&#x5206;&#x7EBF;&#x7A0B;"><a name="11&#x3001;&#x521B;&#x5EFA;&#x5206;&#x7EBF;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#11&#x3001;&#x521B;&#x5EFA;&#x5206;&#x7EBF;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1&#x3001;&#x521B;&#x5EFA;&#x5206;&#x7EBF;&#x7A0B;</h2>
+<pre><code>/* &#x521B;&#x5EFA;&#x4E00;&#x4E2A; NSThread
+ * @note &#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x521B;&#x5EFA; NSThread&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF0C;&#x4F7F;&#x7528;&#x8BE5;&#x5BF9;&#x8C61;&#x8C03;&#x7528; -start &#x5F00;&#x542F;&#x5206;&#x7EBF;&#x7A0B;&#xFF1B;
+ * @note &#x7C7B;&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x7684; NSThread&#xFF0C;&#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x5206;&#x7EBF;&#x7A0B;&#x3002;&#x4E0D;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF0C;&#x4E5F;&#x5C31;&#x4E0D;&#x7528; -start &#xFF1B;
+ * @note &#x5982;&#x679C;&#x5F00;&#x8F9F;&#x7684;&#x7EBF;&#x7A0B;&#x662F;&#x7A0B;&#x5E8F;&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x5206;&#x7EBF;&#x7A0B;&#xFF0C;&#x7CFB;&#x7EDF;&#x53D1;&#x9001;&#x901A;&#x77E5; NSWillBecomeMultiThreadedNotification&#xFF1B;
+ */
+ - (instancetype)initWithTarget:(id)target selector:(SEL)selector object:(nullable id)argument ;
+ - (instancetype)initWithBlock:(void (^)(void))block ;
+
+ + (void)detachNewThreadSelector:(SEL)selector toTarget:(id)target withObject:(nullable id)argument;
+ + (void)detachNewThreadWithBlock:(void (^)(void))block;
+
+/* &#x5F02;&#x6B65;&#x5F00;&#x8F9F;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#xFF0C;&#x6B64;&#x65F6; executing=YES &#xFF0C;&#x5728;&#x65B0;&#x7EBF;&#x7A0B;&#x8C03;&#x7528; -main &#x65B9;&#x6CD5;&#x3002;
+ * @note &#x4EC5;&#x4EC5;&#x88AB;&#x5B9E;&#x4F8B;&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x8C03;&#x7528;
+ */
+ - (void)start;
+</code></pre><h2 id="12&#x3001;&#x7EBF;&#x7A0B;&#x4F11;&#x7720;"><a name="12&#x3001;&#x7EBF;&#x7A0B;&#x4F11;&#x7720;" class="anchor-navigation-ex-anchor" href="#12&#x3001;&#x7EBF;&#x7A0B;&#x4F11;&#x7720;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2&#x3001;&#x7EBF;&#x7A0B;&#x4F11;&#x7720;</h2>
+<pre><code>/* &#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4F11;&#x7720;&#x5230;&#x6307;&#x5B9A;&#x65F6;&#x95F4;&#xFF1B;
+* @param date &#x622A;&#x6B62;&#x65F6;&#x95F4;
+* @note &#x5F53;&#x7EBF;&#x7A0B;&#x4F11;&#x7720;&#x65F6;&#xFF0C;runloop &#x4E0D;&#x4F1A;&#x53D1;&#x751F;
+*/
+ + (void)sleepUntilDate:(NSDate *)date;
+ + (void)sleepForTimeInterval:(NSTimeInterval)ti;
+</code></pre><h2 id="13&#x3001;&#x7EBF;&#x7A0B;&#x505C;&#x6B62;"><a name="13&#x3001;&#x7EBF;&#x7A0B;&#x505C;&#x6B62;" class="anchor-navigation-ex-anchor" href="#13&#x3001;&#x7EBF;&#x7A0B;&#x505C;&#x6B62;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3&#x3001;&#x7EBF;&#x7A0B;&#x505C;&#x6B62;</h2>
+<pre><code>/* &#x7EC8;&#x6B62;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF1A;
+ * @note &#x7EBF;&#x7A0B;&#x9000;&#x51FA;&#x4E4B;&#x524D;&#x6CA1;&#x6709;&#x673A;&#x4F1A;&#x6E05;&#x9664;&#x7EBF;&#x7A0B;&#x4E2D;&#x5206;&#x914D;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x4E0D;&#x5EFA;&#x8BAE;&#x8C03;&#x7528;&#xFF1B;
+ * @note &#x89E6;&#x53D1;&#x901A;&#x77E5; NSThreadWillExitNotification&#xFF1B;&#x540C;&#x6B65;&#x53D1;&#x9001;&#xFF0C;&#x89C2;&#x5BDF;&#x8005;&#x5728;&#x7EBF;&#x7A0B;&#x9000;&#x51FA;&#x4E4B;&#x524D;&#x90FD;&#x80FD;&#x6536;&#x5230;&#x901A;&#x77E5;&#x3002;
+ */
+ + (void)exit;
+
+/* &#x53D6;&#x6D88;&#x64CD;&#x4F5C;
+ * @note &#x4EC5;&#x4EC5;&#x5C06;&#x5C5E;&#x6027; cancelled &#x6539;&#x4E3A; YES&#xFF0C;NSThread &#x4F1A;&#x5B9A;&#x671F;&#x67E5;&#x8BE2; cancelled &#x7684;&#x72B6;&#x6001;
+ * &#x7EBF;&#x7A0B;&#x53D6;&#x6D88;&#xFF1A;CFRunLoopStop(CFRunLoopGetCurrent()); //&#x505C;&#x6B62;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x7684;runLoop
+ */
+ - (void)cancel;
+</code></pre><h2 id="14&#x3001;&#x7EBF;&#x7A0B;&#x4E3B;&#x4F53;"><a name="14&#x3001;&#x7EBF;&#x7A0B;&#x4E3B;&#x4F53;" class="anchor-navigation-ex-anchor" href="#14&#x3001;&#x7EBF;&#x7A0B;&#x4E3B;&#x4F53;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4&#x3001;&#x7EBF;&#x7A0B;&#x4E3B;&#x4F53;</h2>
+<pre><code>/* &#x7EBF;&#x7A0B;&#x7684;&#x4E3B;&#x4F53;&#xFF0C;&#x5C01;&#x88C5;&#x7684;&#x64CD;&#x4F5C;
+ * @note &#x5B50;&#x7C7B;&#x5316; NSThread&#xFF0C;&#x5C06;&#x5F85;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x5C01;&#x88C5;&#x5728; -main &#x65B9;&#x6CD5;&#x4E2D;&#xFF1B;
+ *       &#x6B64;&#x65F6;&#x4E0D;&#x9700;&#x8981;&#x8C03;&#x7528; [super main]&#xFF0C;&#x5426;&#x5219;&#x5C06;&#x5B9E;&#x73B0;&#x521D;&#x59CB;&#x5316;&#x7684; target &#x4E0E; selector
+ */
+ - (void)main;
+</code></pre><h2 id="15&#x3001;-&#x7EBF;&#x7A0B;&#x72B6;&#x6001;"><a name="15&#x3001;-&#x7EBF;&#x7A0B;&#x72B6;&#x6001;" class="anchor-navigation-ex-anchor" href="#15&#x3001;-&#x7EBF;&#x7A0B;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5&#x3001; &#x7EBF;&#x7A0B;&#x72B6;&#x6001;</h2>
+<pre><code> //thread &#x662F;&#x5426;&#x6B63;&#x5728;&#x6267;&#x884C;
+ @property (readonly, getter=isExecuting) BOOL executing;
+ //thread &#x662F;&#x5426;&#x5B8C;&#x6210;&#x4E86;&#x6267;&#x884C;
+ @property (readonly, getter=isFinished) BOOL finished;
+//thread &#x662F;&#x5426;&#x88AB;&#x53D6;&#x6D88;&#x3002;
+ @property (readonly, getter=isCancelled) BOOL cancelled;
+</code></pre><h2 id="16&#x3001;-&#x4E3B;&#x7EBF;&#x7A0B;&#x76F8;&#x5173;"><a name="16&#x3001;-&#x4E3B;&#x7EBF;&#x7A0B;&#x76F8;&#x5173;" class="anchor-navigation-ex-anchor" href="#16&#x3001;-&#x4E3B;&#x7EBF;&#x7A0B;&#x76F8;&#x5173;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6&#x3001; &#x4E3B;&#x7EBF;&#x7A0B;&#x76F8;&#x5173;</h2>
+<pre><code> //&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x662F;&#x5426;&#x662F;&#x4E3B;&#x7EBF;&#x7A0B;
+ @property (readonly) BOOL isMainThread;
+ @property (class, readonly) BOOL isMainThread ;
+ //&#x83B7;&#x53D6;&#x4E3B;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;
+ @property (class, readonly, strong) NSThread *mainThread;
+</code></pre><h2 id="17&#x3001;-&#x67E5;&#x8BE2;&#x7EBF;&#x7A0B;&#x73AF;&#x5883;"><a name="17&#x3001;-&#x67E5;&#x8BE2;&#x7EBF;&#x7A0B;&#x73AF;&#x5883;" class="anchor-navigation-ex-anchor" href="#17&#x3001;-&#x67E5;&#x8BE2;&#x7EBF;&#x7A0B;&#x73AF;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7&#x3001; &#x67E5;&#x8BE2;&#x7EBF;&#x7A0B;&#x73AF;&#x5883;</h2>
+<pre><code>/* &#x5224;&#x65AD;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x662F;&#x5426;&#x662F;&#x591A;&#x7EBF;&#x7A0B;&#x7684;
+ * &#x5982;&#x679C;&#x4F7F;&#x7528; NSThread &#x5C06;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x5206;&#x7EBF;&#x7A0B;&#xFF0C;&#x5219;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE; YES&#xFF1B;
+ * &#x5982;&#x679C;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x4F7F;&#x7528;&#x975E;cocoa API(&#x5982; POSIX &#x6216; Multiprocessing Services API)&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x5206;&#x7EBF;&#x7A0B;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x5C06;&#x8FD4;&#x56DE; NO
+ */
+ + (BOOL)isMultiThreaded;
+ //&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6B63;&#x5728;&#x6267;&#x884C;&#x7684;&#x7EBF;&#x7A0B;&#x7684;&#x5BF9;&#x8C61;
+ @property (class, readonly, strong) NSThread *currentThread;
+ // &#x8C03;&#x7528;&#x5806;&#x6808;&#x8FD4;&#x56DE;&#x5730;&#x5740; &#x7684;&#x6570;&#x7EC4;&#xFF1A;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x5305;&#x542B;NSUInteger&#x503C;&#x7684;NSNumber&#x5BF9;&#x8C61;
+ @property (class, readonly, copy) NSArray&lt;NSNumber *&gt; *callStackReturnAddresses ;
+/* &#x8C03;&#x7528;&#x5806;&#x6808;&#x7B26;&#x53F7;&#x7684;&#x6570;&#x7EC4;&#xFF1A;&#x63CF;&#x8FF0;&#x5728;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x65F6;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x7684;&#x8C03;&#x7528;&#x5806;&#x6808;&#x56DE;&#x6EAF; &#xFF1B;
+ * &#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x662F;&#x4E00;&#x4E2A;NSString&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x503C;&#x7684;&#x683C;&#x5F0F;&#x7531; backtrace_symbols() &#x51FD;&#x6570;&#x786E;&#x5B9A;&#x3002;
+ */
+ @property (class, readonly, copy) NSArray&lt;NSString *&gt; *callStackSymbols;
+
+ //&#x4F7F;&#x7528;&#x8BE5;&#x5B57;&#x5178;&#x6765;&#x5B58;&#x50A8;&#x7279;&#x5B9A;&#x4E8E;&#x7EBF;&#x7A0B;&#x7684;&#x6570;&#x636E;&#x3002;&#x8BE5;&#x5B57;&#x5178;&#x5728;&#x4EFB;&#x4F55;&#x5BF9;NSThread&#x5BF9;&#x8C61;&#x7684;&#x64CD;&#x4F5C;&#x4E2D;&#x90FD;&#x4E0D;&#x4F7F;&#x7528;&#x2014;&#x2014;&#x5B83;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x8DA3;&#x6570;&#x636E;&#x7684;&#x5730;&#x65B9;&#x3002;&#x4F8B;&#x5982;&#xFF0C;Foundation &#x4F7F;&#x7528;&#x5B83;&#x5B58;&#x50A8;&#x7EBF;&#x7A0B;&#x7684;&#x9ED8;&#x8BA4;NSConnection&#x548C;NSAssertionHandler&#x5B9E;&#x4F8B;&#x3002;&#x53EF;&#x4EE5;&#x4E3A;&#x5B57;&#x5178;&#x81EA;&#x5B9A;&#x4E49;&#x5176;&#x952E;&#x503C;&#x3002;
+ @property (readonly, retain) NSMutableDictionary *threadDictionary;
+ //&#x7EBF;&#x7A0B;&#x7684;&#x540D;&#x5B57;
+ @property (nullable, copy) NSString *name;
+ //thread &#x7684;&#x5806;&#x6808;&#x5927;&#x5C0F;&#xFF08;&#x8FD9;&#x4E2A;&#x503C;&#x5FC5;&#x987B;&#x4EE5;&#x5B57;&#x8282;&#x4E3A;&#x5355;&#x4F4D;&#xFF0C;&#x5E76;&#x4E14;&#x662F;4KB&#x7684;&#x500D;&#x6570;&#xFF09;&#x3002;&#x8981;&#x66F4;&#x6539;&#x5806;&#x6808;&#x5927;&#x5C0F;&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x542F;&#x52A8;&#x7EBF;&#x7A0B;&#x4E4B;&#x524D;&#x8BBE;&#x7F6E;&#x6B64;&#x5C5E;&#x6027;&#x3002;&#x5728;&#x7EBF;&#x7A0B;&#x542F;&#x52A8;&#x540E;&#x8BBE;&#x7F6E;&#x5806;&#x6808;&#x5927;&#x5C0F;&#x4F1A;&#x66F4;&#x6539;&#x5C5E;&#x6027;&#x5927;&#x5C0F;(stackSize&#x65B9;&#x6CD5;&#x53CD;&#x6620;&#x4E86;&#x8FD9;&#x4E00;&#x70B9;)&#xFF0C;&#x4F46;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x4E3A;&#x7EBF;&#x7A0B;&#x9884;&#x7559;&#x7684;&#x9875;&#x9762;&#x7684;&#x5B9E;&#x9645;&#x6570;&#x91CF;&#x3002;
+ @property NSUInteger stackSize;
+</code></pre><h2 id="18&#x3001;&#x4F18;&#x5148;&#x7EA7;"><a name="18&#x3001;&#x4F18;&#x5148;&#x7EA7;" class="anchor-navigation-ex-anchor" href="#18&#x3001;&#x4F18;&#x5148;&#x7EA7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8&#x3001;&#x4F18;&#x5148;&#x7EA7;</h2>
+<pre><code>/* &#x7EBF;&#x7A0B;&#x7684;&#x4F18;&#x5148;&#x7EA7;&#xFF1A;&#x5F53;&#x5B58;&#x5728;&#x8D44;&#x6E90;&#x4E89;&#x7528;&#x65F6;&#xFF0C;&#x8BBE;&#x7F6E;&#x66F4;&#x9AD8;&#x4F18;&#x5148;&#x7EA7;&#x83B7;&#x5F97;&#x66F4;&#x591A;&#x7684;&#x8D44;&#x6E90;
+ * NSQualityOfServiceUserInteractive&#xFF1A;&#x6700;&#x9AD8;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x63D0;&#x4F9B;&#x4EA4;&#x4E92;UI&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x5904;&#x7406;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#xFF0C;&#x7ED8;&#x5236;&#x56FE;&#x50CF;&#x5230;&#x5C4F;&#x5E55;&#x4E0A;
+ * NSQualityOfServiceUserInitiated&#xFF1A;&#x6B21;&#x9AD8;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x6267;&#x884C;&#x9700;&#x8981;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x7684;&#x4EFB;&#x52A1;
+ * NSQualityOfServiceDefault&#xFF1A;&#x7EBF;&#x7A0B;&#x9ED8;&#x8BA4;&#x4F18;&#x5148;&#x7EA7;
+ * NSQualityOfServiceUtility&#xFF1A;&#x666E;&#x901A;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x4E0D;&#x9700;&#x8981;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x7684;&#x4EFB;&#x52A1;
+ * NSQualityOfServiceBackground&#xFF1A;&#x540E;&#x53F0;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x7528;&#x4E8E;&#x5B8C;&#x5168;&#x4E0D;&#x7D27;&#x6025;&#x7684;&#x4EFB;&#x52A1;
+ */
+ @property NSQualityOfService qualityOfService;
+ + (double)threadPriority;
+ @property double threadPriority; 
+ //&#x8BBE;&#x7F6E;&#x7EBF;&#x7A0B;&#x7684;&#x4F18;&#x5148;&#x7EA7;
+ + (BOOL)setThreadPriority:(double)p;
+</code></pre><h2 id="19&#x3001;&#x76F8;&#x5173;&#x901A;&#x77E5;"><a name="19&#x3001;&#x76F8;&#x5173;&#x901A;&#x77E5;" class="anchor-navigation-ex-anchor" href="#19&#x3001;&#x76F8;&#x5173;&#x901A;&#x77E5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9&#x3001;&#x76F8;&#x5173;&#x901A;&#x77E5;</h2>
+<pre><code>//&#x7531;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x6D3E;&#x751F;&#x51FA;&#x7B2C;&#x4E00;&#x4E2A;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x65F6;&#x53D1;&#x9001;&#xFF0C;&#x4E00;&#x822C;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x53EA;&#x53D1;&#x9001;&#x4E00;&#x6B21;
+NSString * const NSWillBecomeMultiThreadedNotification;
+
+//&#x76EE;&#x524D;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;
+NSString * const NSDidBecomeSingleThreadedNotification;
+
+// &#x7EBF;&#x7A0B;&#x9000;&#x51FA;&#x4E4B;&#x524D;&#x53D1;&#x9001;&#x901A;&#x77E5;
+NSString * const NSThreadWillExitNotification;
+</code></pre><p><strong>&#x601D;&#x8003;&#x4E00;&#x4E0B;&#xFF1A;</strong> &#x5982;&#x4F55;&#x8BA9;&#x7EBF;&#x7A0B;&#x5728;&#x6CA1;&#x6709;&#x5904;&#x7406;&#x6D88;&#x606F;&#x65F6;&#x4F11;&#x7720;&#x4EE5;&#x907F;&#x514D;&#x8D44;&#x6E90;&#x5360;&#x7528;&#x3001;&#x5728;&#x6709;&#x6D88;&#x606F;&#x5230;&#x6765;&#x65F6;&#x7ACB;&#x523B;&#x88AB;&#x5524;&#x9192;?</p>
+<h1 id="2&#x3001;&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;"><a name="2&#x3001;&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;</h1>
+<pre><code>/* &#x4F7F;&#x7528;&#x6307;&#x5B9A; modes &#x5728;&#x6307;&#x5B9A; thread &#x6267;&#x884C; aSelector
+ * @param thread &#xFF1A;&#x6307;&#x5B9A;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x7528;&#x4E8E;&#x6267;&#x884C; aSelector &#xFF1B;
+ * @param aSelector &#xFF1A;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;&#xFF1B;
+ * @param modes &#xFF1A;&#x6267;&#x884C;&#x6A21;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; kCFRunLoopCommonModes&#xFF1B;
+ *               &#x5982;&#x679C;&#x4E3A;&#x8BE5;&#x53C2;&#x6570;&#x6307;&#x5B9A;nil&#x6216;&#x7A7A;&#x6570;&#x7EC4;&#xFF0C;&#x5219;&#x4E0D;&#x4F1A;&#x6267;&#x884C; aSelector&#xFF1B;
+ * @param wait &#xFF1A;&#x662F;&#x5426;&#x963B;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x76F4;&#x5230; aSelector &#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF1B;
+ *               &#x5982;&#x679C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E5F;&#x662F;&#x4E3B;&#x7EBF;&#x7A0B;&#xFF0C;&#x5E76;&#x4E14; wait &#x6307;&#x5B9A;YES&#xFF0C;&#x5219;&#x6D88;&#x606F;&#x5C06;&#x7ACB;&#x5373;&#x88AB;&#x53D1;&#x9001;&#x548C;&#x5904;&#x7406;&#xFF1B;
+ * @note &#x8BE5;&#x65B9;&#x6CD5;&#x4E00;&#x65E6;&#x88AB;&#x5206;&#x53D1;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;&#x961F;&#x5217;&#xFF0C;&#x5C31;&#x4E0D;&#x80FD;&#x518D;&#x88AB;&#x53D6;&#x6D88;&#x6267;&#x884C;
+ */
+@interface NSObject (NSThreadPerformAdditions)
+//&#x56DE;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;&#x6267;&#x884C; aSelector
+- (void)performSelectorOnMainThread:(SEL)aSelector withObject:(nullable id)arg waitUntilDone:(BOOL)wait modes:(nullable NSArray&lt;NSString *&gt; *)array;
+- (void)performSelectorOnMainThread:(SEL)aSelector withObject:(nullable id)arg waitUntilDone:(BOOL)wait;
+
+//&#x5728;&#x6307;&#x5B9A;&#x7EBF;&#x7A0B;&#x4E0A;&#x6267;&#x884C; aSelector
+- (void)performSelector:(SEL)aSelector onThread:(NSThread *)thr withObject:(nullable id)arg waitUntilDone:(BOOL)wait modes:(nullable NSArray&lt;NSString *&gt; *)array;
+- (void)performSelector:(SEL)aSelector onThread:(NSThread *)thr withObject:(nullable id)arg waitUntilDone:(BOOL)wait;
+
+- (void)performSelectorInBackground:(SEL)aSelector withObject:(nullable id)arg;
+@end
+</code></pre><h2 id="21&#x3001;&#x56DE;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;"><a name="21&#x3001;&#x56DE;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#21&#x3001;&#x56DE;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1&#x3001;&#x56DE;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;</h2>
+<p>&#x5047;&#x5982;&#x6570;&#x636E;&#x5173;&#x8054;&#x6027;&#x7279;&#x522B;&#x5F3A;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x5206;&#x7EBF;&#x7A0B;&#x64CD;&#x4F5C;&#x4E00;&#x4E9B;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#xFF0C;&#x7136;&#x540E;&#x56DE;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;&#x66F4;&#x65B0;UI&#xFF0C;&#x63A5;&#x7740;&#x6839;&#x636E;&#x66F4;&#x65B0;UI&#x7684;&#x7ED3;&#x679C;&#x63A5;&#x7740;&#x5F80;&#x4E0B;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x5982;&#x4F55;&#x5728;&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;&#x5462;&#xFF1F;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4EE5;&#x4E0B;&#x7A0B;&#x5E8F;&#xFF1A;</p>
+<pre><code>- (void)newChileThread{
+   //&#x5148;&#x76D1;&#x542C;&#x7EBF;&#x7A0B;&#x9000;&#x51FA;&#x7684;&#x901A;&#x77E5;&#xFF0C;&#x4EE5;&#x4FBF;&#x77E5;&#x9053;&#x7EBF;&#x7A0B;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x9000;&#x51FA;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(threadExitNotice:) name:NSThreadWillExitNotification object:nil];
+
+    if (@available(iOS 10.0, *)){
+        [NSThread detachNewThreadWithBlock:^{
+            NSThread.currentThread.name = @&quot;&#x6570;&#x636E;&#x7EBF;&#x7A0B;&quot;;
+            [NSThread sleepForTimeInterval:10];//&#x5904;&#x7406;&#x8017;&#x65F6;&#x4EFB;&#x52A1;
+            NSLog(@&quot;---------- &#x5904;&#x7406;&#x6570;&#x636E;&#x4E86; -----------  %@&quot;,[NSDate date]);
+            [self performSelectorOnMainThread:@selector(backMainThreadClick:) withObject:@{@&quot;data&quot;:@&quot;handle data&quot;} waitUntilDone:YES];
+            NSLog(@&quot;---------- &#x518D;&#x6B21;&#x5904;&#x7406;&#x6570;&#x636E;&#x4E86; ----------- %@&quot;,[NSDate date]);
+            [NSThread sleepUntilDate:[[NSDate date] dateByAddingTimeInterval:10]];//z&#x63A5;&#x7740;&#x5904;&#x7406;&#x8017;&#x65F6;&#x4EFB;&#x52A1;
+            NSLog(@&quot;---------- &#x5904;&#x7406;&#x6570;&#x636E;&#x5B8C;&#x6BD5; ----------- %@&quot;,[NSDate date]);        
+          }];
+    }
+}
+
+- (void)backMainThreadClick:(id)userInfo{
+    NSLog(@&quot;&#x5237;&#x65B0;UI  --- %@&quot;,userInfo);
+    [NSThread sleepForTimeInterval:3];//&#x963B;&#x585E;&#x4E3B;&#x7EBF;&#x7A0B; 3s
+}
+</code></pre><p>&#x6211;&#x4EEC;&#x5F00;&#x8F9F;&#x4E86;&#x4E00;&#x6761;&#x65B0;&#x7EBF;&#x7A0B;&#x7528;&#x6765;&#x5904;&#x7406;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#xFF0C;&#x5E76;&#x4E14;&#x76D1;&#x542C;&#x8BE5;&#x7EBF;&#x7A0B;&#x7684;&#x9000;&#x51FA;&#xFF1B;&#x4E2D;&#x9014;&#x7531;&#x4E8E;&#x5173;&#x4E8E;&#x754C;&#x9762;&#x7684;&#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x5904;&#x7406;&#x5B8C;&#x6BD5;&#xFF0C;&#x8FD9;&#x65F6;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x56DE;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;&#x5237;&#x65B0; UI&#xFF0C;&#x8C03;&#x7528;<code>-performSelectorOnMainThread: withObject: waitUntilDone:</code>&#x65B9;&#x6CD5;&#xFF0C;&#x53C2;&#x6570;<code>waitUntilDone</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>YES</code>,&#x6211;&#x4EEC;&#x6765;&#x770B;&#x63A7;&#x5236;&#x53F0;&#x7684;&#x6253;&#x5370;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>2018-07-03 19:17:48.759882+0800 ThreadDemo[967:43885] ---------- &#x5904;&#x7406;&#x6570;&#x636E;&#x4E86; -----------  2018-07-03 11:17:48 +0000
+2018-07-03 19:17:48.760508+0800 ThreadDemo[967:43826] &#x5237;&#x65B0;UI  --- {
+    data = &quot;handle data&quot;;
+}
+2018-07-03 19:17:51.762262+0800 ThreadDemo[967:43885] ---------- &#x518D;&#x6B21;&#x5904;&#x7406;&#x6570;&#x636E;&#x4E86; ----------- 2018-07-03 11:17:51 +0000
+2018-07-03 19:18:01.763943+0800 ThreadDemo[967:43885] ---------- &#x5904;&#x7406;&#x6570;&#x636E;&#x5B8C;&#x6BD5; ----------- 2018-07-03 11:18:01 +0000
+2018-07-03 19:18:01.764444+0800 ThreadDemo[967:43885]  threadExitNotice ------------ &lt;NSThread: 0x600003c455c0&gt;{number = 3, name = &#x6570;&#x636E;&#x7EBF;&#x7A0B;}
+</code></pre><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF1A;&#x7CFB;&#x7EDF;&#x5148;&#x5728;&#x5206;&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x4E86;&#x4E00;&#x4E2A;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#xFF0C;&#x7136;&#x540E;&#x7ACB;&#x5373;&#x56DE;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;&#x5237;&#x65B0;UI&#xFF0C;&#x6B64;&#x5904;&#x7684;&#x5206;&#x7EBF;&#x7A0B;&#x4E00;&#x76F4;&#x7B49;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x5B8C;UI&#x4E8B;&#x4EF6;&#xFF0C;&#x624D;&#x63A5;&#x7740;&#x5728;&#x8BE5;&#x5206;&#x7EBF;&#x7A0B;&#x5904;&#x7406;&#x4EFB;&#x52A1;&#xFF0C;&#x76F4;&#x5230;&#x4EFB;&#x52A1;&#x5904;&#x7406;&#x5B8C;&#x6BD5;&#xFF0C;&#x9000;&#x51FA;&#x8BE5;&#x7EBF;&#x7A0B;</p>
+<p><strong>&#x601D;&#x8003;&#x4E00;&#x4E0B;:</strong> &#x5047;&#x5982;&#x5206;&#x7EBF;&#x7A0B;&#x7684;&#x4EFB;&#x52A1;&#x53EF;&#x4EE5;&#x72EC;&#x7ACB;&#x6267;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x9700;&#x8981;&#x5728;&#x7B49;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x5B8C;&#x518D;&#x63A5;&#x7740;&#x5904;&#x7406;&#x4E0B;&#x9762;&#x7684;&#x4EFB;&#x52A1;&#x561B;&#xFF1F;&#x8FD9;&#x663E;&#x7136;&#x803D;&#x8BEF;&#x4E86;&#x65F6;&#x95F4;&#xFF0C;&#x6D6A;&#x8D39;&#x4E86;&#x6548;&#x7387;&#x3002;
+&#x8FD8;&#x662F;&#x4E0A;&#x8FF0;&#x7A0B;&#x5E8F;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x53C2;&#x6570;<code>waitUntilDone</code>&#x4F20;&#x4E3A;<code>NO</code>,</p>
+<pre><code>2018-07-03 19:19:38.867522+0800 ThreadDemo[1000:45692] ---------- &#x5904;&#x7406;&#x6570;&#x636E;&#x4E86; -----------  2018-07-03 11:19:38 +0000
+2018-07-03 19:19:38.868219+0800 ThreadDemo[1000:45638] &#x5237;&#x65B0;UI  --- {
+    data = &quot;handle data&quot;;
+}
+2018-07-03 19:19:38.868225+0800 ThreadDemo[1000:45692] ---------- &#x518D;&#x6B21;&#x5904;&#x7406;&#x6570;&#x636E;&#x4E86; ----------- 2018-07-03 11:19:38 +0000
+2018-07-03 19:19:48.869657+0800 ThreadDemo[1000:45692] ---------- &#x5904;&#x7406;&#x6570;&#x636E;&#x5B8C;&#x6BD5; ----------- 2018-07-03 11:19:48 +0000
+2018-07-03 19:19:48.870864+0800 ThreadDemo[1000:45692]  threadExitNotice ------------ &lt;NSThread: 0x6000015de840&gt;{number = 3, name = &#x6570;&#x636E;&#x7EBF;&#x7A0B;}
+</code></pre><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF1A;&#x7CFB;&#x7EDF;&#x5728;&#x56DE;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;&#x5237;&#x65B0;UI&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x63A5;&#x7740;&#x5904;&#x7406;&#x5206;&#x7EBF;&#x7A0B;&#x540E;&#x9762;&#x7684;&#x4EFB;&#x52A1;&#x3002;</p>
+<h2 id="22&#x3001;-&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;"><a name="22&#x3001;-&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;" class="anchor-navigation-ex-anchor" href="#22&#x3001;-&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2&#x3001; &#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;</h2>
+<p>&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5F00;&#x8F9F;&#x4E00;&#x6761;&#x5206;&#x7EBF;&#x7A0B;&#xFF0C;&#x7528;&#x6765;&#x5904;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x540C;&#x65F6;&#x548C;&#x4E3B;&#x7EBF;&#x7A0B;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF1A;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre><code>- (void)newChileThread{
+    if (@available(iOS 10.0, *)){
+        [NSThread detachNewThreadWithBlock:^{
+            NSThread.currentThread.name = @&quot;&#x6570;&#x636E;&#x7EBF;&#x7A0B;&quot;;
+            [self performSelector:@selector(newChileThreadTask:) withObject:@{@&quot;data&quot;:@&quot;A&quot;}];
+        }];
+    }
+}
+
+- (void)newChileThreadTask_A:(id)userInfo{
+    NSLog(@&quot;userInfo =========== %@&quot;,userInfo);
+    if ([userInfo[@&quot;data&quot;] isEqualToString:@&quot;A&quot;]){
+        [NSThread sleepForTimeInterval:10];//&#x5904;&#x7406;&#x8017;&#x65F6;&#x4EFB;&#x52A1;
+        NSLog(@&quot;&#x5904;&#x7406;&#x6570;&#x636E;A =======  %@&quot;,NSThread.currentThread);
+        //&#x4EFB;&#x52A1;A&#x5904;&#x7406;&#x5B8C;&#x6BD5;&#xFF0C;&#x56DE;&#x8C03;&#x4E3B;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x67D0;&#x4E9B;&#x64CD;&#x4F5C;&#xFF0C;&#x5E76;&#x963B;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x76F4;&#x81F3;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;
+        [self performSelectorOnMainThread:@selector(backMainThreadClick:) withObject:@{@&quot;result&quot;:@&quot;1&quot;,@&quot;thread&quot;:NSThread.currentThread} waitUntilDone:YES];
+    }
+    NSLog(@&quot;&#x5904;&#x7406;&#x5B8C;&#x6BD5;A ===========&quot;);
+}
+
+- (void)newChileThreadTask_B:(id)userInfo{
+    [NSThread sleepForTimeInterval:10];//&#x5904;&#x7406;&#x8017;&#x65F6;&#x4EFB;&#x52A1;
+    NSLog(@&quot;&#x5904;&#x7406;&#x6570;&#x636E;B -----------  %@&quot;,NSThread.currentThread);
+}
+
+- (void)backMainThreadClick:(id)userInfo{
+    NSLog(@&quot;userInfo ----------  %@&quot;,userInfo);
+    NSThread *thread = userInfo[@&quot;thread&quot;];
+    [NSThread sleepForTimeInterval:3];//&#x963B;&#x585E;&#x4E3B;&#x7EBF;&#x7A0B; 3s
+    if ([userInfo[@&quot;result&quot;] isEqualToString:@&quot;1&quot;]){
+        NSLog(@&quot;currentThread -----  %@&quot;,NSThread.currentThread);
+        [self performSelector:@selector(newChileThreadTask_B:) onThread:thread withObject:@{@&quot;data&quot;:@&quot;B&quot;} waitUntilDone:NO];
+    }
+}
+</code></pre><p>&#x6839;&#x636E;&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#xFF1A;&#x6211;&#x4EEC;&#x5728;&#x65B0;&#x5F00;&#x8F9F;&#x7684;&#x5206;&#x7EBF;&#x7A0B;&#x6267;&#x884C;<code>- performSelector: withObject:</code>&#xFF0C;&#x8F6C;&#x5230; <code>-newChileThreadTask_A:</code> &#x65B9;&#x6CD5;&#x6267;&#x884C;&#x5904;&#x7406;&#x6570;&#x636E; A &#x7684;&#x8017;&#x65F6;&#x4EFB;&#x52A1;&#xFF0C;&#x5728;&#x6B64;&#x8017;&#x65F6;10s&#x540E;&#xFF0C;&#x5C06;&#x4E00;&#x6BB5;&#x6570;&#x636E;&#x4F20;&#x81F3;&#x4E3B;&#x7EBF;&#x7A0B;&#xFF0C;&#x7531;&#x4E8E;&#x53C2;&#x6570; <code>waitUntilDone</code> &#x4E3A; <code>YES</code>&#xFF0C;&#x7CFB;&#x7EDF;&#x5728;&#x6B64;&#x5904;&#x963B;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x76F4;&#x81F3; <code>-backMainThreadClick:</code> &#x65B9;&#x6CD5;&#x91CC;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x624D;&#x4F1A;&#x63A5;&#x7740;&#x6267;&#x884C;&#x5206;&#x7EBF;&#x7A0B;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x671F;&#x671B;&#x63A5;&#x4E0B;&#x6765;&#x6267;&#x884C;&#x5904;&#x7406;&#x6570;&#x636E;B&#x7684;&#x4EFB;&#x52A1;&#xFF1B;
+&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E0B;&#x6253;&#x5370;&#x7ED3;&#x679C;:</p>
+<pre><code>10:50:35.719040+0800  userInfo =========== { data = A; }
+10:50:45.727849+0800  &#x5904;&#x7406;&#x6570;&#x636E;A =======  &lt;NSThread: 0x600002f81140&gt;{number = 7, name = &#x6570;&#x636E;&#x7EBF;&#x7A0B;}
+10:50:45.728304+0800  userInfo ----------  { result = 1;thread = &quot;&lt;NSThread: 0x600002f81140&gt;{number = 7, name = \U6570\U636e\U7ebf\U7a0b}&quot;;}
+10:50:48.728859+0800  currentThread -----  &lt;NSThread: 0x600002fe2d40&gt;{number = 1, name = main}
+10:50:48.729764+0800  &#x5904;&#x7406;&#x5B8C;&#x6BD5;A ===========
+</code></pre><p><strong>&#x7591;&#x95EE;</strong>&#xFF1A; <code>-newChileThreadTask_B:</code> &#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x88AB;&#x6267;&#x884C;&#xFF0C;<em>&#x4E3A;&#x4EC0;&#x4E48;</em>&#xFF1F;</p>
+<h1 id="3&#x3001;runloop-&#x4E0E;-thread"><a name="3&#x3001;runloop-&#x4E0E;-thread" class="anchor-navigation-ex-anchor" href="#3&#x3001;runloop-&#x4E0E;-thread"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;<code>RunLoop</code> &#x4E0E; <code>Thread</code></h1>
+<p><a href="https://developer.apple.com/documentation/foundation/nsrunloop?changes=latest_minor&amp;language=objc" target="_blank">Runloop</a>  &#x662F;&#x901A;&#x8FC7;&#x5185;&#x90E8;&#x7EF4;&#x62A4;&#x7684;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x6765;&#x5BF9;&#x4E8B;&#x4EF6;\&#x6D88;&#x606F;&#x8FDB;&#x884C;&#x7BA1;&#x7406;&#x7684;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF01;</p>
+<ul>
+<li>&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#xFF1A;&#x6CA1;&#x6709;&#x6D88;&#x606F;&#x5904;&#x7406;&#x65F6;&#xFF0C;&#x4F11;&#x7720;&#x4EE5;&#x907F;&#x514D;&#x8D44;&#x6E90;&#x5360;&#x7528;&#xFF1B;
+&#x7528;&#x6237;&#x6001; <code>-&gt;</code> &#x5185;&#x6838;&#x6001;</li>
+<li>&#x6709;&#x6D88;&#x606F;&#x9700;&#x8981;&#x5904;&#x7406;&#x65F6;&#xFF0C;&#x7ACB;&#x5373;&#x88AB;&#x5524;&#x9192;&#xFF1B;
+&#x7528;&#x6237;&#x6001; <code>&lt;-</code> &#x5185;&#x6838;&#x6001;</li>
+</ul>
+<p> <code>RunLoop</code> &#x5BC4;&#x751F;&#x4E8E;&#x7EBF;&#x7A0B;&#xFF1A;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x53EA;&#x80FD;&#x6709;&#x552F;&#x4E00;&#x5BF9;&#x5E94;&#x7684;<code>RunLoop</code>&#xFF0C;&#x4F46;&#x8FD9;&#x4E2A;&#x6839;<code>RunLoop</code>&#x91CC;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x5B50;<code>RunLoop</code>&#xFF0C;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;<code>RunLoop</code>&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#xFF0C;&#x5B50;&#x7EBF;&#x7A0B;&#x7684; <code>RunLoop</code> &#x9ED8;&#x8BA4;&#x4E0D;&#x521B;&#x5EFA;&#xFF0C;&#x5728;&#x5B50;&#x7EBF;&#x7A0B;&#x4E2D;&#x8C03;&#x7528;<code>NSRunLoop.current</code> &#x83B7;&#x53D6; <code>RunLoop</code> &#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x521B;&#x5EFA;<code>RunLoop</code> .</p>
+<h2 id="31&#x3001;&#x4E3A;&#x4EC0;&#x4E48;-main-&#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#xFF1F;"><a name="31&#x3001;&#x4E3A;&#x4EC0;&#x4E48;-main-&#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#31&#x3001;&#x4E3A;&#x4EC0;&#x4E48;-main-&#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1&#x3001;&#x4E3A;&#x4EC0;&#x4E48; <code>main()</code> &#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#xFF1F;</h2>
+<pre><code>int main(int argc, char * argv[]) {
+    NSString * appDelegateClassName;
+    @autoreleasepool {
+        appDelegateClassName = NSStringFromClass([AppDelegate class]);        
+    }
+    return UIApplicationMain(argc, argv, nil, appDelegateClassName);
+}
+</code></pre><ul>
+<li>&#x5728; <code>main()</code>  &#x51FD;&#x6570;&#x4E2D;&#x8C03;&#x7528;&#x7684; <code>UIApplicationMain()</code> &#x51FD;&#x6570;&#x5185;&#x90E8;&#x4F1A;&#x542F;&#x52A8;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684; <code>Runloop</code>;</li>
+<li><code>Runloop</code> &#x662F;&#x5BF9;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x7684;&#x4E00;&#x4E2A;&#x7EF4;&#x62A4;&#x673A;&#x5236;&#xFF1B;</li>
+<li>&#x6CA1;&#x6709;&#x6D88;&#x606F;&#x5904;&#x7406;&#x65F6;&#xFF0C;&#x4F11;&#x7720;&#x4EE5;&#x907F;&#x514D;&#x8D44;&#x6E90;&#x5360;&#x7528;&#xFF1B;&#x6709;&#x6D88;&#x606F;&#x9700;&#x8981;&#x5904;&#x7406;&#x65F6;&#xFF0C;&#x7ACB;&#x5373;&#x88AB;&#x5524;&#x9192;</li>
+</ul>
+<h2 id="32&#x3001;-runloop&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;"><a name="32&#x3001;-runloop&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;" class="anchor-navigation-ex-anchor" href="#32&#x3001;-runloop&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2&#x3001; <code>Runloop</code>&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;</h2>
+<p><code>NSRunLoop</code> &#x662F;&#x5BF9; <code>CFRunLoop</code> &#x7684;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x5C01;&#x88C5;</p>
+<ul>
+<li><code>CFRunLoop</code></li>
+<li><code>CFRunLoopMode</code></li>
+<li><code>Source/Timer/Observer</code></li>
+</ul>
+<h2 id="33&#x3001;runloop-&#x7684;&#x521B;&#x5EFA;"><a name="33&#x3001;runloop-&#x7684;&#x521B;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#33&#x3001;runloop-&#x7684;&#x521B;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3&#x3001;RunLoop &#x7684;&#x521B;&#x5EFA;</h2>
+<pre><code class="lang-CFRunLoop.c```&#x6587;&#x4EF6;&#x7684;&#x90E8;&#x5206;&#x6E90;&#x4EE3;&#x5982;&#x4E0B;&#xFF1A;">
+
+</code></pre>
+<p>static CFMutableDictionaryRef __CFRunLoops = NULL;
+static pthread_t kNilPthreadT = (pthread_t)0;</p>
+<p>// t==0 is a synonym for &quot;main thread&quot; that always works //&#x5F53;t==0&#x65F6;&#x4EE3;&#x8868;&#x4E3B;&#x7EBF;&#x7A0B;
+CF_EXPORT CFRunLoopRef _CFRunLoopGet0(pthread_t t) {
+    if (pthread_equal(t, kNilPthreadT)) {
+    t = pthread_main_thread_np();
+    }
+    //&#x8FDB;&#x884C;&#x52A0;&#x9501;&#x64CD;&#x4F5C;
+    <strong>CFLock(&amp;loopsLock);
+    if (!</strong>CFRunLoops) {
+        <strong>CFUnlock(&amp;loopsLock);
+    // &#x7B2C;&#x4E00;&#x6B21;&#x8FDB;&#x5165;&#x65F6;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x5168;&#x5C40;dict&#xFF0C;&#x5E76;&#x5148;&#x4E3A;&#x4E3B;&#x7EBF;&#x7A0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; RunLoop&#x3002;&#x5E76;&#x5C06;mainLoop&#x6DFB;&#x52A0;&#x5230;dict&#x4E2D;
+    CFMutableDictionaryRef dict = CFDictionaryCreateMutable(kCFAllocatorSystemDefault, 0, NULL, &amp;kCFTypeDictionaryValueCallBacks);
+    CFRunLoopRef mainLoop = </strong>CFRunLoopCreate(pthread_main_thread_np());
+    CFDictionarySetValue(dict, pthreadPointer(pthread_main_thread_np()), mainLoop);
+    if (!OSAtomicCompareAndSwapPtrBarrier(NULL, dict, (void <em> volatile </em>)&amp;<strong>CFRunLoops)) {
+        CFRelease(dict);
+    }
+    CFRelease(mainLoop);
+        </strong>CFLock(&amp;loopsLock);
+    }
+    //&#x901A;&#x8FC7;&#x7EBF;&#x7A0B;&#x76F4;&#x63A5;&#x4ECE;dict&#x4E2D;&#x83B7;&#x53D6;loop
+    CFRunLoopRef loop = (CFRunLoopRef)CFDictionaryGetValue(<strong>CFRunLoops, pthreadPointer(t));
+    </strong>CFUnlock(&amp;loopsLock);
+    if (!loop) {
+    //&#x5982;&#x679C;&#x83B7;&#x53D6;&#x5931;&#x8D25;&#xFF0C;&#x901A;&#x8FC7;&#x7EBF;&#x7A0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;loop&#xFF0C;
+    CFRunLoopRef newLoop = <strong>CFRunLoopCreate(t);
+        </strong>CFLock(&amp;loopsLock);
+    loop = (CFRunLoopRef)CFDictionaryGetValue(<strong>CFRunLoops, pthreadPointer(t));
+    if (!loop) {
+        //&#x518D;&#x6B21;&#x786E;&#x8BA4;&#x6CA1;&#x6709;loop&#xFF0C;&#x5C31;&#x6DFB;&#x52A0;&#x5230;dict&#x4E2D;&#x3002;
+        CFDictionarySetValue(</strong>CFRunLoops, pthreadPointer(t), newLoop);
+        loop = newLoop;
+    }
+        // don&apos;t release run loops inside the loopsLock, because CFRunLoopDeallocate may end up taking it
+        <strong>CFUnlock(&amp;loopsLock);
+    CFRelease(newLoop);
+    }
+    if (pthread_equal(t, pthread_self())) {
+        // &#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#xFF0C;&#x5F53;&#x7EBF;&#x7A0B;&#x9500;&#x6BC1;&#x65F6;&#xFF0C;&#x987A;&#x4FBF;&#x4E5F;&#x9500;&#x6BC1;&#x5176;&#x5BF9;&#x5E94;&#x7684; RunLoop&#x3002;
+        _CFSetTSD(</strong>CFTSDKeyRunLoop, (void <em>)loop, NULL);
+        if (0 == _CFGetTSD(<strong>CFTSDKeyRunLoopCntr)) {
+            _CFSetTSD(</strong>CFTSDKeyRunLoopCntr, (void </em>)(PTHREAD_DESTRUCTOR_ITERATIONS-1), (void (<em>)(void </em>))__CFFinalizeRunLoop);
+        }
+    }
+    return loop;
+}</p>
+<p>//&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x7684;RunLoop
+CFRunLoopRef CFRunLoopGetCurrent(void) {
+    CHECK_FOR_FORK();
+    CFRunLoopRef rl = (CFRunLoopRef)_CFGetTSD(__CFTSDKeyRunLoop);
+    if (rl) return rl;
+    return _CFRunLoopGet0(pthread_self());
+}</p>
+<p>//&#x83B7;&#x53D6;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;RunLoop
+CFRunLoopRef CFRunLoopGetMain(void) {
+    CHECK_FOR_FORK();
+    static CFRunLoopRef <strong>main = NULL; // no retain needed
+    if (!</strong>main) <strong>main = _CFRunLoopGet0(pthread_main_thread_np()); // no CAS needed
+    return </strong>main;
+}</p>
+<pre><code>
+&#x6574;&#x4F53;&#x7684;&#x6D41;&#x7A0B;&#x53EF;&#x4EE5;&#x6982;&#x62EC;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x6B65;&#xFF1A;
+
+* &#x901A;&#x8FC7; `_CFRunLoopGet0()`&#x51FD;&#x6570;&#x4F20;&#x5165;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x3002;
+* &#x5224;&#x65AD;&#x7EBF;&#x7A0B;&#x662F;&#x5426;&#x4E3A;&#x4E3B;&#x7EBF;&#x7A0B;&#x5E76;&#x4E14;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x5B58;&#x5728; `__CFRunLoops()`&#xFF08;&#x5168;&#x5C40;&#x5B57;&#x5178; `CFMutableDictionaryRef`&#xFF09;&#x3002;
+* &#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x8BF4;&#x660E;&#x7B2C;&#x4E00;&#x6B21;&#x8FDB;&#x5165;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x5168;&#x5C40; `dict`&#xFF0C;&#x5E76;&#x4E3A;&#x4E3B;&#x7EBF;&#x7A0B;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; `RunLoop`, &#x5C06; `mainLoop`&#x6DFB;&#x52A0;&#x5230; `dict` &#x4E2D;&#x3002;
+* &#x5982;&#x679C; `__CFRunLoops` &#x5B58;&#x5728;&#xFF0C;&#x5728;&#x5168;&#x5C40;&#x7684; `__CFRunLoops` &#x4E2D;&#x67E5;&#x627E;&#x5BF9;&#x5E94;&#x7684; `RunLoop`&#xFF0C;&#x952E;&#x662F;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x3002;
+* &#x5982;&#x679C;&#x5BF9;&#x5E94; `RunLoop` &#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684; `RunLoop`&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x5230; `__CFRunLoops` &#x4E2D;&#x3002;
+* &#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#xFF0C;&#x5F53;&#x7EBF;&#x7A0B;&#x9500;&#x6BC1;&#x65F6;&#xFF0C;&#x987A;&#x4FBF;&#x4E5F;&#x9500;&#x6BC1;&#x5176;&#x5BF9;&#x5E94;&#x7684; `RunLoop`&#x3002;
+
+&#x53EA;&#x80FD;&#x901A;&#x8FC7; `CFRunLoopGetMain()`&#x51FD;&#x6570;&#x6216;&#x8005; `CFRunLoopGetCurrent()`&#x51FD;&#x6570;&#x6765;&#x83B7;&#x53D6;`RunLoop`&#xFF0C;&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#xFF0C;&#x65E0;&#x8BBA;&#x662F; `CFRunLoopGetMain()` &#x51FD;&#x6570;&#x8FD8;&#x662F;`CFRunLoopGetCurrent()` &#x51FD;&#x6570;&#xFF0C;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x5BF9;&#x5E94;&#x7684;&#x7EBF;&#x7A0B;&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684;`RunLoop`&#xFF0C;&#x7EBF;&#x7A0B;&#x548C; `RunLoop` &#x662F;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x7684;&#xFF0C;&#x4E0D;&#x4F1A;&#x91CD;&#x590D;&#x521B;&#x5EFA;&#x3002;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x5E2E;&#x6211;&#x4EEC;&#x521B;&#x5EFA; `RunLoop` &#x6765;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x3002;&#x800C;&#x5B50;&#x7EBF;&#x7A0B;`RunLoop` &#x5E76;&#x4E0D;&#x4F1A;&#x9ED8;&#x8BA4;&#x5F00;&#x542F;&#x3002;&#x5B50;&#x7EBF;&#x7A0B;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x7EBF;&#x7A0B;&#x5C31;&#x88AB;&#x9500;&#x6BC1;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x7EBF;&#x7A0B;&#x4E0D;&#x88AB;&#x9500;&#x6BC1;&#xFF0C;&#x9700;&#x8981;&#x4E3B;&#x52A8;&#x83B7;&#x53D6;&#x4E00;&#x4E2A; `RunLoop`&#xFF0C;&#x5E76;&#x4E14;&#x5728;`RunLoop` &#x4E2D;&#x6DFB;&#x52A0; `Timer/Source/Observer` &#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x3002;
+
+
+## 3.4&#x3001;&#x4F7F;&#x7528; `RunLoop` &#x5E38;&#x9A7B;&#x7EBF;&#x7A0B;
+
+* 1&#x3001;&#x4E3A;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x5F00;&#x542F;&#x4E00;&#x4E2A;`RunLoop`&#xFF1B;
+* 2&#x3001;&#x5411;&#x8BE5;`RunLoop`&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; `NSMachPort /Source`&#x7B49;&#x7EF4;&#x6301; `RunLoop` &#x7684;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#xFF1B;
+* 3&#x3001;&#x542F;&#x52A8; `RunLoop`
+
+&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x901A;&#x77E5;&#x76D1;&#x542C;&#x7EBF;&#x7A0B;&#x9000;&#x51FA;&#x7684;&#x4E8B;&#x4EF6;
+</code></pre><p>//&#x5728;&#x9002;&#x5F53;&#x7684;&#x4F4D;&#x7F6E;&#x6DFB;&#x52A0;&#x901A;&#x77E5;
+[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(threadExitNotice:) name:NSThreadWillExitNotification object:nil];</p>
+<p>//&#x901A;&#x77E5;&#x54CD;&#x5E94;&#x7684;&#x65B9;&#x6CD5;</p>
+<ul>
+<li>(void)threadExitNotice:(NSNotification *)notification
+{
+  NSLog(@&quot; threadExitNotice ------------ %@&quot;,notification.object);
+}
+```</li>
+</ul>
+<p>&#x8FD9;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#xFF1A;</p>
+<pre><code>- (void)residentThread
+{
+    if (@available(iOS 10.0, *))
+    {
+        //&#x5E38;&#x9A7B;&#x7EBF;&#x7A0B;
+        [NSThread detachNewThreadWithBlock:^{
+            NSThread.currentThread.name = @&quot;&#x5E38;&#x9A7B;&#x7EBF;&#x7A0B;&quot;;
+            NSRunLoop *runLoop = [NSRunLoop currentRunLoop];
+            [runLoop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+            [runLoop run];
+            NSLog(@&quot;---------- &#x6B64;&#x5904;&#x4EE3;&#x7801;&#x4E0D;&#x88AB;&#x6267;&#x884C; -----------&quot;);
+        }];
+    }
+}
+</code></pre><p>&#x7136;&#x540E;&#x6211;&#x4EEC;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;&#x5728;&#x65B0;&#x5F00;&#x542F;&#x7684;&#x5206;&#x7EBF;&#x7A0B;&#x91CC;&#xFF0C;&#x4EE3;&#x7801;&#x6267;&#x884C;&#x5230;<code>[runLoop run];</code> &#x5C31;&#x4E0D;&#x518D;&#x5F80;&#x540E;&#x6267;&#x884C;&#x4E86;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x7EBF;&#x7A0B;&#x963B;&#x585E;&#x4E86;&#x3002;&#x800C;&#x4E14;&#x6CA1;&#x6709;&#x6536;&#x5230;&#x7EBF;&#x7A0B;&#x9000;&#x51FA;&#x7684;&#x901A;&#x77E5;&#x3002;</p>
+<hr>
+<p>&#x53C2;&#x8003;&#x6587;&#x7AE0;&#xFF1A;</p>
+<p><a href="http://www.cocoachina.com/ios/20160412/15903.html" target="_blank">iOS&#x591A;&#x7EBF;&#x7A0B;&#x7BC7;&#xFF1A;NSThread</a></p>
+<p><a href="http://www.cocoachina.com/ios/20160225/15421.html" target="_blank">&#x5C0F;&#x7B28;&#x72FC;&#x6F2B;&#x8C08;&#x591A;&#x7EBF;&#x7A0B;&#xFF1A;NSThread</a></p>
+<p><a href="https://www.jianshu.com/p/7a765bf66a30" target="_blank">&#x591A;&#x7EBF;&#x7A0B;&#x5B9E;&#x73B0;&#x65B9;&#x6848;&#x4E4B;&#x4E00; : NSThread</a></p>
+<p><a href="https://www.jianshu.com/p/288427b752eb" target="_blank">RunLoop(&#x4ECE;&#x6E90;&#x7801;&#x5206;&#x6790;&#x5230;Demo&#x5206;&#x6790;&#x5230;mainLoop log&#x5206;&#x6790;)</a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-09-19 12:49:01
 </span></footer>
                                 
                                 </section>
@@ -1187,7 +1542,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"线程NSThread","level":"1.3.4.3.1","depth":4,"next":{"title":"任务队列NSOperation","level":"1.3.4.3.2","depth":4,"path":"iOS开发/杂记/OC之NSOperation.md","ref":"iOS开发/杂记/OC之NSOperation.md","articles":[]},"previous":{"title":"并发编程","level":"1.3.4.3","depth":3,"path":"iOS开发/杂记/并发编程.md","ref":"iOS开发/杂记/并发编程.md","articles":[{"title":"线程NSThread","level":"1.3.4.3.1","depth":4,"path":"iOS开发/杂记/OC之Thread.md","ref":"iOS开发/杂记/OC之Thread.md","articles":[]},{"title":"任务队列NSOperation","level":"1.3.4.3.2","depth":4,"path":"iOS开发/杂记/OC之NSOperation.md","ref":"iOS开发/杂记/OC之NSOperation.md","articles":[]},{"title":"GCD","level":"1.3.4.3.3","depth":4,"path":"iOS开发/杂记/OC之GCD.md","ref":"iOS开发/杂记/OC之GCD.md","articles":[]}]},"dir":"neutral"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"iOS开发/杂记/OC之Thread.md","mtime":"2021-09-16T12:02:47.486Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-16T12:03:34.407Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"线程NSThread","level":"1.3.4.3.1","depth":4,"next":{"title":"任务队列NSOperation","level":"1.3.4.3.2","depth":4,"path":"iOS开发/杂记/OC之NSOperation.md","ref":"iOS开发/杂记/OC之NSOperation.md","articles":[]},"previous":{"title":"并发编程","level":"1.3.4.3","depth":3,"path":"iOS开发/杂记/并发编程.md","ref":"iOS开发/杂记/并发编程.md","articles":[{"title":"线程NSThread","level":"1.3.4.3.1","depth":4,"path":"iOS开发/杂记/OC之Thread.md","ref":"iOS开发/杂记/OC之Thread.md","articles":[]},{"title":"任务队列NSOperation","level":"1.3.4.3.2","depth":4,"path":"iOS开发/杂记/OC之NSOperation.md","ref":"iOS开发/杂记/OC之NSOperation.md","articles":[]},{"title":"GCD","level":"1.3.4.3.3","depth":4,"path":"iOS开发/杂记/OC之GCD.md","ref":"iOS开发/杂记/OC之GCD.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"iOS开发/杂记/OC之Thread.md","mtime":"2021-09-19T04:49:01.379Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-09-19T04:51:04.875Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
