@@ -1,0 +1,1666 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MTKView 的使用 · 个人博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="苏沫漓">
+        
+        
+    
+    <link rel="stylesheet" href="../../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Metal简介.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../../">
+            
+                <a href="../../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../计算机基础.html">
+            
+                <a href="../../../计算机基础.html">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../计算机组成篇/计算机概述篇.html">
+            
+                <a href="../../../计算机组成篇/计算机概述篇.html">
+            
+                    
+                    第一部分 计算机的组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../计算机组成篇/计算机组成篇.html">
+            
+                <a href="../../../计算机组成篇/计算机组成篇.html">
+            
+                    
+                    计算机组成篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../计算机组成篇/计算机计算篇.html">
+            
+                <a href="../../../计算机组成篇/计算机计算篇.html">
+            
+                    
+                    计算机计算篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../操作系统篇/操作系统基础篇.html">
+            
+                <a href="../../../操作系统篇/操作系统基础篇.html">
+            
+                    
+                    第二部分 操作系统篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../操作系统篇/进程管理篇.html">
+            
+                <a href="../../../操作系统篇/进程管理篇.html">
+            
+                    
+                    进程管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../操作系统篇/内存管理篇.html">
+            
+                <a href="../../../操作系统篇/内存管理篇.html">
+            
+                    
+                    内存管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../../操作系统篇/文件系统篇.html">
+            
+                <a href="../../../操作系统篇/文件系统篇.html">
+            
+                    
+                    文件系统篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../../操作系统篇/操作系统提升篇.html">
+            
+                <a href="../../../操作系统篇/操作系统提升篇.html">
+            
+                    
+                    操作系统提升篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../计算机网络/网络概述篇.html">
+            
+                <a href="../../../计算机网络/网络概述篇.html">
+            
+                    
+                    第三部分 网络篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../../计算机网络/计算机物理层.html">
+            
+                <a href="../../../计算机网络/计算机物理层.html">
+            
+                    
+                    计算机物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../../计算机网络/计算机数据链路层.html">
+            
+                <a href="../../../计算机网络/计算机数据链路层.html">
+            
+                    
+                    计算机数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../../计算机网络/计算机网络层.html">
+            
+                <a href="../../../计算机网络/计算机网络层.html">
+            
+                    
+                    计算机网络层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../../计算机网络/计算机传输层.html">
+            
+                <a href="../../../计算机网络/计算机传输层.html">
+            
+                    
+                    计算机传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../../../计算机网络/计算机应用层.html">
+            
+                <a href="../../../计算机网络/计算机应用层.html">
+            
+                    
+                    计算机应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.5.1" data-path="../../../计算机网络/HTTP协议.html">
+            
+                <a href="../../../计算机网络/HTTP协议.html">
+            
+                    
+                    HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.2" data-path="../../../计算机网络/HTTPS协议.html">
+            
+                <a href="../../../计算机网络/HTTPS协议.html">
+            
+                    
+                    HTTPS协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    iOS开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Runtime
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../../../iOS开发/Runtime/OC之Blocks.html">
+            
+                <a href="../../../../iOS开发/Runtime/OC之Blocks.html">
+            
+                    
+                    OC之Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../../../iOS开发/Runtime/OC内存管理.html">
+            
+                <a href="../../../../iOS开发/Runtime/OC内存管理.html">
+            
+                    
+                    OC内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../../../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                <a href="../../../../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                    
+                    OC内存管理之引用计数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../../../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                <a href="../../../../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                    
+                    +load方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../../../../iOS开发/Runtime/TaggedPointer.html">
+            
+                <a href="../../../../iOS开发/Runtime/TaggedPointer.html">
+            
+                    
+                    TaggedPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../../../../iOS开发/Runtime/编译objc4.html">
+            
+                <a href="../../../../iOS开发/Runtime/编译objc4.html">
+            
+                    
+                    编译objc4备忘录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../../../../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                <a href="../../../../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                    
+                    Runtime函数库中关于协议Protocol的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../../../../iOS开发/Runtime/Runtime_Property.html">
+            
+                <a href="../../../../iOS开发/Runtime/Runtime_Property.html">
+            
+                    
+                    Runtime函数库中关于属性与变量的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../../../../iOS开发/Runtime/Runtime_Instance.html">
+            
+                <a href="../../../../iOS开发/Runtime/Runtime_Instance.html">
+            
+                    
+                    Runtime函数库中关于实例对象的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="../../../../iOS开发/Runtime/Runtime_Class.html">
+            
+                <a href="../../../../iOS开发/Runtime/Runtime_Class.html">
+            
+                    
+                    Runtime函数库中关于Class的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="../../../../iOS开发/Runtime/Runtime_Method.html">
+            
+                <a href="../../../../iOS开发/Runtime/Runtime_Method.html">
+            
+                    
+                    Runtime函数库中关于 Class 的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../../iOS开发/CoreText/CoteText概述.html">
+            
+                <a href="../../../../iOS开发/CoreText/CoteText概述.html">
+            
+                    
+                    CoreText
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../../../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                <a href="../../../../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                    
+                    CoteText排版与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../../../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                <a href="../../../../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                    
+                    CTLineRef的函数库及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../../../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                <a href="../../../../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                    
+                    图文混排的关键：CTRunRef 与 CTRunDelegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    CoreImage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../../../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                <a href="../../../../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                    
+                    图像特征CIFeature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../../../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                <a href="../../../../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                    
+                    图片检测CIDetector
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Metal简介.html">
+            
+                <a href="Metal简介.html">
+            
+                    
+                    Metal 用例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="Metal的简单计算.html">
+            
+                <a href="Metal的简单计算.html">
+            
+                    
+                    内核计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="Metal绘制三角形.html">
+            
+                <a href="Metal绘制三角形.html">
+            
+                    
+                    绘制三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="CPU与GPU协调工作.html">
+            
+                <a href="CPU与GPU协调工作.html">
+            
+                    
+                    CPU与GPU协调工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="深度测试.html">
+            
+                <a href="深度测试.html">
+            
+                    
+                    深度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="读取纹理像素.html">
+            
+                <a href="读取纹理像素.html">
+            
+                    
+                    线程与线程组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="读取纹理像素.html">
+            
+                <a href="读取纹理像素.html">
+            
+                    
+                    读取绘制纹理中的像素数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="离屏渲染.html">
+            
+                <a href="离屏渲染.html">
+            
+                    
+                    自定义MTLRenderPassDescriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Metal调试.html">
+            
+                <a href="Metal调试.html">
+            
+                    
+                    调试 Metal 程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Metal简介.html">
+            
+                <a href="Metal简介.html">
+            
+                    
+                    Metal 文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.6.1" data-path="MTKView.html">
+            
+                <a href="MTKView.html">
+            
+                    
+                    MTKView 的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" >
+            
+                <span>
+            
+                    
+                    杂记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="../../../../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                <a href="../../../../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                    
+                    iOS渲染机制初窥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="../../../../iOS开发/杂记/响应链.html">
+            
+                <a href="../../../../iOS开发/杂记/响应链.html">
+            
+                    
+                    响应链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3" data-path="../../../../iOS开发/杂记/并发编程.html">
+            
+                <a href="../../../../iOS开发/杂记/并发编程.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.3.1" data-path="../../../../iOS开发/杂记/OC之Thread.html">
+            
+                <a href="../../../../iOS开发/杂记/OC之Thread.html">
+            
+                    
+                    线程NSThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3.2" data-path="../../../../iOS开发/杂记/OC之NSOperation.html">
+            
+                <a href="../../../../iOS开发/杂记/OC之NSOperation.html">
+            
+                    
+                    任务队列NSOperation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3.3" data-path="../../../../iOS开发/杂记/OC之GCD.html">
+            
+                <a href="../../../../iOS开发/杂记/OC之GCD.html">
+            
+                    
+                    GCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4" data-path="../../../../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                <a href="../../../../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                    
+                    OC的深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.5" data-path="../../../../其它/sdk_cocoapods.html">
+            
+                <a href="../../../../其它/sdk_cocoapods.html">
+            
+                    
+                    iOS 使用 cocoapods 创建组件化库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.6" data-path="../../../../iOS开发/杂记/内存优化.html">
+            
+                <a href="../../../../iOS开发/杂记/内存优化.html">
+            
+                    
+                    一些内存优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.7" data-path="../../../../iOS开发/杂记/内存泄露.html">
+            
+                <a href="../../../../iOS开发/杂记/内存泄露.html">
+            
+                    
+                    一些内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.8" data-path="../../../../iOS开发/杂记/刘海屏适配.html">
+            
+                <a href="../../../../iOS开发/杂记/刘海屏适配.html">
+            
+                    
+                    刘海屏适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.9" data-path="../../../../iOS开发/杂记/获取WIFI信息.html">
+            
+                <a href="../../../../iOS开发/杂记/获取WIFI信息.html">
+            
+                    
+                    获取WIFI信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    C/C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../../../C_C++篇/C++学习入门篇.html">
+            
+                <a href="../../../../C_C++篇/C++学习入门篇.html">
+            
+                    
+                    C++学习入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../../../C_C++篇/C++学习封装篇.html">
+            
+                <a href="../../../../C_C++篇/C++学习封装篇.html">
+            
+                    
+                    C++学习封装篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../../../C_C++篇/C++学习继承篇.html">
+            
+                <a href="../../../../C_C++篇/C++学习继承篇.html">
+            
+                    
+                    C++学习继承篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../../../C_C++篇/C++学习多态篇.html">
+            
+                <a href="../../../../C_C++篇/C++学习多态篇.html">
+            
+                    
+                    C++学习多态篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    C
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../../../C_C++篇/C数组.html">
+            
+                <a href="../../../../C_C++篇/C数组.html">
+            
+                    
+                    C语言数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../../../C_C++篇/C结构.html">
+            
+                <a href="../../../../C_C++篇/C结构.html">
+            
+                    
+                    C语言结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../../../C_C++篇/C递归.html">
+            
+                <a href="../../../../C_C++篇/C递归.html">
+            
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../../../Git体系/Git常用命令.html">
+            
+                <a href="../../../../Git体系/Git常用命令.html">
+            
+                    
+                    Git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../../../Git体系/Github和SSH密钥.html">
+            
+                <a href="../../../../Git体系/Github和SSH密钥.html">
+            
+                    
+                    Github和SSH密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../../../Gitbook指导/">
+            
+                <a href="../../../../Gitbook指导/">
+            
+                    
+                    GitBook 使用教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../../../Gitbook指导/gitbook教程.html">
+            
+                <a href="../../../../Gitbook指导/gitbook教程.html">
+            
+                    
+                    GitBook 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../../../Gitbook指导/gitbook语法.html">
+            
+                <a href="../../../../Gitbook指导/gitbook语法.html">
+            
+                    
+                    GitBook 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.sumoli.work" target="blank" class="gitbook-link">
+            博客主页
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../../.." >MTKView 的使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#mtkview"><b></b>MTKView</a></li><ul><ul><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x7ED8;&#x56FE;&#x884C;&#x4E3A;"><b></b>&#x914D;&#x7F6E;&#x7ED8;&#x56FE;&#x884C;&#x4E3A;</a></li><li><span class="title-icon "></span><a href="#&#x7ED8;&#x5236;&#x89C6;&#x56FE;&#x5185;&#x5BB9;"><b></b>&#x7ED8;&#x5236;&#x89C6;&#x56FE;&#x5185;&#x5BB9;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;-drawable"><b></b>&#x83B7;&#x53D6; Drawable</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x518C;&#x7ED8;&#x56FE;&#x547D;&#x4EE4;"><b></b>&#x6CE8;&#x518C;&#x7ED8;&#x56FE;&#x547D;&#x4EE4;</a></li><li><span class="title-icon "></span><a href="#&#x521D;&#x59CB;&#x5316;&#x89C6;&#x56FE;"><b></b>&#x521D;&#x59CB;&#x5316;&#x89C6;&#x56FE;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;-metal-&#x8BBE;&#x5907;"><b></b>&#x914D;&#x7F6E; Metal &#x8BBE;&#x5907;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x989C;&#x8272;&#x6E32;&#x67D3;&#x76EE;&#x6807;"><b></b>&#x914D;&#x7F6E;&#x989C;&#x8272;&#x6E32;&#x67D3;&#x76EE;&#x6807;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x5C5E;&#x6027;"><b></b>&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x5C5E;&#x6027;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x591A;&#x91CD;&#x91C7;&#x6837;"><b></b>&#x914D;&#x7F6E;&#x591A;&#x91CD;&#x91C7;&#x6837;</a></li><li><span class="title-icon "></span><a href="#&#x68C0;&#x7D22;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x4FE1;&#x606F;"><b></b>&#x68C0;&#x7D22;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x914D;&#x7F6E;&#x7ED8;&#x5236;&#x884C;&#x4E3A;"><b></b>&#x914D;&#x7F6E;&#x7ED8;&#x5236;&#x884C;&#x4E3A;</a></li><li><span class="title-icon "></span><a href="#&#x91CA;&#x653E;&#x5185;&#x5B58;"><b></b>&#x91CA;&#x653E;&#x5185;&#x5B58;</a></li></ul></ul></ul></div><h1 id="mtkview"><a name="mtkview" class="anchor-navigation-ex-anchor" href="#mtkview"><i class="fa fa-link" aria-hidden="true"></i></a>MTKView</h1>
+<p><a href="https://developer.apple.com/documentation/metalkit/mtkview?language=objc" target="_blank">MTKView</a> !</p>
+<p><code>MTKView</code>&#x521B;&#x5EFA;&#x3001;&#x914D;&#x7F6E;&#x548C;&#x6E32;&#x67D3; Metal &#x5185;&#x5BB9;&#x7684;&#x4E13;&#x7528;&#x89C6;&#x56FE;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x5E38;&#x89C1;&#x7684;&#x6E32;&#x67D3;&#x573A;&#x666F;&#xFF0C;&#x8BBE;&#x7F6E;Metal&#x7ED8;&#x5236;&#x7EB9;&#x7406;&#x7684;&#x529F;&#x80FD;&#xFF01;</p>
+<ul>
+<li>&#x4F7F;&#x7528;MTKView&#x6765;&#x6E32;&#x67D3;&#x56FE;&#x5F62;&#x5E76;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x663E;&#x793A;&#x5B83;&#x4EEC;</li>
+<li>&#x5F53;&#x88AB;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x89C6;&#x56FE;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x7EB9;&#x7406;&#x7684;&#x5BF9;&#x8C61; MTLRenderPassDescriptor&#xFF0C;&#x4EE5;&#x4FBF;&#x60A8;&#x5C06;&#x65B0;&#x5185;&#x5BB9;&#x5448;&#x73B0;&#x5230;&#x5176;&#x4E2D;&#x3002;</li>
+<li>MTKView &#x8FD8;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x6DF1;&#x5EA6;&#x548C;&#x6A21;&#x677F;&#x7EB9;&#x7406;&#xFF01;</li>
+<li>&#x89C6;&#x56FE;&#x4F7F;&#x7528; CAMetalLayer &#x6765;&#x7BA1;&#x7406; Metal &#x7ED8;&#x5236;&#x5BF9;&#x8C61;&#x3002;</li>
+</ul>
+<h3 id="&#x914D;&#x7F6E;&#x7ED8;&#x56FE;&#x884C;&#x4E3A;"><a name="&#x914D;&#x7F6E;&#x7ED8;&#x56FE;&#x884C;&#x4E3A;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x7ED8;&#x56FE;&#x884C;&#x4E3A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x7ED8;&#x56FE;&#x884C;&#x4E3A;</h3>
+<p>MTKView &#x7C7B;&#x652F;&#x6301;&#x4E09;&#x79CD;&#x7ED8;&#x56FE;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li>&#x9ED8;&#x8BA4;&#x5B9A;&#x65F6;&#x66F4;&#x65B0;&#xFF1A;&#x57FA;&#x4E8E;&#x5185;&#x90E8;&#x8BA1;&#x65F6;&#x5668;&#x91CD;&#x65B0;&#x7ED8;&#x5236;&#x5176;&#x5185;&#x5BB9;&#xFF0C;&#x6B64;&#x65F6;&#x9700;&#x8981;&#x5C06;<code>paused</code>&#x548C;<code>enableSetNeedsDisplay</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>NO</code>&#x3002;
+  &#x8BE5;&#x6A21;&#x5F0F;&#x9002;&#x7528;&#x4E8E;&#x5B9A;&#x671F;&#x66F4;&#x65B0;&#x7684;&#x6E38;&#x620F;&#x548C;&#x5176;&#x4ED6;&#x52A8;&#x753B;&#x5185;&#x5BB9;&#x3002;</li>
+<li>&#x7ED8;&#x5236;&#x901A;&#x77E5;&#xFF1A;&#x6570;&#x636E;&#x6539;&#x53D8;&#x4F7F;&#x5176;&#x5185;&#x5BB9;&#x65E0;&#x6548;&#x65F6;&#xFF0C;&#x89C6;&#x56FE;&#x4F1A;&#x91CD;&#x65B0;&#x7ED8;&#x5236;&#x81EA;&#x5DF1;&#xFF1B;&#x901A;&#x5E38;&#x662F;&#x56E0;&#x4E3A;&#x8C03;&#x7528; <code>-setNeedsDisplay</code> &#x6216;&#x5176;&#x4ED6;&#x4E00;&#x4E9B;&#x89C6;&#x56FE;&#x76F8;&#x5173;&#x7684;&#x884C;&#x4E3A;&#xFF1B;
+  &#x4F20;&#x7EDF;&#x7684;&#x7ED8;&#x5236;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#xFF0C;&#x6B64;&#x65F6;&#x9700;&#x8981;&#x5C06;<code>paused</code>&#x548C;<code>enableSetNeedsDisplay</code>&#x8BBE;&#x7F6E;&#x4E3A;<code>YES</code>&#x3002;</li>
+<li>&#x663E;&#x5F0F;&#x7ED8;&#x5236;&#xFF1A;&#x4EC5;&#x5F53;&#x663E;&#x5F0F;&#x8C03;&#x7528; <code>-draw</code> &#x65F6;&#xFF0C;&#x89C6;&#x56FE;&#x624D;&#x4F1A;&#x91CD;&#x7ED8;&#x5176;&#x5185;&#x5BB9;&#xFF1B;
+ &#x4F7F;&#x7528;&#x6B64;&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;&#xFF0C;&#x9700;&#x8981;&#x914D;&#x7F6E;<code>paused = YES</code>&#xFF0C;<code>enableSetNeedsDisplay = NO</code>&#x3002;</li>
+</ul>
+<h3 id="&#x7ED8;&#x5236;&#x89C6;&#x56FE;&#x5185;&#x5BB9;"><a name="&#x7ED8;&#x5236;&#x89C6;&#x56FE;&#x5185;&#x5BB9;" class="anchor-navigation-ex-anchor" href="#&#x7ED8;&#x5236;&#x89C6;&#x56FE;&#x5185;&#x5BB9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED8;&#x5236;&#x89C6;&#x56FE;&#x5185;&#x5BB9;</h3>
+<p>&#x4E0D;&#x7BA1;&#x7ED8;&#x56FE;&#x6A21;&#x5F0F;&#x5982;&#x4F55;&#xFF0C;&#x5F53;&#x89C6;&#x56FE;&#x9700;&#x8981;&#x66F4;&#x65B0;&#x5176;&#x5185;&#x5BB9;&#x65F6;&#xFF1A;</p>
+<ul>
+<li>&#x5982;&#x679C; <code>-drawRect:</code> &#x65B9;&#x6CD5;&#x88AB;&#x5B50;&#x7C7B;&#x91CD;&#x5199;&#xFF0C;&#x5219;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#xFF1B;</li>
+<li>&#x5982;&#x679C;&#x5B50;&#x7C7B;&#x6CA1;&#x6709;&#x91CD;&#x5199;&#xFF0C;&#x8C03;&#x7528; <code>delegate</code> &#x7684; <code>-drawInMTKView:</code>&#xFF1B;</li>
+<li>&#x5F00;&#x53D1;&#x8005;&#x9700;&#x8981;&#x81F3;&#x5C11;&#x5728;&#x4E0A;&#x8FF0;&#x4E00;&#x4E2A;&#x573A;&#x666F;&#x4E2D;&#x81EA;&#x5B9A;&#x4E49;&#x6E32;&#x67D3;&#x5185;&#x5BB9;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4EC0;&#x4E48;&#x90FD;&#x4E0D;&#x505A;&#xFF01;</li>
+</ul>
+<pre><code>@protocol MTKViewDelegate &lt;NSObject&gt;
+
+/// &#x5F53;&#x89C6;&#x56FE;&#x7684; drawableSize &#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x8C03;&#x7528;&#xFF0C;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x89C6;&#x56FE;&#x548C;&#x6295;&#x5F71;&#x77E9;&#x9635;&#x6216;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x4EFB;&#x4F55;&#x7F13;&#x51B2;&#x533A;&#xFF0C;size&#x4EE5;&#x50CF;&#x7D20;&#x4E3A;&#x5355;&#x4F4D;
+- (void)mtkView:(nonnull MTKView *)view drawableSizeWillChange:(CGSize)size;
+
+/// &#x5F53; delegate &#x88AB;&#x8981;&#x6C42;&#x6E32;&#x67D3;&#x5230;&#x89C6;&#x56FE;&#x4E2D;&#x65F6;&#x8C03;&#x7528;
+- (void)drawInMTKView:(nonnull MTKView *)view;
+
+@end
+</code></pre><p>&#x5728;&#x6E32;&#x67D3;&#x56FE;&#x5F62;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x83B7;&#x53D6; <code>MTLRenderPassDescriptor</code>&#xFF0C;&#x5C06;&#x5176;&#x6E32;&#x67D3;&#x5230;&#x5176;&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x5448;&#x73B0;&#x76F8;&#x5173;&#x7684;&#x53EF;&#x7ED8;&#x5236;&#x5BF9;&#x8C61;&#x3002;</p>
+<h3 id="&#x83B7;&#x53D6;-drawable"><a name="&#x83B7;&#x53D6;-drawable" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;-drawable"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6; <code>Drawable</code></h3>
+<p>&#x6BCF;&#x4E2A;<code>MTKView</code>&#x90FD;&#x6301;&#x6709;&#x4E00;&#x4E2A;<code>CAMetalLayer</code>&#x652F;&#x6301;&#x3002;</p>
+<pre><code>- (void)drawInMTKView:(nonnull MTKView *)view {
+    // &#x5F00;&#x59CB;&#x7F16;&#x7801;&#x5C4F;&#x5E55;&#x6E32;&#x67D3;&#x901A;&#x9053; =&gt; &#x83B7;&#x53D6;&#x4ECE;&#x7ED8;&#x5236;&#x7EB9;&#x7406;&#x751F;&#x6210;&#x7684;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x63CF;&#x8FF0;&#x7B26; 
+    MTLRenderPassDescriptor* onscreenDescriptor = view.currentRenderPassDescriptor;
+
+    /// &#x6CE8;&#x610F;&#x26A0;&#xFE0F;&#xFF1A;&#x6700;&#x597D;&#x5C3D;&#x53EF;&#x80FD;&#x665A;&#x7684;&#x83B7;&#x53D6;&#x63CF;&#x8FF0;&#x7B26;&#xFF0C;&#x6700;&#x597D;&#x662F;&#x5728;&#x7F16;&#x7801;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x4E4B;&#x524D;
+    /// &#x89C6;&#x56FE;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x5B58;&#x50A8;&#x548C;&#x52A0;&#x8F7D;&#x64CD;&#x4F5C;&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x7BA1;&#x9053;
+    /// &#x5728;&#x4F7F;&#x7528;&#x8BE5;&#x63CF;&#x8FF0;&#x7B26;&#x521B;&#x5EFA;&#x7F16;&#x7801;&#x5668; MTLRenderCommandEncoder &#x4E4B;&#x524D;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x63CF;&#x8FF0;&#x7B26;&#x7684;&#x67D0;&#x4E9B;&#x9009;&#x9879;
+}
+</code></pre><p>&#x8BFB;&#x53D6; <code>view.currentRenderPassDescriptor</code> &#x65F6;&#xFF0C;</p>
+<ul>
+<li><code>Core Animation</code> &#x4F1A;&#x9690;&#x5F0F;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x5E27;&#x7684;&#x4E00;&#x4E2A;&#x53EF;&#x7ED8;&#x5236;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x5B58;&#x50A8;&#x5728; <code>currentDrawable</code> &#x5C5E;&#x6027;&#x4E2D;;</li>
+<li>&#x7136;&#x540E;&#x5B83;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x63CF;&#x8FF0;&#x7B26;&#x6765;&#x7ED8;&#x5236;&#x5230;&#x7ED8;&#x56FE;&#x4E2D;&#xFF0C;&#x5305;&#x62EC;&#x6DF1;&#x5EA6;&#x6D4B;&#x8BD5;&#x3001;&#x6A21;&#x677F;&#x6D4B;&#x8BD5;&#x7B49;&#x3002;</li>
+</ul>
+<h3 id="&#x6CE8;&#x518C;&#x7ED8;&#x56FE;&#x547D;&#x4EE4;"><a name="&#x6CE8;&#x518C;&#x7ED8;&#x56FE;&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x518C;&#x7ED8;&#x56FE;&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x518C;&#x7ED8;&#x56FE;&#x547D;&#x4EE4;</h3>
+<p>&#x5728;&#x7F16;&#x7801;&#x6E32;&#x67D3;&#x547D;&#x4EE4;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x7F16;&#x7801;&#x540E;&#x7684;&#x7ED8;&#x56FE;&#x547D;&#x4EE4;&#x6CE8;&#x518C;&#x5230; <code>Drawable</code> &#x4EE5;&#x66F4;&#x65B0;&#x89C6;&#x56FE;&#x7684;&#x5185;&#x5BB9;&#x3002;</p>
+<pre><code>- (void)drawInMTKView:(nonnull MTKView *)view {
+    MTLRenderPassDescriptor *descriptor = view.currentRenderPassDescriptor;
+    /// &#x5224;&#x65AD;&#x63CF;&#x8FF0;&#x7B26;&#x5982;&#x679C;&#x65E0;&#x6548;&#xFF0C;&#x5219;&#x65E0;&#x6CD5;&#x8FDB;&#x5165;&#x6E32;&#x67D3;&#x5DE5;&#x4F5C;
+    if (descriptor != nil) { 
+        id&lt;MTLCommandBuffer&gt; commandBuffer = [_commandQueue commandBuffer];
+        commandBuffer.label = @&quot;&#x547D;&#x4EE4;&#x7F13;&#x51B2;&#x533A;&quot;;
+
+        id&lt;MTLRenderCommandEncoder&gt; renderEncoder = [commandBuffer renderCommandEncoderWithDescriptor:descriptor];
+        renderEncoder.label = @&quot;&#x6E32;&#x67D3;&#x547D;&#x4EE4;&#x7F16;&#x7801;&#x5668;&quot;;
+
+        /// &#x8BBE;&#x7F6E;&#x6E32;&#x67D3;&#x72B6;&#x6001;&#x548C;&#x8D44;&#x6E90;
+        /// &#x6E32;&#x67D3;&#x7684;&#x8C03;&#x7528;
+
+        [renderEncoder endEncoding]; // &#x7ED3;&#x675F;&#x7F16;&#x7801;
+
+        /// &#x5C06;&#x7F16;&#x7801;&#x540E;&#x7684;&#x7ED8;&#x56FE;&#x547D;&#x4EE4;&#x6CE8;&#x518C;&#x5230; Drawable
+        [commandBuffer presentDrawable:view.currentDrawable];
+        //&#x5B8C;&#x6210;&#x5C4F;&#x5E55;&#x4E0A;&#x7684; CPU &#x5DE5;&#x4F5C;&#xFF0C;&#x5E76;&#x5C06;&#x547D;&#x4EE4;&#x7F13;&#x51B2;&#x533A;&#x63D0;&#x4EA4;&#x7ED9;GPU
+        [commandBuffer commit];
+    }
+}
+</code></pre><p>&#x5F53; <code>commandQueue</code> &#x5B89;&#x6392;&#x4E00;&#x4E2A; <code>commandBuffer</code> &#x6267;&#x884C;&#x65F6;&#xFF0C;&#x53EF;&#x7ED8;&#x5236;&#x5BF9;&#x8C61;&#x5728;&#x8BE5;&#x547D;&#x4EE4;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x8DDF;&#x8E2A;&#x81EA;&#x8EAB;&#x7684;&#x6240;&#x6709;&#x6E32;&#x67D3;&#x6216;&#x5199;&#x5165;&#x8BF7;&#x6C42;&#x3002;
+&#x76F4;&#x5230;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x624D;&#x4F1A;&#x5C06;&#x7ED8;&#x56FE;&#x663E;&#x793A;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x3002;
+&#x901A;&#x8FC7;&#x8981;&#x6C42;&#x547D;&#x4EE4;&#x7F13;&#x51B2;&#x533A;&#x663E;&#x793A;&#x53EF;&#x7ED8;&#x5236;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x5728;&#x547D;&#x4EE4;&#x961F;&#x5217;&#x8C03;&#x5EA6;&#x4E86;&#x8BE5;&#x547D;&#x4EE4;&#x7F13;&#x51B2;&#x533A;&#x4E4B;&#x540E;&#x8FDB;&#x884C;&#x663E;&#x793A;&#x3002;
+&#x4E0D;&#x8981;&#x7B49;&#x5230;&#x547D;&#x4EE4;&#x7F13;&#x51B2;&#x533A;&#x5B8C;&#x6210;&#x6267;&#x884C;&#x540E;&#x624D;&#x6CE8;&#x518C;&#x53EF;&#x7ED8;&#x5236;&#x5BF9;&#x8C61;&#x7684;&#x663E;&#x793A;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x4E3A;&#x4E86;&#x66F4;&#x597D;&#x7684;&#x6027;&#x80FD;&#xFF0C;&#x53EA;&#x5728;&#x51C6;&#x5907;&#x6E32;&#x67D3;&#x5185;&#x5BB9;&#x65F6;&#x68C0;&#x7D22;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x63CF;&#x8FF0;&#x7B26;&#xFF0C;&#x5E76;&#x5C3D;&#x53EF;&#x80FD;&#x5C11;&#x5730;&#x4FDD;&#x7559;&#x5B83;&#x548C;&#x76F8;&#x5173;&#x7684;&#x53EF;&#x7ED8;&#x5236;&#x5BF9;&#x8C61;&#x3002;&#x4E00;&#x65E6;&#x4F60;&#x5B8C;&#x6210;&#x4E86;&#x5B83;&#x5C31;&#x91CA;&#x653E;&#x5B83;&#x3002;</p>
+<h3 id="&#x521D;&#x59CB;&#x5316;&#x89C6;&#x56FE;"><a name="&#x521D;&#x59CB;&#x5316;&#x89C6;&#x56FE;" class="anchor-navigation-ex-anchor" href="#&#x521D;&#x59CB;&#x5316;&#x89C6;&#x56FE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521D;&#x59CB;&#x5316;&#x89C6;&#x56FE;</h3>
+<pre><code>- (nonnull instancetype)initWithFrame:(CGRect)frameRect device:(nullable id&lt;MTLDevice&gt;)device;
+- (nonnull instancetype)initWithCoder:(nonnull NSCoder *)coder;
+</code></pre><h3 id="&#x914D;&#x7F6E;-metal-&#x8BBE;&#x5907;"><a name="&#x914D;&#x7F6E;-metal-&#x8BBE;&#x5907;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;-metal-&#x8BBE;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E; Metal &#x8BBE;&#x5907;</h3>
+<pre><code>/// &#x63CF;&#x8FF0; GPU &#x7684;&#x8BBE;&#x5907;&#x5BF9;&#x8C61;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; nil&#xFF1B;&#x5FC5;&#x987B;&#x663E;&#x5F0F;&#x8BBE;&#x7F6E;
+@property (nonatomic, retain, nullable) id &lt;MTLDevice&gt; device;
+
+/** &#x7CFB;&#x7EDF;&#x5EFA;&#x8BAE;&#x8BE5;&#x89C6;&#x56FE;&#x4F7F;&#x7528;&#x7684; GPU &#x5BF9;&#x8C61;&#xFF0C;&#x7531; CAMetalLayer &#x51B3;&#x5B9A;&#xFF1A;
+ *     &#x5728;&#x53EA;&#x6709;&#x4E00;&#x4E2A;GPU&#x7684;&#x7CFB;&#x7EDF;&#x4E0A;,&#x8FD4;&#x56DE;&#x9ED8;&#x8BA4;&#x8BBE;&#x5907; MTLCreateSystemDefaultDevice
+ *     &#x5728;&#x5177;&#x6709;&#x591A;&#x4E2A;GPU&#x7684;&#x7CFB;&#x7EDF;&#x4E0A;,&#x8FD4;&#x56DE;&#x7528;&#x4E8E;&#x5408;&#x6210;&#x548C;&#x5448;&#x73B0;&#x89C6;&#x56FE;&#x5185;&#x5BB9;&#x7684; GPU &#x5BF9;&#x8C61;
+ * 
+ * @note &#x8BE5;&#x5BF9;&#x8C61;&#x901A;&#x5E38;&#x5BF9;&#x5E94;&#x4E8E;&#x4E0E;&#x663E;&#x793A;&#x89C6;&#x56FE;&#x7684;&#x5C4F;&#x5E55;&#x76F8;&#x5173;&#x8054;&#x7684;GPU&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E; view.device &#x4E3A;&#x8BE5;&#x5BF9;&#x8C61;&#xFF0C;
+ *       &#x5C06;&#x51CF;&#x5C11; Core Animation &#x4E3A;&#x4E86;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x5448;&#x73B0;&#x89C6;&#x56FE;&#x5185;&#x5BB9;&#x800C;&#x5FC5;&#x987B;&#x5236;&#x4F5C;&#x7684;&#x8DE8; GPU &#x7EB9;&#x7406;&#x526F;&#x672C;&#x7684;&#x6570;&#x91CF;&#x3002;
+ */ 
+@property(nullable, readonly) id&lt;MTLDevice&gt; preferredDevice;
+</code></pre><h3 id="&#x914D;&#x7F6E;&#x989C;&#x8272;&#x6E32;&#x67D3;&#x76EE;&#x6807;"><a name="&#x914D;&#x7F6E;&#x989C;&#x8272;&#x6E32;&#x67D3;&#x76EE;&#x6807;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x989C;&#x8272;&#x6E32;&#x67D3;&#x76EE;&#x6807;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x989C;&#x8272;&#x6E32;&#x67D3;&#x76EE;&#x6807;</h3>
+<pre><code>/// &#x7ED8;&#x5236;&#x7EB9;&#x7406;&#x7684;&#x50CF;&#x7D20;&#x683C;&#x5F0F;&#xFF0C;&#x9700;&#x8981;&#x652F;&#x6301; CAMetalLayer, &#x9ED8;&#x8BA4;&#x503C; MTLPixelFormatBGRA8Unorm
+@property (nonatomic) MTLPixelFormat colorPixelFormat;
+
+/** &#x6BCF;&#x4E00;&#x6E32;&#x67D3;&#x5E27;&#x7684;&#x989C;&#x8272;&#x7A7A;&#x95F4;
+ * &#x9ED8;&#x8BA4;&#x503C;&#x4E3A; nil&#xFF0C;&#x5219;&#x6CA1;&#x6709;&#x989C;&#x8272;&#x5339;&#x914D;&#xFF1B;
+ * &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x989C;&#x8272;&#x7A7A;&#x95F4;&#xFF0C;Core Animation &#x4F1A;&#x5728;&#x5408;&#x6210;&#x89C6;&#x56FE;&#x5185;&#x5BB9;&#x65F6;&#x6267;&#x884C;&#x5FC5;&#x8981;&#x7684;&#x989C;&#x8272;&#x8F6C;&#x6362;&#x3002;
+ */
+@property (nonatomic, nullable) CGColorSpaceRef colorspace;
+
+/** &#x7ED8;&#x5236;&#x7684;&#x7EB9;&#x7406;(currentDrawable)&#x662F;&#x5426;&#x53EA;&#x7528;&#x4E8E;&#x6E32;&#x67D3;(YES)&#xFF0C;&#x8FD8;&#x662F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x91C7;&#x6837;&#x6216;&#x7EB9;&#x7406;&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;(NO)&#xFF1F;
+ * &#x9ED8;&#x8BA4;&#x503C; YES&#xFF0C;CAMetalLayer &#x4F1A;&#x4F18;&#x5316;&#x663E;&#x793A;&#x7684;&#x7EB9;&#x7406;&#xFF1B;&#x4F7F;&#x5176;&#x4E0D;&#x9002;&#x5408;&#x91C7;&#x6837;&#xFF0C;&#x4E0D;&#x80FD;&#x53D6;&#x6837;&#x3001;&#x8BFB;&#x53D6;&#x6216;&#x5199;&#x5165;&#x8FD9;&#x4E9B;&#x7EB9;&#x7406;&#xFF1B;
+ * &#x5982;&#x679C;&#x8BE5;&#x503C;&#x4E3A;NO&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x5BF9;&#x7EB9;&#x7406;&#x8FDB;&#x884C;&#x53D6;&#x6837;&#x6216;&#x6267;&#x884C;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x4F1A;&#x727A;&#x7272;&#x90E8;&#x5206;&#x6027;&#x80FD;&#x3002;
+ */
+@property (nonatomic) BOOL framebufferOnly;
+
+/** &#x53EF;&#x7ED8;&#x5236;&#x7EB9;&#x7406;&#x7684;&#x50CF;&#x7D20;&#x5BBD;&#x9AD8;&#xFF1A;&#x9ED8;&#x8BA4;&#x5F53;&#x524D;&#x89C6;&#x56FE;&#x7684;&#x5927;&#x5C0F;
+ *
+ * &#x5982;&#x679C; autoResizeDrawable &#x662F;YES&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x4F1A;&#x5728;&#x89C6;&#x56FE;&#x7684;&#x5927;&#x5C0F;&#x6539;&#x53D8;&#x65F6;&#x81EA;&#x52A8;&#x66F4;&#x65B0;
+ * &#x5982;&#x679C; autoResizeDrawable &#x662F;NO&#xFF0C;&#x5FC5;&#x987B;&#x663E;&#x5F0F;&#x8BBE;&#x7F6E; drawableSize &#x6765;&#x6539;&#x53D8;&#x7EB9;&#x7406;&#x5BF9;&#x8C61;&#x7684;&#x5927;&#x5C0F;
+ *
+ * &#x8BE5;&#x503C;&#x7684;&#x6539;&#x53D8;&#xFF0C;&#x5C06;&#x8C03;&#x6574;&#x89C6;&#x56FE;&#x521B;&#x5EFA;&#x7684;&#x4EFB;&#x4F55;&#x989C;&#x8272;&#x3001;&#x6DF1;&#x5EA6;&#x3001;&#x6A21;&#x677F;&#x548C;&#x7EB9;&#x7406;&#x7684;&#x5927;&#x5C0F;
+ */
+@property (nonatomic) CGSize drawableSize;
+
+/// &#x5728;&#x89C6;&#x56FE;&#x6539;&#x53D8;&#x5927;&#x5C0F;&#x65F6;, &#x662F;&#x5426;&#x81EA;&#x52A8;&#x8C03;&#x6574; drawableSize &#x7684;&#x5927;&#x5C0F;
+@property (nonatomic) BOOL autoResizeDrawable;
+
+/// &#x63A8;&#x8350;&#x5C3A;&#x5BF8;&#xFF1A;&#x4F7F;&#x7528; KVO &#x76D1;&#x542C; drawableSize &#x662F;&#x5426;&#x6539;&#x53D8;
+@property (nonatomic, readonly) CGSize preferredDrawableSize;
+
+/// &#x6E05;&#x7A7A;&#x8272;&#xFF0C;&#x7528;&#x4E8E;&#x64E6;&#x9664;&#x989C;&#x8272;&#x7F13;&#x51B2;&#xFF1B;&#x9ED8;&#x8BA4;&#x64E6;&#x5199;&#x4E3A;&#x9ED1;&#x8272; (0.0,0.0,0.0,1.0)
+@property (nonatomic) MTLClearColor clearColor;
+</code></pre><h4 id="cametallayer-&#x652F;&#x6301;&#x7684;&#x50CF;&#x7D20;&#x683C;&#x5F0F;"><a name="cametallayer-&#x652F;&#x6301;&#x7684;&#x50CF;&#x7D20;&#x683C;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#cametallayer-&#x652F;&#x6301;&#x7684;&#x50CF;&#x7D20;&#x683C;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a><code>CAMetalLayer</code> &#x652F;&#x6301;&#x7684;&#x50CF;&#x7D20;&#x683C;&#x5F0F;</h4>
+<pre><code>typedef NS_ENUM(NSUInteger, MTLPixelFormat) {
+    MTLPixelFormatBGRA8Unorm      = 80,  /// &#x666E;&#x901A;&#x683C;&#x5F0F;, &#x6309; BGRA &#x987A;&#x5E8F;&#x7531;&#x56DB;&#x4E2A;8&#x4F4D;&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#x7EC4;&#x6210;
+    MTLPixelFormatBGRA8Unorm_sRGB = 81,  /// &#x666E;&#x901A;&#x683C;&#x5F0F;, &#x6309; BGRA &#x987A;&#x5E8F;&#x7531;&#x56DB;&#x4E2A;8&#x4F4D;&#x65E0;&#x7B26;&#x53F7;&#x6574;&#x6570;&#x7EC4;&#x6210;, &#x5728;sRGB&#x548C;&#x7EBF;&#x6027;&#x7A7A;&#x95F4;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x8F6C;&#x6362;
+    MTLPixelFormatRGB10A2Unorm    = 90,  /// &#x4E00;&#x79CD;32&#x4F4D;&#x538B;&#x7F29;&#x50CF;&#x7D20;&#x683C;&#x5F0F;:10&#x4F4D;&#x7EA2;&#x8272;&#x3001;10&#x4F4D;&#x7EFF;&#x8272;&#x3001;10&#x4F4D;&#x84DD;&#x8272;&#x548C;2&#x4F4D; alpha
+    MTLPixelFormatBGR10A2Unorm    = 94,  /// &#x4E00;&#x79CD;32&#x4F4D;&#x538B;&#x7F29;&#x50CF;&#x7D20;&#x683C;&#x5F0F;:10&#x4F4D;&#x84DD;&#x8272;&#x3001;10&#x4F4D;&#x7EFF;&#x8272;&#x3001;10&#x4F4D;&#x7EA2;&#x8272;&#x548C;2&#x4F4D; alpha
+    MTLPixelFormatRGBA16Float     = 115, /// &#x666E;&#x901A;&#x683C;&#x5F0F;&#xFF0C;&#x6309; RGBA &#x987A;&#x5E8F;&#x5305;&#x542B;&#x56DB;&#x4E2A;16&#x4F4D;&#x6D6E;&#x70B9;&#x503C;
+
+    /// &#x4EE5;&#x4E0B;&#x56DB;&#x79CD;&#x652F;&#x6301; &#x5BBD;&#x8272;&#x57DF;&#x663E;&#x793A;&#x8BBE;&#x5907;&#x4E0A;&#x663E;&#x793A;&#x9AD8;&#x8D28;&#x91CF;&#x7684;&#x5BBD;&#x8272;&#x57DF;&#x56FE;&#x50CF;
+    MTLPixelFormatBGRA10_XR       = 552, /// &#x4E00;&#x79CD;64&#x4F4D;&#x6269;&#x5C55;&#x50CF;&#x7D20;&#x683C;&#x5F0F;:10&#x4F4D;&#x84DD;&#x8272;&#x3001;10&#x4F4D;&#x7EFF;&#x8272;&#x3001;10&#x4F4D;&#x7EA2;&#x8272;&#x548C;10&#x4F4D; alpha
+    MTLPixelFormatBGRA10_XR_sRGB  = 553, /// &#x4E00;&#x79CD;64&#x4F4D;&#x6269;&#x5C55;&#x50CF;&#x7D20;&#x683C;&#x5F0F;:10&#x4F4D;&#x84DD;&#x8272;&#x3001;10&#x4F4D;&#x7EFF;&#x8272;&#x3001;10&#x4F4D;&#x7EA2;&#x8272;&#x548C;10&#x4F4D; alpha
+    MTLPixelFormatBGR10_XR        = 554, /// &#x4E00;&#x79CD;32&#x4F4D;&#x6269;&#x5C55;&#x50CF;&#x7D20;&#x683C;&#x5F0F;:10&#x4F4D;&#x84DD;&#x8272;&#x3001;10&#x4F4D;&#x7EFF;&#x8272;&#x548C;10&#x4F4D;&#x7EA2;&#x8272;
+    MTLPixelFormatBGR10_XR_sRGB   = 555, /// &#x4E00;&#x79CD;32&#x4F4D;&#x6269;&#x5C55;&#x50CF;&#x7D20;&#x683C;&#x5F0F;:10&#x4F4D;&#x84DD;&#x8272;&#x3001;10&#x4F4D;&#x7EFF;&#x8272;&#x548C;10&#x4F4D;&#x7EA2;&#x8272;
+}
+</code></pre><p><img src="assets/Metal_&#x50CF;&#x7D20;&#x683C;&#x5F0F;_32&#x4F4D;RGBA.png" alt="Metal_&#x50CF;&#x7D20;&#x683C;&#x5F0F;_32&#x4F4D;RGBA"></p>
+<p><img src="assets/Metal_&#x50CF;&#x7D20;&#x683C;&#x5F0F;_BGR10_XR.png" alt="Metal_&#x50CF;&#x7D20;&#x683C;&#x5F0F;_BGR10_XR"></p>
+<p><img src="assets/Metal_&#x50CF;&#x7D20;&#x683C;&#x5F0F;_BGRA10_XR.png" alt="Metal_&#x50CF;&#x7D20;&#x683C;&#x5F0F;_BGRA10_XR"></p>
+<p><code>alpha</code> &#x503C;&#x5728;&#x91C7;&#x6837;&#x3001;&#x6E32;&#x67D3;&#x548C;&#x5199;&#x5165;&#x64CD;&#x4F5C;&#x4E2D;&#x603B;&#x662F;&#x56FA;&#x5B9A;&#x5728; <code>[0.0,1.0]</code> &#x8303;&#x56F4;&#x5185;&#xFF0C;&#x53EA;&#x6709;&#x5728;&#x5BBD;&#x8272;&#x57DF;&#x663E;&#x793A;&#x8BBE;&#x5907;&#x4E0A;&#x624D;&#x80FD;&#x663E;&#x793A; <code>alpha</code>  &#x5728; <code>[0.0,1.0]</code> &#x8303;&#x56F4;&#x4EE5;&#x5916;&#x7684;&#x989C;&#x8272;&#x503C;&#xFF01;</p>
+<h4 id="&#x64E6;&#x5199;&#x8272;"><a name="&#x64E6;&#x5199;&#x8272;" class="anchor-navigation-ex-anchor" href="#&#x64E6;&#x5199;&#x8272;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x64E6;&#x5199;&#x8272;</h4>
+<p>&#x7528;&#x4E8E;&#x989C;&#x8272;&#x50CF;&#x7D20;&#x7684;RGBA&#x503C;&#x3002;</p>
+<pre><code>typedef struct
+{
+    double red;
+    double green;
+    double blue;
+    double alpha;
+} MTLClearColor;
+</code></pre><h3 id="&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x5C5E;&#x6027;"><a name="&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x5C5E;&#x6027;</h3>
+<pre><code>/** &#x7528;&#x4E8E;&#x521B;&#x5EFA; deepthstenciltexture &#x7684; pixelFormat
+ * &#x9ED8;&#x8BA4;&#x503C;&#x662F; MTLPixelFormatInvalid&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x89C6;&#x56FE;&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;&#x6DF1;&#x5EA6;&#x548C;&#x6A21;&#x677F;&#x7EB9;&#x7406;
+ * &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E3A;&#x6307;&#x5B9A;&#x683C;&#x5F0F;&#xFF0C;&#x89C6;&#x56FE;&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x8FD9;&#x4E9B;&#x7EB9;&#x7406;&#xFF0C;&#x5E76;&#x5C06;&#x5B83;&#x4EEC;&#x914D;&#x7F6E;&#x5230;&#x6E32;&#x67D3;&#x901A;&#x9053;
+ */
+@property (nonatomic) MTLPixelFormat depthStencilPixelFormat;
+
+/** &#x89C6;&#x56FE;&#x5728;&#x521B;&#x5EFA;&#x6DF1;&#x5EA6;&#x548C;&#x6A21;&#x677F;&#x7EB9;&#x7406;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x7EB9;&#x7406;&#x7684;&#x7B56;&#x7565;
+ * &#x9ED8;&#x8BA4;&#x503C;&#x4E0E;&#x63A8;&#x8350;&#x503C;&#x662F; MTLTextureUsageRenderTarget
+ * &#x66F4;&#x6539;&#x6B64;&#x503C;&#x5C06;&#x91CD;&#x65B0;&#x521B;&#x5EFA; depthStencilAttachment&#xFF0C;&#x5F53;&#x524D; depthStencilAttachment &#x4E2D;&#x7684;&#x6570;&#x636E;&#x5C06;&#x4E22;&#x5931;
+ */
+@property (nonatomic) MTLTextureUsage depthStencilAttachmentTextureUsage;
+
+/** &#x7528;&#x4E8E;&#x751F;&#x6210; currentRenderPassDescriptor &#x7684;&#x6E05;&#x9664;&#x6DF1;&#x5EA6;&#x503C;&#xFF0C;&#x521B;&#x5EFA;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x65F6;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;1.0
+ * &#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x6DF1;&#x5EA6;&#x7EB9;&#x7406;&#xFF0C;&#x89C6;&#x56FE;&#x4F1A;&#x914D;&#x7F6E;&#x4EFB;&#x4F55;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x6765;&#x4F7F;&#x7528;&#x8BE5;&#x6DF1;&#x5EA6;&#x7EB9;&#x7406;&#xFF0C;
+ */
+@property (nonatomic) double clearDepth;
+
+/** &#x5728;&#x521B;&#x5EFA;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x63CF;&#x8FF0;&#x7B26;&#x65F6;&#xFF0C;&#x7528;&#x4E8E;&#x6E05;&#x9664;&#x6A21;&#x677F;&#x76EE;&#x6807;&#x7684;&#x6A21;&#x677F;&#x503C;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;1.0
+ * &#x5982;&#x679C;&#x6307;&#x5B9A;&#x4E86;&#x6A21;&#x677F;&#x7EB9;&#x7406;&#xFF0C;&#x89C6;&#x56FE;&#x5C06;&#x914D;&#x7F6E;&#x4EFB;&#x4F55;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x6765;&#x4F7F;&#x7528;&#x6A21;&#x677F;&#x7EB9;&#x7406;
+ */
+@property (nonatomic) uint32_t clearStencil;
+</code></pre><h4 id="&#x7EB9;&#x7406;&#x7684;&#x4F7F;&#x7528;&#x7B56;&#x7565;"><a name="&#x7EB9;&#x7406;&#x7684;&#x4F7F;&#x7528;&#x7B56;&#x7565;" class="anchor-navigation-ex-anchor" href="#&#x7EB9;&#x7406;&#x7684;&#x4F7F;&#x7528;&#x7B56;&#x7565;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EB9;&#x7406;&#x7684;&#x4F7F;&#x7528;&#x7B56;&#x7565;</h4>
+<pre><code>/// MTLTextureUsage &#x58F0;&#x660E;&#x7EB9;&#x7406;&#x5728;&#x5176;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#x5C06;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x591A;&#x4E2A;&#x503C;&#x6309;&#x4F4D;&#x7EC4;&#x5408;&#x4F7F;&#x7528;
+typedef NS_OPTIONS(NSUInteger, MTLTextureUsage) {
+    MTLTextureUsageUnknown         = 0x0000, /// &#x7EB9;&#x7406;&#x4F7F;&#x7528;&#x7684;&#x9009;&#x9879;&#x662F;&#x672A;&#x77E5;&#x7684;
+    MTLTextureUsageShaderRead      = 0x0001, /// &#x6307;&#x793A;&#x7740;&#x8272;&#x5668;&#x5728;&#x6E32;&#x67D3;&#x7684;&#x4EFB;&#x4F55;&#x9636;&#x6BB5;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x7EB9;&#x7406;
+    MTLTextureUsageShaderWrite     = 0x0002, /// &#x6307;&#x793A;&#x7EB9;&#x7406;&#x5C06;&#x88AB;&#x8BA1;&#x7B97;&#x7740;&#x8272;&#x5668;&#x5199;&#x5165;
+    MTLTextureUsageRenderTarget    = 0x0004, /// &#x6307;&#x793A;&#x7EB9;&#x7406;&#x5C06;&#x5728;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x4E2D;&#x7528;&#x4F5C;&#x989C;&#x8272;&#x3001;&#x6DF1;&#x5EA6;&#x6216;&#x6A21;&#x677F;&#x6E32;&#x67D3;&#x76EE;&#x6807;
+    MTLTextureUsagePixelFormatView = 0x0010, /// &#x6307;&#x793A;&#x7EB9;&#x7406;&#x5C06;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x65B0;&#x7EB9;&#x7406;&#x7684;&#x503C;
+};
+</code></pre><h3 id="&#x914D;&#x7F6E;&#x591A;&#x91CD;&#x91C7;&#x6837;"><a name="&#x914D;&#x7F6E;&#x591A;&#x91CD;&#x91C7;&#x6837;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x591A;&#x91CD;&#x91C7;&#x6837;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x591A;&#x91CD;&#x91C7;&#x6837;</h3>
+<pre><code>/** &#x7528;&#x4E8E;&#x751F;&#x6210; multisampleColorTexture &#x5BF9;&#x8C61;&#x7684;&#x6837;&#x672C;&#x8BA1;&#x6570;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;1
+ *
+ * @discussion &#x4E0D;&#x540C;&#x7684;&#x8BBE;&#x5907;&#x53EF;&#x80FD;&#x652F;&#x6301;&#x4E0D;&#x540C;&#x7684;&#x6837;&#x672C;&#x8BA1;&#x6570;&#x503C;&#x3002;
+ *           &#x8C03;&#x7528; [MTLDevice -supportsTextureSampleCount:] &#x6765;&#x786E;&#x5B9A;&#x8BBE;&#x5907;&#x662F;&#x5426;&#x652F;&#x6301;&#x6307;&#x5B9A;&#x7684;&#x6837;&#x672C;&#x8BA1;&#x6570;&#xFF1B;
+ * @discussion &#x5982;&#x679C; sampleCount &gt; 1 &#xFF1A;
+ *             &#x89C6;&#x56FE;&#x4F1A;&#x521B;&#x5EFA;&#x5E76;&#x914D;&#x7F6E;&#x4E00;&#x4E2A;&#x591A;&#x6837;&#x672C;&#x7EB9;&#x7406;&#xFF1B;
+ *             currentDrawable &#x7684;&#x7EB9;&#x7406;&#x5C06;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A; currentRenderPassDescriptor &#x4E2D;&#x7684;&#x89E3;&#x6790;&#x7EB9;&#x7406;
+ *             &#x5B58;&#x50A8;&#x64CD;&#x4F5C;&#x5C06;&#x88AB;&#x8BBE;&#x7F6E;&#x4E3A; MTLStoreActionMultisampleResolve
+ */
+@property (nonatomic) NSUInteger sampleCount;
+
+/** multisampleColorAttachment &#x7684;&#x7EB9;&#x7406;&#x4F7F;&#x7528;&#x7B56;&#x7565;
+ * &#x9ED8;&#x8BA4;&#x503C;&#x4E0E;&#x63A8;&#x8350;&#x503C;&#x662F; MTLTextureUsageRenderTarget
+ * &#x66F4;&#x6539;&#x6B64;&#x503C;&#x5C06;&#x91CD;&#x65B0;&#x521B;&#x5EFA; multisampleColorAttachment&#xFF0C;&#x5F53;&#x524D; multisampleColorAttachment &#x4E2D;&#x7684;&#x6570;&#x636E;&#x5C06;&#x4E22;&#x5931;
+ */
+@property (nonatomic) MTLTextureUsage multisampleColorAttachmentTextureUsage;
+</code></pre><h3 id="&#x68C0;&#x7D22;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x4FE1;&#x606F;"><a name="&#x68C0;&#x7D22;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x68C0;&#x7D22;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x68C0;&#x7D22;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x4FE1;&#x606F;</h3>
+<pre><code>/** &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x63CF;&#x8FF0;&#x7B26;&#xFF0C;&#x7531; currentDrawable &#x7684;&#x7EB9;&#x7406;&#x548C;&#x89C6;&#x56FE;&#x6DF1;&#x5EA6;&#x3001;&#x6A21;&#x677F;&#x3001;&#x91C7;&#x6837;&#x7F13;&#x51B2;&#x533A;&#x548C;&#x6E05;&#x9664;&#x503C;&#x751F;&#x6210;
+ * &#x5982;&#x679C; view.device = nil || currentDrawable = nil&#xFF0C;&#x5219;&#x8BE5;&#x5C5E;&#x6027;&#x4E3A; nil&#xFF1B;
+ */
+@property (nonatomic, readonly, nullable) MTLRenderPassDescriptor *currentRenderPassDescriptor;
+
+/** &#x7528;&#x4E8E;&#x7ED8;&#x5236;&#x5F53;&#x524D;&#x5E27;&#x7684; drawable&#xFF1B;
+ * @note &#x5982;&#x679C;&#x6240;&#x6709; drawable &#x90FD;&#x5728;&#x4F7F;&#x7528;&#x4E2D;&#xFF0C;&#x5219;&#x8BE5;&#x503C;&#x4E3A;nil; &#x6240;&#x4EE5;&#x5728;&#x4F7F;&#x7528;&#x4E4B;&#x524D;&#x9700;&#x8981;&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A; nil
+ * @&#x66F4;&#x65B0;&#x65F6;&#x673A;&#xFF1A; &#x5728;&#x4EE3;&#x7406;&#x65B9;&#x6CD5; -drawInMTKView &#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x66F4;&#x65B0; currentDrawable
+ *           &#x5728;&#x5B50;&#x7C7B;&#x91CD;&#x5199;&#x7684; -drawRect: &#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x66F4;&#x65B0; currentDrawable
+ * @&#x6D41;&#x7A0B; &#x4F7F;&#x7528;&#x547D;&#x4EE4;&#x7F16;&#x7801;&#x5668; MTLRenderCommandEncoder &#x5C06;&#x547D;&#x4EE4;&#x7F16;&#x7801;&#x5230; currentDrawable &#x7684;&#x7EB9;&#x7406;&#x4E2D;
+ *       &#x5E76;&#x901A;&#x8FC7; [commandBuffer -presentDrawable:] &#x6CE8;&#x518C;
+ * @&#x6027;&#x80FD; &#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x4ECE;&#x83B7;&#x53D6;&#x53EF;&#x7ED8;&#x5236;&#x5BF9;&#x8C61;&#x5230;&#x63D0;&#x4EA4;&#x4F7F;&#x7528;&#x5B83;&#x7684;&#x547D;&#x4EE4;&#x7F13;&#x51B2;&#x533A;&#x4E4B;&#x95F4;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x3002;
+ */
+@property (nonatomic, readonly, nullable) id &lt;CAMetalDrawable&gt; currentDrawable;
+
+/** &#x4E0E; currentDrawable &#x5BF9;&#x76F8;&#x5173;&#x8054;&#x7684;&#x6DF1;&#x5EA6;&#x6D4B;&#x8BD5;&#x548C;&#x6A21;&#x677F;&#x7EB9;&#x7406;&#xFF0C;&#x88AB;&#x9644;&#x52A0;&#x5230; MTLRenderPassDescriptor
+ * &#x7EB9;&#x7406;&#x683C;&#x5F0F;&#x7531; depthStencilPixelFormat &#x7684;&#x503C;&#x51B3;&#x5B9A;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x6307;&#x5B9A;&#x50CF;&#x7D20;&#x683C;&#x5F0F;&#x662F; MTLPixelFormatInvalid&#xFF0C;&#x5219;&#x8BE5;&#x503C;&#x662F;nil&#x3002;
+ * &#x9ED8;&#x8BA4;&#x503C;&#x4E3A; nil
+ */
+@property (nonatomic, readonly, nullable) id &lt;MTLTexture&gt; depthStencilTexture;
+
+/** &#x7528;&#x4E8E;&#x6E32;&#x67D3;&#x7684;&#x591A;&#x6837;&#x672C;&#x989C;&#x8272;&#x6837;&#x672C;&#x7EB9;&#x7406;&#xFF0C;&#x5C06;&#x88AB;&#x89E3;&#x6790;&#x4E3A;currentDrawable&#x7684;&#x7EB9;&#x7406;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; nil 
+ * @discussion &#x7EB9;&#x7406;&#x683C;&#x5F0F;&#x7531; colorPixelFormat &#x548C; sampleCount &#x51B3;&#x5B9A;
+ *             &#x5982;&#x679C; colorPixelFormat = MTLPixelFormatInvalid || sampleCount&lt;= 1&#xFF0C;&#x5219;&#x8BE5;&#x503C;&#x4E3A; nil
+ */
+@property (nonatomic, readonly, nullable) id &lt;MTLTexture&gt; multisampleColorTexture;
+</code></pre><h4 id="&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x901A;&#x9053;"><a name="&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x901A;&#x9053;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x901A;&#x9053;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x901A;&#x9053;</h4>
+<p><a href="https://developer.apple.com/documentation/metalkit/mtkview/1536024-currentrenderpassdescriptor?language=objc" target="_blank">&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x7684;&#x4E00;&#x4E9B;&#x7B56;&#x7565;</a>&#xFF1A;</p>
+<ul>
+<li>1&#x3001;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x591A;&#x91CD;&#x91C7;&#x6837;</li>
+</ul>
+<pre><code>{
+    MTLRenderPassDescriptor *descriptor = [[MTLRenderPassDescriptor alloc] init]; 
+    descriptor.colorAttachments[0].texture &#x6307;&#x5411; currentDrawable &#x7684;&#x7EB9;&#x7406;
+    descriptor.colorAttachments[0].loadAction = MTLLoadActionClear;
+    descriptor.colorAttachments[0].storeAction = MTLStoreActionStore;
+}
+</code></pre><ul>
+<li>2&#x3001;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x591A;&#x91CD;&#x91C7;&#x6837;</li>
+</ul>
+<pre><code>{
+    MTLRenderPassDescriptor *descriptor = [[MTLRenderPassDescriptor alloc] init]; 
+    descriptor.colorAttachments[0].texture &#x6307;&#x5411; multisampleTexture 
+    descriptor.colorAttachments[0].resolveTexture &#x6307;&#x5411; multisampleTexture 
+    descriptor.colorAttachments[0].loadAction = MTLLoadActionClear;
+    descriptor.colorAttachments[0].storeAction = MTLStoreActionMultisampleResolve;
+}
+</code></pre><ul>
+<li>3&#x3001;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x6307;&#x5B9A;&#x4E86;&#x6DF1;&#x5EA6;&#x6216;&#x6A21;&#x677F;&#x76EE;&#x6807;&#xFF0C;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x914D;&#x7F6E;&#x7684;&#x76EE;&#x6807;&#x9700;&#x8981;&#x6EE1;&#x8DB3;&#xFF1A;</li>
+</ul>
+<pre><code>{
+    MTLRenderPassDescriptor *descriptor = [[MTLRenderPassDescriptor alloc] init]; 
+    descriptor.colorAttachments[0].loadAction = MTLLoadActionClear;
+    descriptor.colorAttachments[0].storeAction = MTLStoreActionDontCare;
+}
+</code></pre><h3 id="&#x914D;&#x7F6E;&#x7ED8;&#x5236;&#x884C;&#x4E3A;"><a name="&#x914D;&#x7F6E;&#x7ED8;&#x5236;&#x884C;&#x4E3A;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x7ED8;&#x5236;&#x884C;&#x4E3A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x7ED8;&#x5236;&#x884C;&#x4E3A;</h3>
+<pre><code>/** &#x89C6;&#x56FE;&#x91CD;&#x65B0;&#x7ED8;&#x5236;&#x5176;&#x5185;&#x5BB9;&#x7684;&#x901F;&#x7387;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&#x6BCF;&#x79D2; 60 &#x5E27;
+ * &#x5982;&#x679C;&#x8BBE;&#x7F6E; preferredFrameRate&#xFF0C;&#x89C6;&#x56FE;&#x5C06;&#x6839;&#x6839;&#x636E;&#x5C4F;&#x5E55;&#x6027;&#x80FD; &#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x5C3D;&#x53EF;&#x80FD;&#x63A5;&#x8FD1;&#x7684;&#x5E27;&#x7387; 
+ * @note &#x5EFA;&#x8BAE;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x5B83;&#x53EF;&#x4EE5;&#x6301;&#x7EED;&#x4FDD;&#x6301;&#x7684;&#x5E27;&#x7387;&#xFF0C;&#x89C6;&#x56FE;&#x8BBE;&#x7F6E;&#x7684;&#x6700;&#x9AD8;&#x5E27;&#x7387;&#x4E3A; 60 &#x5E27;
+ * @discussion &#x8BBE;&#x7F6E;&#x7684;&#x5E27;&#x7387;&#xFF0C;&#x662F;&#x5C4F;&#x5E55;&#x7684;&#x6700;&#x5927;&#x5237;&#x65B0;&#x7387;&#x7684;&#x4E00;&#x4E2A;&#x5F71;&#x54CD;&#x56E0;&#x7D20;
+ *   &#x4F8B;&#x5982;&#x5C4F;&#x5E55;&#x7684;&#x6700;&#x5927;&#x5237;&#x65B0;&#x7387;&#x662F;60&#x5E27;/&#x79D2;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;&#x8F83;&#x4F4E;&#x7684;&#x5E27;&#x7387;&#xFF0C;&#x89C6;&#x56FE;&#x53EF;&#x80FD;&#x4F1A;&#x9009;&#x62E9;30&#x3001;20&#x3001;15&#x5E27;&#x6BCF;&#x79D2;&#x6216;&#x5176;&#x4ED6;&#x56E0;&#x7D20;&#x4F5C;&#x4E3A;&#x5B9E;&#x9645;&#x7684;&#x5E27;&#x7387;&#x3002;
+ */
+@property(nonatomic) NSInteger preferredFramesPerSecond;
+
+/** &#x6307;&#x793A;&#x7ED8;&#x5236;&#x5FAA;&#x73AF;&#x662F;&#x5426;&#x5DF2;&#x6682;&#x505C;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; NO
+ * &#x5982;&#x679C;&#x8BE5;&#x503C;&#x4E3A;NO&#xFF0C;&#x5219;&#x89C6;&#x56FE;&#x4EE5; preferredFramesPerSecond &#x8BBE;&#x7F6E;&#x7684;&#x5E27;&#x901F;&#x7387;&#x5468;&#x671F;&#x6027;&#x5730;&#x91CD;&#x65B0;&#x7ED8;&#x5236;&#x5185;&#x5BB9;
+ * &#x5982;&#x679C;&#x4E3A; YES&#xFF0C;&#x5C06;&#x5728; delegate &#x5C06;&#x8C03;&#x7528; -drawInMTKView: &#x6216;&#x8005;&#x5B50;&#x7C7B;&#x91CD;&#x5199;  -drawRect: &#x540E;&#xFF0C;&#x91CD;&#x7ED8;&#x5176;&#x5185;&#x5BB9;
+ */
+@property (nonatomic, getter=isPaused) BOOL paused;
+
+/** &#x6307;&#x793A;&#x89C6;&#x56FE;&#x662F;&#x5426;&#x54CD;&#x5E94; -setNeedsDisplay&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; NO
+ * &#x5982;&#x679C; (enableSetNeedsDisplay &amp;&amp; paused) = YES&#xFF0C;&#x5219;&#x54CD;&#x5E94;&#x5BF9; -setNeedsDisplay &#x7684;&#x8C03;&#x7528; 
+ * &#x6B64;&#x65F6;&#x89C6;&#x56FE;&#x7684;&#x5185;&#x90E8;&#x7ED8;&#x5236;&#x5FAA;&#x73AF;&#x88AB;&#x6682;&#x505C;&#xFF0C;&#x66F4;&#x65B0;&#x7531;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;
+ */
+@property (nonatomic) BOOL enableSetNeedsDisplay;
+
+/** &#x7ACB;&#x5373;&#x9A71;&#x52A8;&#x89C6;&#x56FE;&#x5185;&#x5BB9;&#x7684;&#x91CD;&#x7ED8;
+ * &#x8BE5;&#x65B9;&#x6CD5;&#x95F4;&#x63A5;&#x8C03;&#x7528;&#x5B50;&#x7C7B;&#x7684; -drawRect: &#x6216;&#x8005; [delegate -drawInMTKView:] 
+ * @note &#x4E0D;&#x8981;&#x5728;&#x7ED8;&#x56FE;&#x51FD;&#x6570;&#x4E2D;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;
+ */
+- (void)draw;
+
+/** &#x662F;&#x5426;&#x4F7F;&#x7528; Core Animation &#x4E8B;&#x52A1;&#x5448;&#x73B0;&#x5176;&#x5185;&#x5BB9;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; NO
+ * &#x786E;&#x5B9A;&#x89C6;&#x56FE;&#x662F;&#x5426;&#x5C06;&#x5176;&#x81EA;&#x8EAB;&#x5185;&#x5BB9;&#x7684;&#x66F4;&#x65B0;&#x4E0E; Core Animation &#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x5185;&#x5BB9;&#x66F4;&#x6539;&#x540C;&#x6B65;
+ * @discussion &#x5F53;&#x4E3A; NO &#x65F6;&#xFF0C;layer &#x7684;&#x6E32;&#x67D3;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x53D8;&#x5316;&#x4F1A;&#x4E0E;&#x666E;&#x901A;&#x5C42;&#x7684;&#x66F4;&#x65B0;&#x540C;&#x6B65;&#x51FA;&#x73B0;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x3002;
+ *             &#x5F53; YES &#x65F6;&#xFF0C;&#x5BF9; Metal &#x5185;&#x5BB9;&#x7684;&#x66F4;&#x6539;&#x5C06;&#x901A;&#x8FC7; CATransaction &#x673A;&#x5236;&#x53D1;&#x9001;&#x5230;&#x5C4F;&#x5E55;&#x3002;
+ */
+@property (nonatomic) BOOL presentsWithTransaction;
+</code></pre><h3 id="&#x91CA;&#x653E;&#x5185;&#x5B58;"><a name="&#x91CA;&#x653E;&#x5185;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x91CA;&#x653E;&#x5185;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CA;&#x653E;&#x5185;&#x5B58;</h3>
+<pre><code>/// &#x7531;&#x4E8E;&#x521B;&#x5EFA;&#x7684;&#x7EB9;&#x7406;&#x4F1A;&#x6D88;&#x8017;&#x5927;&#x91CF;&#x7684;&#x5185;&#x5B58;
+/// &#x6240;&#x4EE5;&#x7A0B;&#x5E8F;&#x8FDB;&#x5165;&#x540E;&#x53F0;&#x3001;&#x6216;&#x8005;&#x5F88;&#x957F;&#x65F6;&#x95F4;&#x4E0D;&#x663E;&#x793A;&#x7ED8;&#x5236;&#x5185;&#x5BB9;&#xFF0C;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x91CA;&#x653E; depthStencilTexture &#x548C; multisampleColorTexture &#x5BF9;&#x8C61;
+/// &#x89C6;&#x56FE;&#x5728;&#x4E0B;&#x4E00;&#x6B21;&#x8BBF;&#x95EE; depthStencilTexture &#x548C; multisampleColorTexture &#x5C5E;&#x6027;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x521B;&#x5EFA;
+- (void)releaseDrawables;
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-11-02 22:35:33
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> 搜索结果 "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有搜索结果 "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Metal简介.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Metal 文档">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MTKView 的使用","level":"1.3.6.1","depth":3,"next":{"title":"杂记","level":"1.3.7","depth":2,"ref":"","articles":[{"title":"iOS渲染机制初窥","level":"1.3.7.1","depth":3,"path":"iOS开发/杂记/iOS渲染机制初窥.md","ref":"iOS开发/杂记/iOS渲染机制初窥.md","articles":[]},{"title":"响应链","level":"1.3.7.2","depth":3,"path":"iOS开发/杂记/响应链.md","ref":"iOS开发/杂记/响应链.md","articles":[]},{"title":"并发编程","level":"1.3.7.3","depth":3,"path":"iOS开发/杂记/并发编程.md","ref":"iOS开发/杂记/并发编程.md","articles":[{"title":"线程NSThread","level":"1.3.7.3.1","depth":4,"path":"iOS开发/杂记/OC之Thread.md","ref":"iOS开发/杂记/OC之Thread.md","articles":[]},{"title":"任务队列NSOperation","level":"1.3.7.3.2","depth":4,"path":"iOS开发/杂记/OC之NSOperation.md","ref":"iOS开发/杂记/OC之NSOperation.md","articles":[]},{"title":"GCD","level":"1.3.7.3.3","depth":4,"path":"iOS开发/杂记/OC之GCD.md","ref":"iOS开发/杂记/OC之GCD.md","articles":[]}]},{"title":"OC的深拷贝与浅拷贝","level":"1.3.7.4","depth":3,"path":"iOS开发/杂记/OC的深拷贝与浅拷贝.md","ref":"iOS开发/杂记/OC的深拷贝与浅拷贝.md","articles":[]},{"title":"iOS 使用 cocoapods 创建组件化库","level":"1.3.7.5","depth":3,"path":"其它/sdk_cocoapods.md","ref":"其它/sdk_cocoapods.md","articles":[]},{"title":"一些内存优化","level":"1.3.7.6","depth":3,"path":"iOS开发/杂记/内存优化.md","ref":"iOS开发/杂记/内存优化.md","articles":[]},{"title":"一些内存泄漏","level":"1.3.7.7","depth":3,"path":"iOS开发/杂记/内存泄露.md","ref":"iOS开发/杂记/内存泄露.md","articles":[]},{"title":"刘海屏适配","level":"1.3.7.8","depth":3,"path":"iOS开发/杂记/刘海屏适配.md","ref":"iOS开发/杂记/刘海屏适配.md","articles":[]},{"title":"获取WIFI信息","level":"1.3.7.9","depth":3,"path":"iOS开发/杂记/获取WIFI信息.md","ref":"iOS开发/杂记/获取WIFI信息.md","articles":[]}]},"previous":{"title":"Metal 文档","level":"1.3.6","depth":2,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal简介.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal简介.md","articles":[{"title":"MTKView 的使用","level":"1.3.6.1","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKView.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKView.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKView.md","mtime":"2021-11-02T14:35:33.079Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-02T14:38:00.420Z"},"basePath":"../../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../../gitbook/gitbook.js"></script>
+    <script src="../../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
