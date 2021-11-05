@@ -1,0 +1,1713 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>三维空间的观察 · 个人博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="苏沫离">
+        <meta name="author" content="苏沫离">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="矩阵的变换.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="搜索关键字" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../计算机基础.html">
+            
+                <a href="../计算机基础.html">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../计算机组成篇/计算机概述篇.html">
+            
+                <a href="../计算机组成篇/计算机概述篇.html">
+            
+                    
+                    第一部分 计算机的组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../计算机组成篇/计算机组成篇.html">
+            
+                <a href="../计算机组成篇/计算机组成篇.html">
+            
+                    
+                    计算机组成篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../计算机组成篇/计算机计算篇.html">
+            
+                <a href="../计算机组成篇/计算机计算篇.html">
+            
+                    
+                    计算机计算篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../操作系统篇/操作系统基础篇.html">
+            
+                <a href="../操作系统篇/操作系统基础篇.html">
+            
+                    
+                    第二部分 操作系统篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../操作系统篇/进程管理篇.html">
+            
+                <a href="../操作系统篇/进程管理篇.html">
+            
+                    
+                    进程管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../操作系统篇/内存管理篇.html">
+            
+                <a href="../操作系统篇/内存管理篇.html">
+            
+                    
+                    内存管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../操作系统篇/文件系统篇.html">
+            
+                <a href="../操作系统篇/文件系统篇.html">
+            
+                    
+                    文件系统篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../操作系统篇/操作系统提升篇.html">
+            
+                <a href="../操作系统篇/操作系统提升篇.html">
+            
+                    
+                    操作系统提升篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../计算机网络/网络概述篇.html">
+            
+                <a href="../计算机网络/网络概述篇.html">
+            
+                    
+                    第三部分 网络篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../计算机网络/计算机物理层.html">
+            
+                <a href="../计算机网络/计算机物理层.html">
+            
+                    
+                    计算机物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../计算机网络/计算机数据链路层.html">
+            
+                <a href="../计算机网络/计算机数据链路层.html">
+            
+                    
+                    计算机数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../计算机网络/计算机网络层.html">
+            
+                <a href="../计算机网络/计算机网络层.html">
+            
+                    
+                    计算机网络层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../计算机网络/计算机传输层.html">
+            
+                <a href="../计算机网络/计算机传输层.html">
+            
+                    
+                    计算机传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../计算机网络/计算机应用层.html">
+            
+                <a href="../计算机网络/计算机应用层.html">
+            
+                    
+                    计算机应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.5.1" data-path="../计算机网络/HTTP协议.html">
+            
+                <a href="../计算机网络/HTTP协议.html">
+            
+                    
+                    HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.2" data-path="../计算机网络/HTTPS协议.html">
+            
+                <a href="../计算机网络/HTTPS协议.html">
+            
+                    
+                    HTTPS协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    第四部分 图形学基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="矩阵的变换.html">
+            
+                <a href="矩阵的变换.html">
+            
+                    
+                    矩阵的变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4.2" data-path="三维空间的观察.html">
+            
+                <a href="三维空间的观察.html">
+            
+                    
+                    三维空间的观察
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    iOS开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Runtime
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../iOS开发/Runtime/OC之Blocks.html">
+            
+                <a href="../../iOS开发/Runtime/OC之Blocks.html">
+            
+                    
+                    OC之Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../iOS开发/Runtime/OC内存管理.html">
+            
+                <a href="../../iOS开发/Runtime/OC内存管理.html">
+            
+                    
+                    OC内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                <a href="../../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                    
+                    OC内存管理之引用计数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                <a href="../../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                    
+                    +load方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../../iOS开发/Runtime/TaggedPointer.html">
+            
+                <a href="../../iOS开发/Runtime/TaggedPointer.html">
+            
+                    
+                    TaggedPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../../iOS开发/Runtime/编译objc4.html">
+            
+                <a href="../../iOS开发/Runtime/编译objc4.html">
+            
+                    
+                    编译objc4备忘录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                    
+                    Runtime函数库中关于协议Protocol的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../../iOS开发/Runtime/Runtime_Property.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Property.html">
+            
+                    
+                    Runtime函数库中关于属性与变量的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../../iOS开发/Runtime/Runtime_Instance.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Instance.html">
+            
+                    
+                    Runtime函数库中关于实例对象的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="../../iOS开发/Runtime/Runtime_Class.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Class.html">
+            
+                    
+                    Runtime函数库中关于Class的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="../../iOS开发/Runtime/Runtime_Method.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Method.html">
+            
+                    
+                    Runtime函数库中关于 Class 的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../iOS开发/CoreText/CoteText概述.html">
+            
+                <a href="../../iOS开发/CoreText/CoteText概述.html">
+            
+                    
+                    CoreText
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                <a href="../../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                    
+                    CoteText排版与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                <a href="../../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                    
+                    CTLineRef的函数库及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                <a href="../../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                    
+                    图文混排的关键：CTRunRef 与 CTRunDelegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    CoreImage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                <a href="../../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                    
+                    图像特征CIFeature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                <a href="../../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                    
+                    图片检测CIDetector
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Graphics_Metal/MetalDocument/Metal调试.html">
+            
+                <a href="Graphics_Metal/MetalDocument/Metal调试.html">
+            
+                    
+                    Metal 实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="Graphics_Metal/MetalDocument/Metal的简单计算.html">
+            
+                <a href="Graphics_Metal/MetalDocument/Metal的简单计算.html">
+            
+                    
+                    内核计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="Graphics_Metal/MetalDocument/Metal绘制三角形.html">
+            
+                <a href="Graphics_Metal/MetalDocument/Metal绘制三角形.html">
+            
+                    
+                    绘制三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="Graphics_Metal/MetalDocument/简单的纹理贴图.html">
+            
+                <a href="Graphics_Metal/MetalDocument/简单的纹理贴图.html">
+            
+                    
+                    纹理贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="Graphics_Metal/MetalDocument/CPU与GPU协调工作.html">
+            
+                <a href="Graphics_Metal/MetalDocument/CPU与GPU协调工作.html">
+            
+                    
+                    CPU与GPU协调工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="Graphics_Metal/MetalDocument/深度测试.html">
+            
+                <a href="Graphics_Metal/MetalDocument/深度测试.html">
+            
+                    
+                    深度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="Graphics_Metal/MetalDocument/读取纹理像素.md">
+            
+                <span>
+            
+                    
+                    线程与线程组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="Graphics_Metal/MetalDocument/离屏渲染.html">
+            
+                <a href="Graphics_Metal/MetalDocument/离屏渲染.html">
+            
+                    
+                    自定义MTLRenderPassDescriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Graphics_Metal/MetalDocument/Metal简介.html">
+            
+                <a href="Graphics_Metal/MetalDocument/Metal简介.html">
+            
+                    
+                    Metal API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="Graphics_Metal/MetalDocument/MTKView.html">
+            
+                <a href="Graphics_Metal/MetalDocument/MTKView.html">
+            
+                    
+                    MTKView API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="Graphics_Metal/MetalDocument/MTLDevice.html">
+            
+                <a href="Graphics_Metal/MetalDocument/MTLDevice.html">
+            
+                    
+                    MTLDevice API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="Graphics_Metal/MetalDocument/MDLMesh.html">
+            
+                <a href="Graphics_Metal/MetalDocument/MDLMesh.html">
+            
+                    
+                    MDLMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="Graphics_Metal/MetalDocument/MTKModel.html">
+            
+                <a href="Graphics_Metal/MetalDocument/MTKModel.html">
+            
+                    
+                    MTKMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="Graphics_Metal/MetalDocument/MTLDepthStencil.html">
+            
+                <a href="Graphics_Metal/MetalDocument/MTLDepthStencil.html">
+            
+                    
+                    MTLDepthStencilDescriptor API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="Graphics_Metal/MetalDocument/MDLVertexDescriptor.html">
+            
+                <a href="Graphics_Metal/MetalDocument/MDLVertexDescriptor.html">
+            
+                    
+                    MDLVertexDescriptor API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="Graphics_Metal/MetalDocument/MTLRenderPass.html">
+            
+                <a href="Graphics_Metal/MetalDocument/MTLRenderPass.html">
+            
+                    
+                    MTLRenderPass API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="Graphics_Metal/MetalDocument/MTLFunction.html">
+            
+                <a href="Graphics_Metal/MetalDocument/MTLFunction.html">
+            
+                    
+                    MTLFunction API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.9" data-path="Graphics_Metal/MetalDocument/MTLLibrary.html">
+            
+                <a href="Graphics_Metal/MetalDocument/MTLLibrary.html">
+            
+                    
+                    MTLLibrary API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" >
+            
+                <span>
+            
+                    
+                    杂记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                <a href="../../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                    
+                    iOS渲染机制初窥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../../iOS开发/杂记/响应链.html">
+            
+                <a href="../../iOS开发/杂记/响应链.html">
+            
+                    
+                    响应链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../../iOS开发/杂记/并发编程.html">
+            
+                <a href="../../iOS开发/杂记/并发编程.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.3.1" data-path="../../iOS开发/杂记/OC之Thread.html">
+            
+                <a href="../../iOS开发/杂记/OC之Thread.html">
+            
+                    
+                    线程NSThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3.2" data-path="../../iOS开发/杂记/OC之NSOperation.html">
+            
+                <a href="../../iOS开发/杂记/OC之NSOperation.html">
+            
+                    
+                    任务队列NSOperation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3.3" data-path="../../iOS开发/杂记/OC之GCD.html">
+            
+                <a href="../../iOS开发/杂记/OC之GCD.html">
+            
+                    
+                    GCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                <a href="../../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                    
+                    OC的深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="../../其它/sdk_cocoapods.html">
+            
+                <a href="../../其它/sdk_cocoapods.html">
+            
+                    
+                    iOS 使用 cocoapods 创建组件化库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="../../iOS开发/杂记/内存优化.html">
+            
+                <a href="../../iOS开发/杂记/内存优化.html">
+            
+                    
+                    一些内存优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="../../iOS开发/杂记/内存泄露.html">
+            
+                <a href="../../iOS开发/杂记/内存泄露.html">
+            
+                    
+                    一些内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.8" data-path="../../iOS开发/杂记/刘海屏适配.html">
+            
+                <a href="../../iOS开发/杂记/刘海屏适配.html">
+            
+                    
+                    刘海屏适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.9" data-path="../../iOS开发/杂记/获取WIFI信息.html">
+            
+                <a href="../../iOS开发/杂记/获取WIFI信息.html">
+            
+                    
+                    获取WIFI信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    C/C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../C_C++篇/C++学习入门篇.html">
+            
+                <a href="../../C_C++篇/C++学习入门篇.html">
+            
+                    
+                    C++学习入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../C_C++篇/C++学习封装篇.html">
+            
+                <a href="../../C_C++篇/C++学习封装篇.html">
+            
+                    
+                    C++学习封装篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../C_C++篇/C++学习继承篇.html">
+            
+                <a href="../../C_C++篇/C++学习继承篇.html">
+            
+                    
+                    C++学习继承篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../C_C++篇/C++学习多态篇.html">
+            
+                <a href="../../C_C++篇/C++学习多态篇.html">
+            
+                    
+                    C++学习多态篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    C
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../C_C++篇/C数组.html">
+            
+                <a href="../../C_C++篇/C数组.html">
+            
+                    
+                    C语言数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../C_C++篇/C结构.html">
+            
+                <a href="../../C_C++篇/C结构.html">
+            
+                    
+                    C语言结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../C_C++篇/C递归.html">
+            
+                <a href="../../C_C++篇/C递归.html">
+            
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../Git体系/Git常用命令.html">
+            
+                <a href="../../Git体系/Git常用命令.html">
+            
+                    
+                    Git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../Git体系/Github和SSH密钥.html">
+            
+                <a href="../../Git体系/Github和SSH密钥.html">
+            
+                    
+                    Github和SSH密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../Gitbook指导/">
+            
+                <a href="../../Gitbook指导/">
+            
+                    
+                    GitBook 使用教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../Gitbook指导/gitbook教程.html">
+            
+                <a href="../../Gitbook指导/gitbook教程.html">
+            
+                    
+                    GitBook 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../Gitbook指导/gitbook语法.html">
+            
+                <a href="../../Gitbook指导/gitbook语法.html">
+            
+                    
+                    GitBook 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.sumoli.work" target="blank" class="gitbook-link">
+            苏沫离
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >三维空间的观察</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;"><b></b>&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;</a></li><li><span class="title-icon "></span><a href="#1&#x3001;&#x6295;&#x5F71;&#x5206;&#x7C7B;"><b></b>1&#x3001;&#x6295;&#x5F71;&#x5206;&#x7C7B;</a></li><ul><li><span class="title-icon "></span><a href="#11&#x3001;&#x5E73;&#x884C;&#x6295;&#x5F71;"><b></b>1.1&#x3001;&#x5E73;&#x884C;&#x6295;&#x5F71;</a></li><li><span class="title-icon "></span><a href="#12&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;"><b></b>1.2&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;</a></li><ul><li><span class="title-icon "></span><a href="#121&#x3001;&#x706D;&#x70B9;"><b></b>1.2.1&#x3001;&#x706D;&#x70B9;</a></li></ul></ul><li><span class="title-icon "></span><a href="#2&#x3001;&#x4E09;&#x7EF4;&#x53D8;&#x6362;&#x6D41;&#x6C34;&#x7EBF;"><b></b>2&#x3001;&#x4E09;&#x7EF4;&#x53D8;&#x6362;&#x6D41;&#x6C34;&#x7EBF;</a></li><ul><li><span class="title-icon "></span><a href="#21&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x4E0E;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;"><b></b>2.1&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x4E0E;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;</a></li><ul><li><span class="title-icon "></span><a href="#211&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;"><b></b>2.1.1&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;</a></li></ul><li><span class="title-icon "></span><a href="#22&#x3001;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x4E0B;&#x7684;&#x89C6;&#x666F;&#x4F53;"><b></b>2.2&#x3001;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x4E0B;&#x7684;&#x89C6;&#x666F;&#x4F53;</a></li><ul><li><span class="title-icon "></span><a href="#221&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;"><b></b>2.2.1&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;</a></li></ul></ul></ul></div><h1 id="&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;"><a name="&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;</h1>
+<p>&#x6295;&#x5F71;&#x5C31;&#x662F;&#x4ECE;&#x6295;&#x5F71;&#x4E2D;&#x5FC3;&#x53D1;&#x51FA;&#x5C04;&#x7EBF;&#xFF0C;&#x7ECF;&#x8FC7;&#x4E09;&#x7EF4;&#x7269;&#x4F53;&#x4E0A;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x70B9;&#x4E4B;&#x540E;&#xFF0C;&#x4E0E;&#x6295;&#x5F71;&#x9762;&#x76F8;&#x4EA4;&#x6240;&#x5F62;&#x6210;&#x7684;&#x4EA4;&#x70B9;&#x96C6;&#x5408;&#x3002;</p>
+<p>&#x6295;&#x5F71;&#x53D8;&#x6362;&#xFF1A;&#x4ECE;&#x6570;&#x5B66;&#x89D2;&#x5EA6;&#x89C2;&#x5BDF;&#xFF0C;&#x6295;&#x5F71;&#x5C31;&#x662F;&#x5C06;&#x4E09;&#x7EF4;&#x5750;&#x6807;&#x8F6C;&#x53D8;&#x4E3A;&#x4E8C;&#x7EF4;&#x5750;&#x6807;&#x7684;&#x8FC7;&#x7A0B;&#xFF1B;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF1A;&#x6295;&#x5F71;&#x7684;&#x672C;&#x8D28;&#x5C31;&#x662F;&#x964D;&#x7EF4;&#xFF01;</p>
+<h1 id="1&#x3001;&#x6295;&#x5F71;&#x5206;&#x7C7B;"><a name="1&#x3001;&#x6295;&#x5F71;&#x5206;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x6295;&#x5F71;&#x5206;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x6295;&#x5F71;&#x5206;&#x7C7B;</h1>
+<ul>
+<li>&#x5F53;&#x6295;&#x5F71;&#x4E2D;&#x5FC3;&#x5230;&#x6295;&#x5F71;&#x9762;&#x7684;&#x8DDD;&#x79BB;&#x4E3A;&#x65E0;&#x7A77;&#x5927;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5E73;&#x884C;&#x6295;&#x5F71;&#xFF1B;</li>
+<li>&#x5F53;&#x6295;&#x5F71;&#x4E2D;&#x5FC3;&#x5230;&#x6295;&#x5F71;&#x9762;&#x7684;&#x8DDD;&#x79BB;&#x4E3A;&#x6709;&#x9650;&#x503C;&#x65F6;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x900F;&#x89C6;&#x6295;&#x5F71;&#xFF1B;</li>
+</ul>
+<h2 id="11&#x3001;&#x5E73;&#x884C;&#x6295;&#x5F71;"><a name="11&#x3001;&#x5E73;&#x884C;&#x6295;&#x5F71;" class="anchor-navigation-ex-anchor" href="#11&#x3001;&#x5E73;&#x884C;&#x6295;&#x5F71;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1&#x3001;&#x5E73;&#x884C;&#x6295;&#x5F71;</h2>
+<blockquote>
+<p>&#x5E73;&#x884C;&#x6295;&#x5F71;&#xFF1A;&#x6BCF;&#x4E2A;&#x70B9;&#x7684;&#x6295;&#x5F71;&#x65B9;&#x5411;&#x4E00;&#x81F4;&#xFF01;</p>
+</blockquote>
+<p><img src="assets/&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;_&#x591A;&#x89C6;&#x56FE;&#x6295;&#x5F71;.PNG" alt="&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;_&#x591A;&#x89C6;&#x56FE;&#x6295;&#x5F71;"></p>
+<p>&#x6839;&#x636E;&#x6295;&#x5F71;&#x65B9;&#x5411;&#x4E0E;&#x6295;&#x5F71;&#x9762;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>&#x659C;&#x6295;&#x5F71;&#xFF1A;</li>
+<li>&#x6B63;&#x4EA4;&#x6295;&#x5F71;&#xFF1A;&#x6295;&#x5F71;&#x65B9;&#x5411;&#x548C;&#x6295;&#x5F71;&#x5E73;&#x9762;&#x5782;&#x76F4;&#xFF01;</li>
+</ul>
+<h2 id="12&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;"><a name="12&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;" class="anchor-navigation-ex-anchor" href="#12&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;</h2>
+<p>&#x900F;&#x89C6;&#x6295;&#x5F71;&#xFF1A;&#x4F7F;&#x7528;&#x4E2D;&#x5FC3;&#x6295;&#x5F71;&#x6CD5;&#x5C06;&#x7269;&#x4F53;&#x6295;&#x5C04;&#x5230;&#x6295;&#x5F71;&#x9762;&#x4E0A;&#xFF0C;&#x4ECE;&#x800C;&#x83B7;&#x5F97;&#x7684;&#x4E00;&#x79CD;&#x8F83;&#x4E3A;&#x63A5;&#x8FD1;&#x89C6;&#x89C9;&#x6548;&#x679C;&#x7684;&#x5355;&#x9762;&#x6295;&#x5F71;&#x56FE;&#xFF01;</p>
+<p><img src="assets/&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;_&#x900F;&#x89C6;&#x6295;&#x5F71;.PNG" alt="&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;_&#x900F;&#x89C6;&#x6295;&#x5F71;"></p>
+<p>&#x6839;&#x636E;&#x5C4F;&#x5E55;&#x5207;&#x5272;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x5750;&#x6807;&#x8F74;&#x6570;&#x91CF;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>&#x4E00;&#x70B9;&#x900F;&#x89C6;&#xFF1B;</li>
+<li>&#x4E8C;&#x70B9;&#x900F;&#x89C6;&#xFF1B;</li>
+<li>&#x4E09;&#x70B9;&#x900F;&#x89C6;&#xFF1B;</li>
+</ul>
+<h3 id="121&#x3001;&#x706D;&#x70B9;"><a name="121&#x3001;&#x706D;&#x70B9;" class="anchor-navigation-ex-anchor" href="#121&#x3001;&#x706D;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1&#x3001;&#x706D;&#x70B9;</h3>
+<p>&#x6A21;&#x62DF;&#x4EBA;&#x7684;&#x773C;&#x775B;&#x4E8E;&#x4E00;&#x4E2A;&#x70B9;&#xFF0C;&#x900F;&#x8FC7;&#x4E00;&#x4E2A;&#x5E73;&#x9762;&#x89C2;&#x5BDF;&#x7ACB;&#x65B9;&#x4F53;&#xFF01;</p>
+<p><img src="assets/&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;_&#x900F;&#x89C6;&#x6295;&#x5F71;&#x706D;&#x70B9;.PNG" alt="&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x7684;&#x6295;&#x5F71;_&#x900F;&#x89C6;&#x6295;&#x5F71;&#x706D;&#x70B9;"></p>
+<p>&#x6309;&#x7167;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x7684;&#x89C4;&#x5219;&#xFF1A;&#x89C2;&#x5BDF;&#x7684;&#x56DB;&#x8FB9;&#x5F62;&#xFF0C;&#x968F;&#x7740;&#x89C6;&#x7EBF;&#x7684;&#x5EF6;&#x4F38;&#xFF0C;&#x4F1A;&#x8D8A;&#x6765;&#x8D8A;&#x5C0F;&#xFF0C;&#x76F4;&#x5230;&#x53D8;&#x6210;&#x4E00;&#x4E2A;&#x70B9;&#xFF08;&#x706D;&#x70B9;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x6D88;&#x5931;&#xFF1B;&#x8FD9;&#x662F;&#x4E00;&#x79CD; &#x2018;&#x8FD1;&#x5927;&#x8FDC;&#x5C0F;&#x2019; &#x7684;&#x89C2;&#x5BDF;&#x6548;&#x679C;&#xFF01;</p>
+<p>&#x4EE5;&#x4E2D;&#x8F74;&#x7EBF;&#x4E3A;&#x5206;&#x754C;&#x7EBF;&#xFF0C;&#x773C;&#x775B;&#x4E0E;&#x706D;&#x70B9;&#x4E4B;&#x95F4;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x5BF9;&#x79F0;&#x7684;&#x6548;&#x679C;&#xFF1B;&#x540C;&#x6837;&#x9AD8;&#x5EA6;&#x7684;&#x7EBF;&#x6BB5;&#xFF0C;&#x968F;&#x7740;&#x8DDD;&#x79BB;&#x773C;&#x775B;&#x8D8A;&#x8FD1;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x5C31;&#x8D8A;&#x9AD8;&#xFF1B;&#x968F;&#x7740;&#x8DDD;&#x79BB;&#x706D;&#x70B9;&#x8D8A;&#x8FD1;&#xFF0C;&#x770B;&#x8D77;&#x6765;&#x5C31;&#x8D8A;&#x5C0F;&#xFF01;</p>
+<p><strong>&#x706D;&#x70B9;</strong> &#xFF1A;&#x5728;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x4E2D;&#xFF0C;&#x4E00;&#x675F;&#x5E73;&#x884C;&#x4E8E;&#x6295;&#x5F71;&#x9762;&#x7684;&#x5E73;&#x884C;&#x7EBF;&#x6295;&#x5F71;&#x53EF;&#x4EE5;&#x4FDD;&#x6301;&#x5E73;&#x884C;&#xFF0C;&#x800C;&#x4E0D;&#x5E73;&#x884C;&#x4E8E;&#x6295;&#x5F71;&#x9762;&#x7684;&#x5E73;&#x884C;&#x7EBF;&#x7684;&#x6295;&#x5F71;&#x4F1A;&#x805A;&#x96C6;&#x5230;&#x4E00;&#x4E2A;&#x70B9;&#xFF0C;&#x8FD9;&#x4E2A;&#x70B9;&#x6210;&#x4E3A;&#x706D;&#x70B9;&#xFF08;Vanishing Point&#xFF09;&#x3002;</p>
+<ul>
+<li>&#x706D;&#x70B9;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x662F;&#x65E0;&#x9650;&#x8FDC;&#x5904;&#x7684;&#x4E00;&#x70B9;&#x5728;&#x6295;&#x5F71;&#x9762;&#x4E0A;&#x7684;&#x6295;&#x5F71;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x662F;&#x5E73;&#x884C;&#x900F;&#x89C6;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x706D;&#x70B9;&#xFF0C;&#x5728;&#x5BF9;&#x8C61;&#x4E2D;&#x95F4;&#x7684;&#x540E;&#x65B9;&#x3002;&#x65B9;&#x6CD5;&#x662F;&#x5EF6;&#x957F;&#x7269;&#x4F53;&#x5DE6;&#x53F3;&#x7EB5;&#x6DF1;&#x7684;&#x4E24;&#x6761;&#x6709;&#x4F1A;&#x805A;&#x8D8B;&#x52BF;&#x7684;&#x7EBF;&#xFF0C;&#x5411;&#x540E;&#x65B9;&#x4F1A;&#x805A;&#x4E8E;&#x4E00;&#x70B9;&#xFF0C;&#x5E73;&#x884C;&#x900F;&#x89C6;&#x80FD;&#x4EA7;&#x751F;&#x7EB5;&#x6DF1;&#x611F;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x662F;&#x6210;&#x89D2;&#x900F;&#x89C6;&#xFF0C;&#x6709;&#x4E24;&#x4E2A;&#x706D;&#x70B9;&#xFF0C;&#x5728;&#x5BF9;&#x8C61;&#x7684;&#x4E24;&#x4FA7;&#x7684;&#x540E;&#x65B9;&#xFF1B;
+&#x65B9;&#x6CD5;&#x662F;&#x5206;&#x522B;&#x5EF6;&#x957F;&#x7269;&#x4F53;&#x5DE6;&#x53F3;&#x4E24;&#x65B9;&#x7684;&#x6709;&#x4F1A;&#x805A;&#x8D8B;&#x52BF;&#x7684;&#x56DB;&#x6761;&#x7EBF;&#xFF0C;&#x4E24;&#x4E24;&#x4EA4;&#x4E8E;&#x5BF9;&#x8C61;&#x5DE6;&#x53F3;&#x4E24;&#x8FB9;&#x7684;&#x540E;&#x65B9;&#xFF0C;&#x5F62;&#x6210;&#x4E24;&#x4E2A;&#x706D;&#x70B9;&#xFF1B;
+&#x6210;&#x89D2;&#x900F;&#x89C6;&#x662F;&#x6700;&#x7B26;&#x5408;&#x89C6;&#x89C9;&#x4E60;&#x60EF;&#x7684;&#x900F;&#x89C6;&#xFF0C;&#x5F88;&#x5BCC;&#x6709;&#x7ACB;&#x4F53;&#x611F;&#xFF1B;
+&#x51E1;&#x662F;&#x5E73;&#x884C;&#x4E8E;&#x753B;&#x9762;&#x7684;&#x76F4;&#x7EBF;&#x90FD;&#x6CA1;&#x6709;&#x706D;&#x70B9;&#xFF0C;&#x51E1;&#x662F;&#x4E0E;&#x753B;&#x9762;&#x6709;&#x4E00;&#x5B9A;&#x89D2;&#x5EA6;&#x7684;&#x4E00;&#x7EC4;&#x5E73;&#x884C;&#x7EBF;&#xFF0C;&#x90FD;&#x6709;&#x706D;&#x70B9;&#x3002;
+&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x89D2;&#x5EA6;&#x662F;90&#x5EA6;&#xFF0C;&#x5C31;&#x662F;&#x5E73;&#x884C;&#x900F;&#x89C6;&#xFF1B;&#x5426;&#x5219;&#x662F;&#x6210;&#x89D2;&#x900F;&#x89C6;&#x3002;</li>
+</ul>
+<p>&#x5F71;&#x706D;&#x70B9;&#x2014;&#x2014;&#x6B63;&#x9762;&#x81EA;&#x7136;&#x5149;&#x7167;&#x5C04;&#xFF0C;&#x9634;&#x5F71;&#x5411;&#x540E;&#x7684;&#x6D88;&#x5931;&#x70B9;&#x3002;&#x6807;&#x8BC6;&#x4E3A;VS&#xFF08;Vanishingofshadow&#xFF09;&#xFF0C;&#x5149;&#x706D;&#x70B9;&#x2014;&#x2014;&#x5F71;&#x706D;&#x70B9;&#x5411;&#x4E0B;&#x5782;&#x76F4;&#x4E8E;&#x89E6;&#x5F71;&#x9762;&#x7684;&#x70B9;&#x3002;&#x6807;&#x8BC6;&#x4E3A;VL&#xFF08;Vanishingoflight&#xFF09;</p>
+<h1 id="2&#x3001;&#x4E09;&#x7EF4;&#x53D8;&#x6362;&#x6D41;&#x6C34;&#x7EBF;"><a name="2&#x3001;&#x4E09;&#x7EF4;&#x53D8;&#x6362;&#x6D41;&#x6C34;&#x7EBF;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x4E09;&#x7EF4;&#x53D8;&#x6362;&#x6D41;&#x6C34;&#x7EBF;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x4E09;&#x7EF4;&#x53D8;&#x6362;&#x6D41;&#x6C34;&#x7EBF;</h1>
+<p><img src="assets/&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x5750;&#x6807;&#x53D8;&#x6362;&#x6D41;&#x6C34;&#x7EBF;.PNG" alt="&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x5750;&#x6807;&#x53D8;&#x6362;&#x6D41;&#x6C34;&#x7EBF;"></p>
+<p>&#x5728;&#x6574;&#x4E2A;&#x6E32;&#x67D3;&#x7BA1;&#x7EBF;&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;&#x9876;&#x70B9;&#x53EF;&#x80FD;&#x4F1A;&#x7ECF;&#x5386;&#x4E00;&#x4E0B;&#x516D;&#x79CD;&#x5750;&#x6807;&#x7A7A;&#x95F4;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x6362;&#xFF1A;</p>
+<ul>
+<li>1&#x3001;&#x6A21;&#x578B;&#x5750;&#x6807;&#xFF1A;&#x6A21;&#x578B;&#x5750;&#x6807;&#x8868;&#x793A;&#x7684;&#x662F;&#x6A21;&#x578B;&#x4E2D;&#x6240;&#x6709;&#x70B9;&#x76F8;&#x5BF9;&#x4E8E;&#x6A21;&#x578B;&#x672C;&#x8EAB;&#x539F;&#x70B9;&#x7684;&#x4E00;&#x4E2A;&#x5750;&#x6807;&#x7CFB;&#xFF1B;&#x5C5E;&#x4E8E;&#x53F3;&#x624B;&#x5750;&#x6807;&#x7CFB;&#xFF1B;</li>
+<li>2&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#xFF1A;&#x4E16;&#x754C;&#x5750;&#x6807;&#x662F;&#x6307;&#x6A21;&#x578B;&#x4E2D;&#x6BCF;&#x4E2A;&#x70B9;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x539F;&#x70B9;&#x7684;&#x4E00;&#x4E2A;&#x5750;&#x6807;&#x4F4D;&#x7F6E;&#xFF1B;&#x5C5E;&#x4E8E;&#x53F3;&#x624B;&#x5750;&#x6807;&#x7CFB;&#xFF1B;</li>
+<li>3&#x3001;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#xFF08;&#x76F8;&#x673A;&#x5750;&#x6807;&#x6216;&#x8005;&#x4EBA;&#x773C;&#x5750;&#x6807;&#xFF09;&#xFF1A;&#x5728;&#x4E16;&#x754C;&#x5750;&#x6807;&#x4E2D;&#x7684;&#x6A21;&#x578B;&#xFF0C;&#x76F8;&#x5BF9;&#x4E8E;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7684;&#x6620;&#x5C04;&#xFF1B;&#x53F3;&#x624B;&#x6216;&#x8005;&#x5DE6;&#x624B;&#x5750;&#x6807;&#x7CFB;&#xFF1B;</li>
+<li>4&#x3001;&#x6295;&#x5F71;&#x5750;&#x6807;&#xFF1A;&#x6295;&#x5F71;&#x7684;&#x6700;&#x7EC8;&#x76EE;&#x7684;&#x662F;&#x5C06;&#x4E00;&#x4E2A;&#x4E09;&#x7EF4;&#x7269;&#x4F53;&#x5C55;&#x793A;&#x5728; <strong>&#x4E8C;&#x7EF4;&#x5E73;&#x9762;&#x7684;&#x526A;&#x88C1;&#x7A7A;&#x95F4;</strong> &#x91CC;&#xFF1B;&#x5C5E;&#x4E8E;&#x5DE6;&#x624B;&#x5750;&#x6807;&#x7CFB;&#xFF1B;
+  &#x5982;&#x679C;&#x662F;&#x6B63;&#x4EA4;&#x6295;&#x5F71;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x526A;&#x88C1;&#x7A7A;&#x95F4;&#x60F3;&#x8C61;&#x4E3A;&#x4E00;&#x4E2A;&#x7ACB;&#x65B9;&#x4F53;&#x7A7A;&#x95F4;&#xFF1B;
+  &#x5982;&#x679C;&#x662F;&#x900F;&#x89C6;&#x6295;&#x5F71;&#xFF0C;&#x5219;&#x526A;&#x88C1;&#x7A7A;&#x95F4;&#x662F;&#x4E00;&#x4E2A;&#x9525;&#x4F53;&#xFF0C;&#x7269;&#x4F53;&#x5448;&#x73B0;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x8FD1;&#x5927;&#x8FDC;&#x5C0F;&#x7684;&#x6548;&#x679C;&#xFF1B;</li>
+<li>5&#x3001;NDC&#x5750;&#x6807;&#xFF1A;&#x5C06;&#x526A;&#x88C1;&#x7A7A;&#x95F4;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x5F52;&#x4E00;&#x5316;&#xFF1B;&#x5C5E;&#x4E8E;&#x5DE6;&#x624B;&#x5750;&#x6807;&#x7CFB;&#xFF1B;
+  &#x5728; Metal &#x4E2D;<code>(x,y)</code> &#x53D6;&#x503C;&#x8303;&#x56F4; <code>[-1,1]</code>, <code>z</code> &#x53D6;&#x503C;&#x8303;&#x56F4; <code>[0,1]</code>&#xFF1B;
+  &#x5728; OpenGL &#x4E2D;&#xFF0C;<code>Z</code> &#x8F74;&#x7684;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x4E3A; <code>[-1,1]</code> &#x4E14;&#x4F7F;&#x7528;&#x53F3;&#x624B;&#x5750;&#x6807;&#x7CFB;</li>
+<li>6&#x3001;&#x5C4F;&#x5E55;&#x5750;&#x6807;&#xFF1A;&#x6240;&#x6709;&#x9876;&#x70B9;&#x6700;&#x7EC8;&#x4F1A;&#x8F6C;&#x6362;&#x6210;&#x5728;&#x5C4F;&#x5E55;&#x5750;&#x6807;&#x7CFB;&#x4E0A;&#x7684;&#x4E00;&#x4E2A;&#x5750;&#x6807;</li>
+</ul>
+<pre><code>/// &#x4FDD;&#x5B58;&#x5E38;&#x91CF;&#x6570;&#x636E;
+typedef struct {
+    matrix_float4x4 worldMatrix; /// &#x6A21;&#x578B;&#x4ECE;&#x6A21;&#x578B;&#x5750;&#x6807;&#x8F6C;&#x6362;&#x5230;&#x4E16;&#x754C;&#x5750;&#x6807;&#xFF1A;&#x5E73;&#x79FB;&#x3001;&#x65CB;&#x8F6C;&#x3001;&#x7F29;&#x653E;&#x7B49;&#x6700;&#x7EC8;&#x5F62;&#x6210;&#x7684;&#x590D;&#x5408;&#x53D8;&#x6362;
+    matrix_float4x4 viewMatrix; ///  &#x4E16;&#x754C;&#x5750;&#x6807;&#x5230;&#x76F8;&#x673A;&#x5750;&#x6807;&#x4E0A;&#x7684;&#x8F6C;&#x6362;&#xFF1A;&#x4E24;&#x4E2A;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x5207;&#x6362;
+    matrix_float4x4 projectionMatrix; /// &#x900F;&#x89C6;&#x6295;&#x5F71;&#xFF1A;&#x4F7F;&#x5F97;&#x5728;&#x5E73;&#x9762;&#x4E0A;&#x4EA7;&#x751F;&#x7269;&#x4F53;&#x8FD1;&#x5927;&#x8FDC;&#x5C0F;&#x7684;&#x6548;&#x679C;
+} Uniforms;
+</code></pre><h2 id="21&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x4E0E;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;"><a name="21&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x4E0E;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#21&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x4E0E;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x4E0E;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;</h2>
+<p>&#x4ECE;&#x6A21;&#x578B;&#x5750;&#x6807;&#xFF0C;&#x5230;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x77E9;&#x9635;&#x7684;&#x5E73;&#x79FB;&#x3001;&#x65CB;&#x8F6C;&#x6765;&#x8F7B;&#x677E;&#x5B9E;&#x73B0;&#xFF01;</p>
+<p>&#x4ECE;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x8F6C;&#x6362;&#xFF0C;&#x7A0D;&#x663E;&#x590D;&#x6742;&#x4E9B;&#xFF01;&#x56E0;&#x4E3A;&#x89C2;&#x5BDF;&#x70B9;&#xFF08;&#x773C;&#x775B;&#x6216;&#x76F8;&#x673A;&#xFF09;&#x662F;&#x968F;&#x65F6;&#x79FB;&#x52A8;&#x7684;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x7B97;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7;&#x7ED9;&#x5B9A;&#x773C;&#x775B;&#x7684;&#x4F4D;&#x7F6E;&#x3001;&#x89C6;&#x7EBF;&#x7684;&#x65B9;&#x5411;&#xFF0C;&#x6765;&#x6C42;&#x51FA;&#x6B64;&#x523B;&#x7684;&#x590D;&#x5408;&#x53D8;&#x6362;&#x77E9;&#x9635;&#xFF01;</p>
+<p><img src="assets/&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x8F6C;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;.PNG" alt="&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x8F6C;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;"></p>
+<p>&#x5728;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x4E2D;:</p>
+<ul>
+<li>&#x89C2;&#x5BDF;&#x70B9;&#x5728;&#x5750;&#x6807;&#x539F;&#x70B9;&#xFF1B;</li>
+<li>&#x89C6;&#x7EBF;&#x65B9;&#x5411;&#x4E3A; Z &#x8F74;&#x7684;&#x6B63;&#x65B9;&#x5411;&#xFF1A;</li>
+<li>&#x53EF;&#x4EE5;&#x662F;&#x53F3;&#x624B;&#x5750;&#x6807;&#x7CFB;&#x3001;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x5DE6;&#x624B;&#x5750;&#x6807;&#x7CFB;&#xFF1B;&#x5982;&#x679C;&#x662F;&#x53F3;&#x624B;&#x5750;&#x6807;&#x7CFB;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x526A;&#x88C1;&#x7A7A;&#x95F4;&#x4E4B;&#x524D;&#x8F6C;&#x4E3A;&#x5DE6;&#x624B;&#x5750;&#x6807;&#x7CFB;&#xFF1B;</li>
+<li><code>XY</code> &#x5E73;&#x9762;&#x548C; <code>Z</code> &#x5782;&#x76F4;&#xFF1B;</li>
+</ul>
+<h3 id="211&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;"><a name="211&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;" class="anchor-navigation-ex-anchor" href="#211&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1&#x3001;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;</h3>
+<p><img src="assets/&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x8F6C;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x70B9;.PNG" alt="&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x8F6C;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;"></p>
+<blockquote>
+<p>&#x7269;&#x4F53;&#x7684;&#x8FD0;&#x52A8;&#x662F;&#x76F8;&#x5BF9;&#x7684;&#xFF01;</p>
+</blockquote>
+<p>&#x5F53;&#x7269;&#x4F53;&#x4E0E;&#x89C2;&#x5BDF;&#x70B9;&#x7684;&#x8DDD;&#x79BB;&#x8D8A;&#x6765;&#x8D8A;&#x5927;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x7269;&#x4F53;&#x5728;&#x8FDC;&#x79BB;&#x89C2;&#x5BDF;&#x70B9;&#xFF0C;&#x6240;&#x4EE5;&#x770B;&#x8D77;&#x6765;&#x201C;&#x7269;&#x4F53;&#x8D8A;&#x6765;&#x8D8A;&#x8FDC;&#x3001;&#x8D8A;&#x6765;&#x8D8A;&#x5C0F;&#x201D;&#xFF1B;</li>
+<li>&#x89C2;&#x5BDF;&#x70B9;&#x5728;&#x8FDC;&#x79BB;&#x7269;&#x4F53;&#xFF0C;&#x6240;&#x4EE5;&#x770B;&#x8D77;&#x6765;&#x201C;&#x7269;&#x4F53;&#x8D8A;&#x6765;&#x8D8A;&#x8FDC;&#x3001;&#x8D8A;&#x6765;&#x8D8A;&#x5C0F;&#x201D;&#xFF1B;</li>
+</ul>
+<p>&#x7269;&#x4F53;&#x548C;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7684;&#x76F8;&#x5BF9;&#x4F4D;&#x7F6E;&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x6362;&#xFF0C;&#x4EC5;&#x4EC5;&#x6C42;&#x51FA;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x8F6C;&#x6362;&#x77E9;&#x9635;&#xFF0C;&#x518D;&#x5C06;&#x6B64;&#x77E9;&#x9635;&#x7528;&#x4E8E;&#x7269;&#x4F53;&#xFF0C;&#x5C31;&#x80FD;&#x5F97;&#x51FA;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x4E0B;&#x7684;&#x7269;&#x4F53;&#x5750;&#x6807;&#xFF01;</p>
+<p><img src="assets/&#x56FE;&#x5F62;&#x5B66;_&#x7269;&#x4F53;&#x7684;&#x8FD0;&#x52A8;&#x662F;&#x76F8;&#x5BF9;&#x7684;.jpeg" alt="&#x56FE;&#x5F62;&#x5B66;_&#x7269;&#x4F53;&#x7684;&#x8FD0;&#x52A8;&#x662F;&#x76F8;&#x5BF9;&#x7684;"></p>
+<p><strong>&#x4E16;&#x754C;&#x4E0A;&#x7684;&#x7269;&#x4F53;&#x8FD0;&#x52A8;&#x662F;&#x76F8;&#x5BF9;&#x7684;</strong> :&#x968F;&#x7740;&#x89C2;&#x5BDF;&#x70B9;&#x5728;&#x4E16;&#x754C;&#x7684;&#x79FB;&#x52A8;&#xFF0C;&#x89C2;&#x5BDF;&#x5230;&#x7684;&#x7269;&#x4F53;&#x4E5F;&#x4F1A;&#x53D8;&#x5F97;&#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF1B;</p>
+<ul>
+<li>&#x5982;&#xFF1A;&#x89C2;&#x5BDF;&#x70B9;&#x5411; <code>X</code> &#x8F74;&#x7684;&#x6B63;&#x65B9;&#x5411;&#x79FB;&#x52A8;&#xFF0C;&#x5219;&#x7269;&#x4F53;&#x76F8;&#x5BF9;&#x800C;&#x8A00;&#x5E94;&#x8BE5;&#x5411; <code>X</code> &#x8F74;&#x7684;&#x8D1F;&#x65B9;&#x5411;&#x79FB;&#x52A8;&#xFF1B;</li>
+<li>&#x5982;&#xFF1A;&#x6CBF;&#x7740; <code>X</code> &#x8F74;&#x9006;&#x65F6;&#x9488;&#x65CB;&#x8F6C;&#xFF0C;&#x89C2;&#x5BDF;&#x70B9;&#x5411;&#x4E0A;&#x79FB;&#x52A8;&#xFF0C;&#x7269;&#x4F53;&#x76F8;&#x5BF9;&#x5411;&#x4E0B;&#x79FB;&#x52A8;&#xFF1B;</li>
+</ul>
+<p><img src="assets/&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x8F6C;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x70B9;.PNG" alt="&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x8F6C;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;"></p>
+<p>&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;&#x4E2D;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x70B9;&#x5982;&#x4F55;&#x8F6C;&#x6362;&#x5230;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#xFF1F;</p>
+<ul>
+<li>1&#x3001;&#x5C06;&#x89C2;&#x5BDF;&#x70B9;&#x5728;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x4F4D;&#x7F6E; <code>(x, y, z)</code> &#x5E73;&#x79FB; <code>(-x, -y, -z)</code> &#x5230;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x539F;&#x70B9;&#xFF1B;&#x4F7F;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x539F;&#x70B9;&#x4E0E;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x7684;&#x539F;&#x70B9;&#x91CD;&#x5408;&#xFF1B;</li>
+<li>2&#x3001;&#x89C2;&#x5BDF;&#x70B9; <code>x, y, z</code> &#x4E09;&#x4E2A;&#x65B9;&#x5411;&#x5206;&#x522B;&#x76F8;&#x5BF9;&#x4E8E;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB; <strong>&#x9006;&#x65F6;&#x9488;</strong> &#x65CB;&#x8F6C;&#x4E86; <code>(ax, ay, az)</code><ul>
+<li>2.1&#x3001;&#x65CB;&#x8F6C; <code>Vx</code> &#x8F74; <code>-ax</code>&#xFF0C;&#x5C06; <code>Vz</code> &#x8F74;&#x65CB;&#x8F6C;&#x5230; <code>XZ</code> &#x5E73;&#x9762;&#x4E0A;&#xFF1B;</li>
+<li>2.2&#x3001;&#x65CB;&#x8F6C; <code>Vy</code> &#x8F74; <code>-ay</code>&#xFF0C;&#x5C06; <code>Vz</code> &#x8F74;&#x4E8E; <code>Z</code> &#x8F74;&#x91CD;&#x53E0;&#xFF1B;</li>
+<li>2.3&#x3001;&#x65CB;&#x8F6C; <code>Vz</code> &#x8F74; <code>-az</code>&#xFF0C;&#x5C06; <code>Vx</code> &#x4E0E; <code>X</code> &#x8F74;&#x3001;<code>Vy</code> &#x4E0E; <code>Y</code> &#x8F74;&#x91CD;&#x53E0;&#xFF1B;</li>
+</ul>
+</li>
+</ul>
+<pre><code>/// &#x77E9;&#x9635;&#x53D8;&#x6362;&#xFF1A;&#x5E73;&#x79FB;&#x3001;&#x65CB;&#x8F6C;
+ matrix_float4x4 lookAt(float eyeX, float eyeY, float eyeZ,
+                        float angleX, float angleY, float angleZ) {
+    matrix_float4x4 matrix = matrix_multiply(matrix4x4_identity(), matrix4x4_translation(-eyeX, -eyeY, -eyeZ));
+    matrix = matrix_multiply(matrix, matrix4x4_rotationX(-angleX));
+    matrix = matrix_multiply(matrix, matrix4x4_rotationY(-angleY));
+    matrix = matrix_multiply(matrix, matrix4x4_rotationZ(-angleZ));
+    return matrix;
+}
+</code></pre><h2 id="22&#x3001;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x4E0B;&#x7684;&#x89C6;&#x666F;&#x4F53;"><a name="22&#x3001;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x4E0B;&#x7684;&#x89C6;&#x666F;&#x4F53;" class="anchor-navigation-ex-anchor" href="#22&#x3001;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x4E0B;&#x7684;&#x89C6;&#x666F;&#x4F53;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2&#x3001;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x4E0B;&#x7684;&#x89C6;&#x666F;&#x4F53;</h2>
+<p><img src="assets/&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x900F;&#x89C6;&#x6295;&#x5F71;&#x7684;&#x89C2;&#x5BDF;&#x4F53;.PNG" alt="&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x900F;&#x89C6;&#x6295;&#x5F71;&#x7684;&#x89C6;&#x666F;&#x4F53;"></p>
+<ul>
+<li>&#x8DDD;&#x79BB;&#x89C2;&#x5BDF;&#x70B9;&#x8F83;&#x8FD1;&#x7684;&#x5E73;&#x9762;&#x4E3A; <strong>&#x8FD1;&#x526A;&#x88C1;&#x5E73;&#x9762;</strong>&#xFF0C;&#x5782;&#x76F4;&#x4E8E;&#x89C2;&#x5BDF;&#x65B9;&#x5411;&#x5411;&#x91CF;&#xFF0C;&#x8DDD;&#x79BB;&#x4E3A; <code>zNear</code> &#xFF1B;</li>
+<li>&#x8DDD;&#x79BB;&#x89C2;&#x5BDF;&#x70B9;&#x8F83;&#x8FDC;&#x7684;&#x5E73;&#x9762;&#x4E3A; <strong>&#x8FDC;&#x526A;&#x88C1;&#x5E73;&#x9762;</strong>&#xFF0C;&#x5782;&#x76F4;&#x4E8E;&#x89C2;&#x5BDF;&#x65B9;&#x5411;&#x5411;&#x91CF;&#xFF0C;&#x8DDD;&#x79BB;&#x4E3A; <code>zFar</code> &#xFF1B;</li>
+<li>&#x900F;&#x89C6;&#x6295;&#x5F71;&#x7684;&#x6295;&#x5F71;&#x7EBF;&#x4E92;&#x4E0D;&#x5E73;&#x884C;&#xFF0C;&#x76F8;&#x4EA4;&#x4E8E;&#x89C6;&#x70B9;&#xFF1B;&#x56E0;&#x6B64;&#x540C;&#x6837;&#x5C3A;&#x5BF8;&#x7684;&#x7269;&#x4F53;&#xFF0C;&#x8FD1;&#x5904;&#x7684;&#x6295;&#x5F71;&#x6548;&#x679C;&#x5927;&#xFF0C;&#x8FDC;&#x5904;&#x7684;&#x6295;&#x5F71;&#x6548;&#x679C;&#x5C0F;&#xFF1B;&#x4ECE;&#x800C;&#x4EA7;&#x751F;&#x73B0;&#x5B9E;&#x4E16;&#x754C;&#x4E2D; <strong>&#x8FD1;&#x5927;&#x8FDC;&#x5C0F;</strong> &#x7684;&#x6548;&#x679C;&#xFF1B;</li>
+</ul>
+<p>&#x5F71;&#x54CD;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x6700;&#x7EC8;&#x6548;&#x679C;&#x7684;&#x53C2;&#x6570;&#xFF1A;</p>
+<ul>
+<li>&#x89C6;&#x91CE;&#x7684;&#x5927;&#x5C0F;&#xFF1A;&#x5982;&#x679C;&#x89C6;&#x91CE;&#x5F88;&#x7A84;&#xFF0C;&#x5219;&#x4EC5;&#x80FD;&#x770B;&#x5230;&#x7269;&#x4F53;&#x7684;&#x67D0;&#x4E00;&#x90E8;&#x5206;&#xFF1B;</li>
+<li>&#x89C2;&#x5BDF;&#x70B9;&#x4E0E;&#x8FD1;&#x526A;&#x88C1;&#x5E73;&#x9762;&#x7684;&#x8DDD;&#x79BB;<code>zNear</code> &#xFF1A;&#x5982;&#x679C;&#x8DDD;&#x79BB;&#x592A;&#x8FD1;&#xFF0C;&#x8D85;&#x51FA;&#x89C6;&#x91CE;&#x8303;&#x56F4;&#xFF0C;&#x5219;&#x6CA1;&#x5FC5;&#x8981;&#x53BB;&#x5904;&#x7406;&#x8FD9;&#x90E8;&#x5206;&#x6570;&#x636E;&#xFF1B;</li>
+<li>&#x89C2;&#x5BDF;&#x70B9;&#x4E0E;&#x8FDC;&#x526A;&#x88C1;&#x5E73;&#x9762;&#x7684;&#x8DDD;&#x79BB;<code>zFar</code>&#xFF1A;&#x5982;&#x679C;&#x8DDD;&#x79BB;&#x592A;&#x8FDC;&#xFF0C;&#x8D85;&#x8FC7;&#x4E86; `zFar &#xFF0C;&#x4E5F;&#x6CA1;&#x5FC5;&#x8981;&#x5904;&#x7406;&#x8FD9;&#x90E8;&#x5206;&#x6570;&#x636E;&#xFF1B;</li>
+</ul>
+<p>&#x6700;&#x7EC8;&#x5904;&#x7406;&#x900F;&#x89C6;&#x6295;&#x5F71;&#xFF1A;&#x4F7F;&#x7528;&#x8FD1;&#x526A;&#x88C1;&#x5E73;&#x9762;&#x4E0E;&#x8FDC;&#x526A;&#x88C1;&#x5E73;&#x9762;&#xFF0C;&#x505A;&#x6210;&#x4E00;&#x4E2A;&#x9525;&#x5F62;&#x7A7A;&#x95F4;&#xFF08;&#x526A;&#x88C1;&#x7A7A;&#x95F4;&#xFF09;&#xFF0C;&#x5728;&#x9525;&#x5F62;&#x526A;&#x88C1;&#x7A7A;&#x95F4;&#x4E4B;&#x5916;&#x7684;&#x7269;&#x4F53;&#x4E0D;&#x663E;&#x793A;&#xFF0C;&#x4EC5;&#x663E;&#x793A;&#x9525;&#x5F62;&#x526A;&#x88C1;&#x7A7A;&#x95F4;&#x4E4B;&#x5185;&#x7684;&#x7269;&#x4F53;&#xFF01;</p>
+<h3 id="221&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;"><a name="221&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;" class="anchor-navigation-ex-anchor" href="#221&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.1&#x3001;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x516C;&#x5F0F;&#x63A8;&#x5BFC;</h3>
+<p>&#x5728;&#x89C6;&#x666F;&#x4F53;&#x4E2D;&#x7684;&#x70B9;&#xFF0C;&#x662F;&#x5982;&#x4F55;&#x6620;&#x5C04;&#x5230; <code>Z[0, 1]</code> &#x7684;&#x526A;&#x88C1;&#x7A7A;&#x95F4;&#x7684; (&#x4F53;&#x79EF;&#x4E3A; <code>2 * 2 * 1</code>)&#xFF1F;</p>
+<p><img src="assets/&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x900F;&#x89C6;&#x6295;&#x5F71;&#x7684;&#x89C6;&#x573A;.PNG" alt="&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x900F;&#x89C6;&#x6295;&#x5F71;&#x7684;&#x89C6;&#x573A;"></p>
+<ul>
+<li>&#x5DE6;&#x624B;&#x5750;&#x6807;&#x7CFB;&#xFF0C;&#x968F;&#x7740;&#x89C6;&#x7EBF;&#x770B;&#x7684;&#x8D8A;&#x6765;&#x8D8A;&#x8FDC;&#xFF0C;Z &#x503C;&#x8D8A;&#x6765;&#x8D8A;&#x5927;&#xFF1B;</li>
+<li>&#x773C;&#x775B;&#x770B;&#x5230;&#x7684;&#x8303;&#x56F4;&#x79F0;&#x4E3A; <strong>&#x89C6;&#x573A;</strong> <code>fov</code>&#xFF1B;</li>
+<li>&#x5F53; <code>zNear</code> &#x8D85;&#x8FC7; <code>zFar</code> &#x65F6;&#xFF0C;&#x5C06;&#x4EC0;&#x4E48;&#x4E5F;&#x89C2;&#x5BDF;&#x4E0D;&#x5230;&#xFF1B;</li>
+</ul>
+<p><img src="assets/&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x900F;&#x89C6;&#x6295;&#x5F71;_YZ&#x5E73;&#x9762;&#x7684;&#x63A8;&#x5BFC;.PNG" alt="&#x56FE;&#x5F62;&#x5B66;_&#x4E09;&#x7EF4;&#x7A7A;&#x95F4;_&#x900F;&#x89C6;&#x6295;&#x5F71;_YZ&#x5E73;&#x9762;&#x7684;&#x63A8;&#x5BFC;"></p>
+<p>&#x4ECE;&#x6570;&#x5B66;&#x89D2;&#x5EA6;&#x800C;&#x8A00;&#xFF0C;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x5C31;&#x662F;&#x5BF9;&#x4E16;&#x754C;&#x5750;&#x6807;&#x7CFB;&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x70B9;&#xFF0C;&#x627E;&#x51FA;&#x5B83;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x5BF9;&#x5E94;&#x7684;&#x5750;&#x6807;&#xFF1B;&#x8BE5;&#x70B9;&#x548C;&#x89C6;&#x70B9;&#x7684;&#x8FDE;&#x7EBF;&#x4E0E;&#x5C4F;&#x5E55;&#x7684;&#x4EA4;&#x70B9;&#xFF0C;&#x6B63;&#x662F;&#x5176;&#x5C4F;&#x5E55;&#x5750;&#x6807;&#xFF01;</p>
+<p>&#x6570;&#x5B66;&#x95EE;&#x9898;&#xFF1A;&#x5DF2;&#x77E5;&#x89C6;&#x666F;&#x4F53;&#x7684; YZ &#x5E73;&#x9762;&#x67D0;&#x4E00;&#x70B9; <code>(y, z)</code>, &#x6C42;&#x53D6;&#x5BF9;&#x5E94;&#x5728;&#x526A;&#x88C1;&#x7A7A;&#x95F4;&#x7684; YZ &#x5E73;&#x9762;&#x7684;&#x70B9; <code>(y&#x2018;, z&#x2019;)</code> &#xFF01;
+&#x90A3;&#x4E48;&#x63A8;&#x5BFC;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<ul>
+<li>1&#x3001;&#x6839;&#x636E;&#x7269;&#x4F53;&#x4E0E;&#x89C6;&#x91CE;&#x7684;&#x8303;&#x56F4;&#x6BD4;&#x503C;&#xFF0C;&#x53EF;&#x5F97;&#x5173;&#x7CFB;&#x5F0F; <code>y / y0 = y&apos; / 1</code>&#xFF1B;</li>
+<li>2&#x3001;&#x6839;&#x636E;&#x6B63;&#x5207;&#x51FD;&#x6570;&#x5F97;&#x5230;&#x516C;&#x5F0F;  <code>tan(fov / 2.0) = y0 / z</code>&#xFF1B;</li>
+<li>3&#x3001;&#x7531;&#x6B64;&#x53EF;&#x4EE5;&#x63A8;&#x5BFC;&#x51FA; <code>y&apos; = y / (z * tan(fov / 2.0))</code>;</li>
+<li>4&#x3001;&#x4E0D;&#x59A8;&#x4EE4; <code>f = 1.0 / tan(fov / 2.0)</code> ;</li>
+<li>5&#x3001;&#x90A3;&#x4E48;&#x6709; <code>y&apos; = f / z * y</code>;</li>
+</ul>
+<p>&#x540C;&#x6837;&#x7684;&#xFF0C;&#x5728; XZ &#x5E73;&#x9762;&#x53EF;&#x4EE5;&#x63A8;&#x5BFC;&#x51FA; <code>x&apos; = x / (z * tan(fovx / 2.0))</code>;</p>
+<ul>
+<li>&#x6211;&#x4EEC;&#x7684;&#x89C6;&#x53E3; <code>viewport</code> &#x7684;&#x5BBD;&#x9AD8;&#x6BD4;&#x4E3A; <code>aspect = weight / height</code>;</li>
+<li>&#x4E5F;&#x5C31;&#x662F;&#x8BF4; <code>x0 / y0 = aspect</code>;</li>
+<li>&#x8FD1;&#x4E00;&#x6B65;&#x63A8;&#x51FA; <code>tan(fovx / 2.0) / tan(fovy / 2.0) = aspect</code>;</li>
+<li>&#x6B64;&#x65F6;&#xFF1A;<code>tan(fovx / 2.0) = aspect * tan(fovy / 2.0) = aspect / f</code>;</li>
+<li>&#x6240;&#x4EE5;&#x6709;&#xFF1A;<code>x&apos; = f / (z * aspect) * x</code>;</li>
+</ul>
+<p>&#x773C;&#x775B;&#x770B;&#x5230;&#x7684;&#x662F;&#x8FD1;&#x5927;&#x8FDC;&#x5C0F;&#x7684;&#x89C6;&#x89C9;&#x6548;&#x679C;&#xFF1A;</p>
+<ul>
+<li>&#x773C;&#x775B;&#x770B;&#x5230;&#x7684; <code>Z</code> &#x503C;&#x5E76;&#x975E;&#x6210;&#x6BD4;&#x4F8B;&#x7684;&#x51CF;&#x5C0F;&#xFF1B;</li>
+<li>&#x4EBA;&#x7684;&#x89C6;&#x89C9;&#xFF1A;&#x8D8A;&#x8FD1;&#x8D8A;&#x91CD;&#x8981;&#xFF0C;&#x8D8A;&#x8FDC;&#x8D8A;&#x5BB9;&#x6613;&#x5FFD;&#x7565;&#xFF1B;</li>
+<li>&#x8003;&#x8651;&#x4F7F;&#x7528;&#x66F2;&#x7EBF;&#x6765;&#x8868;&#x8FBE; <code>z&apos;</code> &#x4E0E; &apos;z&apos; &#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB; <code>z&apos; = m / z + c</code>&#xFF1B;</li>
+<li>&#x5F53; <code>zFar</code> &#x65E0;&#x7A77;&#x8D8B;&#x8FD1;&#x4E8E; <code>1</code>&#xFF0C;<code>zNear</code> &#x65E0;&#x7A77;&#x8D8B;&#x8FD1;&#x4E8E; <code>0</code> &#x65F6;&#x6709;</li>
+</ul>
+<pre><code>m / zFar + c = 1;
+m / zNear + c = 0;
+</code></pre><p>&#x4ECE;&#x800C;&#x63A8;&#x5BFC;&#x51FA;</p>
+<pre><code>m = zFar * zNear / (zNear - zFar);
+c = zFar / (zFar - zNear);
+</code></pre><ul>
+<li>&#x6B64;&#x65F6; <code>z&apos; = (zFar * zNear / (zNear - zFar)) / z + zFar / (zFar - zNear)</code>&#xFF1B;</li>
+</ul>
+<p>&#x6700;&#x7EC8;&#x63A8;&#x5BFC;&#x51FA;&#x4ECE;&#x89C2;&#x5BDF;&#x5750;&#x6807;&#x7CFB;&#x5230;&#x526A;&#x88C1;&#x7A7A;&#x95F4;&#x7684;&#x5750;&#x6807;&#x53D8;&#x6362;&#xFF1A;</p>
+<pre><code>x&apos; = f / (z * aspect) * x;
+y&apos; = f / z * y;
+z&apos; = (zFar * zNear / (zNear - zFar)) / z + zFar / (zFar - zNear);
+/// &#x5176;&#x4E2D; f = 1.0 / tan(fov / 2.0)
+</code></pre><p>&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x5C06;&#x4E0A;&#x8FF0;&#x5173;&#x7CFB;&#x7EC4;&#x7EC7;&#x4E3A;&#x77E9;&#x9635;&#x53D8;&#x6362;&#x5462;&#xFF1F;<code>x&apos;, y&apos;</code>&#x90FD;&#x5305;&#x542B;&#x4E86; <code>1/z</code>, &#x4E0D;&#x59A8;&#x4EE4;&#xFF1A;</p>
+<pre><code>x&apos;&apos; = x&apos; * z;
+y&apos;&apos; = y&apos; * z;
+z&apos;&apos; = z&apos; * z;
+</code></pre><p>&#x6B64;&#x65F6;&#x6709;&#xFF1A;</p>
+<pre><code>x&apos;&apos; = f / aspect * y;
+y&apos;&apos; = f * y;
+z&apos;&apos; = (zFar * zNear / (zNear - zFar)) + zFar / (zFar - zNear) * z;
+/// &#x5176;&#x4E2D; f = 1.0 / tan(fov / 2.0)
+</code></pre><p>&#x76F8;&#x5E94;&#x7684;&#x900F;&#x89C6;&#x6295;&#x5F71;&#x77E9;&#x9635; <code>matrix_perspective</code> &#x4E3A;&#xFF1A;</p>
+<pre><code>float f = tan(M_PI_2 - 0.5 * fovy);
+float zs = farZ / (farZ - nearZ);
+{
+    {f / aspect, 0,  0,           0},
+    {         0, f,  0,           0},
+    {         0, 0, zs, -nearZ * zs},
+    {         0, 0,  1,           0}
+}
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;&#x77E9;&#x9635;&#x7684; <code>[3][2] = 1</code> &#x662F;&#x57FA;&#x4E8E;&#x56FE;&#x5F62;&#x5B66;&#x5F15;&#x64CE;&#x7684;&#x7279;&#x6027;&#x800C;&#x8BBE;&#x7F6E;&#x7684;&#xFF1A;</p>
+<pre><code>{x, y, z, 1} * matrix_perspective =
+
+{
+    f / aspect * x,
+    f * y,
+    (zFar * zNear / (zNear - zFar)) + zFar / (zFar - zNear) * z,
+    z
+}
+</code></pre><p>&#x56FE;&#x5F62;&#x5B66;&#x5F15;&#x64CE;&#x6700;&#x7EC8;&#x4F1A; <code>xyz / w</code>&#xFF0C;&#x6240;&#x4EE5;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x4ECD;&#x4E3A;&#x6211;&#x4EEC;&#x63A8;&#x7B97;&#x51FA;&#x7684;&#xFF1A;</p>
+<pre><code>{
+    f / (z * aspect) * x,
+    f / z * y,
+    (zFar * zNear / (zNear - zFar)) / z + zFar / (zFar - zNear),
+    1
+}
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-11-01 17:54:58
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> 搜索结果 "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有匹配结果 "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="矩阵的变换.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 矩阵的变换">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"三维空间的观察","level":"1.2.4.2","depth":3,"next":{"title":"iOS开发","level":"1.3","depth":1,"ref":"","articles":[{"title":"Runtime","level":"1.3.1","depth":2,"ref":"","articles":[{"title":"OC之Blocks","level":"1.3.1.1","depth":3,"path":"iOS开发/Runtime/OC之Blocks.md","ref":"iOS开发/Runtime/OC之Blocks.md","articles":[]},{"title":"OC内存管理","level":"1.3.1.2","depth":3,"path":"iOS开发/Runtime/OC内存管理.md","ref":"iOS开发/Runtime/OC内存管理.md","articles":[]},{"title":"OC内存管理之引用计数","level":"1.3.1.3","depth":3,"path":"iOS开发/Runtime/OC内存管理之引用计数.md","ref":"iOS开发/Runtime/OC内存管理之引用计数.md","articles":[]},{"title":"+load方法","level":"1.3.1.4","depth":3,"path":"iOS开发/Runtime/+load方法的调用历程.md","ref":"iOS开发/Runtime/+load方法的调用历程.md","articles":[]},{"title":"TaggedPointer","level":"1.3.1.5","depth":3,"path":"iOS开发/Runtime/TaggedPointer.md","ref":"iOS开发/Runtime/TaggedPointer.md","articles":[]},{"title":"编译objc4备忘录","level":"1.3.1.6","depth":3,"path":"iOS开发/Runtime/编译objc4.md","ref":"iOS开发/Runtime/编译objc4.md","articles":[]},{"title":"Runtime函数库中关于协议Protocol的函数使用","level":"1.3.1.7","depth":3,"path":"iOS开发/Runtime/Runtime_Protocol.md","ref":"iOS开发/Runtime/Runtime_Protocol.md","articles":[]},{"title":"Runtime函数库中关于属性与变量的函数使用","level":"1.3.1.8","depth":3,"path":"iOS开发/Runtime/Runtime_Property.md","ref":"iOS开发/Runtime/Runtime_Property.md","articles":[]},{"title":"Runtime函数库中关于实例对象的函数使用","level":"1.3.1.9","depth":3,"path":"iOS开发/Runtime/Runtime_Instance.md","ref":"iOS开发/Runtime/Runtime_Instance.md","articles":[]},{"title":"Runtime函数库中关于Class的函数使用","level":"1.3.1.10","depth":3,"path":"iOS开发/Runtime/Runtime_Class.md","ref":"iOS开发/Runtime/Runtime_Class.md","articles":[]},{"title":"Runtime函数库中关于 Class 的函数使用","level":"1.3.1.11","depth":3,"path":"iOS开发/Runtime/Runtime_Method.md","ref":"iOS开发/Runtime/Runtime_Method.md","articles":[]}]},{"title":"CoreText","level":"1.3.2","depth":2,"path":"iOS开发/CoreText/CoteText概述.md","ref":"iOS开发/CoreText/CoteText概述.md","articles":[{"title":"CoteText排版与布局","level":"1.3.2.1","depth":3,"path":"iOS开发/CoreText/CoteText排版与布局.md","ref":"iOS开发/CoreText/CoteText排版与布局.md","articles":[]},{"title":"CTLineRef的函数库及使用","level":"1.3.2.2","depth":3,"path":"iOS开发/CoreText/CTLineRef的函数库及使用.md","ref":"iOS开发/CoreText/CTLineRef的函数库及使用.md","articles":[]},{"title":"图文混排的关键：CTRunRef 与 CTRunDelegate","level":"1.3.2.3","depth":3,"path":"iOS开发/CoreText/CTRunRef与CTRunDelegate.md","ref":"iOS开发/CoreText/CTRunRef与CTRunDelegate.md","articles":[]}]},{"title":"CoreImage","level":"1.3.3","depth":2,"ref":"","articles":[{"title":"图像特征CIFeature","level":"1.3.3.1","depth":3,"path":"iOS开发/CoreImage/图像特征CIFeature.md","ref":"iOS开发/CoreImage/图像特征CIFeature.md","articles":[]},{"title":"图片检测CIDetector","level":"1.3.3.2","depth":3,"path":"iOS开发/CoreImage/图片检测CIDetector.md","ref":"iOS开发/CoreImage/图片检测CIDetector.md","articles":[]}]},{"title":"Metal 实践","level":"1.3.4","depth":2,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal调试.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal调试.md","articles":[{"title":"内核计算","level":"1.3.4.1","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal的简单计算.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal的简单计算.md","articles":[]},{"title":"绘制三角形","level":"1.3.4.2","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal绘制三角形.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal绘制三角形.md","articles":[]},{"title":"纹理贴图","level":"1.3.4.3","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/简单的纹理贴图.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/简单的纹理贴图.md","articles":[]},{"title":"CPU与GPU协调工作","level":"1.3.4.4","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/CPU与GPU协调工作.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/CPU与GPU协调工作.md","articles":[]},{"title":"深度测试","level":"1.3.4.5","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/深度测试.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/深度测试.md","articles":[]},{"title":"线程与线程组","level":"1.3.4.6","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/读取纹理像素.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/读取纹理像素.md","articles":[]},{"title":"自定义MTLRenderPassDescriptor","level":"1.3.4.7","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/离屏渲染.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/离屏渲染.md","articles":[]}]},{"title":"Metal API","level":"1.3.5","depth":2,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal简介.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal简介.md","articles":[{"title":"MTKView API","level":"1.3.5.1","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKView.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKView.md","articles":[]},{"title":"MTLDevice API","level":"1.3.5.2","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLDevice.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLDevice.md","articles":[]},{"title":"MDLMesh API","level":"1.3.5.3","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLMesh.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLMesh.md","articles":[]},{"title":"MTKMesh API","level":"1.3.5.4","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKModel.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKModel.md","articles":[]},{"title":"MTLDepthStencilDescriptor API","level":"1.3.5.5","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLDepthStencil.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLDepthStencil.md","articles":[]},{"title":"MDLVertexDescriptor API","level":"1.3.5.6","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLVertexDescriptor.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLVertexDescriptor.md","articles":[]},{"title":"MTLRenderPass API","level":"1.3.5.7","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLRenderPass.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLRenderPass.md","articles":[]},{"title":"MTLFunction API","level":"1.3.5.8","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLFunction.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLFunction.md","articles":[]},{"title":"MTLLibrary API","level":"1.3.5.9","depth":3,"path":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLLibrary.md","ref":"计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLLibrary.md","articles":[]}]},{"title":"杂记","level":"1.3.6","depth":2,"ref":"","articles":[{"title":"iOS渲染机制初窥","level":"1.3.6.1","depth":3,"path":"iOS开发/杂记/iOS渲染机制初窥.md","ref":"iOS开发/杂记/iOS渲染机制初窥.md","articles":[]},{"title":"响应链","level":"1.3.6.2","depth":3,"path":"iOS开发/杂记/响应链.md","ref":"iOS开发/杂记/响应链.md","articles":[]},{"title":"并发编程","level":"1.3.6.3","depth":3,"path":"iOS开发/杂记/并发编程.md","ref":"iOS开发/杂记/并发编程.md","articles":[{"title":"线程NSThread","level":"1.3.6.3.1","depth":4,"path":"iOS开发/杂记/OC之Thread.md","ref":"iOS开发/杂记/OC之Thread.md","articles":[]},{"title":"任务队列NSOperation","level":"1.3.6.3.2","depth":4,"path":"iOS开发/杂记/OC之NSOperation.md","ref":"iOS开发/杂记/OC之NSOperation.md","articles":[]},{"title":"GCD","level":"1.3.6.3.3","depth":4,"path":"iOS开发/杂记/OC之GCD.md","ref":"iOS开发/杂记/OC之GCD.md","articles":[]}]},{"title":"OC的深拷贝与浅拷贝","level":"1.3.6.4","depth":3,"path":"iOS开发/杂记/OC的深拷贝与浅拷贝.md","ref":"iOS开发/杂记/OC的深拷贝与浅拷贝.md","articles":[]},{"title":"iOS 使用 cocoapods 创建组件化库","level":"1.3.6.5","depth":3,"path":"其它/sdk_cocoapods.md","ref":"其它/sdk_cocoapods.md","articles":[]},{"title":"一些内存优化","level":"1.3.6.6","depth":3,"path":"iOS开发/杂记/内存优化.md","ref":"iOS开发/杂记/内存优化.md","articles":[]},{"title":"一些内存泄漏","level":"1.3.6.7","depth":3,"path":"iOS开发/杂记/内存泄露.md","ref":"iOS开发/杂记/内存泄露.md","articles":[]},{"title":"刘海屏适配","level":"1.3.6.8","depth":3,"path":"iOS开发/杂记/刘海屏适配.md","ref":"iOS开发/杂记/刘海屏适配.md","articles":[]},{"title":"获取WIFI信息","level":"1.3.6.9","depth":3,"path":"iOS开发/杂记/获取WIFI信息.md","ref":"iOS开发/杂记/获取WIFI信息.md","articles":[]}]}]},"previous":{"title":"矩阵的变换","level":"1.2.4.1","depth":3,"path":"计算机基础/计算机图形学/矩阵的变换.md","ref":"计算机基础/计算机图形学/矩阵的变换.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"计算机基础/计算机图形学/三维空间的观察.md","mtime":"2021-11-01T09:54:58.685Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-05T11:30:36.768Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
