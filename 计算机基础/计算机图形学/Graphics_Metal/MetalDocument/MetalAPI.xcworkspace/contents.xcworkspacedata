@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:&#x6570;&#x636e;&#x52a0;&#x8f7d;.md">
+   </FileRef>
+   <FileRef
+      location = "group:&#x591a;&#x89c6;&#x56fe;&#x6e32;&#x67d3;.md">
+   </FileRef>
+   <FileRef
+      location = "group:&#x8ba1;&#x7b97;&#x7ba1;&#x9053;&#x5904;&#x7406;&#x7eb9;&#x7406;.md">
+   </FileRef>
+   <FileRef
+      location = "group:&#x7b80;&#x5355;&#x7684;&#x7eb9;&#x7406;&#x8d34;&#x56fe;.md">
+   </FileRef>
+   <FileRef
+      location = "group:&#x79bb;&#x5c4f;&#x6e32;&#x67d3;.md">
+   </FileRef>
+   <FileRef
+      location = "group:&#x6df1;&#x5ea6;&#x6d4b;&#x8bd5;.md">
+   </FileRef>
+   <FileRef
+      location = "group:CPU&#x4e0e;GPU&#x534f;&#x8c03;&#x5de5;&#x4f5c;.md">
+   </FileRef>
+   <FileRef
+      location = "group:MDLMesh.md">
+   </FileRef>
+   <FileRef
+      location = "group:MDLVertexDescriptor.md">
+   </FileRef>
+   <FileRef
+      location = "group:Metal&#x7684;&#x7b80;&#x5355;&#x8ba1;&#x7b97;.md">
+   </FileRef>
+   <FileRef
+      location = "group:Metal&#x8c03;&#x8bd5;.md">
+   </FileRef>
+   <FileRef
+      location = "group:Metal&#x7ed8;&#x5236;&#x4e09;&#x89d2;&#x5f62;.md">
+   </FileRef>
+   <FileRef
+      location = "group:Metal&#x7b80;&#x4ecb;.md">
+   </FileRef>
+   <FileRef
+      location = "group:MTKModel.md">
+   </FileRef>
+   <FileRef
+      location = "group:MTKView.md">
+   </FileRef>
+   <FileRef
+      location = "group:MTLCompileOptions.md">
+   </FileRef>
+   <FileRef
+      location = "group:MTLDepthStencil.md">
+   </FileRef>
+   <FileRef
+      location = "group:MTLDevice.md">
+   </FileRef>
+   <FileRef
+      location = "group:MTLFunction.md">
+   </FileRef>
+   <FileRef
+      location = "group:MTLLibrary.md">
+   </FileRef>
+   <FileRef
+      location = "group:MTLRenderPass.md">
+   </FileRef>
+</Workspace>

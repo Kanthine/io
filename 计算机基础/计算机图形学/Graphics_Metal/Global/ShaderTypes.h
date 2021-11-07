@@ -18,6 +18,31 @@ typedef enum ShaderParamType {
     ShaderParamTypeUniforms,
 } ShaderParamType;
 
+// 纹理索引值在着色器和C代码之间共享，以确保着色器纹理索引匹配金属API纹理集调用的索引
+typedef enum TextureIndex {
+    TextureIndexBaseColor = 0,
+    TextureIndexSpecular  = 1,
+    TextureIndexNormal    = 2,
+    TextureIndexCubeMap   = 3
+} TextureIndex;
+
+typedef enum VertexAttribute {
+    VertexAttributePosition  = 0,
+    VertexAttributeTexcoord  = 1,
+    VertexAttributeNormal    = 2,
+    VertexAttributeTangent   = 3,
+    VertexAttributeBitangent = 4
+} MeshVertexAttribute;
+
+typedef enum MeshBufferIndex {
+    BufferIndexMeshPositions,
+    BufferIndexMeshGenerics,
+    BufferIndexFrameParams,
+    BufferIndexViewportParams,
+    BufferIndexActorParams,
+    BufferIndexInstanceParams
+} MeshBufferIndex;
+
 typedef struct {
     vector_float2 position;
     vector_float4 color;
@@ -35,6 +60,19 @@ typedef struct {
     matrix_float4x4 worldMatrix; /// 模型从模型坐标转换到世界坐标：平移、旋转、缩放等最终形成的复合变换
     matrix_float4x4 viewMatrix; ///  世界坐标到相机坐标上的转换：两个坐标系的切换
     matrix_float4x4 projectionMatrix; /// 透视投影：使得在平面上产生物体近大远小的效果
+    
+    float IL; // 光源强度
+    float Kd; // 漫反射系数
+    float Ks; // 镜面反射系数
+    float shininess; // 镜面反射高光指数
+    float Ia; // 环境光强度
+    float Ka; // 环境光系数
+
+    vector_float3 directionalLightDirection;
+    vector_float3 directionalLightColor;
+    
+    vector_float3 cameraPos; // 相机世界坐标
+
 } Uniforms;
 
 typedef struct {

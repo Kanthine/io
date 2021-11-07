@@ -13,8 +13,7 @@
 
 + (nonnull id<MTLTexture>)createMetalTextureFromMaterial:(nonnull MDLMaterial *) material
                                  modelIOMaterialSemantic:(MDLMaterialSemantic ) materialSemantic
-                                   metalKitTextureLoader:(nonnull MTKTextureLoader *) textureLoader
-{
+                                   metalKitTextureLoader:(nonnull MTKTextureLoader *) textureLoader {
     id<MTLTexture> texture;
 
     NSArray<MDLMaterialProperty *> *propertiesWithSemantic =
@@ -116,8 +115,7 @@
 
         if (textureLoader != NULL)
         {
-            // Set each index in our array with the appropriate material semantic specified in the
-            //   submesh's material property
+            // Set each index in our array with the appropriate material semantic specified in the submesh's material property
 
             [mutableTextures addObject:
                 [AAPLSubmesh createMetalTextureFromMaterial: modelIOSubmesh.material

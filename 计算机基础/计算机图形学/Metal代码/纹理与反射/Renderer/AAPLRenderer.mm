@@ -31,7 +31,7 @@ static const float         CameraRotationSpeed      = 0.0025f;
     CameraProbe                      _cameraReflection; /// 反射视角
     AAPLActorData *                  _reflectiveActor;  /// 反射
     NSMutableArray <AAPLActorData*>* _actorData;
-
+    
     // GPU 缓冲区
     id<MTLBuffer> _frameParamsBuffers                [MaxBuffersInFlight]; // frame-constant parameters
     id<MTLBuffer> _viewportsParamsBuffers_final      [MaxBuffersInFlight]; // frame-constant parameters, final viewport

@@ -118,6 +118,7 @@
             [DemoItem item:@"计算纹理" controller:@"ComputeTextureController"],
             [DemoItem item:@"读取纹理像素" controller:@"ReadTexturePixelController"],
             [DemoItem item:@"离屏渲染" controller:@"OffscreenController"],
+            [DemoItem item:@"OBJ模型加载" controller:@"OBJ_ViewController"],
         ];
     }
     return _dataArray;

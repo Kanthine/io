@@ -100,7 +100,6 @@
     _aspect = size.width / size.height;
 }
 
-
 - (void)loadVertexDatas {
     int size = 0;
     Vertex3D *vertexs = fMore_3D(10, &size);

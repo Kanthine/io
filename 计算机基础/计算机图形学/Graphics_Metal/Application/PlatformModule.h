@@ -50,6 +50,7 @@
 @property (nonatomic, assign) NSInteger type;
 @property (nonatomic, copy) NSString *typeName;
 @property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) id data;
 + (instancetype)modelWithType:(NSInteger)type name:(NSString *)name;
 + (instancetype)modelWithType:(NSInteger)type typeName:(NSString *)typeName name:(NSString *)name;
 @end
