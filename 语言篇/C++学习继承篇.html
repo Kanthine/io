@@ -1,0 +1,1955 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>C++学习继承篇 · 个人博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="苏沫漓">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="C++学习多态篇.html" />
+    
+    
+    <link rel="prev" href="C++学习封装篇.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../计算机基础/计算机基础.html">
+            
+                <a href="../计算机基础/计算机基础.html">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                <a href="../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                    
+                    第一部分 计算机的组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                <a href="../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                    
+                    计算机组成篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                <a href="../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                    
+                    计算机计算篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                <a href="../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                    
+                    第二部分 操作系统篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../计算机基础/操作系统篇/进程管理篇.html">
+            
+                <a href="../计算机基础/操作系统篇/进程管理篇.html">
+            
+                    
+                    进程管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../计算机基础/操作系统篇/内存管理篇.html">
+            
+                <a href="../计算机基础/操作系统篇/内存管理篇.html">
+            
+                    
+                    内存管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../计算机基础/操作系统篇/文件系统篇.html">
+            
+                <a href="../计算机基础/操作系统篇/文件系统篇.html">
+            
+                    
+                    文件系统篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                <a href="../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                    
+                    操作系统提升篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../计算机基础/计算机网络/网络概述篇.html">
+            
+                <a href="../计算机基础/计算机网络/网络概述篇.html">
+            
+                    
+                    第三部分 网络篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../计算机基础/计算机网络/计算机物理层.html">
+            
+                <a href="../计算机基础/计算机网络/计算机物理层.html">
+            
+                    
+                    计算机物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                <a href="../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                    
+                    计算机数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../计算机基础/计算机网络/计算机网络层.html">
+            
+                <a href="../计算机基础/计算机网络/计算机网络层.html">
+            
+                    
+                    计算机网络层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../计算机基础/计算机网络/计算机传输层.html">
+            
+                <a href="../计算机基础/计算机网络/计算机传输层.html">
+            
+                    
+                    计算机传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../计算机基础/计算机网络/计算机应用层.html">
+            
+                <a href="../计算机基础/计算机网络/计算机应用层.html">
+            
+                    
+                    计算机应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.5.1" data-path="../计算机基础/计算机网络/HTTP协议.html">
+            
+                <a href="../计算机基础/计算机网络/HTTP协议.html">
+            
+                    
+                    HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.2" data-path="../计算机基础/计算机网络/HTTPS协议.html">
+            
+                <a href="../计算机基础/计算机网络/HTTPS协议.html">
+            
+                    
+                    HTTPS协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    第四部分 图形学基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../计算机基础/计算机图形学/矩阵的变换.html">
+            
+                <a href="../计算机基础/计算机图形学/矩阵的变换.html">
+            
+                    
+                    矩阵的变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../计算机基础/计算机图形学/三维空间的观察.html">
+            
+                <a href="../计算机基础/计算机图形学/三维空间的观察.html">
+            
+                    
+                    三维空间的观察
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    iOS开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../iOS开发/Runtime/Objective_C简介.html">
+            
+                <a href="../iOS开发/Runtime/Objective_C简介.html">
+            
+                    
+                    Runtime
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../iOS开发/Runtime/OC之Blocks.html">
+            
+                <a href="../iOS开发/Runtime/OC之Blocks.html">
+            
+                    
+                    OC之Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../iOS开发/Runtime/OC内存管理.html">
+            
+                <a href="../iOS开发/Runtime/OC内存管理.html">
+            
+                    
+                    OC内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                <a href="../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                    
+                    OC内存管理之引用计数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                <a href="../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                    
+                    +load方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../iOS开发/Runtime/TaggedPointer.html">
+            
+                <a href="../iOS开发/Runtime/TaggedPointer.html">
+            
+                    
+                    TaggedPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../iOS开发/Runtime/方法签名.html">
+            
+                <a href="../iOS开发/Runtime/方法签名.html">
+            
+                    
+                    消息与方法签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../iOS开发/Runtime/OC_方法交换.html">
+            
+                <a href="../iOS开发/Runtime/OC_方法交换.html">
+            
+                    
+                    方法交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../iOS开发/Runtime/三次补救措施.html">
+            
+                <a href="../iOS开发/Runtime/三次补救措施.html">
+            
+                    
+                    方法不被识别的补救
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../iOS开发/Runtime/编译objc4.html">
+            
+                <a href="../iOS开发/Runtime/编译objc4.html">
+            
+                    
+                    编译objc4备忘录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                <a href="../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                    
+                    Runtime函数库中关于协议Protocol的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="../iOS开发/Runtime/Runtime_Property.html">
+            
+                <a href="../iOS开发/Runtime/Runtime_Property.html">
+            
+                    
+                    Runtime函数库中关于属性与变量的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.12" data-path="../iOS开发/Runtime/Runtime_Instance.html">
+            
+                <a href="../iOS开发/Runtime/Runtime_Instance.html">
+            
+                    
+                    Runtime函数库中关于实例对象的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.13" data-path="../iOS开发/Runtime/Runtime_Class.html">
+            
+                <a href="../iOS开发/Runtime/Runtime_Class.html">
+            
+                    
+                    Runtime函数库中关于Class的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.14" data-path="../iOS开发/Runtime/Runtime_Method.html">
+            
+                <a href="../iOS开发/Runtime/Runtime_Method.html">
+            
+                    
+                    Runtime函数库中关于 Class 的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../iOS开发/CoreText/CoteText概述.html">
+            
+                <a href="../iOS开发/CoreText/CoteText概述.html">
+            
+                    
+                    CoreText
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                <a href="../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                    
+                    CoteText排版与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                <a href="../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                    
+                    CTLineRef的函数库及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                <a href="../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                    
+                    图文混排的关键：CTRunRef 与 CTRunDelegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    CoreImage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                <a href="../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                    
+                    图像特征CIFeature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                <a href="../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                    
+                    图片检测CIDetector
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal调试.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal调试.html">
+            
+                    
+                    Metal 实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal的简单计算.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal的简单计算.html">
+            
+                    
+                    内核计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal绘制三角形.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal绘制三角形.html">
+            
+                    
+                    绘制三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/简单的纹理贴图.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/简单的纹理贴图.html">
+            
+                    
+                    纹理贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/CPU与GPU协调工作.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/CPU与GPU协调工作.html">
+            
+                    
+                    CPU与GPU协调工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/深度测试.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/深度测试.html">
+            
+                    
+                    深度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/读取纹理像素.md">
+            
+                <span>
+            
+                    
+                    线程与线程组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/离屏渲染.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/离屏渲染.html">
+            
+                    
+                    自定义MTLRenderPassDescriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal简介.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal简介.html">
+            
+                    
+                    Metal API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKView.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKView.html">
+            
+                    
+                    MTKView API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLDevice.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLDevice.html">
+            
+                    
+                    MTLDevice API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLMesh.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLMesh.html">
+            
+                    
+                    MDLMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKModel.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKModel.html">
+            
+                    
+                    MTKMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLVertexDescriptor.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLVertexDescriptor.html">
+            
+                    
+                    MDLVertexDescriptor API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLRenderPass.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLRenderPass.html">
+            
+                    
+                    MTLRenderPass API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLFunction.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLFunction.html">
+            
+                    
+                    MTLFunction API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLLibrary.html">
+            
+                <a href="../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLLibrary.html">
+            
+                    
+                    MTLLibrary API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" >
+            
+                <span>
+            
+                    
+                    杂记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                <a href="../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                    
+                    iOS渲染机制初窥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../iOS开发/杂记/响应链.html">
+            
+                <a href="../iOS开发/杂记/响应链.html">
+            
+                    
+                    响应链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../iOS开发/杂记/并发编程.html">
+            
+                <a href="../iOS开发/杂记/并发编程.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.3.1" data-path="../iOS开发/杂记/OC之Thread.html">
+            
+                <a href="../iOS开发/杂记/OC之Thread.html">
+            
+                    
+                    线程NSThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3.2" data-path="../iOS开发/杂记/OC之NSOperation.html">
+            
+                <a href="../iOS开发/杂记/OC之NSOperation.html">
+            
+                    
+                    任务队列NSOperation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3.3" data-path="../iOS开发/杂记/OC之GCD.html">
+            
+                <a href="../iOS开发/杂记/OC之GCD.html">
+            
+                    
+                    GCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3.4" data-path="../iOS开发/杂记/OC之锁.html">
+            
+                <a href="../iOS开发/杂记/OC之锁.html">
+            
+                    
+                    锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                <a href="../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                    
+                    OC的深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="../其它/sdk_cocoapods.html">
+            
+                <a href="../其它/sdk_cocoapods.html">
+            
+                    
+                    iOS 使用 cocoapods 创建组件化库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="../iOS开发/杂记/内存优化.html">
+            
+                <a href="../iOS开发/杂记/内存优化.html">
+            
+                    
+                    一些内存优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="../iOS开发/杂记/内存泄露.html">
+            
+                <a href="../iOS开发/杂记/内存泄露.html">
+            
+                    
+                    一些内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.8" data-path="../iOS开发/杂记/OC之处理错误.html">
+            
+                <a href="../iOS开发/杂记/OC之处理错误.html">
+            
+                    
+                    一些错误处理机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.9" data-path="../iOS开发/杂记/刘海屏适配.html">
+            
+                <a href="../iOS开发/杂记/刘海屏适配.html">
+            
+                    
+                    刘海屏适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.10" data-path="../iOS开发/杂记/获取WIFI信息.html">
+            
+                <a href="../iOS开发/杂记/获取WIFI信息.html">
+            
+                    
+                    获取WIFI信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    开发语言
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="C++学习入门篇.html">
+            
+                <a href="C++学习入门篇.html">
+            
+                    
+                    C++学习入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="C++学习封装篇.html">
+            
+                <a href="C++学习封装篇.html">
+            
+                    
+                    C++学习封装篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.1.3" data-path="C++学习继承篇.html">
+            
+                <a href="C++学习继承篇.html">
+            
+                    
+                    C++学习继承篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="C++学习多态篇.html">
+            
+                <a href="C++学习多态篇.html">
+            
+                    
+                    C++学习多态篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    C
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="C数组.html">
+            
+                <a href="C数组.html">
+            
+                    
+                    C语言数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="C结构.html">
+            
+                <a href="C结构.html">
+            
+                    
+                    C语言结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="C递归.html">
+            
+                <a href="C递归.html">
+            
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Git体系/Git常用命令.html">
+            
+                <a href="../Git体系/Git常用命令.html">
+            
+                    
+                    Git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Git体系/Github和SSH密钥.html">
+            
+                <a href="../Git体系/Github和SSH密钥.html">
+            
+                    
+                    Github和SSH密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Gitbook指导/">
+            
+                <a href="../Gitbook指导/">
+            
+                    
+                    GitBook 使用教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../Gitbook指导/gitbook教程.html">
+            
+                <a href="../Gitbook指导/gitbook教程.html">
+            
+                    
+                    GitBook 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../Gitbook指导/gitbook语法.html">
+            
+                <a href="../Gitbook指导/gitbook语法.html">
+            
+                    
+                    GitBook 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.sumoli.work" target="blank" class="gitbook-link">
+            博客主页
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >C++学习继承篇</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#c-&#x5B66;&#x4E60;&#x7EE7;&#x627F;&#x7BC7;"><b></b>C++ &#x5B66;&#x4E60;&#x7EE7;&#x627F;&#x7BC7;</a></li><li><span class="title-icon "></span><a href="#1&#x3001;&#x4EC0;&#x4E48;&#x662F;&#x7EE7;&#x627F;&#xFF1F;"><b></b>1&#x3001;&#x4EC0;&#x4E48;&#x662F;&#x7EE7;&#x627F;&#xFF1F;</a></li><ul><li><span class="title-icon "></span><a href="#11&#x3001;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;"><b></b>1.1&#x3001;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;</a></li></ul><li><span class="title-icon "></span><a href="#2&#x3001;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;"><b></b>2&#x3001;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;</a></li><ul><li><span class="title-icon "></span><a href="#21&#x3001;&#x516C;&#x6709;&#x7EE7;&#x627F;"><b></b>2.1&#x3001;&#x516C;&#x6709;&#x7EE7;&#x627F;</a></li><li><span class="title-icon "></span><a href="#22&#x3001;&#x4FDD;&#x62A4;&#x7EE7;&#x627F;"><b></b>2.2&#x3001;&#x4FDD;&#x62A4;&#x7EE7;&#x627F;</a></li><li><span class="title-icon "></span><a href="#23&#x3001;&#x79C1;&#x6709;&#x7EE7;&#x627F;"><b></b>2.3&#x3001;&#x79C1;&#x6709;&#x7EE7;&#x627F;</a></li></ul><li><span class="title-icon "></span><a href="#3&#x3001;&#x8986;&#x76D6;&#x4E0E;&#x9690;&#x85CF;"><b></b>3&#x3001;&#x8986;&#x76D6;&#x4E0E;&#x9690;&#x85CF;</a></li><ul><li><span class="title-icon "></span><a href="#31&#x3001;&#x9690;&#x85CF;"><b></b>3.1&#x3001;&#x9690;&#x85CF;</a></li></ul><li><span class="title-icon "></span><a href="#4&#x3001;-&#x57FA;&#x7C7B;&#x4E0E;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5173;&#x7CFB;&#xFF1A;-isa-&#x4E0E;-hasa"><b></b>4&#x3001; &#x57FA;&#x7C7B;&#x4E0E;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5173;&#x7CFB;&#xFF1A; Is&apos;a &#x4E0E; Has&apos;a</a></li><ul><li><span class="title-icon "></span><a href="#41&#x3001;-is-a-&#x5173;&#x7CFB;"><b></b>4.1&#x3001; Is-a &#x5173;&#x7CFB;</a></li><ul><li><span class="title-icon "></span><a href="#411&#x3001;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;"><b></b>4.1.1&#x3001;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;</a></li><li><span class="title-icon "></span><a href="#412&#x3001;&#x6D4B;&#x8BD5;"><b></b>4.1.2&#x3001;&#x6D4B;&#x8BD5;</a></li></ul></ul><li><span class="title-icon "></span><a href="#5&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;"><b></b>5&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;</a></li><ul><li><span class="title-icon "></span><a href="#51&#x3001;&#x591A;&#x91CD;&#x7EE7;&#x627F;"><b></b>5.1&#x3001;&#x591A;&#x91CD;&#x7EE7;&#x627F;</a></li><li><span class="title-icon "></span><a href="#52&#x3001;&#x591A;&#x7EE7;&#x627F;"><b></b>5.2&#x3001;&#x591A;&#x7EE7;&#x627F;</a></li><li><span class="title-icon "></span><a href="#53&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x7684;&#x9677;&#x9631;"><b></b>5.3&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x7684;&#x9677;&#x9631;</a></li><li><span class="title-icon "></span><a href="#54&#x3001;&#x865A;&#x7EE7;&#x627F;-virtual"><b></b>5.4&#x3001;&#x865A;&#x7EE7;&#x627F; virtual</a></li></ul></ul></div><h1 id="c-&#x5B66;&#x4E60;&#x7EE7;&#x627F;&#x7BC7;"><a name="c-&#x5B66;&#x4E60;&#x7EE7;&#x627F;&#x7BC7;" class="anchor-navigation-ex-anchor" href="#c-&#x5B66;&#x4E60;&#x7EE7;&#x627F;&#x7BC7;"><i class="fa fa-link" aria-hidden="true"></i></a>C++ &#x5B66;&#x4E60;&#x7EE7;&#x627F;&#x7BC7;</h1>
+<h1 id="1&#x3001;&#x4EC0;&#x4E48;&#x662F;&#x7EE7;&#x627F;&#xFF1F;"><a name="1&#x3001;&#x4EC0;&#x4E48;&#x662F;&#x7EE7;&#x627F;&#xFF1F;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x4EC0;&#x4E48;&#x662F;&#x7EE7;&#x627F;&#xFF1F;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x4EC0;&#x4E48;&#x662F;&#x7EE7;&#x627F;&#xFF1F;</h1>
+<p>&#x7EE7;&#x627F;&#x662F;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8F6F;&#x4EF6;&#x6280;&#x672F;&#x5F53;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x4E0E;&#x591A;&#x6001;&#x3001;&#x5C01;&#x88C5;&#x5171;&#x4E3A;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x4E09;&#x4E2A;&#x57FA;&#x672C;&#x7279;&#x5F81;&#x3002;&#x7EE7;&#x627F;&#x53EF;&#x4EE5;&#x4F7F;&#x5F97;&#x5B50;&#x7C7B;&#x5177;&#x6709;&#x7236;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x6216;&#x8005;&#x91CD;&#x65B0;&#x5B9A;&#x4E49;&#x3001;&#x8FFD;&#x52A0;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x7B49;&#x3002;</p>
+<pre><code>/// &#x57FA;&#x7C7B;
+class People {
+
+public:
+    int age;
+    string firstName;
+    void sleep(void);
+    void eatFood(string food);
+};
+
+/// &#x6D3E;&#x751F;&#x7C7B;
+class Worker : public People{
+public:
+    void work(void);
+    int salary;
+};
+</code></pre><ul>
+<li>&#x88AB;&#x7EE7;&#x627F;&#x7684;&#x7C7B;&#x53EB;&#x505A;&#x57FA;&#x7C7B;&#x4E5F;&#x53EB;&#x505A;&#x7236;&#x7C7B;&#xFF0C;&#x4ECE;&#x5176;&#x4ED6;&#x7C7B;&#x7EE7;&#x627F;&#x800C;&#x6765;&#x7684;&#x7C7B;&#x53EB;&#x505A;&#x6D3E;&#x751F;&#x7C7B;&#x4E5F;&#x53EB;&#x505A;&#x5B50;&#x7C7B;&#xFF1B;</li>
+<li>&#x5B50;&#x7C7B;&#x4E2D;&#x4E0D;&#x4EC5;&#x7EE7;&#x627F;&#x4E86;&#x7236;&#x7C7B;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x4E5F;&#x7EE7;&#x627F;&#x4E86;&#x7236;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF1B;</li>
+</ul>
+<h2 id="11&#x3001;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;"><a name="11&#x3001;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;" class="anchor-navigation-ex-anchor" href="#11&#x3001;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1&#x3001;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;</h2>
+<p><img src="assets/Cpp_&#x5B50;&#x7C7B;&#x4E0E;&#x7236;&#x7C7B;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5173;&#x7CFB;.png" alt="&#x5B50;&#x7C7B;&#x4E0E;&#x7236;&#x7C7B;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5173;&#x7CFB;"></p>
+<p>&#x5B50;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x5185;&#x5B58;&#x4E2D;&#x65E2;&#x5305;&#x542B;&#x7236;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x53C8;&#x5305;&#x542B;&#x81EA;&#x5DF1;&#x7279;&#x6709;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+<pre><code>{
+    Worker *p = new Worker();
+    if (p != NULL) {
+        p -&gt; firstName = &quot;&#x72D7;&#x86CB;&quot;;
+        p -&gt; age = 10;
+        p -&gt; eatFood(&quot;&#x9762;&#x5305;&quot;);
+        cout &lt;&lt; p -&gt; firstName &lt;&lt; endl;
+        cout &lt;&lt; p -&gt; age &lt;&lt; endl;
+
+        delete p;
+    }
+}
+</code></pre><p>&#x521B;&#x5EFA;&#x65F6;&#x5148;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#xFF0C;&#x63A5;&#x7740;&#x518D;&#x8C03;&#x7528;&#x81EA;&#x8EAB;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF01;</p>
+<p>&#x9500;&#x6BC1;&#x65F6;&#x5148;&#x8C03;&#x7528;&#x81EA;&#x8EAB;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x91CA;&#x653E;&#x4E00;&#x4E9B;&#x5185;&#x5B58;&#xFF0C;&#x63A5;&#x7740;&#x518D;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF01;</p>
+<h1 id="2&#x3001;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;"><a name="2&#x3001;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;</h1>
+<p>&#x57FA;&#x7C7B;&#x5230;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5173;&#x7CFB;&#xFF1A;</p>
+<ul>
+<li>&#x516C;&#x6709;&#x7EE7;&#x627F; <code>class subclass : public superclass</code></li>
+<li>&#x79C1;&#x6709;&#x7EE7;&#x627F; <code>class subclass : private superclass</code></li>
+<li>&#x4FDD;&#x62A4;&#x7EE7;&#x627F; <code>class subclass : protected superclass</code></li>
+</ul>
+<h2 id="21&#x3001;&#x516C;&#x6709;&#x7EE7;&#x627F;"><a name="21&#x3001;&#x516C;&#x6709;&#x7EE7;&#x627F;" class="anchor-navigation-ex-anchor" href="#21&#x3001;&#x516C;&#x6709;&#x7EE7;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1&#x3001;&#x516C;&#x6709;&#x7EE7;&#x627F;</h2>
+<p>&#x5728;&#x516C;&#x6709;&#x7EE7;&#x627F;&#x4E2D;&#xFF1A;</p>
+<ul>
+<li>&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x7236;&#x7C7B;&#x7684; <code>public</code> &#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x8BFB;&#x5199;&#x7236;&#x7C7B;&#x7684; <code>public</code> &#x6570;&#x636E;&#x6210;&#x5458;&#xFF1B;</li>
+<li>&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x5728; <strong>&#x5185;&#x90E8;</strong> &#x8BBF;&#x95EE;&#x7236;&#x7C7B;&#x7684; <code>protected</code> &#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x8BFB;&#x5199;&#x7236;&#x7C7B;&#x7684; <code>protected</code> &#x6570;&#x636E;&#x6210;&#x5458;&#xFF1B;</li>
+<li>&#x5B50;&#x7C7B;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7236;&#x7C7B;&#x7684; <code>private</code> &#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x4E0D;&#x80FD;&#x8BFB;&#x5199;&#x7236;&#x7C7B;&#x7684; <code>private</code> &#x6570;&#x636E;&#x6210;&#x5458;&#xFF1B;&#x7236;&#x7C7B;&#x7684;&#x79C1;&#x6709;&#x6570;&#x636E;&#x6210;&#x5458;&#x4E0E;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x5BF9;&#x4E8E;&#x5B50;&#x7C7B;&#x6765;&#x8BF4;&#xFF0C;&#x662F; <strong>&#x4E0D;&#x53EF;&#x89C1;</strong> &#x7684;&#xFF01;</li>
+<li>&#x7236;&#x7C7B;&#x7684;&#x79C1;&#x6709;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0D;&#x80FD;&#x88AB;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x5E76;&#x4F7F;&#x7528;&#xFF1B;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;</th>
+<th>&#x7EE7;&#x627F;&#x65B9;&#x5F0F;</th>
+<th>&#x6D3E;&#x751F;&#x7C7B;&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>private</code>  &#x6210;&#x5458;</td>
+<td><code>public</code></td>
+<td>&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#xFF08;&#x4E0D;&#x53EF;&#x89C1;&#xFF09;</td>
+</tr>
+<tr>
+<td><code>protected</code> &#x6210;&#x5458;</td>
+<td><code>public</code></td>
+<td><code>protected</code></td>
+</tr>
+<tr>
+<td><code>public</code> &#x6210;&#x5458;</td>
+<td><code>public</code></td>
+<td><code>public</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="22&#x3001;&#x4FDD;&#x62A4;&#x7EE7;&#x627F;"><a name="22&#x3001;&#x4FDD;&#x62A4;&#x7EE7;&#x627F;" class="anchor-navigation-ex-anchor" href="#22&#x3001;&#x4FDD;&#x62A4;&#x7EE7;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2&#x3001;&#x4FDD;&#x62A4;&#x7EE7;&#x627F;</h2>
+<p>&#x5BF9;&#x4E8E;&#x8BBF;&#x95EE;&#x9650;&#x5B9A;&#x7B26;  <code>protected</code>&#xFF1A; &#x5176;&#x4FEE;&#x9970;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#x4E0E;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x7C7B;&#x5185;&#x90E8;&#x8BBF;&#x95EE;&#x4E0E;&#x8BFB;&#x5199;&#xFF1B;&#x5728;&#x5916;&#x90E8;&#x662F;&#x4E0D;&#x88AB;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x7684;&#xFF01;</p>
+<table>
+<thead>
+<tr>
+<th>&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;</th>
+<th>&#x7EE7;&#x627F;&#x65B9;&#x5F0F;</th>
+<th>&#x6D3E;&#x751F;&#x7C7B;&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>private</code>  &#x6210;&#x5458;</td>
+<td><code>protected</code></td>
+<td>&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#xFF08;&#x4E0D;&#x53EF;&#x89C1;&#xFF09;</td>
+</tr>
+<tr>
+<td><code>protected</code> &#x6210;&#x5458;</td>
+<td><code>protected</code></td>
+<td><code>protected</code></td>
+</tr>
+<tr>
+<td><code>public</code> &#x6210;&#x5458;</td>
+<td><code>protected</code></td>
+<td><code>protected</code></td>
+</tr>
+</tbody>
+</table>
+<p>&#x5728;&#x4FDD;&#x62A4;&#x7EE7;&#x627F;&#x4E2D;&#xFF1A;</p>
+<ul>
+<li>&#x7236;&#x7C7B;&#x7684;&#x516C;&#x5171;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0E;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x5C06;&#x6210;&#x4E3A;&#x5B50;&#x7C7B;&#x7684;&#x53D7;&#x4FDD;&#x62A4;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0E;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF01;</li>
+<li>&#x7236;&#x7C7B;&#x7684;&#x53D7;&#x4FDD;&#x62A4;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0E;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x5C06;&#x6210;&#x4E3A;&#x5B50;&#x7C7B;&#x7684;&#x79C1;&#x6709;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0E;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF01;</li>
+<li>&#x7236;&#x7C7B;&#x7684;&#x79C1;&#x6709;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0E;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x5BF9;&#x4E8E;&#x5B50;&#x7C7B;&#x6765;&#x8BF4;&#x662F;&#x4E0D;&#x53EF;&#x89C1;&#x7684;&#xFF01;</li>
+</ul>
+<h2 id="23&#x3001;&#x79C1;&#x6709;&#x7EE7;&#x627F;"><a name="23&#x3001;&#x79C1;&#x6709;&#x7EE7;&#x627F;" class="anchor-navigation-ex-anchor" href="#23&#x3001;&#x79C1;&#x6709;&#x7EE7;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3&#x3001;&#x79C1;&#x6709;&#x7EE7;&#x627F;</h2>
+<p>&#x5BF9;&#x4E8E;&#x8BBF;&#x95EE;&#x9650;&#x5B9A;&#x7B26;  <code>private</code>&#xFF1A; &#x5176;&#x4FEE;&#x9970;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#x4E0E;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x7C7B;&#x5185;&#x90E8;&#x8BBF;&#x95EE;&#x4E0E;&#x8BFB;&#x5199;&#xFF1B;&#x5728;&#x5916;&#x90E8;&#x4E0E;&#x5B50;&#x7C7B;&#x4E2D;&#x662F;&#x4E0D;&#x53EF;&#x89C1;&#x7684;&#xFF01;</p>
+<table>
+<thead>
+<tr>
+<th>&#x57FA;&#x7C7B;&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;</th>
+<th>&#x7EE7;&#x627F;&#x65B9;&#x5F0F;</th>
+<th>&#x6D3E;&#x751F;&#x7C7B;&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x5C5E;&#x6027;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>private</code>  &#x6210;&#x5458;</td>
+<td><code>private</code></td>
+<td>&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#xFF08;&#x4E0D;&#x53EF;&#x89C1;&#xFF09;</td>
+</tr>
+<tr>
+<td><code>protected</code> &#x6210;&#x5458;</td>
+<td><code>private</code></td>
+<td><code>private</code></td>
+</tr>
+<tr>
+<td><code>public</code> &#x6210;&#x5458;</td>
+<td><code>private</code></td>
+<td><code>private</code></td>
+</tr>
+</tbody>
+</table>
+<p>&#x5728;&#x79C1;&#x6709;&#x7EE7;&#x627F;&#x4E2D;&#xFF1A;</p>
+<ul>
+<li>&#x7236;&#x7C7B;&#x7684;&#x516C;&#x5171;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0E;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x5C06;&#x6210;&#x4E3A;&#x5B50;&#x7C7B;&#x7684;&#x79C1;&#x6709;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0E;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF01;</li>
+<li>&#x7236;&#x7C7B;&#x7684;&#x53D7;&#x4FDD;&#x62A4;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0E;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x5C06;&#x6210;&#x4E3A;&#x5B50;&#x7C7B;&#x7684;&#x79C1;&#x6709;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0E;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF01;</li>
+<li>&#x7236;&#x7C7B;&#x7684;&#x79C1;&#x6709;&#x6210;&#x5458;&#x51FD;&#x6570;&#x4E0E;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x5BF9;&#x4E8E;&#x5B50;&#x7C7B;&#x6765;&#x8BF4;&#x662F;&#x4E0D;&#x53EF;&#x89C1;&#x7684;&#xFF01;</li>
+</ul>
+<h1 id="3&#x3001;&#x8986;&#x76D6;&#x4E0E;&#x9690;&#x85CF;"><a name="3&#x3001;&#x8986;&#x76D6;&#x4E0E;&#x9690;&#x85CF;" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x8986;&#x76D6;&#x4E0E;&#x9690;&#x85CF;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x8986;&#x76D6;&#x4E0E;&#x9690;&#x85CF;</h1>
+<p>&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x4E2D;&#x7684; &#x8986;&#x76D6; &#x4E0E; &#x9690;&#x85CF;&#xFF1A;</p>
+<ul>
+<li>&#x9690;&#x85CF;&#xFF1A;&#x540C;&#x540D;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x3001;&#x6216;&#x8005;&#x540C;&#x540D;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570; &#xFF08;&#x7236;&#x5B50;&#x5173;&#x7CFB;&#x3001;&#x6210;&#x5458;&#x540C;&#x540D;&#x3001;&#x9690;&#x85CF;&#xFF09;</li>
+<li>&#x8986;&#x76D6;:</li>
+</ul>
+<h2 id="31&#x3001;&#x9690;&#x85CF;"><a name="31&#x3001;&#x9690;&#x85CF;" class="anchor-navigation-ex-anchor" href="#31&#x3001;&#x9690;&#x85CF;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1&#x3001;&#x9690;&#x85CF;</h2>
+<p>&#x9690;&#x85CF;&#x7684;&#x7279;&#x6027;&#x4E3B;&#x8981;&#x4F53;&#x73B0;&#x5728;&#xFF1A;</p>
+<ul>
+<li>&#x5B50;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x53EA;&#x80FD;&#x8BBF;&#x95EE;&#x81EA;&#x5DF1;&#x7684;&#x6210;&#x5458;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x4F3C;&#x4E4E;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x7236;&#x7C7B;&#x7684;&#x540C;&#x540D;&#x51FD;&#x6570;&#xFF1B;</li>
+<li>&#x5B50;&#x7C7B;&#x4FEE;&#x6539;&#x7684;&#x662F;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF0C;&#x800C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x7236;&#x7C7B;&#x7684;&#x540C;&#x540D;&#x6570;&#x636E;&#x6210;&#x5458;&#xFF1B;</li>
+</ul>
+<pre><code>/// &#x7236;&#x7C7B;
+class People {
+protected:
+    string food;
+public:
+    void eatFood(string food){
+        this -&gt; food = food;
+    };
+};
+
+/// &#x5B50;&#x7C7B;
+class Worker : public People{
+protected:
+    /// &#x540C;&#x540D;&#x7684;&#x6570;&#x636E;&#x6210;&#x5458;
+    string food;
+public:
+    /// &#x5B50;&#x7C7B;&#x7684;&#x51FD;&#x6570;&#x9690;&#x85CF;&#x4E86;&#x7236;&#x7C7B;&#x7684;&#x540C;&#x540D;&#x51FD;&#x6570;
+    void eatFood(string food){
+        this -&gt; food = food;
+
+        this -&gt; People_YL::food = food;// &#x8BFB;&#x5199;&#x540C;&#x540D;&#x7684;&#x7236;&#x7C7B;&#x6570;&#x636E;&#x6210;&#x5458;
+    };
+};
+</code></pre><p>&#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x7236;&#x7C7B;&#x7684;&#x540C;&#x540D;&#x51FD;&#x6570;&#x786E;&#x5B9E;&#x88AB;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7279;&#x6B8A;&#x624B;&#x6BB5;&#x6765;&#x8BBF;&#x95EE;&#x7236;&#x7C7B;&#x7684;&#x540C;&#x540D;&#x51FD;&#x6570;</p>
+<pre><code>{
+    Worker_YL *p = new Worker_YL;
+    p -&gt; eatFood(&quot;&#x5DE5;&#x4EBA;&#x5728;&#x98DF;&#x5802;&#x5403;&#x996D;&quot;);
+
+    /// &#x901A;&#x8FC7;&#x7279;&#x6B8A;&#x624B;&#x6BB5;&#x6765;&#x8BBF;&#x95EE;&#x7236;&#x7C7B;&#x7684;&#x540C;&#x540D;&#x51FD;&#x6570;
+    p -&gt; People_YL::eatFood(&quot;&#x4EBA;&#x7C7B;&#x9700;&#x8981;&#x5403;&#x996D;&quot;);
+}
+</code></pre><p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong> &#x5728;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x4E2D;&#xFF0C;&#x540C;&#x540D;&#x4F46;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x65E0;&#x6CD5;&#x5F62;&#x6210;&#x91CD;&#x8F7D;&#xFF0C;&#x53EA;&#x80FD;&#x4EE5;&#x9690;&#x85CF;&#x7684;&#x5F62;&#x5F0F;&#x51FA;&#x73B0;&#xFF01;</p>
+<p>&#x5373;&#x4F7F;&#x5B50;&#x7C7B;&#x5DF2;&#x7ECF;&#x7EE7;&#x627F;&#x4E86;&#x7236;&#x7C7B;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4F46;&#x51FD;&#x6570;&#x540C;&#x540D;&#xFF0C;&#x5C31;&#x4F1A;&#x5C06;&#x7236;&#x7C7B;&#x51FD;&#x6570;&#x9690;&#x85CF;&#xFF0C;&#x5373;&#x4F7F;&#x53C2;&#x6570;&#x4E0D;&#x540C;&#xFF0C;&#x4E5F;&#x65E0;&#x6CD5;&#x5F62;&#x6210;&#x91CD;&#x8F7D;&#xFF01;</p>
+<pre><code>/// &#x7236;&#x7C7B;
+class People {
+public:
+    void eatFood();
+};
+
+/// &#x5B50;&#x7C7B;
+class Worker : public People{
+public:
+    /// &#x5B50;&#x7C7B;&#x7684;&#x51FD;&#x6570;&#x9690;&#x85CF;&#x4E86;&#x7236;&#x7C7B;&#x7684;&#x540C;&#x540D;&#x51FD;&#x6570;
+    void eatFood(string food);
+};
+
+
+/// &#x6D4B;&#x8BD5;&#x4EE3;&#x7801;
+{
+    Worker_YL *p = new Worker_YL;
+    p -&gt; eatFood(&quot;&#x5DE5;&#x4EBA;&#x5728;&#x98DF;&#x5802;&#x5403;&#x996D;&quot;);
+
+    p -&gt; eatFood(); /// &#x274C; &#x4E0D;&#x5141;&#x8BB8;&#x8FD9;&#x79CD;&#x8C03;&#x7528;
+    p -&gt; People_YL::eatFood(); /// &#x8981;&#x60F3;&#x8C03;&#x7528;&#x8BE5;&#x51FD;&#x6570;&#xFF0C;&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x7236;&#x7C7B;&#x6765;&#x8C03;&#x7528;
+}
+</code></pre><h1 id="4&#x3001;-&#x57FA;&#x7C7B;&#x4E0E;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5173;&#x7CFB;&#xFF1A;-isa-&#x4E0E;-hasa"><a name="4&#x3001;-&#x57FA;&#x7C7B;&#x4E0E;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5173;&#x7CFB;&#xFF1A;-isa-&#x4E0E;-hasa" class="anchor-navigation-ex-anchor" href="#4&#x3001;-&#x57FA;&#x7C7B;&#x4E0E;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5173;&#x7CFB;&#xFF1A;-isa-&#x4E0E;-hasa"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001; &#x57FA;&#x7C7B;&#x4E0E;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5173;&#x7CFB;&#xFF1A; <code>Is&apos;a</code> &#x4E0E; <code>Has&apos;a</code></h1>
+<h2 id="41&#x3001;-is-a-&#x5173;&#x7CFB;"><a name="41&#x3001;-is-a-&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#41&#x3001;-is-a-&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1&#x3001; <code>Is-a</code> &#x5173;&#x7CFB;</h2>
+<p><code>Is-a</code> &#x6982;&#x5FF5;&#xFF1A;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;</p>
+<ul>
+<li>&#x7236;&#x7C7B;&#x6307;&#x9488;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x5B50;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x4E0E;&#x6210;&#x5458;&#x51FD;&#x6570;</li>
+<li>&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x6307;&#x9488;&#x9500;&#x6BC1;&#x5B50;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF0C;&#x53EA;&#x4F1A;&#x9500;&#x6BC1;&#x7236;&#x7C7B;&#x7684;&#x90A3;&#x4E00;&#x90E8;&#x5206;&#xFF1B;&#x5B50;&#x7C7B;&#x72EC;&#x6709;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x4E0D;&#x4F1A;&#x88AB;&#x91CA;&#x653E;</li>
+<li>&#x7236;&#x7C7B;&#x6307;&#x9488;  <code>new</code>  &#x4E00;&#x4E2A;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x4F1A;&#x5148;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x63A5;&#x7740;&#x8C03;&#x7528;&#x5B50;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF01;</li>
+<li>&#x800C; <code>delete</code> &#x4EC5;&#x4EC5;&#x8C03;&#x7528;&#x7684;&#x662F;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570; &#xFF1B;</li>
+</ul>
+<pre><code>class People {
+public:
+    int age;
+    void eatFood();
+};
+
+class Worker : public People{
+public:
+    int salary;
+    void work(void);
+};
+</code></pre><p>&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x6BB5;</p>
+<pre><code>/// Is-a &#x6982;&#x5FF5;&#xFF1A;&#x6D3E;&#x751F;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;
+{    
+    People *p = new Worker(); /// &#x5148;&#x8C03;&#x7528; People &#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x63A5;&#x7740;&#x8C03;&#x7528; Worker &#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;
+    std::cout &lt;&lt; p -&gt; age &lt;&lt; std::endl; 
+
+    /// &#x274C;   &#x7236;&#x7C7B;&#x6307;&#x9488;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x5B50;&#x7C7B;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x4E0E;&#x6210;&#x5458;&#x51FD;&#x6570;
+    std::cout &lt;&lt; p -&gt; salary &lt;&lt; std::endl; 
+    std::cout &lt;&lt; p -&gt; work() &lt;&lt; std::endl;
+
+    /// &#x8C03;&#x7528;&#x7236;&#x7C7B;&#x6307;&#x9488;&#x9500;&#x6BC1;&#x5B50;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#xFF0C;&#x53EA;&#x4F1A;&#x9500;&#x6BC1;&#x7236;&#x7C7B;&#x7684;&#x90A3;&#x4E00;&#x90E8;&#x5206;
+    /// &#x5B50;&#x7C7B;&#x72EC;&#x6709;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x4E0D;&#x4F1A;&#x88AB;&#x91CA;&#x653E;
+    delete p; /// &#x274C;
+}
+</code></pre><p><strong>&#x601D;&#x8003;</strong>&#xFF1A;&#x5728; <code>Is-a</code> &#x5173;&#x7CFB;&#x4E2D;&#x5982;&#x4F55;&#x901A;&#x8FC7;&#x7236;&#x7C7B;&#x6307;&#x9488;&#x91CA;&#x653E;&#x5B50;&#x7C7B;&#x5185;&#x5B58;&#xFF1F;</p>
+<h3 id="411&#x3001;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;"><a name="411&#x3001;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#411&#x3001;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.1&#x3001;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;</h3>
+<p>&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF1A;&#x5F53;&#x5B58;&#x5728;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x7236;&#x7C7B;&#x6307;&#x9488;&#x6307;&#x5411;&#x5806;&#x4E2D;&#x7684;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x5411;&#x901A;&#x8FC7;&#x7236;&#x7C7B;&#x6307;&#x9488;&#x91CA;&#x653E;&#x5B50;&#x7C7B;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x5C31;&#x9700;&#x8981;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#x6765;&#x89E3;&#x51B3;&#x4E86;&#xFF01;</p>
+<p>&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570; <code>virtual ~People();</code>   &#x5F53;&#x7236;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x88AB;&#x58F0;&#x660E;&#x4E3A;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4E5F;&#x4F1A;&#x9ED8;&#x8BA4;&#x5C06;&#x5B50;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#x7F16;&#x8BD1;&#x4E3A;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF01;</p>
+<pre><code>class People {
+public:
+    int age;
+    void eatFood();
+    virtual ~People(); /// &#x58F0;&#x660E;&#x4E3A;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;
+};
+
+class Worker : public People{
+public:
+    int salary;
+    void work(void);
+    ~Worker();/// &#x7F16;&#x8BD1;&#x5668;&#x4E5F;&#x4F1A;&#x9ED8;&#x8BA4;&#x5C06;&#x5176;&#x7F16;&#x8BD1;&#x4E3A;&#x865A;&#x6790;&#x6784;&#x51FD;&#x6570;
+};
+</code></pre><p>&#x6B64;&#x65F6;&#x901A;&#x8FC7;&#x7236;&#x7C7B;&#x6307;&#x9488;&#x6307;&#x5411;&#x5806;&#x4E2D;&#x7684;&#x5B50;&#x7C7B;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4E14;&#x4F7F;&#x7528;&#x7236;&#x7C7B;&#x6307;&#x9488;&#x91CA;&#x653E;&#x5B50;&#x7C7B;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x5C06;&#x4F1A;&#x5148;&#x8C03;&#x7528;&#x5B50;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF0C;&#x63A5;&#x7740;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x6790;&#x6784;&#x51FD;&#x6570;&#xFF01;</p>
+<h3 id="412&#x3001;&#x6D4B;&#x8BD5;"><a name="412&#x3001;&#x6D4B;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#412&#x3001;&#x6D4B;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>4.1.2&#x3001;&#x6D4B;&#x8BD5;</h3>
+<p>&#x6D4B;&#x8BD5;&#x5728;&#x516C;&#x6709;&#x7EE7;&#x627F;&#x4E2D;&#xFF0C;<code>Is-a</code>  &#x5728;&#x51FD;&#x6570;&#x4F20;&#x9012;&#x4E2D;&#x7684;&#x8868;&#x73B0;&#xFF01;</p>
+<h6 id="&#x7EE7;&#x627F;&#x5173;&#x7CFB;"><a name="&#x7EE7;&#x627F;&#x5173;&#x7CFB;" class="anchor-navigation-ex-anchor" href="#&#x7EE7;&#x627F;&#x5173;&#x7CFB;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EE7;&#x627F;&#x5173;&#x7CFB;</h6>
+<pre><code>class People {
+public:
+    string name;
+    People(){
+        this -&gt; name = &quot;&#x4EBA;&#x7C7B;&quot;;
+        cout &lt;&lt; &quot;People&quot; &lt;&lt; endl;
+    };
+    virtual ~People(){
+        cout &lt;&lt; &quot;~People&quot; &lt;&lt; endl;
+    };
+    void logName(){
+        cout &lt;&lt; this -&gt; name &lt;&lt; endl;
+    }
+};
+
+class Worker : public People{
+public:
+    Worker(){
+        this -&gt; name = &quot;&#x5DE5;&#x4EBA;&quot;;
+        cout &lt;&lt; &quot;Worker&quot; &lt;&lt; endl;
+    };
+    ~Worker(){
+        cout &lt;&lt; &quot;~Worker&quot; &lt;&lt; endl;
+    };
+};
+</code></pre><h6 id="&#x6D4B;&#x8BD5;&#x51FD;&#x6570;"><a name="&#x6D4B;&#x8BD5;&#x51FD;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x6D4B;&#x8BD5;&#x51FD;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D4B;&#x8BD5;&#x51FD;&#x6570;</h6>
+<pre><code>/// test1 &#x51FD;&#x6570;&#x7684;&#x4F20;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61; peo
+/// &#x56E0;&#x6B64;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x4F20;&#x503C;&#x65F6;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x73B0;&#x5728;&#x6808;&#x4E0A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x5C06;&#x6808;&#x4E0A;&#x7684;&#x7F13;&#x5B58;&#x91CA;&#x653E;
+void test1(People peo) {
+    peo.logName();
+}
+
+void test2(People &amp;peo) {
+    peo.logName();
+}
+
+void test3(People *peo) {
+    peo -&gt; logName();
+}
+</code></pre><p>&#x5BF9;&#x6BD4; <code>test1()</code> &#x51FD;&#x6570; &#xFF0C; <code>test2()</code>&#x4E0E; <code>test3()</code>&#x4E0D;&#x4F1A;&#x4EA7;&#x751F;&#x4E34;&#x65F6;&#x53D8;&#x91CF;&#xFF0C;&#x6548;&#x7387;&#x66F4;&#x9AD8;&#xFF01;</p>
+<h6 id="&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;"><a name="&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;</h6>
+<pre><code>{
+    People p;
+    Worker w;
+
+    test1(p);
+    test1(w);
+
+    test2(p);
+    test2(w);
+
+    test3(p);
+    test3(w);
+}
+</code></pre><p>&#x4E0A;&#x8FF0;&#x4E09;&#x4E2A; <code>test</code> &#x51FD;&#x6570;&#xFF0C;</p>
+<ul>
+<li>&#x5F53;&#x4F20;&#x9012; <code>People</code> &#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x6253;&#x5370;&#x7684;&#x662F; <code>People</code> &#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF1B;</li>
+<li>&#x5F53;&#x4F20;&#x9012; <code>Worker</code> &#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x6253;&#x5370;&#x7684;&#x662F; <code>Worker</code> &#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x53D8;&#x91CF;&#xFF1B;</li>
+</ul>
+<p>Has a : &#x5305;&#x542B;&#x5173;&#x7CFB;&#xFF01;</p>
+<h1 id="5&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;"><a name="5&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;" class="anchor-navigation-ex-anchor" href="#5&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>5&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;</h1>
+<h2 id="51&#x3001;&#x591A;&#x91CD;&#x7EE7;&#x627F;"><a name="51&#x3001;&#x591A;&#x91CD;&#x7EE7;&#x627F;" class="anchor-navigation-ex-anchor" href="#51&#x3001;&#x591A;&#x91CD;&#x7EE7;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>5.1&#x3001;&#x591A;&#x91CD;&#x7EE7;&#x627F;</h2>
+<p>&#x5F53; <code>B</code> &#x7C7B;&#x4ECE; <code>A</code> &#x7C7B;&#x6D3E;&#x751F;&#x800C;&#x6765;&#xFF0C;<code>C</code> &#x7C7B;&#x4ECE; <code>B</code> &#x7C7B;&#x6D3E;&#x751F;&#x800C;&#x6765;&#xFF0C;&#x6B64;&#x65F6;&#x79F0;&#x4E3A;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF01;</p>
+<pre><code>class People {
+public:
+    string name;
+};
+
+class Worker : public People{
+};
+
+class BenchWorker : public Worker{
+};
+</code></pre><p>&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A; <code>BenchWorker</code> &#xFF0C;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#xFF1A;<code>People()</code> -&gt;  <code>Worker()</code> -&gt;  <code>BenchWorker()</code> !</p>
+<p>&#x91CA;&#x653E;&#x4E00;&#x4E2A; <code>BenchWorker</code> &#xFF0C;&#x6790;&#x6784;&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#xFF1A;<code>~BenchWorker()</code> -&gt;  <code>~Worker()</code> -&gt;  <code>~People()</code> !</p>
+<p>&#x4E00;&#x4E2A;&#x5B50;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x4F20;&#x5165;&#x7236;&#x7C7B;&#x7684;&#x51FD;&#x6570;&#x4E2D;&#xFF01;</p>
+<p>&#x4E0D;&#x7BA1;&#x7EE7;&#x627F;&#x7684;&#x5173;&#x7CFB;&#x6709;&#x591A;&#x5C11;&#x5C42;&#xFF0C;&#x53EA;&#x8981;&#x5B58;&#x5728;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#xFF0C;&#x5B50;&#x7C7B;&#x4E0E;&#x7236;&#x7C7B;&#x5C31;&#x5B58;&#x5728; <code>isa</code> &#x7684;&#x5173;&#x7CFB;&#xFF1A;<code>PeasantWorker</code> isa <code>People</code> &#xFF1B;<code>PeasantWorker</code> isa <code>Worker</code>&#xFF01;</p>
+<h2 id="52&#x3001;&#x591A;&#x7EE7;&#x627F;"><a name="52&#x3001;&#x591A;&#x7EE7;&#x627F;" class="anchor-navigation-ex-anchor" href="#52&#x3001;&#x591A;&#x7EE7;&#x627F;"><i class="fa fa-link" aria-hidden="true"></i></a>5.2&#x3001;&#x591A;&#x7EE7;&#x627F;</h2>
+<p>&#x591A;&#x7EE7;&#x627F;&#xFF1A;</p>
+<ul>
+<li>&#x4E00;&#x4E2A;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x591A;&#x4E2A;&#x7236;&#x7C7B;</li>
+<li>&#x5BF9;&#x7236;&#x7C7B;&#x7684;&#x4E2A;&#x6570;&#x6CA1;&#x6709;&#x9650;&#x5236;&#xFF0C;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x662F;&#x516C;&#x5171;&#x7EE7;&#x627F;&#x3001;&#x4FDD;&#x62A4;&#x7EE7;&#x627F;&#x3001;&#x79C1;&#x6709;&#x7EE7;&#x627F;&#xFF1B;</li>
+<li>&#x7EE7;&#x627F;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x751F;&#x547D;&#x7EE7;&#x627F;&#x65B9;&#x5F0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;&#x79C1;&#x6709;&#x7EE7;&#x627F;&#xFF1B;</li>
+</ul>
+<pre><code>/// &#x5DE5;&#x4EBA;
+class Worker : public People{
+};
+/// &#x519C;&#x6C11;
+class Peasant : public People{
+};
+/// &#x519C;&#x6C11;&#x5DE5; : &#x9ED8;&#x8BA4;&#x79C1;&#x6709;&#x7EE7;&#x627F;
+class PeasantWorker : public Peasant, public Worker {
+public:
+    PeasantWorker(){
+        ///&#x7F16;&#x8BD1;&#x274C; Non-static member &apos;name&apos; found in multiple base-class subobjects of type &apos;People&apos;:
+        this -&gt; name = &quot;&#x519C;&#x6C11;&#x5DE5;&quot;;
+    };
+};
+</code></pre><p>&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A; <code>BenchWorker</code> &#xFF0C;&#x4F9D;&#x6B21;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF08;&#x521D;&#x59CB;&#x5316;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x987A;&#x5E8F;&#xFF09;&#xFF01;&#x6790;&#x6784;&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x6B63;&#x597D;&#x4E0E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x76F8;&#x53CD;&#xFF01;</p>
+<p><code>PeasantWorker</code> isa <code>Worker</code>
+<code>PeasantWorker</code> isa <code>Peasant</code></p>
+<h2 id="53&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x7684;&#x9677;&#x9631;"><a name="53&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x7684;&#x9677;&#x9631;" class="anchor-navigation-ex-anchor" href="#53&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x7684;&#x9677;&#x9631;"><i class="fa fa-link" aria-hidden="true"></i></a>5.3&#x3001;&#x591A;&#x7EE7;&#x627F;&#x4E0E;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#x7684;&#x9677;&#x9631;</h2>
+<p>&#x83F1;&#x5F62;&#x7EE7;&#x627F;&#xFF1A;&#x65E2;&#x6709;&#x591A;&#x7EE7;&#x627F;&#x3001;&#x53C8;&#x6709;&#x591A;&#x91CD;&#x7EE7;&#x627F;&#xFF01;&#x5982;&#x4E0B;&#x6240;&#x793A;</p>
+<pre><code>     &#x7C7B; A                     &#x4EBA;&#x7C7B;
+  &#x7C7B;B     &#x7C7B;C          &#x519C;&#x540D;&#x7C7B;         &#x5DE5;&#x4EBA;&#x7C7B;
+      &#x7C7B;D                     &#x519C;&#x6C11;&#x5DE5;&#x7C7B;
+</code></pre><p>&#x7C7B; D &#x7EE7;&#x627F;&#x7C7B;B&#xFF0C;&#x7C7B;B&#x7EE7;&#x627F;&#x7C7B;A&#xFF1B;&#x7C7B; D &#x7EE7;&#x627F;&#x7C7B;C&#xFF0C;&#x7C7B;C&#x7EE7;&#x627F;&#x7C7B;A&#xFF01; </p>
+<p>&#x6B64;&#x65F6;&#x7C7B; D &#x5C06;&#x542B;&#x6709;&#x7C7B; A &#x4E2D;&#x4E24;&#x4EFD;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x662F;&#x4E0D;&#x88AB;&#x5141;&#x8BB8;&#x7684;&#xFF1B;</p>
+<p>&#x5982;&#x4F55;&#x89E3;&#x51B3;&#x6570;&#x636E;&#x5197;&#x4F59;&#x7684;&#x95EE;&#x9898;&#x5462;&#xFF1F;&#x4F7F;&#x7528;&#x865A;&#x7EE7;&#x627F; <code>virtual</code> &#xFF01;</p>
+<h2 id="54&#x3001;&#x865A;&#x7EE7;&#x627F;-virtual"><a name="54&#x3001;&#x865A;&#x7EE7;&#x627F;-virtual" class="anchor-navigation-ex-anchor" href="#54&#x3001;&#x865A;&#x7EE7;&#x627F;-virtual"><i class="fa fa-link" aria-hidden="true"></i></a>5.4&#x3001;&#x865A;&#x7EE7;&#x627F; <code>virtual</code></h2>
+<pre><code>/// &#x5DE5;&#x4EBA;
+class Worker : virtual public People{
+};
+/// &#x519C;&#x6C11;
+class Peasant : virtual public People{
+};
+/// &#x519C;&#x6C11;&#x5DE5; : &#x9ED8;&#x8BA4;&#x79C1;&#x6709;&#x7EE7;&#x627F;
+class PeasantWorker : public Peasant, public Worker {
+};
+</code></pre><p>&#x6B64;&#x65F6;<code>PeasantWorker</code>&#x7C7B;&#x4EC5;&#x542B;&#x6709;<code>People</code>&#x7C7B;&#x4E2D;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#xFF01;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-11-13 11:05:13
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> 搜索结果 "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有搜索结果 "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="C++学习封装篇.html" class="navigation navigation-prev " aria-label="Previous page: C++学习封装篇">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="C++学习多态篇.html" class="navigation navigation-next " aria-label="Next page: C++学习多态篇">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"C++学习继承篇","level":"1.4.1.3","depth":3,"next":{"title":"C++学习多态篇","level":"1.4.1.4","depth":3,"path":"语言篇/C++学习多态篇.md","ref":"语言篇/C++学习多态篇.md","articles":[]},"previous":{"title":"C++学习封装篇","level":"1.4.1.2","depth":3,"path":"语言篇/C++学习封装篇.md","ref":"语言篇/C++学习封装篇.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"语言篇/C++学习继承篇.md","mtime":"2021-11-13T03:05:13.786Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-13T03:07:06.191Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

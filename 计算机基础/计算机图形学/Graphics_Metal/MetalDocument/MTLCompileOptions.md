@@ -6,46 +6,31 @@
 typedef NS_ENUM(NSInteger, MTLLibraryType) {
     MTLLibraryTypeExecutable = 0,
     MTLLibraryTypeDynamic = 1,
-} API_AVAILABLE(macos(11.0), ios(14.0));
+};
 
-MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
 @interface MTLCompileOptions : NSObject <NSCopying>
 
-// Pre-processor options
+// 预处理配置
 
-/*!
- @property preprocessorNames
- @abstract List of preprocessor macros to consider to when compiling this program. Specified as key value pairs, using a NSDictionary. The keys must be NSString objects and values can be either NSString or NSNumber objects.
- @discussion The default value is nil.
- */
+/// 编译程序时的预处理器宏列表，默认值为 nil
 @property (nullable, readwrite, copy, nonatomic) NSDictionary <NSString *, NSObject *> *preprocessorMacros;
 
 // Math intrinsics options
 
-/*!
- @property fastMathEnabled
- @abstract If YES, enables the compiler to perform optimizations for floating-point arithmetic that may violate the IEEE 754 standard. It also enables the high precision variant of math functions for single precision floating-point scalar and vector types. fastMathEnabled defaults to YES.
- */
+/// 默认值为 YES，允许编译器对浮点运算执行可能违反 IEEE 754 标准的优化。
 @property (readwrite, nonatomic) BOOL fastMathEnabled;
 
-/*!
- @property languageVersion
- @abstract set the metal language version used to interpret the source.
+/// 设置用于解释源文件的 Metal 语言版本
+@property (readwrite, nonatomic) MTLLanguageVersion languageVersion;
+
+/** 应该将库编译为哪种类型，默认使用 MTLLibraryTypeExecutable
+ * MTLLibraryTypeExecutable 适用于构建 kernel、vertex 和 fragment 等类型函数；
+ * MTLDynamicLibrary 编译的库用来实例化，未限定的函数可以用作编译其他库的外部依赖项。
  */
-@property (readwrite, nonatomic) MTLLanguageVersion languageVersion API_AVAILABLE(macos(10.11), ios(9.0));
+@property (readwrite, nonatomic) MTLLibraryType libraryType;
 
-/*!
- @property type
- @abstract Which type the library should be compiled as. The default value is MTLLibraryTypeExecutable.
- @discussion MTLLibraryTypeExecutable is suitable to build a library of "kernel", "vertex" and "fragment" qualified functions.
- MTLLibraryType is suitable when the compilation result will instead be used to instantiate a MTLDynamicLibrary.
- MTLDynamicLibrary contains no qualified functions, but it's unqualified functions and variables can be used as an external dependency for compiling other libraries.
-*/
-@property (readwrite, nonatomic) MTLLibraryType libraryType API_AVAILABLE(macos(11.0), ios(14.0));
-
-/*!
+/** 动态库的加载名称
  @property installName
- @abstract The install name of this dynamic library.
  @discussion The install name is used when a pipeline state is created that depends, directly or indirectly, on a dynamic library.
  The installName is embedded into any other MTLLibrary that links against the compilation result.
  This property should be set such that the dynamic library can be found in the file system at the time a pipeline state is created.
@@ -58,22 +43,20 @@ MTL_EXPORT API_AVAILABLE(macos(10.11), ios(8.0))
  This property is ignored when the type property is not set to MTLLibraryTypeDynamic.
  This propery should not be null if the property type is set to MTLLibraryTypeDynamic: the compilation will fail in that scenario.
  */
-@property (readwrite, nullable, copy, nonatomic) NSString *installName API_AVAILABLE(macos(11.0), ios(14.0));
+@property (readwrite, nullable, copy, nonatomic) NSString *installName;
 
-/*!
- @property libraries
- @abstract A set of MTLDynamicLibrary instances to link against.
- The installName of the provided MTLDynamicLibrary is embedded into the compilation result.
- When a function from the resulting MTLLibrary is used (either as an MTLFunction, or as an to create a pipeline state, the embedded install names are used to automatically load the MTLDynamicLibrary instances.
- This property can be null if no libraries should be automatically loaded, either because the MTLLibrary has no external dependencies, or because you will use insertLibraries to specify the libraries to use at pipeline creation time.
-*/
-@property (readwrite, nullable, copy, nonatomic) NSArray<id<MTLDynamicLibrary>> *libraries API_AVAILABLE(macos(11.0), ios(14.0));
-
-
-/*!
- @property preserveInvariance
- @abstract If YES,  set the compiler to compile shaders to preserve invariance.  The default is false.
+/** 一组要链接的动态库，将 installName 嵌入到编译结果中
+ * 使用动态库中的函数作为渲染管道的执行函数时，将自动加载动态库；
+ * 如果无需加载动态库，直接将该属性置为 nil；
  */
-@property (readwrite, nonatomic) BOOL preserveInvariance API_AVAILABLE(macos(11.0), macCatalyst(14.0), ios(13.0));
+@property (readwrite, nullable, copy, nonatomic) NSArray<id<MTLDynamicLibrary>> *libraries;
+
+/** 默认值为 NO
+ * 当为 YES 时，Metal 编译器会查看它编译的所有着色器顶点输出的坐标值，
+ * 如果坐标值具有不变性，编译器会保守地编译相应的顶点着色器，以保证 GPU 以相同的方式执行计算；
+ * 当 Metal 渲染器包含多个渲染管道，并且需要在每个渲染管道中计算相同的坐标时，需要保持不变。
+ */
+@property (readwrite, nonatomic) BOOL preserveInvariance;
+
 @end
 ```

@@ -1,0 +1,2199 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>锁 · 个人博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="苏沫漓">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="OC的深拷贝与浅拷贝.html" />
+    
+    
+    <link rel="prev" href="OC之GCD.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../计算机基础/计算机基础.html">
+            
+                <a href="../../计算机基础/计算机基础.html">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                    
+                    第一部分 计算机的组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                    
+                    计算机组成篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                    
+                    计算机计算篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                    
+                    第二部分 操作系统篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../计算机基础/操作系统篇/进程管理篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/进程管理篇.html">
+            
+                    
+                    进程管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../计算机基础/操作系统篇/内存管理篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/内存管理篇.html">
+            
+                    
+                    内存管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../计算机基础/操作系统篇/文件系统篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/文件系统篇.html">
+            
+                    
+                    文件系统篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                    
+                    操作系统提升篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../计算机基础/计算机网络/网络概述篇.html">
+            
+                <a href="../../计算机基础/计算机网络/网络概述篇.html">
+            
+                    
+                    第三部分 网络篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../计算机基础/计算机网络/计算机物理层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机物理层.html">
+            
+                    
+                    计算机物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                    
+                    计算机数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../计算机基础/计算机网络/计算机网络层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机网络层.html">
+            
+                    
+                    计算机网络层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../计算机基础/计算机网络/计算机传输层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机传输层.html">
+            
+                    
+                    计算机传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../../计算机基础/计算机网络/计算机应用层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机应用层.html">
+            
+                    
+                    计算机应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.5.1" data-path="../../计算机基础/计算机网络/HTTP协议.html">
+            
+                <a href="../../计算机基础/计算机网络/HTTP协议.html">
+            
+                    
+                    HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.2" data-path="../../计算机基础/计算机网络/HTTPS协议.html">
+            
+                <a href="../../计算机基础/计算机网络/HTTPS协议.html">
+            
+                    
+                    HTTPS协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    第四部分 图形学基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../计算机基础/计算机图形学/矩阵的变换.html">
+            
+                <a href="../../计算机基础/计算机图形学/矩阵的变换.html">
+            
+                    
+                    矩阵的变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../计算机基础/计算机图形学/三维空间的观察.html">
+            
+                <a href="../../计算机基础/计算机图形学/三维空间的观察.html">
+            
+                    
+                    三维空间的观察
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    iOS开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Runtime/Objective_C简介.html">
+            
+                <a href="../Runtime/Objective_C简介.html">
+            
+                    
+                    Runtime
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../Runtime/OC之Blocks.html">
+            
+                <a href="../Runtime/OC之Blocks.html">
+            
+                    
+                    OC之Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../Runtime/OC内存管理.html">
+            
+                <a href="../Runtime/OC内存管理.html">
+            
+                    
+                    OC内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../Runtime/OC内存管理之引用计数.html">
+            
+                <a href="../Runtime/OC内存管理之引用计数.html">
+            
+                    
+                    OC内存管理之引用计数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../Runtime/+load方法的调用历程.html">
+            
+                <a href="../Runtime/+load方法的调用历程.html">
+            
+                    
+                    +load方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../Runtime/TaggedPointer.html">
+            
+                <a href="../Runtime/TaggedPointer.html">
+            
+                    
+                    TaggedPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../Runtime/方法签名.html">
+            
+                <a href="../Runtime/方法签名.html">
+            
+                    
+                    消息与方法签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../Runtime/OC_方法交换.html">
+            
+                <a href="../Runtime/OC_方法交换.html">
+            
+                    
+                    方法交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../Runtime/三次补救措施.html">
+            
+                <a href="../Runtime/三次补救措施.html">
+            
+                    
+                    方法不被识别的补救
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../Runtime/编译objc4.html">
+            
+                <a href="../Runtime/编译objc4.html">
+            
+                    
+                    编译objc4备忘录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="../Runtime/Runtime_Protocol.html">
+            
+                <a href="../Runtime/Runtime_Protocol.html">
+            
+                    
+                    Runtime函数库中关于协议Protocol的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="../Runtime/Runtime_Property.html">
+            
+                <a href="../Runtime/Runtime_Property.html">
+            
+                    
+                    Runtime函数库中关于属性与变量的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.12" data-path="../Runtime/Runtime_Instance.html">
+            
+                <a href="../Runtime/Runtime_Instance.html">
+            
+                    
+                    Runtime函数库中关于实例对象的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.13" data-path="../Runtime/Runtime_Class.html">
+            
+                <a href="../Runtime/Runtime_Class.html">
+            
+                    
+                    Runtime函数库中关于Class的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.14" data-path="../Runtime/Runtime_Method.html">
+            
+                <a href="../Runtime/Runtime_Method.html">
+            
+                    
+                    Runtime函数库中关于 Class 的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../CoreText/CoteText概述.html">
+            
+                <a href="../CoreText/CoteText概述.html">
+            
+                    
+                    CoreText
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../CoreText/CoteText排版与布局.html">
+            
+                <a href="../CoreText/CoteText排版与布局.html">
+            
+                    
+                    CoteText排版与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../CoreText/CTLineRef的函数库及使用.html">
+            
+                <a href="../CoreText/CTLineRef的函数库及使用.html">
+            
+                    
+                    CTLineRef的函数库及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../CoreText/CTRunRef与CTRunDelegate.html">
+            
+                <a href="../CoreText/CTRunRef与CTRunDelegate.html">
+            
+                    
+                    图文混排的关键：CTRunRef 与 CTRunDelegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    CoreImage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../CoreImage/图像特征CIFeature.html">
+            
+                <a href="../CoreImage/图像特征CIFeature.html">
+            
+                    
+                    图像特征CIFeature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../CoreImage/图片检测CIDetector.html">
+            
+                <a href="../CoreImage/图片检测CIDetector.html">
+            
+                    
+                    图片检测CIDetector
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal调试.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal调试.html">
+            
+                    
+                    Metal 实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal的简单计算.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal的简单计算.html">
+            
+                    
+                    内核计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal绘制三角形.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal绘制三角形.html">
+            
+                    
+                    绘制三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/简单的纹理贴图.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/简单的纹理贴图.html">
+            
+                    
+                    纹理贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/CPU与GPU协调工作.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/CPU与GPU协调工作.html">
+            
+                    
+                    CPU与GPU协调工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/深度测试.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/深度测试.html">
+            
+                    
+                    深度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.6" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/读取纹理像素.md">
+            
+                <span>
+            
+                    
+                    线程与线程组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.7" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/离屏渲染.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/离屏渲染.html">
+            
+                    
+                    自定义MTLRenderPassDescriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal简介.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/Metal简介.html">
+            
+                    
+                    Metal API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKView.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKView.html">
+            
+                    
+                    MTKView API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLDevice.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLDevice.html">
+            
+                    
+                    MTLDevice API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLMesh.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLMesh.html">
+            
+                    
+                    MDLMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKModel.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTKModel.html">
+            
+                    
+                    MTKMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLVertexDescriptor.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MDLVertexDescriptor.html">
+            
+                    
+                    MDLVertexDescriptor API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLRenderPass.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLRenderPass.html">
+            
+                    
+                    MTLRenderPass API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLFunction.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLFunction.html">
+            
+                    
+                    MTLFunction API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.8" data-path="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLLibrary.html">
+            
+                <a href="../../计算机基础/计算机图形学/Graphics_Metal/MetalDocument/MTLLibrary.html">
+            
+                    
+                    MTLLibrary API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" >
+            
+                <span>
+            
+                    
+                    杂记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="iOS渲染机制初窥.html">
+            
+                <a href="iOS渲染机制初窥.html">
+            
+                    
+                    iOS渲染机制初窥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="响应链.html">
+            
+                <a href="响应链.html">
+            
+                    
+                    响应链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="并发编程.html">
+            
+                <a href="并发编程.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.3.1" data-path="OC之Thread.html">
+            
+                <a href="OC之Thread.html">
+            
+                    
+                    线程NSThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3.2" data-path="OC之NSOperation.html">
+            
+                <a href="OC之NSOperation.html">
+            
+                    
+                    任务队列NSOperation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3.3" data-path="OC之GCD.html">
+            
+                <a href="OC之GCD.html">
+            
+                    
+                    GCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6.3.4" data-path="OC之锁.html">
+            
+                <a href="OC之锁.html">
+            
+                    
+                    锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="OC的深拷贝与浅拷贝.html">
+            
+                <a href="OC的深拷贝与浅拷贝.html">
+            
+                    
+                    OC的深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="../../其它/sdk_cocoapods.html">
+            
+                <a href="../../其它/sdk_cocoapods.html">
+            
+                    
+                    iOS 使用 cocoapods 创建组件化库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="内存优化.html">
+            
+                <a href="内存优化.html">
+            
+                    
+                    一些内存优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="内存泄露.html">
+            
+                <a href="内存泄露.html">
+            
+                    
+                    一些内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.8" data-path="OC之处理错误.html">
+            
+                <a href="OC之处理错误.html">
+            
+                    
+                    一些错误处理机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.9" data-path="刘海屏适配.html">
+            
+                <a href="刘海屏适配.html">
+            
+                    
+                    刘海屏适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.10" data-path="获取WIFI信息.html">
+            
+                <a href="获取WIFI信息.html">
+            
+                    
+                    获取WIFI信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    开发语言
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../语言篇/C++学习入门篇.html">
+            
+                <a href="../../语言篇/C++学习入门篇.html">
+            
+                    
+                    C++学习入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../语言篇/C++学习封装篇.html">
+            
+                <a href="../../语言篇/C++学习封装篇.html">
+            
+                    
+                    C++学习封装篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../语言篇/C++学习继承篇.html">
+            
+                <a href="../../语言篇/C++学习继承篇.html">
+            
+                    
+                    C++学习继承篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../语言篇/C++学习多态篇.html">
+            
+                <a href="../../语言篇/C++学习多态篇.html">
+            
+                    
+                    C++学习多态篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    C
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../语言篇/C数组.html">
+            
+                <a href="../../语言篇/C数组.html">
+            
+                    
+                    C语言数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../语言篇/C结构.html">
+            
+                <a href="../../语言篇/C结构.html">
+            
+                    
+                    C语言结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../语言篇/C递归.html">
+            
+                <a href="../../语言篇/C递归.html">
+            
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../Git体系/Git常用命令.html">
+            
+                <a href="../../Git体系/Git常用命令.html">
+            
+                    
+                    Git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../Git体系/Github和SSH密钥.html">
+            
+                <a href="../../Git体系/Github和SSH密钥.html">
+            
+                    
+                    Github和SSH密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../Gitbook指导/">
+            
+                <a href="../../Gitbook指导/">
+            
+                    
+                    GitBook 使用教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../Gitbook指导/gitbook教程.html">
+            
+                <a href="../../Gitbook指导/gitbook教程.html">
+            
+                    
+                    GitBook 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../Gitbook指导/gitbook语法.html">
+            
+                <a href="../../Gitbook指导/gitbook语法.html">
+            
+                    
+                    GitBook 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.sumoli.work" target="blank" class="gitbook-link">
+            博客主页
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >锁</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#oc&#x4E4B;&#x9501;"><b></b>OC&#x4E4B;&#x9501;</a></li><ul><ul><li><span class="title-icon "></span><a href="#&#x524D;&#x8A00;&#xFF1A;&#x591A;&#x7EBF;&#x7A0B;&#x4E0B;&#x7684;-&#x6570;&#x636E;&#x7ADE;&#x4E89;-&#x95EE;&#x9898;"><b></b>&#x524D;&#x8A00;&#xFF1A;&#x591A;&#x7EBF;&#x7A0B;&#x4E0B;&#x7684; &#x6570;&#x636E;&#x7ADE;&#x4E89; &#x95EE;&#x9898;</a></li></ul></ul><li><span class="title-icon "></span><a href="#1&#x3001;&#x4E92;&#x65A5;&#x9501;"><b></b>1&#x3001;&#x4E92;&#x65A5;&#x9501;</a></li><ul><li><span class="title-icon "></span><a href="#11&#x3001;synchronized-&#x9501;"><b></b>1.1&#x3001;@synchronized &#x9501;</a></li><li><span class="title-icon "></span><a href="#12&#x3001;nslock-&#x9501;"><b></b>1.2&#x3001;NSLock &#x9501;</a></li><li><span class="title-icon "></span><a href="#13&#x3001;pthreadmutext"><b></b>1.3&#x3001;pthread_mutex_t</a></li></ul><li><span class="title-icon "></span><a href="#2&#x3001;&#x9012;&#x5F52;&#x9501;"><b></b>2&#x3001;&#x9012;&#x5F52;&#x9501;</a></li><ul><li><span class="title-icon "></span><a href="#21&#x3001;&#x9012;&#x5F52;&#x9501;-nsrecursivelock"><b></b>2.1&#x3001;&#x9012;&#x5F52;&#x9501; NSRecursiveLock</a></li><li><span class="title-icon "></span><a href="#22&#x3001;pthreadmutext-&#x5B9E;&#x73B0;&#x9012;&#x5F52;&#x9501;"><b></b>2.2&#x3001;pthread_mutex_t &#x5B9E;&#x73B0;&#x9012;&#x5F52;&#x9501;</a></li><ul><li><span class="title-icon "></span><a href="#221&#x3001;&#x4E92;&#x65A5;&#x9501;&#x5C5E;&#x6027;pthreadmutexattrt"><b></b>2.2.1&#x3001;&#x4E92;&#x65A5;&#x9501;&#x5C5E;&#x6027;pthread_mutexattr_t</a></li></ul></ul><li><span class="title-icon "></span><a href="#3&#x3001;&#x6761;&#x4EF6;&#x9501;"><b></b>3&#x3001;&#x6761;&#x4EF6;&#x9501;</a></li><ul><li><span class="title-icon "></span><a href="#31&#x3001;&#x6761;&#x4EF6;&#x9501;-nsconditionlock"><b></b>3.1&#x3001;&#x6761;&#x4EF6;&#x9501; NSConditionLock</a></li><li><span class="title-icon "></span><a href="#32&#x3001;&#x6761;&#x4EF6;&#x9501;-nscondition"><b></b>3.2&#x3001;&#x6761;&#x4EF6;&#x9501; NSCondition</a></li><li><span class="title-icon "></span><a href="#33&#x3001;&#x5229;&#x7528;pthreadmutext&#x5B9E;&#x73B0;&#x6761;&#x4EF6;&#x9501;"><b></b>3.3&#x3001;&#x5229;&#x7528;pthread_mutex_t&#x5B9E;&#x73B0;&#x6761;&#x4EF6;&#x9501;</a></li></ul><li><span class="title-icon "></span><a href="#4&#x3001;&#x4FE1;&#x53F7;&#x91CF;dispatchsemaphore"><b></b>4&#x3001;&#x4FE1;&#x53F7;&#x91CF;dispatch_semaphore</a></li><li><span class="title-icon "></span><a href="#5&#x3001;&#x8BFB;&#x5199;&#x9501;"><b></b>5&#x3001;&#x8BFB;&#x5199;&#x9501;</a></li><li><span class="title-icon "></span><a href="#6&#x3001;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x7684;&#x64CD;&#x4F5C;"><b></b>6&#x3001;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x7684;&#x64CD;&#x4F5C;</a></li><li><span class="title-icon "></span><a href="#7&#x3001;&#x5C5E;&#x6027;&#x4FEE;&#x9970;&#x8BCD;-atomicnonatomic"><b></b>7&#x3001;&#x5C5E;&#x6027;&#x4FEE;&#x9970;&#x8BCD; atomic/nonatomic</a></li><ul><li><span class="title-icon "></span><a href="#71&#x3001;atomic"><b></b>7.1&#x3001;atomic</a></li></ul></ul></div><h1 id="oc&#x4E4B;&#x9501;"><a name="oc&#x4E4B;&#x9501;" class="anchor-navigation-ex-anchor" href="#oc&#x4E4B;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>OC&#x4E4B;&#x9501;</h1>
+<h3 id="&#x524D;&#x8A00;&#xFF1A;&#x591A;&#x7EBF;&#x7A0B;&#x4E0B;&#x7684;-&#x6570;&#x636E;&#x7ADE;&#x4E89;-&#x95EE;&#x9898;"><a name="&#x524D;&#x8A00;&#xFF1A;&#x591A;&#x7EBF;&#x7A0B;&#x4E0B;&#x7684;-&#x6570;&#x636E;&#x7ADE;&#x4E89;-&#x95EE;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x524D;&#x8A00;&#xFF1A;&#x591A;&#x7EBF;&#x7A0B;&#x4E0B;&#x7684;-&#x6570;&#x636E;&#x7ADE;&#x4E89;-&#x95EE;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x524D;&#x8A00;&#xFF1A;&#x591A;&#x7EBF;&#x7A0B;&#x4E0B;&#x7684; <em>&#x6570;&#x636E;&#x7ADE;&#x4E89;</em> &#x95EE;&#x9898;</h3>
+<p>&#x4F7F;&#x7528;&#x5E76;&#x53D1;&#x7F16;&#x7A0B;&#x4EE5;&#x66F4;&#x9AD8;&#x6548;&#x7387;&#x5904;&#x7406;&#x4EFB;&#x52A1;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x4E5F;&#x5E26;&#x6765;&#x4E86;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#xFF1A;&#x5982;&#x5BF9;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x7684;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#x3002;&#x7A0B;&#x5E8F;&#x4E2D;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x662F;&#x4E0D;&#x786E;&#x5B9A;&#x7684;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x6267;&#x884C;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x540C;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x5F97;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x8FD9;&#x4F1A;&#x5BFC;&#x81F4;&#x5E76;&#x53D1;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;bug&#x96BE;&#x4EE5;&#x68C0;&#x6D4B;&#x548C;&#x4FEE;&#x590D;&#x3002;
+<strong>&#x4F8B;&#x5B50;&#xFF1A;</strong>&#x591A;&#x6B21;&#x6267;&#x884C;&#x8BE5;&#x6BB5;&#x4EE3;&#x7801;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x6253;&#x5370;&#x6570;&#x636E;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#xFF0C;&#x6700;&#x7EC8;&#x7ED3;&#x679C;&#x4E5F;&#x4E0D;&#x7B26;&#x5408;&#x9884;&#x8BA1;&#xFF01;</p>
+<pre><code>dispatch_queue_t queue = dispatch_queue_create(&quot;com.demo.task&quot;, DISPATCH_QUEUE_CONCURRENT);
+ __block int length = 0;
+ dispatch_apply(6, queue, ^(size_t index) {
+     dispatch_async(queue, ^{
+         NSLog(@&quot;length === %d -- %@&quot;,++length,NSThread.currentThread);
+         [NSThread sleepForTimeInterval:2];//&#x6A21;&#x62DF;&#x8017;&#x65F6;&#x4EFB;&#x52A1;
+         NSLog(@&quot;length --- %d == %@&quot;,--length,NSThread.currentThread);
+     });
+ });
+</code></pre><p>&#x591A;&#x6761;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x81F3;&#x5C11;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x4FEE;&#x6539;&#x8BE5;&#x53D8;&#x91CF;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5C31;&#x53EB;<strong>&#x7ADE;&#x6001;</strong> &#x3002;&#x5F00;&#x542F; Xcode &#x7EBF;&#x7A0B;&#x7ADE;&#x6001;&#x68C0;&#x6D4B;&#x5DE5;&#x5177; <code>Thread Sanitizer</code> &#x53EF;&#x4EE5;&#x68C0;&#x6D4B;&#x51FA;&#x8FD9;&#x7C7B;&#x95EE;&#x9898;&#xFF1A;</p>
+<p><img src="assets/iOS_&#x591A;&#x7EBF;&#x7A0B;_&#x6570;&#x636E;&#x7ADE;&#x4E89;.png" alt="Data race WARNING"></p>
+<p>iOS &#x4F7F;&#x7528;&#x540C;&#x6B65;&#x673A;&#x5236;&#x89E3;&#x51B3;&#x591A;&#x7EBF;&#x7A0B;&#x4E0B;&#x7684;&#x7ADE;&#x6001;&#xFF0C;&#x5982; <strong>&#x9501;</strong> &#x6216;&#x8005; <strong>&#x6761;&#x4EF6;</strong>&#x3002;&#x6761;&#x4EF6;&#xFF1A;&#x4F7F;&#x7EBF;&#x7A0B;&#x5904;&#x4E8E;&#x4F11;&#x7720;&#x72B6;&#x6001;&#xFF0C;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x5524;&#x9192;&#x4F11;&#x7720;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x6761;&#x4EF6;&#x53D8;&#x91CF;&#x901A;&#x5E38;&#x7528;&#x9501;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x9501;&#x5B9E;&#x884C;&#x4E92;&#x65A5;&#x7B56;&#x7565;&#xFF0C;&#x907F;&#x514D;&#x5171;&#x4EAB;&#x6570;&#x636E;&#x88AB;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x8BBF;&#x95EE;&#xFF1B;&#x4F7F;&#x7528;&#x4E0D;&#x5F53;&#x53EF;&#x80FD;&#x5F15;&#x53D1;&#x6B7B;&#x9501;&#x3001;&#x6D3B;&#x9501;&#x3001;&#x8D44;&#x6E90;&#x532E;&#x4E4F;&#x7B49;&#x95EE;&#x9898;&#xFF0C;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x4E2D;&#x65AD;&#xFF1A;</p>
+<ul>
+<li>&#x6B7B;&#x9501;&#xFF1A;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E92;&#x76F8;&#x963B;&#x585E;&#xFF0C;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x90FD;&#x7B49;&#x5F85;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x91CA;&#x653E;&#x9501;&#xFF0C;&#x5BFC;&#x81F4;&#x6240;&#x6709;&#x7EBF;&#x7A0B;&#x90FD;&#x5904;&#x4E8E;&#x7B49;&#x5F85;&#x72B6;&#x6001;&#x3002;&#x5982; GCD &#x7684; <code>dispatch_sync()</code> &#x51FD;&#x6570;&#x4F7F;&#x7528;&#x4E0D;&#x5F53;&#xFF0C;&#x5BB9;&#x6613;&#x9020;&#x6210;&#x961F;&#x5217;&#x7684;&#x5FAA;&#x73AF;&#x7B49;&#x5F85;&#x3002;</li>
+<li>&#x6D3B;&#x9501;&#xFF1A;&#x4EFB;&#x52A1;&#x6216;&#x8005;&#x7EBF;&#x7A0B;&#x6CA1;&#x6709;&#x88AB;&#x963B;&#x585E;&#xFF0C;&#x7531;&#x4E8E;&#x67D0;&#x4E9B;&#x6761;&#x4EF6;&#x6CA1;&#x6709;&#x6EE1;&#x8DB3;&#xFF0C;&#x5BFC;&#x81F4;&#x4E00;&#x76F4;&#x91CD;&#x590D;&#x5C1D;&#x8BD5;&#x3001;&#x5931;&#x8D25;&#xFF0C;&#x5C1D;&#x8BD5;&#x3001;&#x5931;&#x8D25;&#x2026;&#x5982; <code>NSConditionLock</code> &#x7684;&#x6761;&#x4EF6;&#x65E0;&#x6CD5;&#x5F97;&#x5230;&#x6EE1;&#x8DB3;&#x3002;</li>
+<li>&#x8D44;&#x6E90;&#x532E;&#x4E4F;&#xFF1A;&#x4E00;&#x4E9B;&#x7EBF;&#x7A0B;&#x5360;&#x7528;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x7684;&#x65F6;&#x95F4;&#x8FC7;&#x957F;&#xFF0C;&#x5BFC;&#x81F4;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x8BBF;&#x95EE;&#x8BE5;&#x8D44;&#x6E90;&#x3002;&#x6D3B;&#x9501;&#x4E5F;&#x662F;&#x8D44;&#x6E90;&#x532E;&#x4E4F;&#x7684;&#x4E00;&#x79CD;&#x5F62;&#x5F0F;&#x3002;</li>
+</ul>
+<h1 id="1&#x3001;&#x4E92;&#x65A5;&#x9501;"><a name="1&#x3001;&#x4E92;&#x65A5;&#x9501;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x4E92;&#x65A5;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x4E92;&#x65A5;&#x9501;</h1>
+<p>&#x4E92;&#x65A5;&#x9501;&#x901A;&#x8FC7;&#x5C06;&#x4EE3;&#x7801;&#x5207;&#x7247;&#x6210;&#x4E00;&#x4E2A;&#x4E2A;&#x4E34;&#x754C;&#x533A;&#xFF0C;&#x9632;&#x6B62;&#x591A;&#x6761;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x5BF9;&#x67D0;&#x4E2A;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x8BFB;&#x5199;&#x3002;</p>
+<h2 id="11&#x3001;synchronized-&#x9501;"><a name="11&#x3001;synchronized-&#x9501;" class="anchor-navigation-ex-anchor" href="#11&#x3001;synchronized-&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1&#x3001;<code>@synchronized</code> &#x9501;</h2>
+<p><a href="http://rykap.com/objective-c/2015/05/09/synchronized/" target="_blank">@synchronized</a> &#x53D1;&#x6325;&#x4E86;&#x548C;&#x9501;&#x4E00;&#x6837;&#x7684;&#x4F5C;&#x7528;&#xFF1A;&#x5B83;&#x907F;&#x514D;&#x4E86;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x6267;&#x884C;&#x540C;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x3002;&#x5BF9;&#x6BD4;<code>NSLock</code>&#x521B;&#x5EFA;&#x9501;&#x3001;&#x52A0;&#x9501;&#x3001;&#x89E3;&#x9501;&#xFF0C;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;<code>@synchronized</code> &#x4F1A;&#x66F4;&#x65B9;&#x4FBF;&#x3001;&#x66F4;&#x6613;&#x8BFB;&#x3002;</p>
+<pre><code>- (void)synchronizedMethod{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@&quot;taskA_1 --- %@&quot;,NSThread.currentThread);
+        NSLog(@&quot;taskA_2 === %@&quot;,[self getTheString]);
+        NSLog(@&quot;taskA_3 --- %@&quot;,NSThread.currentThread);
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@&quot;taskB_1 --- %@&quot;,NSThread.currentThread);
+        NSLog(@&quot;taskB_2 === %@&quot;,[self getTheString]);
+        NSLog(@&quot;taskB_3 --- %@&quot;,NSThread.currentThread);
+    });
+}
+
+- (NSString *)getTheString{
+    @synchronized (self){
+        NSLog(@&quot;currentThread == %@&quot;,NSThread.currentThread);
+        [NSThread sleepForTimeInterval:2];
+        return @&quot;*****************************&quot;;
+    }
+}
+
+/* &#x6253;&#x5370;&#x6570;&#x636E;&#xFF1A;
+10:23:26 taskB_1 --- &lt;NSThread: 0x7b1000056800&gt;{number = 5, name = (null)}
+10:23:26 taskA_1 --- &lt;NSThread: 0x7b1000053f80&gt;{number = 4, name = (null)}
+10:23:26 currentThread == &lt;NSThread: 0x7b1000053f80&gt;{number = 4, name = (null)}
+10:23:28 taskA_2 === *****************************
+10:23:28 currentThread == &lt;NSThread: 0x7b1000056800&gt;{number = 5, name = (null)}
+10:23:28 taskA_3 --- &lt;NSThread: 0x7b1000053f80&gt;{number = 4, name = (null)}
+10:23:30 taskB_2 === *****************************
+10:23:30 taskB_3 --- &lt;NSThread: 0x7b1000056800&gt;{number = 5, name = (null)}
+ */
+</code></pre><h2 id="12&#x3001;nslock-&#x9501;"><a name="12&#x3001;nslock-&#x9501;" class="anchor-navigation-ex-anchor" href="#12&#x3001;nslock-&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2&#x3001;<code>NSLock</code> &#x9501;</h2>
+<p>Cocoa &#x7684; <a href="https://developer.apple.com/documentation/foundation/nslock?changes=latest_minor&amp;language=objc" target="_blank">NSLock</a> &#x662F;&#x6700;&#x57FA;&#x672C;&#x7684;&#x9501;&#xFF0C;&#x4F7F;&#x7528; <code>POSIX</code> &#x7EBF;&#x7A0B;&#x5B9E;&#x73B0;&#x5176;&#x529F;&#x80FD;&#x3002;</p>
+<pre><code>//&#x9501;&#x7684;&#x901A;&#x7528;&#x534F;&#x8BAE;
+@protocol NSLocking
+
+/* &#x52A0;&#x9501;&#x64CD;&#x4F5C;&#xFF0C;&#x6B64;&#x65F6;&#x5982;&#x679C;&#x5DF2;&#x7ECF;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x4E0A;&#x9501;&#xFF0C;&#x5219;&#x6B64;&#x64CD;&#x4F5C;&#x4F1A;&#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x7B49;&#x5F85;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x89E3;&#x9501;&#xFF1B;
+ *         &#x5982;&#x679C;&#x6CA1;&#x6709;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x4E0A;&#x9501;&#xFF0C;&#x5219;&#x7ACB;&#x5373;&#x4E0A;&#x9501;&#xFF0C;&#x5E76;&#x5411;&#x4E0B;&#x6267;&#x884C;&#x3002;
+ * @note &#x6B7B;&#x9501;&#xFF1A;&#x540C;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#xFF0C;&#x5982;&#x679C;&#x591A;&#x6B21;&#x4E0A;&#x540C;&#x4E00;&#x628A;&#x9501;&#xFF0C;&#x4F1A;&#x5835;&#x585E;&#x7EBF;&#x7A0B;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x89E3;&#x9501;&#xFF0C;&#x9020;&#x6210;&#x7EBF;&#x7A0B;&#x6B7B;&#x9501;&#x3002;
+ *           &#x9664;&#x975E;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x9501;&#xFF1A;NSRecursiveLock
+ */
+- (void)lock;
+/* &#x89E3;&#x9501;&#x64CD;&#x4F5C;
+ */
+- (void)unlock;
+@end
+
+//NSLock&#x5728;&#x5185;&#x90E8;&#x5C01;&#x88C5;&#x4E86;&#x4E00;&#x4E2A; pthread_mutex&#xFF0C;&#x5C5E;&#x6027;&#x4E3A; PTHREAD_MUTEX_ERRORCHECK&#x3002;
+@interface NSLock : NSObject &lt;NSLocking&gt; 
+/* &#x8BD5;&#x56FE;&#x52A0;&#x9501;&#xFF0C;&#x4E0D;&#x4F1A;&#x963B;&#x585E;&#x7EBF;&#x7A0B;&#xFF1B;&#x65E0;&#x8BBA;&#x80FD;&#x5426;&#x52A0;&#x9501;&#xFF0C;&#x90FD;&#x7ACB;&#x5373;&#x6267;&#x884C;&#x540E;&#x7EED;&#x4EE3;&#x7801;
+ * @return &#x52A0;&#x9501;&#x6210;&#x529F;&#x8FD4;&#x56DE; YES&#xFF1B;
+ *         NSLock &#x5BF9;&#x8C61;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x88AB;&#x9501;&#x5B9A;&#xFF0C;&#x8BE5;&#x64CD;&#x4F5C;&#x5931;&#x8D25;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; NO
+ */
+- (BOOL)tryLock; 
+
+/* &#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x5728;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#x5185;&#x4E00;&#x76F4;&#x5C1D;&#x8BD5;&#x4E0A;&#x9501;
+ * @param limit &#x622A;&#x6B62;&#x65F6;&#x95F4;
+ * @return &#x5728;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#x5185;&#x6210;&#x529F;&#x52A0;&#x9501;&#xFF0C;&#x8FD4;&#x56DE; YES
+ *         &#x5230;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#xFF0C;&#x4F9D;&#x65E7;&#x88AB;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x9501;&#x5B9A;&#xFF0C;&#x8FD4;&#x56DE; NO
+ */
+- (BOOL)lockBeforeDate:(NSDate *)limit;
+@property (nullable, copy) NSString *name;
+@end
+</code></pre><h2 id="13&#x3001;pthreadmutext"><a name="13&#x3001;pthreadmutext" class="anchor-navigation-ex-anchor" href="#13&#x3001;pthreadmutext"><i class="fa fa-link" aria-hidden="true"></i></a>1.3&#x3001;<code>pthread_mutex_t</code></h2>
+<p><code>pthread_mutex_t</code> &#x662F;&#x4E3A;<code>Unix/Linux</code> &#x5E73;&#x53F0;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x5957;&#x9501;&#xFF1A;&#x9664;&#x4E86;&#x5B9E;&#x73B0;&#x4E92;&#x65A5;&#x9501;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x9012;&#x5F52;&#x9501;&#x3001;&#x8BFB;&#x5199;&#x9501;&#x3001;&#x6761;&#x4EF6;&#x9501;&#x7B49;&#x3002;</p>
+<pre><code>/* &#x7C7B;&#x4F3C;&#x4E8E; NSLocking &#x7684; -lock &#x65B9;&#x6CD5;
+ * &#x52A0;&#x9501;&#x64CD;&#x4F5C;&#xFF0C;&#x6B64;&#x65F6;&#x5982;&#x679C; pthread_mutex_t &#x5DF2;&#x7ECF;&#x4E0A;&#x9501;&#xFF0C;&#x5219;&#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x7B49;&#x5F85;&#x89E3;&#x9501;&#xFF0C;
+ *         &#x5982;&#x679C; pthread_mutex_t &#x6CA1;&#x6709;&#x4E0A;&#x9501;&#xFF0C;&#x5219;&#x7ACB;&#x5373;&#x4E0A;&#x9501;&#xFF0C;&#x5E76;&#x5411;&#x4E0B;&#x6267;&#x884C;
+ */
+int pthread_mutex_lock(pthread_mutex_t *);
+
+/* &#x7C7B;&#x4F3C;&#x4E8E; NSLock &#x7684; -tryLock &#x65B9;&#x6CD5;
+ * &#x8BD5;&#x56FE;&#x52A0;&#x9501;&#xFF0C;&#x4E0D;&#x4F1A;&#x963B;&#x585E;&#x7EBF;&#x7A0B;&#xFF1B;&#x65E0;&#x8BBA;&#x80FD;&#x5426;&#x52A0;&#x9501;&#xFF0C;&#x90FD;&#x7ACB;&#x5373;&#x6267;&#x884C;&#x540E;&#x7EED;&#x4EE3;&#x7801;
+ * @return &#x5982;&#x679C; pthread_mutex_t &#x88AB;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x4E0A;&#x9501;&#xFF0C;&#x6216;&#x8005;&#x5DF2;&#x7ECF;&#x88AB;&#x91CA;&#x653E;&#xFF0C;&#x52A0;&#x9501;&#x5931;&#x8D25;&#xFF0C;&#x8FD4;&#x56DE;&#x975E; 0 &#x503C;&#xFF1A;
+ *        &#x52A0;&#x9501;&#x6210;&#x529F;&#x8FD4;&#x56DE; 0
+ */
+int pthread_mutex_trylock(pthread_mutex_t *);
+
+/* &#x89E3;&#x9501;
+ */
+int pthread_mutex_unlock(pthread_mutex_t *);
+
+/* &#x91CA;&#x653E;&#x9501;
+ * @note  pthread_mutex &#x7531; C &#x51FD;&#x6570;&#x521B;&#x5EFA;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4E0D;&#x8D1F;&#x8D23;&#x91CA;&#x653E;&#xFF0C;&#x9700;&#x8981;&#x7A0B;&#x5E8F;&#x5458;&#x5728;&#x5408;&#x9002;&#x7684;&#x65F6;&#x673A;&#x91CA;&#x653E;
+ */
+int pthread_mutex_destroy(pthread_mutex_t *);
+</code></pre><p><strong>&#x4F8B;&#x5B50;&#xFF1A;</strong>&#x5F15;&#x5165;&#x5934;&#x6587;&#x4EF6;<code>#include&lt;pthread.h&gt;</code>&#xFF0C;&#x5229;&#x7528;<code>pthread_mutex_t</code>&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x4E92;&#x65A5;&#x9501;&#xFF1A;</p>
+<pre><code>- (void)pthread_mutex_LockMethod{
+    dispatch_group_t group = dispatch_group_create();
+    //&#x9759;&#x6001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4E92;&#x65A5;&#x9501;
+    __block pthread_mutex_t pthreadLock = PTHREAD_MUTEX_INITIALIZER;
+    __block int length = 0;
+
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        pthread_mutex_lock(&amp;pthreadLock);
+        length ++;
+        [NSThread sleepForTimeInterval:2];
+        pthread_mutex_unlock(&amp;pthreadLock);
+    });
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        if (pthread_mutex_trylock(&amp;pthreadLock) == 0){
+            [NSThread sleepForTimeInterval:2];
+            pthread_mutex_unlock(&amp;pthreadLock);
+        }else{
+            NSLog(@&quot;&#x52A0;&#x9501;&#x5931;&#x8D25; %@&quot;,NSThread.currentThread);
+        }
+    });
+
+    //&#x4F7F;&#x7528; dispatch_group &#x76D1;&#x542C;&#x4EFB;&#x52A1;&#x5168;&#x90E8;&#x5B8C;&#x6210;&#x540E;&#x624B;&#x52A8;&#x91CA;&#x653E; pthread_mutex
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        pthread_mutex_destroy(&amp;pthreadLock);
+    });
+}
+</code></pre><p>&#x4F7F;&#x7528;&#x4E92;&#x65A5;&#x9501;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x51E0;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>&#x4E92;&#x65A5;&#x9501;&#x7684;&#x52A0;&#x9501;&#x548C;&#x89E3;&#x9501;&#x64CD;&#x4F5C;&#x8981;&#x6D88;&#x8017;&#x65F6;&#x95F4;&#x3002;&#x56E0;&#x6B64;&#x4E92;&#x65A5;&#x9501;&#x591F;&#x7528;&#x5373;&#x53EF;&#xFF0C;&#x6BCF;&#x4E2A;&#x4E92;&#x65A5;&#x9501;&#x4FDD;&#x62A4;&#x7684;&#x533A;&#x57DF;&#x5C3D;&#x91CF;&#x5927;&#x3002;</li>
+<li>&#x4E92;&#x65A5;&#x9501;&#x672C;&#x8D28;&#x662F;&#x4E32;&#x884C;&#x3002;&#x5982;&#x679C;&#x591A;&#x6761;&#x7EBF;&#x7A0B;&#x9891;&#x7E41;&#x4F7F;&#x7528;&#x540C;&#x4E00;&#x4E92;&#x65A5;&#x9501;&#xFF0C;&#x5219;&#x7EBF;&#x7A0B;&#x7684;&#x5927;&#x90E8;&#x5206;&#x65F6;&#x95F4;&#x5C31;&#x4F1A;&#x5728;&#x7B49;&#x5F85;&#xFF0C;&#x8FD9;&#x5BF9;&#x6027;&#x80FD;&#x662F;&#x6709;&#x5BB3;&#x7684;&#x3002;&#x5982;&#x679C;&#x4E92;&#x65A5;&#x9501;&#x4FDD;&#x62A4;&#x7684;&#x6570;&#x636E;&#x5305;&#x542B;&#x5F7C;&#x6B64;&#x65E0;&#x5173;&#x7684;&#x7247;&#x6BB5;&#xFF0C;&#x5C06;&#x8FD9;&#x4E9B;&#x7247;&#x6BB5;&#x62C6;&#x5206;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x4E92;&#x65A5;&#x9501;&#x4FDD;&#x62A4;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x4EFB;&#x610F;&#x65F6;&#x523B;&#x7B49;&#x5F85;&#x4E92;&#x65A5;&#x9501;&#x7684;&#x7EBF;&#x7A0B;&#x51CF;&#x5C11;&#xFF0C;&#x7EBF;&#x7A0B;&#x7B49;&#x5F85;&#x65F6;&#x95F4;&#x51CF;&#x5C11;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x4E92;&#x65A5;&#x9501;&#x5E94;&#x8BE5;&#x8DB3;&#x591F;&#x591A;(&#x5230;&#x6709;&#x610F;&#x4E49;&#x7684;&#x5730;&#x6B65;)&#xFF0C;&#x6BCF;&#x4E2A;&#x4E92;&#x65A5;&#x9501;&#x4FDD;&#x62A4;&#x7684;&#x533A;&#x57DF;&#x5219;&#x5E94;&#x5C3D;&#x91CF;&#x7684;&#x5C11;&#x3002;</li>
+</ul>
+<h1 id="2&#x3001;&#x9012;&#x5F52;&#x9501;"><a name="2&#x3001;&#x9012;&#x5F52;&#x9501;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x9012;&#x5F52;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x9012;&#x5F52;&#x9501;</h1>
+<blockquote>
+<p>Warning : You should not use this class to implement a recursive lock. Calling the lock method twice on the same thread will lock up your thread permanently. Use the NSRecursiveLock class to implement recursive locks instead.</p>
+</blockquote>
+<p>&#x5B98;&#x65B9;&#x6587;&#x6863;&#x8B66;&#x544A;&#xFF1A;&#x5728;&#x9012;&#x5F52;&#x4E2D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;<code>NSRecursiveLock</code>&#xFF0C;&#x4F7F;&#x7528; <code>NSLock</code> &#x9020;&#x6210;&#x9012;&#x5F52;&#x6B7B;&#x9501;&#x3002;</p>
+<p>&#x9012;&#x5F52;&#x9501;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x91CD;&#x590D;&#x4E0A;&#x9501;&#xFF0C;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x6B7B;&#x9501;&#x3002;</p>
+<h2 id="21&#x3001;&#x9012;&#x5F52;&#x9501;-nsrecursivelock"><a name="21&#x3001;&#x9012;&#x5F52;&#x9501;-nsrecursivelock" class="anchor-navigation-ex-anchor" href="#21&#x3001;&#x9012;&#x5F52;&#x9501;-nsrecursivelock"><i class="fa fa-link" aria-hidden="true"></i></a>2.1&#x3001;&#x9012;&#x5F52;&#x9501; <code>NSRecursiveLock</code></h2>
+<p>&#x4F7F;&#x7528; <code>NSRecursiveLock</code> &#x5904;&#x7406;&#x9012;&#x5F52;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>- (void)recursiveLockMethod{
+    NSMutableArray *array = [NSMutableArray array];
+    NSRecursiveLock *recursiveLock = [[NSRecursiveLock alloc] init];
+    static void (^recursiveTestBlock)(int length);
+    recursiveTestBlock = ^(int length){
+        NSLog(@&quot;&#x5F00;&#x59CB;&#x52A0;&#x9501; === length &#xFF1A;%d -- %@&quot;,length,NSThread.currentThread);
+        [recursiveLock lock];
+        if (length &gt; 0){
+            [array addObject:@(length)];
+            [NSThread sleepForTimeInterval:2];//&#x6A21;&#x62DF;&#x8017;&#x65F6;&#x4EFB;&#x52A1;
+            recursiveTestBlock(--length);
+        }
+        [recursiveLock unlock];
+        NSLog(@&quot;&#x5DF2;&#x7ECF;&#x89E3;&#x9501; --- length &#xFF1A;%d == %@&quot;,length,NSThread.currentThread);
+    };
+
+    [NSThread detachNewThreadWithBlock:^{
+        recursiveTestBlock(3);
+    }];
+
+    [NSThread detachNewThreadWithBlock:^{
+        [recursiveLock lock];
+        NSLog(@&quot;array ------ %@&quot;,array);
+        [recursiveLock unlock];
+    }];
+}
+
+/* &#x6253;&#x5370;&#x6570;&#x636E;&#xFF1A;
+11:54:38 &#x5F00;&#x59CB;&#x52A0;&#x9501; === length &#xFF1A;3 -- &lt;NSThread: 0x7b100007c000&gt;{number = 7, name = (null)}
+11:54:40 &#x5F00;&#x59CB;&#x52A0;&#x9501; === length &#xFF1A;2 -- &lt;NSThread: 0x7b100007c000&gt;{number = 7, name = (null)}
+11:54:42 &#x5F00;&#x59CB;&#x52A0;&#x9501; === length &#xFF1A;1 -- &lt;NSThread: 0x7b100007c000&gt;{number = 7, name = (null)}
+11:54:44 &#x5F00;&#x59CB;&#x52A0;&#x9501; === length &#xFF1A;0 -- &lt;NSThread: 0x7b100007c000&gt;{number = 7, name = (null)}
+11:54:44 &#x5DF2;&#x7ECF;&#x89E3;&#x9501; --- length &#xFF1A;0 == &lt;NSThread: 0x7b100007c000&gt;{number = 7, name = (null)}
+11:54:44 &#x5DF2;&#x7ECF;&#x89E3;&#x9501; --- length &#xFF1A;0 == &lt;NSThread: 0x7b100007c000&gt;{number = 7, name = (null)}
+11:54:44 &#x5DF2;&#x7ECF;&#x89E3;&#x9501; --- length &#xFF1A;1 == &lt;NSThread: 0x7b100007c000&gt;{number = 7, name = (null)}
+11:54:44 &#x5DF2;&#x7ECF;&#x89E3;&#x9501; --- length &#xFF1A;2 == &lt;NSThread: 0x7b100007c000&gt;{number = 7, name = (null)}
+11:54:44 array ------ (3,2,1)
+ */
+</code></pre><p>&#x5728;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x4E2D;&#x4EFB;&#x52A1;&#x662F;&#x6309;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x7684;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x8D44;&#x6E90;&#x7ADE;&#x4E89;&#x95EE;&#x9898;&#xFF1B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>NSRecursiveLock</code> &#x5728;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x4E2D;&#x91CD;&#x590D;&#x52A0;&#x9501;&#x3002;<code>NSRecursiveLock</code>&#x4F1A;&#x8BB0;&#x5F55;&#x4E0A;&#x9501;&#x548C;&#x89E3;&#x9501;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x5F53;&#x4E8C;&#x8005;&#x5E73;&#x8861;&#x65F6;&#x624D;&#x4F1A;&#x91CA;&#x653E;&#x9501;&#xFF0C;<strong>&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x624D;&#x80FD;&#x83B7;&#x53D6;&#x8BE5;&#x9501;</strong>&#x3002;</p>
+<h2 id="22&#x3001;pthreadmutext-&#x5B9E;&#x73B0;&#x9012;&#x5F52;&#x9501;"><a name="22&#x3001;pthreadmutext-&#x5B9E;&#x73B0;&#x9012;&#x5F52;&#x9501;" class="anchor-navigation-ex-anchor" href="#22&#x3001;pthreadmutext-&#x5B9E;&#x73B0;&#x9012;&#x5F52;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2&#x3001;<code>pthread_mutex_t</code> &#x5B9E;&#x73B0;&#x9012;&#x5F52;&#x9501;</h2>
+<h3 id="221&#x3001;&#x4E92;&#x65A5;&#x9501;&#x5C5E;&#x6027;pthreadmutexattrt"><a name="221&#x3001;&#x4E92;&#x65A5;&#x9501;&#x5C5E;&#x6027;pthreadmutexattrt" class="anchor-navigation-ex-anchor" href="#221&#x3001;&#x4E92;&#x65A5;&#x9501;&#x5C5E;&#x6027;pthreadmutexattrt"><i class="fa fa-link" aria-hidden="true"></i></a>2.2.1&#x3001;&#x4E92;&#x65A5;&#x9501;&#x5C5E;&#x6027;<code>pthread_mutexattr_t</code></h3>
+<pre><code>//&#x4E92;&#x65A5;&#x9501;&#x5C5E;&#x6027;
+typedef __darwin_pthread_mutexattr_t pthread_mutexattr_t;
+
+ /* &#x4E92;&#x65A5;&#x9501;&#x5C5E;&#x6027;&#x7684;&#x521D;&#x59CB;&#x5316;
+ * &#x8BE5;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x5C5E;&#x6027;&#x90FD;&#x662F;&#x9ED8;&#x8BA4;&#x503C;&#xFF1B;&#x9700;&#x8981;&#x8C03;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x51FD;&#x6570;&#x8BBE;&#x7F6E;&#x5176;&#x5C5E;&#x6027; 
+ */
+ int pthread_mutexattr_init(pthread_mutexattr_t *)
+
+/* &#x9500;&#x6BC1;&#x4E92;&#x65A5;&#x9501;&#x5C5E;&#x6027;
+ */
+int pthread_mutexattr_destroy(pthread_mutexattr_t *)
+
+/* &#x8BBE;&#x7F6E;&#x4E92;&#x65A5;&#x9501;&#x7684;&#x7C7B;&#x578B;
+ * @return &#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x6210;&#x529F;&#xFF0C;&#x8FD4;&#x56DE; 0 &#xFF1B;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x7801;&#x3002;
+ */
+int pthread_mutexattr_settype(pthread_mutexattr_t *, int)
+
+/*  &#x83B7;&#x53D6;&#x4E92;&#x65A5;&#x9501;&#x7684;&#x7C7B;&#x578B;
+ * @return &#x5982;&#x679C;&#x83B7;&#x53D6;&#x6210;&#x529F;&#xFF0C;&#x8FD4;&#x56DE; 0 &#xFF1B;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x7801;&#x3002;
+*/
+int pthread_mutexattr_gettype(const pthread_mutexattr_t * __restrict,int * __restrict)
+</code></pre><p>&#x4E92;&#x65A5;&#x9501; <code>pthread_mutex_t</code> &#x7684;&#x51E0;&#x79CD;&#x7C7B;&#x578B;&#xFF1A;</p>
+<ul>
+<li><code>PTHREAD_PROCESS_SHARED</code>&#xFF1A; &#x8DE8;&#x8FDB;&#x7A0B;&#x5171;&#x4EAB;&#xFF1B;
+&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x5730;&#x5740;&#x7A7A;&#x95F4;&#x662F;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x4F4D;&#x4E8E;&#x4E00;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x666E;&#x901A;&#x5185;&#x5B58;&#x533A;&#x57DF;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x662F;&#x65E0;&#x6CD5;&#x88AB;&#x5176;&#x5B83;&#x8FDB;&#x7A0B;&#x6240;&#x8BBF;&#x95EE;&#x7684;&#xFF1B;
+  &#x80FD;&#x6EE1;&#x8DB3;&#x8FD9;&#x4E00;&#x8981;&#x6C42;&#x7684;&#x5185;&#x5B58;&#x533A;&#x57DF;&#x662F;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#xFF0C;&#x56E0;&#x800C;&#x4E92;&#x65A5;&#x9501;&#x8981;&#x5728;&#x8FDB;&#x7A0B;&#x7684;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x533A;&#x57DF;&#x5185;&#x521B;&#x5EFA;&#x3002;</li>
+<li><code>PTHREAD_PROCESS_PRIVATE</code> &#xFF1A; &#x8FDB;&#x7A0B;&#x79C1;&#x6709;</li>
+<li><code>PTHREAD_MUTEX_TIMED_NP</code> &#x666E;&#x901A;&#x9501;&#xFF0C;&#x4FDD;&#x8BC1;&#x4E86;&#x8D44;&#x6E90;&#x5206;&#x914D;&#x7684;&#x516C;&#x5E73;&#x6027;&#xFF1B;
+  &#x5F53;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x52A0;&#x9501;&#x4EE5;&#x540E;&#xFF0C;&#x5176;&#x4F59;&#x8BF7;&#x6C42;&#x9501;&#x7684;&#x7EBF;&#x7A0B;&#x5C06;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x7B49;&#x5F85;&#x961F;&#x5217;&#xFF0C;&#x5E76;&#x5728;&#x89E3;&#x9501;&#x540E;&#x6309;&#x4F18;&#x5148;&#x7EA7;&#x83B7;&#x5F97;&#x9501;&#x3002;
+  &#x89E3;&#x9501;&#x4E00;&#x4E2A;&#x7531;&#x522B;&#x7684;&#x7EBF;&#x7A0B;&#x9501;&#x5B9A;&#x7684;&#x4E92;&#x65A5;&#x9501;&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x3002;
+  &#x89E3;&#x9501;&#x5DF2;&#x7ECF;&#x88AB;&#x89E3;&#x9501;&#x7684;&#x4E92;&#x65A5;&#x9501;&#x4E5F;&#x5C06;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#x3002;</li>
+<li><code>PTHREAD_MUTEX_NORMAL</code> &#x4E0E; <code>PTHREAD_MUTEX_DEFAULT</code> &#xFF1A;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#x6B7B;&#x9501;&#xFF0C;&#x4E0D;&#x4F1A;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;&#x4EE3;&#x7801;&#xFF0C;&#x907F;&#x514D;&#x4F7F;&#x7528;</li>
+<li><code>PTHREAD_MUTEX_ADAPTIVE_NP</code> &#xFF1A; &#x9002;&#x5E94;&#x9501;&#xFF0C;&#x4EC5;&#x7B49;&#x5F85;&#x89E3;&#x9501;&#x540E;&#x91CD;&#x65B0;&#x7ADE;&#x4E89;</li>
+<li><code>PTHREAD_MUTEX_ERRORCHECK</code> &#x4E0E; <code>PTHREAD_MUTEX_ERRORCHECK_NP</code> &#xFF1A;&#x68C0;&#x9519;&#x9501;&#xFF1A;&#x81EA;&#x52A8;&#x68C0;&#x6D4B;&#x6B7B;&#x9501;&#x3002;
+&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x8BD5;&#x56FE;&#x5BF9;&#x4E00;&#x4E2A;&#x4E92;&#x65A5;&#x9501;&#x91CD;&#x590D;&#x9501;&#x5B9A;&#xFF0C;&#x8FD4;&#x56DE; <code>EDEADLK</code>&#xFF0C;&#x4FDD;&#x8BC1;&#x591A;&#x6B21;&#x52A0;&#x9501;&#x65F6;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x6700;&#x7B80;&#x5355;&#x60C5;&#x51B5;&#x4E0B;&#x7684;&#x6B7B;&#x9501;&#x3002;</li>
+<li><code>PTHREAD_MUTEX_RECURSIVE</code> &#x4E0E; <code>PTHREAD_MUTEX_RECURSIVE_NP</code> &#xFF1A;&#x9012;&#x5F52;&#x9501;&#xFF1A; &#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x91CD;&#x590D;&#x4E0A;&#x9501;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F15;&#x8D77;&#x6B7B;&#x9501;&#xFF1B;&#x8FDB;&#x7A0B;&#x79C1;&#x6709;&#xFF1B;
+  &#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5BF9;&#x9012;&#x5F52;&#x9501;&#x91CD;&#x590D;&#x4E0A;&#x9501;&#x5FC5;&#x987B;&#x7531;&#x8FD9;&#x4E2A;&#x7EBF;&#x7A0B;&#x6765;&#x91CD;&#x590D;&#x76F8;&#x540C;&#x6570;&#x91CF;&#x7684;&#x89E3;&#x9501;&#xFF0C;&#x8FD9;&#x6837;&#x624D;&#x80FD;&#x89E3;&#x5F00;&#x8FD9;&#x4E2A;&#x4E92;&#x65A5;&#x9501;&#xFF0C;<em>&#x7136;&#x540E;</em> &#x522B;&#x7684;&#x7EBF;&#x7A0B;&#x624D;&#x80FD;&#x5F97;&#x5230;&#x8FD9;&#x4E2A;&#x4E92;&#x65A5;&#x9501;&#x3002;</li>
+</ul>
+<p><strong>&#x4F8B;&#x5B50;&#xFF1A;</strong>&#x5229;&#x7528;<code>pthread_mutex_t</code>&#x5B9E;&#x73B0;&#x9012;&#x5F52;&#x9501;&#x7684;&#x6548;&#x679C; &#x4E0E; <code>NSRecursiveLock</code>&#x4E00;&#x6837;&#xFF1A;</p>
+<pre><code>- (void)pthread_mutex_RecursiveLockMethod{
+    __block pthread_mutex_t pthreadLock;
+    pthread_mutexattr_t pthreadMutexattr;
+    pthread_mutexattr_init(&amp;pthreadMutexattr);//&#x9501;&#x5C5E;&#x6027;&#x7684;&#x521D;&#x59CB;&#x5316;
+    pthread_mutexattr_settype(&amp;pthreadMutexattr, PTHREAD_MUTEX_RECURSIVE);//&#x8BBE;&#x7F6E;&#x4E3A;&#x9012;&#x5F52;&#x9501;
+    pthread_mutex_init(&amp;pthreadLock, &amp;pthreadMutexattr);//&#x9501;&#x7684;&#x521D;&#x59CB;&#x5316;
+
+    static void (^recursiveTestBlock)(int length);
+    recursiveTestBlock = ^(int length){
+        NSLog(@&quot;&#x5F00;&#x59CB;&#x52A0;&#x9501; === length &#xFF1A;%d -- %@&quot;,length,NSThread.currentThread);
+        pthread_mutex_lock(&amp;pthreadLock);//&#x4E0A;&#x9501;
+        if (length &gt; 0){
+            [NSThread sleepForTimeInterval:2];
+            recursiveTestBlock(--length);
+        }
+        pthread_mutex_unlock(&amp;pthreadLock);//&#x89E3;&#x9501;
+        NSLog(@&quot;&#x5DF2;&#x7ECF;&#x89E3;&#x9501; --- length &#xFF1A;%d == %@&quot;,length,NSThread.currentThread);
+    };
+    [NSThread detachNewThreadWithBlock:^{
+        recursiveTestBlock(3);
+    }];
+}
+</code></pre><h1 id="3&#x3001;&#x6761;&#x4EF6;&#x9501;"><a name="3&#x3001;&#x6761;&#x4EF6;&#x9501;" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x6761;&#x4EF6;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x6761;&#x4EF6;&#x9501;</h1>
+<p>&#x6761;&#x4EF6;&#x9501;&#xFF1A;&#x5F53;&#x67D0;&#x4E9B;&#x6761;&#x4EF6;&#x4E0D;&#x6EE1;&#x8DB3;&#x65F6;&#x7EBF;&#x7A0B;&#x8FDB;&#x5165;&#x4F11;&#x7720;&#xFF1B;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#x65F6;&#xFF0C;&#x5524;&#x9192;&#x4F11;&#x7720;&#x7EBF;&#x7A0B;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#x3002;</p>
+<h2 id="31&#x3001;&#x6761;&#x4EF6;&#x9501;-nsconditionlock"><a name="31&#x3001;&#x6761;&#x4EF6;&#x9501;-nsconditionlock" class="anchor-navigation-ex-anchor" href="#31&#x3001;&#x6761;&#x4EF6;&#x9501;-nsconditionlock"><i class="fa fa-link" aria-hidden="true"></i></a>3.1&#x3001;&#x6761;&#x4EF6;&#x9501; <code>NSConditionLock</code></h2>
+<p><a href="https://developer.apple.com/documentation/foundation/nsconditionlock?changes=latest_minor&amp;language=objc" target="_blank">NSConditionLock </a> &#x786E;&#x4FDD;&#x53EA;&#x6709;&#x6EE1;&#x8DB3;&#x7279;&#x5B9A;&#x6761;&#x4EF6;&#x65F6;&#xFF0C;&#x7EBF;&#x7A0B;&#x624D;&#x80FD;&#x83B7;&#x53D6;&#x8BE5;&#x9501;&#x3002;</p>
+<pre><code>//&#x5B9E;&#x73B0; NSLocking &#x534F;&#x8BAE;
+@interface NSConditionLock : NSObject &lt;NSLocking&gt;
+
+/* &#x521D;&#x59CB;&#x5316;&#x6761;&#x4EF6;&#x9501;
+* @param condition &#x52A0;&#x9501;&#x6EE1;&#x8DB3;&#x7684;&#x6761;&#x4EF6;
+*/
+- (instancetype)initWithCondition:(NSInteger)condition;
+
+// &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7684;&#x6761;&#x4EF6;
+@property (readonly) NSInteger condition;
+
+/* &#x8BD5;&#x56FE;&#x52A0;&#x9501;&#xFF0C;&#x4E0D;&#x4F1A;&#x963B;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x7684;&#x6267;&#x884C;&#x3002;
+ * @param condition &#x52A0;&#x9501;&#x6EE1;&#x8DB3;&#x7684;&#x6761;&#x4EF6;
+ *        &#x6EE1;&#x8DB3;&#x8BE5;&#x6761;&#x4EF6;&#xFF0C;&#x4E14;&#x6CA1;&#x6709;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x52A0;&#x9501;&#xFF0C;&#x624D;&#x80FD;&#x52A0;&#x9501;&#x6210;&#x529F;
+ * @return &#x52A0;&#x9501;&#x6210;&#x529F;&#x8FD4;&#x56DE; YES&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; NO
+ */
+- (BOOL)tryLock;
+- (BOOL)tryLockWhenCondition:(NSInteger)condition;
+
+/* &#x52A0;&#x9501;&#x64CD;&#x4F5C;&#xFF0C;&#x963B;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;
+* @param condition &#x52A0;&#x9501;&#x6EE1;&#x8DB3;&#x7684;&#x6761;&#x4EF6;
+*        &#x6EE1;&#x8DB3;&#x8BE5;&#x6761;&#x4EF6;&#xFF0C;&#x4E14;&#x6CA1;&#x6709;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x52A0;&#x9501;&#xFF0C;&#x5219;&#x52A0;&#x9501;&#x6210;&#x529F;&#xFF0C;&#x7A0B;&#x5E8F;&#x5411;&#x4E0B;&#x6267;&#x884C;&#xFF1B;
+*        &#x5982;&#x679C;&#x4E0D;&#x6EE1;&#x8DB3;&#x8BE5;&#x6761;&#x4EF6;&#xFF0C;&#x6216;&#x8005;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x4E0A;&#x9501;&#xFF0C;&#x5219;&#x5835;&#x585E;&#x7EBF;&#x7A0B;&#xFF0C;&#x4E00;&#x76F4;&#x7B49;&#x5F85;
+*/
+- (void)lockWhenCondition:(NSInteger)condition;
+
+/* &#x52A0;&#x9501;&#x64CD;&#x4F5C;&#xFF0C;&#x4F1A;&#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;
+* @param limit &#x52A0;&#x9501;&#x7684;&#x622A;&#x6B62;&#x65F6;&#x95F4;
+*        &#x5728;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#x4E4B;&#x524D;&#xFF0C;&#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x4E00;&#x76F4;&#x5C1D;&#x8BD5;&#x52A0;&#x9501;&#x3002;
+* @return &#x52A0;&#x9501;&#x6210;&#x529F;&#x8FD4;&#x56DE; YES &#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; NO
+*/
+- (BOOL)lockBeforeDate:(NSDate *)limit;
+
+/* &#x52A0;&#x9501;&#x64CD;&#x4F5C;&#xFF0C;&#x4F1A;&#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;
+ * @param condition &#x52A0;&#x9501;&#x6EE1;&#x8DB3;&#x7684;&#x6761;&#x4EF6;&#xFF0C;
+ * @param limit &#x52A0;&#x9501;&#x7684;&#x622A;&#x6B62;&#x65F6;&#x95F4;
+ * @note &#x5728;&#x622A;&#x6B62;&#x65F6;&#x95F4; limit &#x4E4B;&#x524D;&#xFF0C;&#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x4E00;&#x76F4;&#x5C1D;&#x8BD5;&#x52A0;&#x9501;&#x3002;
+ *       &#x5982;&#x679C;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#xFF0C;&#x5E76;&#x4E14;&#x6CA1;&#x6709;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x4E0A;&#x9501;&#xFF0C;&#x5219;&#x52A0;&#x9501;&#x6210;&#x529F;&#xFF0C;&#x7ACB;&#x5373;&#x8FD4;&#x56DE; YES&#xFF1B;
+ *                  &#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x4E0A;&#x9501;&#xFF0C;&#x8D85;&#x8FC7;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#xFF0C;&#x5219;&#x52A0;&#x9501;&#x5931;&#x8D25;&#xFF0C;&#x8FD4;&#x56DE; NO&#xFF1B;
+ *       &#x5982;&#x679C;&#x4E0D;&#x6EE1;&#x8DB3;&#x6761;&#x4EF6;&#xFF0C;&#x5728;&#x5230;&#x8FBE;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#x4E4B;&#x524D;&#xFF0C;&#x4F1A;&#x4E00;&#x76F4;&#x5C1D;&#x8BD5;&#xFF0C;&#x7B49;&#x5F85;&#x53EF;&#x80FD;&#x53D8;&#x5316;&#x7684;&#x6761;&#x4EF6;&#xFF1B;
+ *                    &#x5728;&#x5230;&#x8FBE;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#x4E5F;&#x4E0D;&#x6EE1;&#x8DB3;&#xFF0C;&#x5219;&#x52A0;&#x9501;&#x5931;&#x8D25;&#xFF0C;&#x8FD4;&#x56DE; NO&#xFF1B;
+ * @return &#x52A0;&#x9501;&#x6210;&#x529F;&#x8FD4;&#x56DE; YES &#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE; NO
+ */
+- (BOOL)lockWhenCondition:(NSInteger)condition beforeDate:(NSDate *)limit;
+
+/* &#x89E3;&#x9501;&#x64CD;&#x4F5C;
+ * @param condition &#x91CD;&#x7F6E;&#x9501;&#x7684;&#x6761;&#x4EF6;
+ */
+- (void)unlockWithCondition:(NSInteger)condition;
+@end
+</code></pre><h2 id="32&#x3001;&#x6761;&#x4EF6;&#x9501;-nscondition"><a name="32&#x3001;&#x6761;&#x4EF6;&#x9501;-nscondition" class="anchor-navigation-ex-anchor" href="#32&#x3001;&#x6761;&#x4EF6;&#x9501;-nscondition"><i class="fa fa-link" aria-hidden="true"></i></a>3.2&#x3001;&#x6761;&#x4EF6;&#x9501; <code>NSCondition</code></h2>
+<p> <a href="https://developer.apple.com/documentation/foundation/nscondition?changes=latest_minor&amp;language=objc" target="_blank">NSCondition</a> &#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x7B49;&#x5F85;&#x4FE1;&#x53F7;&#x800C;&#x4F11;&#x7720;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x88AB;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5524;&#x9192;&#x7684;&#x529F;&#x80FD;&#x3002;&#x5176;&#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x4E86;&#x9501;&#x548C;&#x7EBF;&#x7A0B;&#x68C0;&#x67E5;&#x5668;&#x7684;&#x529F;&#x80FD;&#xFF1A;</p>
+<ul>
+<li>&#x9501;&#xFF1A;&#x4FDD;&#x62A4;&#x5171;&#x4EAB;&#x6570;&#x636E;&#xFF1B; </li>
+<li>&#x7EBF;&#x7A0B;&#x68C0;&#x67E5;&#x5668;&#xFF1A;&#x5224;&#x65AD;&#x7EBF;&#x7A0B;&#x662F;&#x5426;&#x4F11;&#x7720;&#xFF0C;&#x6536;&#x5230;&#x4FE1;&#x53F7;&#x5524;&#x9192;&#x4F11;&#x7720;&#x7EBF;&#x7A0B;&#x3002;</li>
+</ul>
+<pre><code>//&#x5B9E;&#x73B0; NSLocking &#x534F;&#x8BAE;
+@interface NSCondition : NSObject &lt;NSLocking&gt; 
+
+/* &#x4F7F;&#x7EBF;&#x7A0B;&#x5904;&#x4E8E;&#x4F11;&#x7720;&#x72B6;&#x6001;&#xFF0C;&#x53EA;&#x6709;&#x6536;&#x5230;&#x4FE1;&#x53F7;&#xFF0C;&#x624D;&#x4F1A;&#x5524;&#x9192;&#x7EBF;&#x7A0B;
+ * @note &#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x5904;&#x4E8E;&#x4F11;&#x7720;&#xFF0C;&#x5219;&#x4E4B;&#x524D; -lock &#x64CD;&#x4F5C;&#x7684;&#x9501;&#x4E5F;&#x88AB;&#x4F11;&#x7720;&#xFF0C;
+ *        &#x53EA;&#x6709;&#x8BE5;&#x6761;&#x7EBF;&#x7A0B;&#x518D;&#x6B21;&#x6D3B;&#x8DC3;&#xFF0C;&#x52A0;&#x9501;&#x624D;&#x6709;&#x6548;&#xFF1B;
+ */
+- (void)wait;
+
+/* &#x4F7F;&#x7EBF;&#x7A0B;&#x5904;&#x4E8E;&#x4F11;&#x7720;&#x72B6;&#x6001;
+ * @param limit &#x4F11;&#x7720;&#x7684;&#x622A;&#x6B62;&#x65F6;&#x95F4;
+ *    &#x5982;&#x679C;&#x5728;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#x4E4B;&#x524D;&#x6536;&#x5230;&#x4E86;&#x4FE1;&#x53F7;&#x5C31;&#x5524;&#x9192;&#x7EBF;&#x7A0B;&#xFF0C;&#x8FD4;&#x56DE; YES
+ *    &#x5982;&#x679C;&#x5230;&#x4E86;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#x4E5F;&#x6CA1;&#x6536;&#x5230;&#x4FE1;&#x53F7;&#xFF0C;&#x4E5F;&#x4F1A;&#x5524;&#x9192;&#x7EBF;&#x7A0B;&#xFF0C;&#x8FD4;&#x56DE; NO
+ */
+- (BOOL)waitUntilDate:(NSDate *)limit;
+
+/* &#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x4FE1;&#x53F7;&#x91CF;&#xFF0C;&#x5524;&#x9192;&#x4E00;&#x4E2A;&#x4F11;&#x7720;&#x7EBF;&#x7A0B;
+ * &#x5524;&#x9192;&#x591A;&#x6761;&#x7EBF;&#x7A0B;&#x5C31;&#x5F97;&#x591A;&#x6B21;&#x8C03;&#x7528;&#xFF1B;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7EBF;&#x7A0B;&#x4F11;&#x7720;&#xFF0C;&#x5219;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x4E0D;&#x8D77;&#x4F5C;&#x7528;&#xFF1B;
+ */
+- (void)signal;
+
+/* &#x5524;&#x9192;&#x6240;&#x6709;&#x4F11;&#x7720;&#x7EBF;&#x7A0B;
+ * @note &#x5982;&#x679C;&#x8FD9;&#x4E9B;&#x7EBF;&#x7A0B;&#x5728;&#x4F11;&#x7720;&#x4E4B;&#x524D; -lock&#xFF0C; &#x5728;&#x6536;&#x5230;&#x5E7F;&#x64AD;&#x4E4B;&#x540E;&#x5E76;&#x975E;&#x540C;&#x65F6;&#x5524;&#x9192;&#x7684;&#xFF1B;
+ *     &#x6309;&#x5148;&#x540E;&#x987A;&#x5E8F;&#xFF0C;&#x4E00;&#x6761;&#x6761;&#x7EBF;&#x7A0B;&#x4F9D;&#x6B21;&#x5524;&#x9192;&#x5E76;&#x89E3;&#x9501;
+ */
+- (void)broadcast;
+@end
+</code></pre><h2 id="33&#x3001;&#x5229;&#x7528;pthreadmutext&#x5B9E;&#x73B0;&#x6761;&#x4EF6;&#x9501;"><a name="33&#x3001;&#x5229;&#x7528;pthreadmutext&#x5B9E;&#x73B0;&#x6761;&#x4EF6;&#x9501;" class="anchor-navigation-ex-anchor" href="#33&#x3001;&#x5229;&#x7528;pthreadmutext&#x5B9E;&#x73B0;&#x6761;&#x4EF6;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3&#x3001;&#x5229;&#x7528;<code>pthread_mutex_t</code>&#x5B9E;&#x73B0;&#x6761;&#x4EF6;&#x9501;</h2>
+<p>&#x6761;&#x4EF6;&#x53D8;&#x91CF; <code>pthread_cond_t</code> &#x5305;&#x62EC;&#x4E24;&#x4E2A;&#x52A8;&#x4F5C;&#xFF1A;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x56E0;<em>&#x6761;&#x4EF6;&#x53D8;&#x91CF;&#x4E0D;&#x6EE1;&#x8DB3;</em> &#x800C;&#x4F11;&#x7720;&#xFF1B;&#x53E6;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x4F7F;<em>&#x6761;&#x4EF6;&#x6210;&#x7ACB;</em> &#x53D1;&#x51FA;&#x4FE1;&#x53F7;&#x5524;&#x9192;&#x4F11;&#x7720;&#x7EBF;&#x7A0B;&#x3002;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x7ADE;&#x4E89;&#xFF0C;&#x6761;&#x4EF6;&#x53D8;&#x91CF;&#x603B;&#x548C;&#x4E92;&#x65A5;&#x9501;&#x7ED3;&#x5408;&#x4F7F;&#x7528;&#x3002;</p>
+<pre><code>/* &#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x53D8;&#x91CF;
+ * @note &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x9759;&#x6001;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x53D8;&#x91CF;&#xFF1A; PTHREAD_COND_INITIALIZER
+ * @return &#x521D;&#x59CB;&#x5316;&#x6210;&#x529F;&#xFF0C;&#x8FD4;&#x56DE; 0&#xFF1B; &#x5426;&#x5219;&#x8FD4;&#x56DE;&#x975E; 0
+ */
+int pthread_cond_init(pthread_cond_t* cond, pthread_condattr_t *cond_attr);
+
+/* &#x9500;&#x6BC1;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x53D8;&#x91CF;
+ * @return &#x9500;&#x6BC1;&#x6210;&#x529F;&#xFF0C;&#x8FD4;&#x56DE; 0&#xFF1B; &#x5426;&#x5219;&#x8FD4;&#x56DE;&#x975E; 0
+ */
+int pthread_cond_destroy(pthread_cond_t* cond);
+
+/* &#x4F11;&#x7720;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;
+ * @param pthread_cond_t  &#x6761;&#x4EF6;&#x53D8;&#x91CF;
+ * @param pthread_mutex_t &#x4E92;&#x65A5;&#x9501;
+ * @return &#x6536;&#x5230;&#x4FE1;&#x53F7;&#xFF0C;&#x8FD4;&#x56DE; 0 &#xFF0C;&#x5524;&#x9192;&#x7EBF;&#x7A0B;&#x7EE7;&#x7EED;&#x6267;&#x884C;
+ * @note &#x8BE5;&#x51FD;&#x6570;&#x5524;&#x9192;&#x4F11;&#x7720;&#x7EBF;&#x7A0B;&#x540E;&#xFF0C;&#x5E76;&#x4E0D;&#x610F;&#x5473;&#x6EE1;&#x8DB3;&#x4E0B;&#x8FF0;&#x6267;&#x884C;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x5FC5;&#x987B;&#x91CD;&#x65B0;&#x68C0;&#x67E5;&#x6761;&#x4EF6;&#xFF1B;&#x6700;&#x597D;&#x7684;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x662F;&#x5FAA;&#x73AF;&#x8C03;&#x7528;&#xFF1A;
+ *     while (&#x6761;&#x4EF6;){
+ *          pthread_cond_wait(&amp;pthreadCondition, &amp;condMutexLock);
+ *     }
+ *     // &#x548C;&#x6761;&#x4EF6;&#x5173;&#x8054;&#x7684;&#x67D0;&#x4E9B;&#x4EE3;&#x7801;
+ */
+int pthread_cond_wait(pthread_cond_t * __restrict,pthread_mutex_t * __restrict);
+
+/* &#x4F11;&#x7720;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x5230;&#x622A;&#x6B62;&#x65F6;&#x95F4;
+ * @param pthread_cond_t  &#x6761;&#x4EF6;&#x53D8;&#x91CF;
+ * @param pthread_mutex_t &#x4E92;&#x65A5;&#x9501;
+ * @param timespec &#x622A;&#x6B62;&#x65F6;&#x95F4;
+ * @return &#x5982;&#x679C;&#x5728;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#x5185;&#x6536;&#x5230;&#x4FE1;&#x53F7;&#xFF0C;&#x8FD4;&#x56DE; 0 &#xFF0C;&#x5524;&#x9192;&#x7EBF;&#x7A0B;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF1B;
+ *         &#x5982;&#x679C;&#x5230;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#x8FD8;&#x6CA1;&#x6709;&#x4FE1;&#x53F7;&#xFF0C;&#x8FD4;&#x56DE; ETIMEOUT &#xFF0C;&#x5524;&#x9192;&#x7EBF;&#x7A0B;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF1B;
+ */
+int pthread_cond_timedwait(pthread_cond_t * __restrict, pthread_mutex_t * __restrict,const struct timespec * _Nullable __restrict)
+
+/* &#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x4FE1;&#x53F7;&#xFF0C;&#x5524;&#x9192;&#x4E00;&#x6761;&#x5904;&#x4E8E;&#x4F11;&#x7720;&#x7684;&#x7EBF;&#x7A0B;&#xFF1B;
+ * @note &#x5B58;&#x5728;&#x591A;&#x6761;&#x4F11;&#x7720;&#x7EBF;&#x7A0B;&#x65F6;&#x6309;&#x5165;&#x961F;&#x987A;&#x5E8F;&#x5524;&#x9192;&#x5176;&#x4E2D;&#x4E00;&#x6761;
+ * @return &#x53D1;&#x9001;&#x4FE1;&#x53F7;&#x6210;&#x529F;&#xFF0C;&#x8FD4;&#x56DE; 0 &#xFF1B;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x975E; 0 &#x503C;
+ */
+int pthread_cond_signal(pthread_cond_t* cond);
+
+/* &#x5E7F;&#x64AD;&#x67D0;&#x4FE1;&#x53F7;&#xFF0C;&#x5524;&#x9192;&#x6240;&#x6709;&#x76F8;&#x5173;&#x7684;&#x5904;&#x4E8E;&#x4F11;&#x7720;&#x7684;&#x7EBF;&#x7A0B;&#xFF1B;
+ * @return &#x5E7F;&#x64AD;&#x6210;&#x529F;&#xFF0C;&#x8FD4;&#x56DE; 0 &#xFF1B;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x975E; 0 &#x503C;
+ */
+int pthread_cond_broadcast(pthread_cond_t* cond);
+</code></pre><p><strong>&#x4F8B;&#x5B50;&#xFF1A;</strong> &#x6761;&#x4EF6;&#x9501;&#x7684;&#x4F7F;&#x7528;&#xFF08;&#x7528;&#x6CD5;&#x4E0E;<code>NSCondition</code>&#x5927;&#x540C;&#x5C0F;&#x5F02;&#xFF09;</p>
+<pre><code>- (void)pthread_mutex_ConditionMethod{
+    __block pthread_mutex_t condMutexLock;
+    __block pthread_cond_t pthreadCondition;//&#x6761;&#x4EF6;&#x53D8;&#x91CF;
+    pthread_mutex_init(&amp;condMutexLock, NULL);//&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x4E92;&#x65A5;&#x9501;
+    pthread_cond_init(&amp;pthreadCondition, NULL);//&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x53D8;&#x91CF;
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        NSLog(@&quot;&#x5F00;&#x59CB;&#x52A0;&#x9501; &#xFF1A; taskA === %@&quot;,NSThread.currentThread);
+        pthread_mutex_lock(&amp;condMutexLock);
+        //wait() &#x63A5;&#x5230; signal &#x540E;&#xFF0C;&#x5E76;&#x4E0D;&#x610F;&#x5473;&#x7740;&#x6761;&#x4EF6;&#x7684;&#x503C;&#x4E00;&#x5B9A;&#x53D1;&#x751F;&#x4E86;&#x53D8;&#x5316;&#xFF0C;&#x5FC5;&#x987B;&#x91CD;&#x65B0;&#x68C0;&#x67E5;&#x6761;&#x4EF6;&#x7684;&#x503C;&#x3002;&#x6700;&#x597D;&#x7684;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x662F;&#x5FAA;&#x73AF;&#x8C03;&#x7528;&#xFF1A;
+        while ([array containsObject:@5] == NO){
+            NSLog(@&quot;&#x6267;&#x884C;wait&#xFF1A; taskA === %@&quot;,NSThread.currentThread);
+            struct timespec abstime;
+            struct timeval now;
+            long timeout_s = 5; // &#x7B49;&#x5F85; 1s
+            gettimeofday(&amp;now, NULL);
+            long nsec = now.tv_usec * 1000 + timeout_s * 1000000;
+            abstime.tv_sec = now.tv_sec + nsec / 1000000000 + timeout_s;
+            abstime.tv_nsec = nsec % 1000000000;
+            if (pthread_cond_timedwait(&amp;pthreadCondition, &amp;condMutexLock, &amp;abstime) == 0){
+                NSLog(@&quot;&#x63A5;signal&#xFF1A; taskA === %@&quot;,NSThread.currentThread);
+            }else{
+                NSLog(@&quot;taskA ---- &#x6307;&#x5B9A;&#x65F6;&#x95F4;&#x5185;&#x4E5F;&#x6CA1;&#x6709;&#x6536;&#x5230; &#x4FE1;&#x53F7;&quot;);
+            }
+        }
+        pthread_mutex_unlock(&amp;condMutexLock);//&#x89E3;&#x9501;
+        NSLog(@&quot;&#x5DF2;&#x7ECF;&#x89E3;&#x9501; &#xFF1A; taskA === %@&quot;,NSThread.currentThread);
+    });
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        NSLog(@&quot;&#x5F00;&#x59CB;&#x52A0;&#x9501; &#xFF1A; taskB === %@&quot;,NSThread.currentThread);
+        pthread_mutex_lock(&amp;condMutexLock);//&#x4E0A;&#x9501;
+        [array addObject:@5];
+        pthread_cond_signal(&amp;pthreadCondition);
+        NSLog(@&quot;&#x53D1;&#x9001;&#x4FE1;&#x53F7; &#xFF1A; taskB === %@&quot;,NSThread.currentThread);
+        pthread_mutex_unlock(&amp;condMutexLock);//&#x89E3;&#x9501;
+        NSLog(@&quot;&#x5DF2;&#x7ECF;&#x89E3;&#x9501; &#xFF1A; taskB === %@&quot;,NSThread.currentThread);
+    });
+}
+</code></pre><h1 id="4&#x3001;&#x4FE1;&#x53F7;&#x91CF;dispatchsemaphore"><a name="4&#x3001;&#x4FE1;&#x53F7;&#x91CF;dispatchsemaphore" class="anchor-navigation-ex-anchor" href="#4&#x3001;&#x4FE1;&#x53F7;&#x91CF;dispatchsemaphore"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;&#x4FE1;&#x53F7;&#x91CF;<code>dispatch_semaphore</code></h1>
+<p>&#x4FE1;&#x53F7;&#x91CF;&#x4E5F;&#x79F0;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x9501;&#xFF0C;&#x672C;&#x8EAB;&#x4E0D;&#x5177;&#x5907;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x529F;&#x80FD;&#xFF0C;&#x901A;&#x8FC7;&#x63A7;&#x5236;&#x5176;&#x5B83;&#x901A;&#x4FE1;&#x8D44;&#x6E90;&#x6765;&#x5B9E;&#x73B0;&#x7EBF;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;&#x3002;&#x4FE1;&#x53F7;&#x91CF;&#x5728;&#x6B64;&#x8FC7;&#x7A0B;&#x4E2D;&#x8D1F;&#x8D23;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#x7684;&#x4E92;&#x65A5;&#x3001;&#x540C;&#x6B65;&#x7B49;&#x529F;&#x80FD;&#x3002;</p>
+<p> <code>dispatch_semaphore</code> &#x548C; <code>NSCondition</code> &#x7C7B;&#x4F3C;&#xFF0C;&#x90FD;&#x662F;&#x4E00;&#x79CD;&#x57FA;&#x4E8E;&#x4FE1;&#x53F7;&#x7684;&#x540C;&#x6B65;&#x65B9;&#x5F0F;&#x3002;&#x4F46; <code>NSCondition</code> &#x53EA;&#x80FD;&#x53D1;&#x9001;&#x4FE1;&#x53F7;&#xFF0C;&#x4E0D;&#x80FD;&#x4FDD;&#x5B58;&#xFF1A;<em>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x7EBF;&#x7A0B;&#x5728;&#x7B49;&#x5F85;&#xFF0C;&#x5219;&#x53D1;&#x9001;&#x7684;&#x4FE1;&#x53F7;&#x4F1A;&#x5931;&#x6548;</em>&#xFF1B;&#x800C; <code>dispatch_semaphore</code> &#x80FD;&#x4FDD;&#x5B58;&#x53D1;&#x9001;&#x7684;&#x4FE1;&#x53F7;&#x3002;<code>dispatch_semaphore</code> &#x7684;&#x6838;&#x5FC3;&#x662F; <code>dispatch_semaphore_t</code>&#x7C7B;&#x578B;&#x7684;&#x4FE1;&#x53F7;&#x91CF;&#x3002;</p>
+<pre><code>/* &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x4FE1;&#x53F7;&#x91CF;
+ * @param value &#x5982;&#x679C; &lt; 0,&#x5219;&#x8FD4;&#x56DE; NULL
+ */
+dispatch_semaphore_t dispatch_semaphore_create(long value);
+
+/* &#x6839;&#x636E;&#x6307;&#x5B9A;&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x5C06;&#x7EBF;&#x7A0B;&#x4F11;&#x7720;
+ * @param dsema &#x6307;&#x5B9A;&#x7684;&#x4FE1;&#x53F7;&#x91CF;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x4FE1;&#x53F7;&#x91CF;&#x7684; value&gt;0 &#xFF0C;&#x5219;&#x8BE5;&#x51FD;&#x6570;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE; 0
+ *              &#x5982;&#x679C; value=0&#xFF0C;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4F1A;&#x548C; NSCondition &#x4E00;&#x6837;&#x4F11;&#x7720;&#xFF0C;&#x7B49;&#x5F85;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x53D1;&#x9001;&#x4FE1;&#x53F7;&#x5524;&#x9192;&#x6B64;&#x7EBF;&#x7A0B;&#x53BB;&#x6267;&#x884C;&#x540E;&#x7EED;&#x4EFB;&#x52A1;
+ * @param timeout &#x622A;&#x6B62;&#x65F6;&#x95F4;&#xFF1B;&#x6B64;&#x65F6;&#x5373;&#x4F7F; value &#x503C;&#x4E0D;&#x5927;&#x4E8E; 0 &#xFF0C;&#x4E5F;&#x4F1A;&#x63A5;&#x7740;&#x5411;&#x4E0B;&#x6267;&#x884C;&#xFF0C;
+ *               DISPATCH_TIME_NOW &#x7ACB;&#x5373;&#x53D1;&#x751F;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x8868;&#x793A;&#x5FFD;&#x7565;&#x4FE1;&#x53F7;&#x91CF;&#xFF0C;&#x76F4;&#x63A5;&#x8FD0;&#x884C;
+ *               DISPATCH_TIME_FOREVER&#x8868;&#x793A;&#x65E0;&#x7A77;&#x5927;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x8868;&#x793A;&#x4F1A;&#x4E00;&#x76F4;&#x7B49;&#x5F85;&#x4FE1;&#x53F7;&#x91CF;&#x4E3A;&#x6B63;&#x6570;&#xFF0C;&#x624D;&#x4F1A;&#x7EE7;&#x7EED;&#x8FD0;&#x884C;
+ * @return &#x5982;&#x679C;&#x8BE5;&#x4FE1;&#x53F7;&#x91CF;&#x7684; value&gt;0 &#xFF0C;&#x5219;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE; 0,
+ *         &#x5982;&#x679C; value=0&#xFF0C;&#x5728;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#x4E4B;&#x5185;&#x6536;&#x5230;&#x4FE1;&#x53F7;&#xFF0C;&#x5219;&#x5524;&#x9192;&#x8BE5;&#x7EBF;&#x7A0B;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE; 0 &#xFF1B;
+ *                      &#x8D85;&#x8FC7;&#x622A;&#x6B62;&#x65F6;&#x95F4;&#xFF0C;&#x5524;&#x9192;&#x8BE5;&#x7EBF;&#x7A0B;&#x5E76;&#x8FD4;&#x56DE;&#x975E; 0 &#x503C;&#xFF0C;
+ */
+long dispatch_semaphore_wait(dispatch_semaphore_t dsema, dispatch_time_t timeout);
+
+/* &#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x4FE1;&#x53F7;
+* @param dsema &#x6307;&#x5B9A;&#x7684;&#x4FE1;&#x53F7;&#x91CF;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x4FE1;&#x53F7;&#x91CF;&#x7684; value&gt;0 &#xFF0C;&#x5219;&#x8BE5;&#x51FD;&#x6570;&#x4E0D;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x64CD;&#x4F5C;&#xFF0C;&#x8FD4;&#x56DE; 0
+*              &#x5982;&#x679C; value=0&#xFF0C;&#x5219; value++&#xFF0C;&#x53D1;&#x9001;&#x4FE1;&#x53F7;&#xFF0C;&#x5524;&#x9192;&#x4F11;&#x7720;&#x4E2D;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x8FD4;&#x56DE; 0
+*/
+long dispatch_semaphore_signal(dispatch_semaphore_t dsema);
+</code></pre><p><strong>&#x4F8B;&#x5B50;&#xFF1A;</strong> <code>dispatch_semaphore</code>&#x63A7;&#x5236;&#x7EBF;&#x7A0B;&#x7684;&#x6700;&#x5927;&#x5E76;&#x53D1;&#x6570;</p>
+<pre><code>- (void)dispatch_semaphoreMethod{
+    dispatch_queue_t queue = dispatch_queue_create(&quot;com.demo.task&quot;, DISPATCH_QUEUE_CONCURRENT);
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(2);
+    dispatch_apply(6, queue, ^(size_t i) {
+        long single = dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        dispatch_group_async(group, queue, ^{
+            NSLog(@&quot;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x7B2C; %zu &#x6B21;&#x4EFB;&#x52A1; == single : %ld----- %@&quot;,i,single,NSThread.currentThread);
+            [NSThread sleepForTimeInterval:(i % 2 == 0 ? 2 : 3)];//&#x6A21;&#x62DF;&#x8017;&#x65F6;&#x4EFB;&#x52A1;
+            long value = dispatch_semaphore_signal(semaphore);// &#x5F53;&#x7EBF;&#x7A0B;&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x4FE1;&#x53F7;&#xFF0C;&#x589E;&#x52A0;&#x4FE1;&#x53F7;&#x91CF;&#x3002;
+            NSLog(@&quot;&#x7ED3;&#x675F;&#x6267;&#x884C;&#x7B2C; %zu &#x6B21;&#x4EFB;&#x52A1; == single : %ld----- %@&quot;,i,value,NSThread.currentThread);
+        });
+    });
+
+    //&#x65E2;&#x63A7;&#x5236;&#x4E86;&#x7EBF;&#x7A0B;&#x6570;&#x91CF;&#xFF0C;&#x4E5F;&#x5728;&#x6267;&#x884C;&#x4EFB;&#x52A1;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x5F97;&#x5230;&#x4E86;&#x901A;&#x77E5;&#x3002;
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@&quot;&#x4EFB;&#x52A1;&#x7ED3;&#x675F; ------ %@&quot;,NSThread.currentThread);
+    });
+}
+</code></pre><h1 id="5&#x3001;&#x8BFB;&#x5199;&#x9501;"><a name="5&#x3001;&#x8BFB;&#x5199;&#x9501;" class="anchor-navigation-ex-anchor" href="#5&#x3001;&#x8BFB;&#x5199;&#x9501;"><i class="fa fa-link" aria-hidden="true"></i></a>5&#x3001;&#x8BFB;&#x5199;&#x9501;</h1>
+<p>&#x5BF9;&#x4E8E;&#x5B9E;&#x65F6;&#x6027;&#x8F83;&#x9AD8;&#x7684;&#x5E94;&#x7528;&#x5982;&#x8BA2;&#x7968;&#x7CFB;&#x7EDF;&#xFF0C;&#x4F7F;&#x7528;&#x4E92;&#x65A5;&#x9501;&#x65F6;&#xFF0C;&#x591A;&#x6761;&#x7EBF;&#x7A0B;&#x65E0;&#x6CD5;&#x540C;&#x65F6;&#x8BFB;&#x53D6;&#x67D0;&#x4E2A;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x53D1;&#x6027;&#x80FD;&#x8F83;&#x4F4E;&#x3002;&#x6B64;&#x65F6;&#x8BFB;&#x5199;&#x9501;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x8BFB;&#x53D6;&#x6548;&#x7387;&#x3002;
+&#x8BFB;&#x5199;&#x9501;&#x628A;&#x5BF9;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x7684;&#x8BBF;&#x95EE;&#x8005;&#x5212;&#x5206;&#x6210;&#x8BFB;&#x8005;&#x548C;&#x5199;&#x8005;&#xFF0C;<strong>&#x5728;&#x4EFB;&#x4E00;&#x65F6;&#x523B;&#x5141;&#x8BB8;&#x591A;&#x6761;&#x7EBF;&#x7A0B;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x63D0;&#x9AD8;&#x5E76;&#x53D1;&#x5EA6;</strong>&#xFF1B;<strong>&#x540C;&#x65F6;&#x5728;&#x67D0;&#x4E2A;&#x7EBF;&#x7A0B;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x671F;&#x95F4;&#x4FDD;&#x62A4;&#x8BE5;&#x6570;&#x636E;&#xFF0C;&#x4EE5;&#x514D;&#x88AB;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x7684;&#x8BFB;&#x53D6;&#x3001;&#x4FEE;&#x6539;&#x64CD;&#x4F5C;&#x5E72;&#x6270;</strong>&#x3002;</p>
+<ul>
+<li>&#x5199;&#x8005;&#xFF1A;&#x53EA;&#x9700;&#x4FEE;&#x6539;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#xFF0C;&#x5177;&#x6709;&#x6392;&#x5B83;&#x6027;&#xFF0C;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x53EA;&#x6709;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x5728;&#x5199;&#xFF1B;</li>
+<li>&#x8BFB;&#x8005;&#xFF1A;&#x53EA;&#x80FD;&#x8BFB;&#x53D6;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#xFF1B;&#x591A;&#x6761;&#x7EBF;&#x7A0B;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8BFB;&#x53D6;&#xFF1B;
+&#x5F53;&#x4E4B;&#x524D;&#xFF08;<em>&#x8BFB;&#x64CD;&#x4F5C;&#x4E4B;&#x524D;</em>&#xFF09;&#x6240;&#x6709;&#x5199;&#x64CD;&#x4F5C;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x624D;&#x80FD;&#x8FDB;&#x884C;&#x8BFB;&#x64CD;&#x4F5C;&#xFF1B;</li>
+</ul>
+<p>&#x5229;&#x7528; <code>dispatch_barrier_async()</code> &#x51FD;&#x6570;&#x5728;&#x961F;&#x5217;&#x4E2D;&#x8BBE;&#x7F6E;&#x540C;&#x6B65;&#x70B9;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x522B;&#x6267;&#x884C;&#x8BFB;&#x53D6;&#x3001;&#x5199;&#x5165;&#xFF0C;&#x8FBE;&#x5230;&#x8BFB;&#x5199;&#x9501;&#x7684;&#x6548;&#x679C;&#x3002;&#x4F46;&#x6CA1;&#x6709; <code>pthread_rwlock_t</code> &#x597D;&#x7528;&#x3002;</p>
+<h5 id="&#x8BFB;&#x5199;&#x9501;pthreadrwlockt"><a name="&#x8BFB;&#x5199;&#x9501;pthreadrwlockt" class="anchor-navigation-ex-anchor" href="#&#x8BFB;&#x5199;&#x9501;pthreadrwlockt"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BFB;&#x5199;&#x9501;<code>pthread_rwlock_t</code></h5>
+<pre><code>/* &#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x8BFB;&#x5199;&#x9501;
+ * @return &#x521D;&#x59CB;&#x5316;&#x6210;&#x529F;&#xFF0C;&#x8FD4;&#x56DE; 0&#xFF1B; &#x5426;&#x5219;&#x8FD4;&#x56DE;&#x975E; 0
+ */
+int pthread_rwlock_init(pthread_rwlock_t * __restrict, const pthread_rwlockattr_t * _Nullable __restrict);
+
+/* &#x9500;&#x6BC1;&#x6307;&#x5B9A;&#x8BFB;&#x5199;&#x9501;
+ * @return &#x9500;&#x6BC1;&#x6210;&#x529F;&#xFF0C;&#x8FD4;&#x56DE; 0&#xFF1B; &#x5426;&#x5219;&#x8FD4;&#x56DE;&#x975E; 0
+ */
+int pthread_rwlock_destroy(pthread_rwlock_t * );
+
+/* &#x5199;&#x5165;&#x64CD;&#x4F5C;&#x4E0A;&#x9501;&#xFF0C;&#x4F1A;&#x5835;&#x585E;&#x7EBF;&#x7A0B;
+ * @note &#x5F53;&#x8BE5;&#x9501;&#x5DF2;&#x7ECF;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x6267;&#x884C; &#x201C;&#x5199;&#x5165;&#x64CD;&#x4F5C;&#x4E0A;&#x9501;&#x201D;&#xFF0C;&#x5219;&#x4F1A;&#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x7B49;&#x5F85;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x5B8C;&#x6210;&#x5199;&#x5165;&#x64CD;&#x4F5C;&#xFF1B;
+ * @return &#x4E0A;&#x9501;&#x6210;&#x529F;&#xFF0C;&#x8FD4;&#x56DE; 0 &#xFF1B;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x975E; 0 &#x503C;
+ */
+int pthread_rwlock_wrlock(pthread_rwlock_t *);
+
+/* &#x5199;&#x5165;&#x64CD;&#x4F5C;&#x5C1D;&#x8BD5;&#x4E0A;&#x9501;&#xFF0C;&#x4E0D;&#x4F1A;&#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;
+ * @return &#x5F53;&#x8BE5;&#x9501;&#x5DF2;&#x7ECF;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x201C;&#x5199;&#x5165;&#x64CD;&#x4F5C;&#x4E0A;&#x9501;&#x201D;&#xFF0C;&#x4E0A;&#x9501;&#x5931;&#x8D25;&#xFF0C;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x975E; 0 &#x503C;
+ *         &#x6210;&#x529F;&#x4E0A;&#x9501;&#x8FD4;&#x56DE; 0&#xFF1B;
+ */
+int pthread_rwlock_trywrlock(pthread_rwlock_t *);
+
+/* &#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#x4E0A;&#x9501;&#xFF0C;&#x4F1A;&#x5835;&#x585E;&#x7EBF;&#x7A0B;
+ * @note &#x5F53;&#x8BE5;&#x9501;&#x5DF2;&#x7ECF;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x201C;&#x5199;&#x5165;&#x64CD;&#x4F5C;&#x4E0A;&#x9501;&#x201D;&#xFF0C;&#x5219;&#x4F1A;&#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x7B49;&#x5F85;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x89E3;&#x9664; wrlock&#xFF1B;
+ *       &#x76F4;&#x5230;&#x4E4B;&#x524D;&#x7684; wrlock &#x90FD;&#x5DF2;&#x89E3;&#x9501;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x8FD4;&#x56DE; 0 &#xFF0C;&#x4EE3;&#x7801;&#x63A5;&#x7740;&#x6267;&#x884C;
+ * @note &#x5373;&#x4F7F;&#x8BE5;&#x9501;&#x5DF2;&#x7ECF;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x201C;&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#x4E0A;&#x9501;&#x201D;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x8BE5;&#x64CD;&#x4F5C;
+ *       &#x591A;&#x6761;&#x5904;&#x4E8E; rdlock &#x9501;&#x5B9A;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8BBF;&#x95EE;&#x67D0;&#x4E00;&#x8D44;&#x6E90;
+ * @return &#x6210;&#x529F;&#x4E0A;&#x9501;&#x8FD4;&#x56DE; 0&#xFF1B;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x975E; 0 &#x503C;
+ */
+int pthread_rwlock_rdlock(pthread_rwlock_t *);
+
+/* &#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&#x5C1D;&#x8BD5;&#x4E0A;&#x9501;&#xFF0C;&#x4E0D;&#x4F1A;&#x5835;&#x585E;&#x7EBF;&#x7A0B;
+ * @note1 &#x5F53;&#x8BE5;&#x9501;&#x5DF2;&#x7ECF;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x201C;&#x5199;&#x5165;&#x64CD;&#x4F5C;&#x4E0A;&#x9501;&#x201D;&#xFF0C;&#x4E0A;&#x9501;&#x5931;&#x8D25;&#xFF0C;&#x7ACB;&#x5373;&#x8FD4;&#x56DE;&#x975E; 0 &#x503C;&#xFF1B;
+ * @note2 &#x5373;&#x4F7F;&#x8BE5;&#x9501;&#x5DF2;&#x7ECF;&#x5728;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x6267;&#x884C; rdlock&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;&#x6B64;&#x5904;&#x7684; tryrdlock&#xFF0C;&#x4F9D;&#x65E7;&#x53EF;&#x4EE5;&#x4E0A;&#x9501;&#x6210;&#x529F;
+ * @return &#x6210;&#x529F;&#x4E0A;&#x9501;&#x8FD4;&#x56DE; 0&#xFF1B;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x975E; 0 &#x503C;
+ */
+int pthread_rwlock_tryrdlock(pthread_rwlock_t *);
+
+/* &#x89E3;&#x9664;&#x8BFB;&#x9501;&#x3001;&#x89E3;&#x9664;&#x5199;&#x9501;
+ * @return &#x6210;&#x529F;&#x89E3;&#x9664;&#x8FD4;&#x56DE; 0&#xFF1B;&#x5426;&#x5219;&#x8FD4;&#x56DE;&#x975E; 0 &#x503C;
+*/
+int pthread_rwlock_unlock(pthread_rwlock_t *);
+</code></pre><p><strong>&#x4F8B;&#x5B50;&#xFF1A;</strong>&#x540C;&#x65F6;&#x591A;&#x6B21;&#x5199;&#x5165;&#x4E0E;&#x8BFB;&#x53D6;&#xFF1A;</p>
+<pre><code>- (void)pthread_rwlock_Method{
+    __block pthread_rwlock_t rwlock;
+    pthread_rwlock_init(&amp;rwlock, NULL);//&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x8BFB;&#x5199;&#x9501;
+    NSMutableArray *array = [NSMutableArray array];
+    dispatch_queue_t queue = dispatch_queue_create(&quot;com.demo.barrier&quot;, DISPATCH_QUEUE_CONCURRENT);
+
+    //&#x5199;&#x4EFB;&#x52A1;&#xFF1A;&#x5199;&#x9501;&#x9501;&#x5B9A;
+    dispatch_block_t writeTask = dispatch_block_create(DISPATCH_BLOCK_BARRIER, ^{
+        pthread_rwlock_wrlock(&amp;rwlock);
+        NSInteger index = array.count;
+        NSLog(@&quot;&#x5F00;&#x59CB;&#x6267;&#x884C;writeTask:%ld === %@&quot;,index,NSThread.currentThread);
+        [array addObject:@(index)];
+        [NSThread sleepForTimeInterval:3];//&#x6A21;&#x62DF;&#x8017;&#x65F6;&#x4EFB;&#x52A1;
+        NSLog(@&quot;&#x7ED3;&#x675F;&#x6267;&#x884C;writeTask:%ld === %@&quot;,index,NSThread.currentThread);
+        pthread_rwlock_unlock(&amp;rwlock);
+    });
+
+    NSLog(@&quot;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x5199;&#x5165;&#x64CD;&#x4F5C;&quot;);
+    for (int i = 0; i &lt; 3; i++) {
+        dispatch_async(queue, writeTask);
+    }
+
+    NSLog(@&quot;&#x5F00;&#x59CB;&#x6267;&#x884C;&#x8BFB;&#x53D6;&#x64CD;&#x4F5C;&quot;);
+    for (NSInteger index = 0; index &lt; 3; index++) {
+        dispatch_async(queue, ^{
+            pthread_rwlock_rdlock(&amp;rwlock);
+            NSLog(@&quot;&#x5F00;&#x59CB;&#x6267;&#x884C;readTask:%ld === %@&quot;,index,NSThread.currentThread);
+            NSLog(@&quot;&#x8BFB;&#x53D6;&#x6570;&#x636E;:%ld---- %@&quot;,index,array[index]);
+            [NSThread sleepForTimeInterval:3];//&#x6A21;&#x62DF;&#x8017;&#x65F6;&#x4EFB;&#x52A1;
+            NSLog(@&quot;&#x7ED3;&#x675F;&#x6267;&#x884C;readTask:%ld === %@&quot;,index,NSThread.currentThread);
+            pthread_rwlock_unlock(&amp;rwlock);
+        });
+    }
+    NSLog(@&quot;&#x7ED3;&#x675F;&#x6267;&#x884C;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&quot;);
+}
+</code></pre><h1 id="6&#x3001;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x7684;&#x64CD;&#x4F5C;"><a name="6&#x3001;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x7684;&#x64CD;&#x4F5C;" class="anchor-navigation-ex-anchor" href="#6&#x3001;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x7684;&#x64CD;&#x4F5C;"><i class="fa fa-link" aria-hidden="true"></i></a>6&#x3001;&#x6267;&#x884C;&#x4E00;&#x6B21;&#x7684;&#x64CD;&#x4F5C;</h1>
+<pre><code>/* GCD &#x63D0;&#x4F9B; dispatch_once_t &#x4FDD;&#x8BC1;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x4E2D;&#x53EA;&#x6267;&#x884C;&#x4E00;&#x6B21;;
+ * &#x5E38;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5355;&#x4F8B;
+ * @note &#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x76F4;&#x5230; block &#x6267;&#x884C;&#x5B8C;&#x6BD5;
+ * @note  &#x5982;&#x679C;&#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x8C03;&#x7528; dispatch_once() &#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x53E6;&#x5916;&#x7684;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;&#x6B64;&#x5904;&#x4EE3;&#x7801;&#xFF0C;
+ *        &#x5219;&#x8C03;&#x7528;&#x7EBF;&#x7A0B;&#x7B49;&#x5F85;&#xFF0C;&#x4E0D;&#x5F80;&#x4E0B;&#x6267;&#x884C;&#xFF0C;&#x76F4;&#x5230;&#x9996;&#x6B21;&#x8C03;&#x7528;&#x7684;&#x7EBF;&#x7A0B;&#x8FD4;&#x56DE;&#xFF1B;
+ *        &#x6B64;&#x65F6; dispatch_once_t &#x88AB;&#x6807;&#x8BB0;&#x6267;&#x884C;&#xFF0C;Block &#x4E0D;&#x518D;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x8DF3;&#x8FC7;&#x5F80;&#x4E0B;&#x6267;&#x884C;&#x3002;
+ */
+typedef intptr_t dispatch_once_t;
+void dispatch_once(dispatch_once_t *predicate, DISPATCH_NOESCAPE dispatch_block_t block);
+
+/* C&#x8BED;&#x8A00;&#x63D0;&#x4F9B; pthread_once_t &#x4FDD;&#x8BC1;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x4E2D;&#x53EA;&#x6267;&#x884C;&#x4E00;&#x6B21;; &#x5E38;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x5355;&#x4F8B;
+ * @param pthread_once_t &#x63A7;&#x5236;&#x53D8;&#x91CF;&#xFF0C;&#x4F7F;&#x7528;&#x5B8F; PTHREAD_ONCE_INIT &#x9759;&#x6001;&#x5730;&#x521D;&#x59CB;&#x5316;&#x8BE5;&#x53D8;&#x91CF;&#xFF1B;
+ * @param void(* _Nonnull)(void) &#x51FD;&#x6570;&#x6307;&#x9488;
+ * @note &#x5835;&#x585E;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#xFF0C;&#x76F4;&#x5230;&#x51FD;&#x6570;&#x6267;&#x884C;&#x5B8C;&#x6BD5;
+ * @note  &#x5982;&#x679C;&#x5728;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x8C03;&#x7528; pthread_once() &#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x53E6;&#x5916;&#x7684;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;&#x6B64;&#x5904;&#x4EE3;&#x7801;&#xFF0C;
+ *        &#x5219;&#x8C03;&#x7528;&#x7EBF;&#x7A0B;&#x7B49;&#x5F85;&#xFF0C;&#x4E0D;&#x5F80;&#x4E0B;&#x6267;&#x884C;&#xFF0C;&#x76F4;&#x5230;&#x9996;&#x6B21;&#x8C03;&#x7528;&#x7684;&#x7EBF;&#x7A0B;&#x8FD4;&#x56DE;&#xFF1B;
+ *        &#x6B64;&#x65F6; pthread_once_t &#x88AB;&#x6807;&#x8BB0;&#x6267;&#x884C;&#xFF0C;&#x8DF3;&#x8FC7;&#x8BE5;&#x51FD;&#x6570;&#xFF0C;&#x5F80;&#x4E0B;&#x6267;&#x884C;&#x3002;
+ */
+int pthread_once(pthread_once_t *, void (* _Nonnull)(void));
+</code></pre><p><code>pthread_once_t</code> &#x7684;&#x5B9E;&#x73B0;&#x6548;&#x679C;&#x548C; <code>dispatch_once_t</code> &#x4E00;&#x6837;&#x3002;&#x4F7F;&#x7528; <code>pthread_once_t</code> &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5355;&#x4F8B;&#xFF1A;</p>
+<pre><code>void pthread_once_Function(void) {
+    static id shareInstance;
+    shareInstance = [[NSObject alloc] init];
+}
+
+- (void)pthread_once_Method{
+    pthread_once_t once = PTHREAD_ONCE_INIT;
+     pthread_once(&amp;once, &amp;pthread_once_Function);
+}
+</code></pre><h1 id="7&#x3001;&#x5C5E;&#x6027;&#x4FEE;&#x9970;&#x8BCD;-atomicnonatomic"><a name="7&#x3001;&#x5C5E;&#x6027;&#x4FEE;&#x9970;&#x8BCD;-atomicnonatomic" class="anchor-navigation-ex-anchor" href="#7&#x3001;&#x5C5E;&#x6027;&#x4FEE;&#x9970;&#x8BCD;-atomicnonatomic"><i class="fa fa-link" aria-hidden="true"></i></a>7&#x3001;&#x5C5E;&#x6027;&#x4FEE;&#x9970;&#x8BCD; <code>atomic/nonatomic</code></h1>
+<p><code>atomic/nonatomic</code> &#x7528;&#x6765;&#x51B3;&#x5B9A;&#x7F16;&#x8BD1;&#x5668;&#x751F;&#x6210;&#x7684;<code>getter</code> &#x548C; <code>setter</code> &#x662F;&#x5426;&#x4E3A;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#xFF1B;</p>
+<h2 id="71&#x3001;atomic"><a name="71&#x3001;atomic" class="anchor-navigation-ex-anchor" href="#71&#x3001;atomic"><i class="fa fa-link" aria-hidden="true"></i></a>7.1&#x3001;<code>atomic</code></h2>
+<p>&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x9ED8;&#x8BA4;&#x4E3A; <code>atomic</code>&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x4FDD;&#x8BC1;&#x5728;&#x5176;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684; <code>getter/setter</code> &#x65B9;&#x6CD5;&#x4E2D;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x5B8C;&#x6574;&#x7684;&#xFF0C;&#x4E0D;&#x53D7;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x7684;&#x5F71;&#x54CD;&#x3002;&#x5982;<code>&#x7EBF;&#x7A0B;5</code>&#x5728;&#x6267;&#x884C; <code>getter</code> &#x65B9;&#x6CD5;&#x65F6;&#xFF0C;<code>&#x7EBF;&#x7A0B;6</code>&#x6267;&#x884C;&#x4E86; <code>setter</code> &#x65B9;&#x6CD5;&#xFF0C;&#x6B64;&#x65F6; <code>&#x7EBF;&#x7A0B;5</code> &#x4F9D;&#x7136;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x65E0;&#x635F;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code>//&#x58F0;&#x660E;&#x4E00;&#x4E2A;atomic&#x4FEE;&#x9970;&#x7684;&#x5C5E;&#x6027;
+@property (atomic ,copy) NSString *testStrig;
+
+//setter &#x65B9;&#x6CD5;&#x7684;&#x5185;&#x90E8;&#x5B9E;&#x73B0;
+ - (void)setTestStrig:(NSString *)testStrig{
+     {lock}
+     if (![_testStrig isEqualToString:testStrig]){
+        _testStrig = testStrig;
+     }
+    {unlock}
+ }
+</code></pre><p><code>atomic</code> &#x4E0D;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x53E6;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x540C;&#x65F6;&#x5728;&#x8C03; <code>[testStrig release]</code> &#xFF0C;&#x7A0B;&#x5E8F;&#x53EF;&#x80FD; <code>crash</code> &#xFF0C;&#x56E0;&#x4E3A; <code>-release</code> &#x4E0D;&#x53D7; <code>getter/setter</code> &#x64CD;&#x4F5C;&#x7684;&#x9650;&#x5236;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x53EA;&#x662F;&#x8BFB;/&#x5199;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x4F46;&#x5E76;&#x4E0D;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5176;&#x5B83;&#x7EBF;&#x7A0B;&#x8FD8;&#x80FD;&#x6267;&#x884C;&#x8BFB;&#x5199;&#x4E4B;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x3002;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x9700;&#x8981;&#x5F00;&#x53D1;&#x8005;&#x81EA;&#x5DF1;&#x6765;&#x4FDD;&#x8BC1;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th><code>atomic</code></th>
+<th><code>nonatomic</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x9ED8;&#x8BA4;&#x4FEE;&#x9970;&#x7B26;</td>
+<td>&#x4E0D;&#x662F;&#x9ED8;&#x8BA4;&#x7684;</td>
+</tr>
+<tr>
+<td>&#x8BFB;&#x5199;&#x901F;&#x5EA6;&#x6162;&#xFF0C;&#x6027;&#x80FD;&#x5DEE;</td>
+<td>&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#xFF0C;&#x63D0;&#x9AD8;&#x6027;&#x80FD;</td>
+</tr>
+<tr>
+<td>&#x8BFB;&#x5199;&#x5B89;&#x5168;&#xFF0C;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;</td>
+<td>&#x8BFB;&#x5199;&#x4E0D;&#x5B89;&#x5168;&#xFF0C;&#x7EBF;&#x7A0B;&#x4E0D;&#x5B89;&#x5168;</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://gitee.com/longMo/DataRace" target="_blank">demo</a></p>
+<hr>
+<p>&#x53C2;&#x8003;&#x6587;&#x7AE0;&#xFF1A;</p>
+<p><a href="https://www.jianshu.com/p/ddbe44064ca4" target="_blank">iOS &#x5E38;&#x89C1;&#x77E5;&#x8BC6;&#x70B9;&#xFF08;&#x4E09;&#xFF09;&#xFF1A;Lock</a></p>
+<p><a href="https://blog.csdn.net/baidu_36649389/article/details/54573825" target="_blank">C&#x8BED;&#x8A00;&#x4E92;&#x65A5;&#x9501;pthread_mutex_t</a></p>
+<p><a href="http://www.cocoachina.com/ios/20180720/24248.html" target="_blank">iOS &#x4E2D;&#x5E38;&#x89C1;&#x7684;&#x51E0;&#x79CD;&#x9501;</a></p>
+<p><a href="https://blog.csdn.net/hairetz/article/details/4535920" target="_blank">pthread_cond_wait()&#x7528;&#x6CD5;&#x5206;&#x6790;</a></p>
+<p><a href="https://www.cnblogs.com/renxinyuan/p/3875659.html" target="_blank">pthread_rwlock_t&#x8BFB;&#x5199;&#x9501;&#x51FD;&#x6570;&#x8BF4;&#x660E;</a>
+<a href="https://blog.csdn.net/lipeiran1987/article/details/31767917" target="_blank">ios atomic nonatomic&#x533A;&#x522B;</a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-11-13 11:05:13
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> 搜索结果 "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有搜索结果 "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="OC之GCD.html" class="navigation navigation-prev " aria-label="Previous page: GCD">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="OC的深拷贝与浅拷贝.html" class="navigation navigation-next " aria-label="Next page: OC的深拷贝与浅拷贝">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"锁","level":"1.3.6.3.4","depth":4,"next":{"title":"OC的深拷贝与浅拷贝","level":"1.3.6.4","depth":3,"path":"iOS开发/杂记/OC的深拷贝与浅拷贝.md","ref":"iOS开发/杂记/OC的深拷贝与浅拷贝.md","articles":[]},"previous":{"title":"GCD","level":"1.3.6.3.3","depth":4,"path":"iOS开发/杂记/OC之GCD.md","ref":"iOS开发/杂记/OC之GCD.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"iOS开发/杂记/OC之锁.md","mtime":"2021-11-13T03:05:13.747Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-13T03:07:06.191Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

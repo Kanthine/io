@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:&#x6570;&#x636e;&#x52a0;&#x8f7d;.md">
-   </FileRef>
-   <FileRef
       location = "group:&#x591a;&#x89c6;&#x56fe;&#x6e32;&#x67d3;.md">
    </FileRef>
    <FileRef
@@ -41,6 +38,9 @@
       location = "group:Metal&#x7b80;&#x4ecb;.md">
    </FileRef>
    <FileRef
+      location = "group:MTLRenderCommandEncoder.md">
+   </FileRef>
+   <FileRef
       location = "group:MTKModel.md">
    </FileRef>
    <FileRef
@@ -48,9 +48,6 @@
    </FileRef>
    <FileRef
       location = "group:MTLCompileOptions.md">
-   </FileRef>
-   <FileRef
-      location = "group:MTLDepthStencil.md">
    </FileRef>
    <FileRef
       location = "group:MTLDevice.md">
