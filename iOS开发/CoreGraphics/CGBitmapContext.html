@@ -1,0 +1,1836 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CGBitmapContext · 个人博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="苏沫漓">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="CGContext.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../计算机基础/计算机基础.html">
+            
+                <a href="../../计算机基础/计算机基础.html">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                    
+                    第一部分 计算机的组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                    
+                    计算机组成篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                    
+                    计算机计算篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                    
+                    第二部分 操作系统篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../计算机基础/操作系统篇/进程管理篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/进程管理篇.html">
+            
+                    
+                    进程管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../计算机基础/操作系统篇/内存管理篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/内存管理篇.html">
+            
+                    
+                    内存管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../计算机基础/操作系统篇/文件系统篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/文件系统篇.html">
+            
+                    
+                    文件系统篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                    
+                    操作系统提升篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../计算机基础/计算机网络/网络概述篇.html">
+            
+                <a href="../../计算机基础/计算机网络/网络概述篇.html">
+            
+                    
+                    第三部分 网络篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../计算机基础/计算机网络/计算机物理层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机物理层.html">
+            
+                    
+                    计算机物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                    
+                    计算机数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../计算机基础/计算机网络/计算机网络层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机网络层.html">
+            
+                    
+                    计算机网络层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../计算机基础/计算机网络/计算机传输层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机传输层.html">
+            
+                    
+                    计算机传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../../计算机基础/计算机网络/计算机应用层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机应用层.html">
+            
+                    
+                    计算机应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.5.1" data-path="../../计算机基础/计算机网络/HTTP协议.html">
+            
+                <a href="../../计算机基础/计算机网络/HTTP协议.html">
+            
+                    
+                    HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.2" data-path="../../计算机基础/计算机网络/HTTPS协议.html">
+            
+                <a href="../../计算机基础/计算机网络/HTTPS协议.html">
+            
+                    
+                    HTTPS协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    第四部分 图形学基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../计算机基础/计算机图形学/矩阵的变换.html">
+            
+                <a href="../../计算机基础/计算机图形学/矩阵的变换.html">
+            
+                    
+                    矩阵的变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../计算机基础/计算机图形学/三维空间的观察.html">
+            
+                <a href="../../计算机基础/计算机图形学/三维空间的观察.html">
+            
+                    
+                    三维空间的观察
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../计算机基础/计算机图形学/MetalDocument/Metal简介.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/Metal简介.html">
+            
+                    
+                    Metal API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Runtime/Objective_C简介.html">
+            
+                <a href="../Runtime/Objective_C简介.html">
+            
+                    
+                    Runtime
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../Runtime/OC之Blocks.html">
+            
+                <a href="../Runtime/OC之Blocks.html">
+            
+                    
+                    OC之Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../Runtime/OC内存管理.html">
+            
+                <a href="../Runtime/OC内存管理.html">
+            
+                    
+                    OC内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../Runtime/OC内存管理之引用计数.html">
+            
+                <a href="../Runtime/OC内存管理之引用计数.html">
+            
+                    
+                    OC内存管理之引用计数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../Runtime/+load方法的调用历程.html">
+            
+                <a href="../Runtime/+load方法的调用历程.html">
+            
+                    
+                    +load方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../Runtime/TaggedPointer.html">
+            
+                <a href="../Runtime/TaggedPointer.html">
+            
+                    
+                    TaggedPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../Runtime/方法签名.html">
+            
+                <a href="../Runtime/方法签名.html">
+            
+                    
+                    消息与方法签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../Runtime/OC_方法交换.html">
+            
+                <a href="../Runtime/OC_方法交换.html">
+            
+                    
+                    方法交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../Runtime/三次补救措施.html">
+            
+                <a href="../Runtime/三次补救措施.html">
+            
+                    
+                    方法不被识别的补救
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../Runtime/编译objc4.html">
+            
+                <a href="../Runtime/编译objc4.html">
+            
+                    
+                    编译objc4备忘录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="../Runtime/Runtime_Protocol.html">
+            
+                <a href="../Runtime/Runtime_Protocol.html">
+            
+                    
+                    Runtime函数库中关于协议Protocol的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="../Runtime/Runtime_Property.html">
+            
+                <a href="../Runtime/Runtime_Property.html">
+            
+                    
+                    Runtime函数库中关于属性与变量的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.12" data-path="../Runtime/Runtime_Instance.html">
+            
+                <a href="../Runtime/Runtime_Instance.html">
+            
+                    
+                    Runtime函数库中关于实例对象的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.13" data-path="../Runtime/Runtime_Class.html">
+            
+                <a href="../Runtime/Runtime_Class.html">
+            
+                    
+                    Runtime函数库中关于Class的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.14" data-path="../Runtime/Runtime_Method.html">
+            
+                <a href="../Runtime/Runtime_Method.html">
+            
+                    
+                    Runtime函数库中关于 Class 的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../CoreText/CoteText概述.html">
+            
+                <a href="../CoreText/CoteText概述.html">
+            
+                    
+                    CoreText
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../CoreText/CoteText排版与布局.html">
+            
+                <a href="../CoreText/CoteText排版与布局.html">
+            
+                    
+                    CoteText排版与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../CoreText/CTLineRef的函数库及使用.html">
+            
+                <a href="../CoreText/CTLineRef的函数库及使用.html">
+            
+                    
+                    CTLineRef的函数库及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../CoreText/CTRunRef与CTRunDelegate.html">
+            
+                <a href="../CoreText/CTRunRef与CTRunDelegate.html">
+            
+                    
+                    图文混排的关键：CTRunRef 与 CTRunDelegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    CoreImage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../CoreImage/图像特征CIFeature.html">
+            
+                <a href="../CoreImage/图像特征CIFeature.html">
+            
+                    
+                    图像特征CIFeature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../CoreImage/图片检测CIDetector.html">
+            
+                <a href="../CoreImage/图片检测CIDetector.html">
+            
+                    
+                    图片检测CIDetector
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    CoreGraphics
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.4.1" data-path="CGBitmapContext.html">
+            
+                <a href="CGBitmapContext.html">
+            
+                    
+                    CGBitmapContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="CGContext.html">
+            
+                <a href="CGContext.html">
+            
+                    
+                    CGContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="CGPath.html">
+            
+                <a href="CGPath.html">
+            
+                    
+                    CGPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="CoreGraphics.html">
+            
+                <a href="CoreGraphics.html">
+            
+                    
+                    CoreGraphics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../计算机基础/计算机图形学/MetalDocument/Metal调试.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/Metal调试.html">
+            
+                    
+                    Metal 实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../../计算机基础/计算机图形学/MetalDocument/Metal的简单计算.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/Metal的简单计算.html">
+            
+                    
+                    内核计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../../计算机基础/计算机图形学/MetalDocument/Metal绘制三角形.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/Metal绘制三角形.html">
+            
+                    
+                    绘制三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../../计算机基础/计算机图形学/MetalDocument/简单的纹理贴图.md">
+            
+                <span>
+            
+                    
+                    纹理贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../../计算机基础/计算机图形学/MetalDocument/CPU与GPU协调工作.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/CPU与GPU协调工作.html">
+            
+                    
+                    CPU与GPU协调工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../../计算机基础/计算机图形学/MetalDocument/深度测试.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/深度测试.html">
+            
+                    
+                    深度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../../计算机基础/计算机图形学/MetalDocument/读取纹理像素.md">
+            
+                <span>
+            
+                    
+                    线程与线程组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../../计算机基础/计算机图形学/MetalDocument/离屏渲染.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/离屏渲染.html">
+            
+                    
+                    自定义MTLRenderPassDescriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../计算机基础/计算机图形学/MetalDocument/Metal简介.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/Metal简介.html">
+            
+                    
+                    Metal API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../../计算机基础/计算机图形学/MetalDocument/MTKView.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MTKView.html">
+            
+                    
+                    MTKView API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../../计算机基础/计算机图形学/MetalDocument/MTLDevice.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MTLDevice.html">
+            
+                    
+                    MTLDevice API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../../计算机基础/计算机图形学/MetalDocument/MDLMesh.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MDLMesh.html">
+            
+                    
+                    MDLMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../../计算机基础/计算机图形学/MetalDocument/MTKModel.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MTKModel.html">
+            
+                    
+                    MTKMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="../../计算机基础/计算机图形学/MetalDocument/MDLVertexDescriptor.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MDLVertexDescriptor.html">
+            
+                    
+                    MDLVertexDescriptor API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="../../计算机基础/计算机图形学/MetalDocument/MTLRenderPass.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MTLRenderPass.html">
+            
+                    
+                    MTLRenderPass API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="../../计算机基础/计算机图形学/MetalDocument/MTLFunction.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MTLFunction.html">
+            
+                    
+                    MTLFunction API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.8" data-path="../../计算机基础/计算机图形学/MetalDocument/MTLLibrary.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MTLLibrary.html">
+            
+                    
+                    MTLLibrary API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.9" data-path="../../计算机基础/计算机图形学/MetalDocument/MTLRegion.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MTLRegion.html">
+            
+                    
+                    MTLRegion API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.10" data-path="../../计算机基础/计算机图形学/MetalDocument/MTLTexture.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MTLTexture.html">
+            
+                    
+                    MTLTexture API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.11" data-path="../../计算机基础/计算机图形学/MetalDocument/MTLSampler.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MTLSampler.html">
+            
+                    
+                    MTLSampler API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.12" data-path="../../计算机基础/计算机图形学/MetalDocument/MTLRenderCommandEncoder.html">
+            
+                <a href="../../计算机基础/计算机图形学/MetalDocument/MTLRenderCommandEncoder.html">
+            
+                    
+                    MTLRenderCommandEncoder API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" >
+            
+                <span>
+            
+                    
+                    杂记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="../杂记/iOS渲染机制初窥.html">
+            
+                <a href="../杂记/iOS渲染机制初窥.html">
+            
+                    
+                    iOS渲染机制初窥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="../杂记/响应链.html">
+            
+                <a href="../杂记/响应链.html">
+            
+                    
+                    响应链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3" data-path="../杂记/并发编程.html">
+            
+                <a href="../杂记/并发编程.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.3.1" data-path="../杂记/OC之Thread.html">
+            
+                <a href="../杂记/OC之Thread.html">
+            
+                    
+                    线程NSThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3.2" data-path="../杂记/OC之NSOperation.html">
+            
+                <a href="../杂记/OC之NSOperation.html">
+            
+                    
+                    任务队列NSOperation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3.3" data-path="../杂记/OC之GCD.html">
+            
+                <a href="../杂记/OC之GCD.html">
+            
+                    
+                    GCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3.4" data-path="../杂记/OC之锁.html">
+            
+                <a href="../杂记/OC之锁.html">
+            
+                    
+                    锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4" data-path="../杂记/OC的深拷贝与浅拷贝.html">
+            
+                <a href="../杂记/OC的深拷贝与浅拷贝.html">
+            
+                    
+                    OC的深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.5" data-path="../../其它/sdk_cocoapods.html">
+            
+                <a href="../../其它/sdk_cocoapods.html">
+            
+                    
+                    iOS 使用 cocoapods 创建组件化库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.6" data-path="../杂记/内存优化.html">
+            
+                <a href="../杂记/内存优化.html">
+            
+                    
+                    一些内存优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.7" data-path="../杂记/内存泄露.html">
+            
+                <a href="../杂记/内存泄露.html">
+            
+                    
+                    一些内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.8" data-path="../杂记/OC之处理错误.html">
+            
+                <a href="../杂记/OC之处理错误.html">
+            
+                    
+                    一些错误处理机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.9" data-path="../杂记/刘海屏适配.html">
+            
+                <a href="../杂记/刘海屏适配.html">
+            
+                    
+                    刘海屏适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.10" data-path="../杂记/获取WIFI信息.html">
+            
+                <a href="../杂记/获取WIFI信息.html">
+            
+                    
+                    获取WIFI信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    开发语言
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../语言篇/C++学习入门篇.html">
+            
+                <a href="../../语言篇/C++学习入门篇.html">
+            
+                    
+                    C++学习入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../语言篇/C++学习封装篇.html">
+            
+                <a href="../../语言篇/C++学习封装篇.html">
+            
+                    
+                    C++学习封装篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../语言篇/C++学习继承篇.html">
+            
+                <a href="../../语言篇/C++学习继承篇.html">
+            
+                    
+                    C++学习继承篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../语言篇/C++学习多态篇.html">
+            
+                <a href="../../语言篇/C++学习多态篇.html">
+            
+                    
+                    C++学习多态篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    C
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../语言篇/C数组.html">
+            
+                <a href="../../语言篇/C数组.html">
+            
+                    
+                    C语言数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../语言篇/C结构.html">
+            
+                <a href="../../语言篇/C结构.html">
+            
+                    
+                    C语言结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../语言篇/C递归.html">
+            
+                <a href="../../语言篇/C递归.html">
+            
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../Git体系/Git常用命令.html">
+            
+                <a href="../../Git体系/Git常用命令.html">
+            
+                    
+                    Git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../Git体系/Github和SSH密钥.html">
+            
+                <a href="../../Git体系/Github和SSH密钥.html">
+            
+                    
+                    Github和SSH密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../Gitbook指导/">
+            
+                <a href="../../Gitbook指导/">
+            
+                    
+                    GitBook 使用教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../Gitbook指导/gitbook教程.html">
+            
+                <a href="../../Gitbook指导/gitbook教程.html">
+            
+                    
+                    GitBook 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../Gitbook指导/gitbook语法.html">
+            
+                <a href="../../Gitbook指导/gitbook语法.html">
+            
+                    
+                    GitBook 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.sumoli.work" target="blank" class="gitbook-link">
+            博客主页
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >CGBitmapContext</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id=""> </h1>
+<pre><code>/** &#x83B7;&#x53D6;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x50CF;&#x7D20;&#x5BBD;&#x5EA6;
+ * @note &#x5982;&#x679C; context &#x4E0D;&#x662F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; 0
+ */
+size_t CGBitmapContextGetWidth(CGContextRef cg_nullable context);
+
+/** &#x83B7;&#x53D6;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x50CF;&#x7D20;&#x9AD8;&#x5EA6;
+ * @note &#x5982;&#x679C; context &#x4E0D;&#x662F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; 0
+ */
+size_t CGBitmapContextGetHeight(CGContextRef cg_nullable context);
+
+/** &#x83B7;&#x53D6;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#x7684;&#x6BCF;&#x4E00;&#x884C;&#x5B57;&#x8282;&#x6570;
+ * @note &#x5982;&#x679C; context &#x4E0D;&#x662F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; 0
+ */
+size_t CGBitmapContextGetBytesPerRow(CGContextRef cg_nullable context);
+
+
+/** &#x4F4D;&#x56FE;&#x7684;&#x5185;&#x5B58;&#x5757;&#x4FE1;&#x606F; : ByteOrder &#x6307;&#x5B9A;&#x50CF;&#x7D20;&#x683C;&#x5F0F;&#x7684;&#x5B57;&#x8282;&#x987A;&#x5E8F;
+ *  &#x4F7F;&#x7528; ARGB &#x683C;&#x5F0F;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5B58;&#x50A8;&#x50CF;&#x7D20;&#x6570;&#x636E;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x5FC5;&#x987B;&#x6CE8;&#x610F;&#x5982;&#x4F55;&#x8BFB;&#x53D6;&#x6570;&#x636E;
+ *  &#x5982;&#x679C;&#x4EE3;&#x7801;&#x6CA1;&#x6709;&#x6B63;&#x786E;&#x7F16;&#x5199;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x8BEF;&#x8BFB;&#x6570;&#x636E;&#xFF0C;&#x5BFC;&#x81F4;&#x989C;&#x8272;&#x6216; alpha &#x51FA;&#x73B0;&#x9519;&#x8BEF;
+ */
+typedef CF_OPTIONS(uint32_t, CGBitmapInfo) {
+    kCGBitmapAlphaInfoMask = 0x1F,
+    kCGBitmapFloatInfoMask = 0xF00,
+    kCGBitmapFloatComponents = (1 &lt;&lt; 8),
+    kCGBitmapByteOrderMask     = kCGImageByteOrderMask,
+    kCGBitmapByteOrderDefault  = kCGImageByteOrderDefault,
+    kCGBitmapByteOrder16Little = kCGImageByteOrder16Little,
+    kCGBitmapByteOrder32Little = kCGImageByteOrder32Little,
+    kCGBitmapByteOrder16Big    = kCGImageByteOrder16Big,
+    kCGBitmapByteOrder32Big    = kCGImageByteOrder32Big
+};
+
+/** &#x83B7;&#x53D6;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#x7684; bitmap &#x4FE1;&#x606F;
+ * @note &#x5982;&#x679C; context &#x4E0D;&#x662F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; 0
+ */
+CGBitmapInfo CGBitmapContextGetBitmapInfo(CGContextRef cg_nullable context);
+
+/** &#x83B7;&#x53D6;&#x4E0E;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#x76F8;&#x5173;&#x7684;&#x6570;&#x636E;
+ * @note &#x5982;&#x679C; context &#x4E0D;&#x662F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; NULL
+ */
+void * __nullable CGBitmapContextGetData(CGContextRef cg_nullable context);
+
+
+CF_ASSUME_NONNULL_BEGIN
+
+/* The callback for releasing the data supplied to
+   `CGBitmapContextCreateWithData&apos;. */
+
+typedef void (*CGBitmapContextReleaseDataCallback)(void * __nullable releaseInfo,
+    void * __nullable data);
+
+/* Create a bitmap context. The context draws into a bitmap which is `width&apos;
+   pixels wide and `height&apos; pixels high. The number of components for each
+   pixel is specified by `space&apos;, which may also specify a destination color
+   profile. Note that the only legal case when `space&apos; can be NULL is when
+   alpha is specified as kCGImageAlphaOnly. The number of bits for each
+   component of a pixel is specified by `bitsPerComponent&apos;. The number of bytes
+   per pixel is equal to `(bitsPerComponent * number of components + 7)/8&apos;.
+   Each row of the bitmap consists of `bytesPerRow&apos; bytes, which must be at
+   least `width * bytes per pixel&apos; bytes; in addition, `bytesPerRow&apos; must be
+   an integer multiple of the number of bytes per pixel. `data&apos;, if non-NULL,
+   points to a block of memory at least `bytesPerRow * height&apos; bytes. If `data&apos;
+   is NULL, the context will allocate the data itself; this data will be freed
+   when the context is deallocated. `bitmapInfo&apos; specifies whether the bitmap
+   should contain an alpha channel and how it&apos;s to be generated, along with
+   whether the components are floating-point or integer. If `releaseCallback&apos; is
+   non-NULL, it is called when the context is freed with `releaseInfo&apos; and
+   `data&apos; as arguments. */
+
+CG_EXTERN CGContextRef __nullable CGBitmapContextCreateWithData(
+    void * __nullable data, size_t width, size_t height, size_t bitsPerComponent,
+    size_t bytesPerRow, CGColorSpaceRef cg_nullable space, uint32_t bitmapInfo,
+    CGBitmapContextReleaseDataCallback __nullable releaseCallback,
+    void * __nullable releaseInfo)
+    CG_AVAILABLE_STARTING(10.6, 4.0);
+
+/* Create a bitmap context. The context draws into a bitmap which is `width&apos;
+   pixels wide and `height&apos; pixels high. The number of components for each
+   pixel is specified by `space&apos;, which may also specify a destination color
+   profile.  Note that the only legal case when `space&apos; can be NULL is when
+   alpha is specified as kCGImageAlphaOnly.The number of bits for each component
+   of a pixel is specified by `bitsPerComponent&apos;. The number of bytes per pixel
+   is equal to `(bitsPerComponent * number of components + 7)/8&apos;. Each row of
+   the bitmap consists of `bytesPerRow&apos; bytes, which must be at least
+   `width * bytes per pixel&apos; bytes; in addition, `bytesPerRow&apos; must be an
+   integer multiple of the number of bytes per pixel. `data&apos;, if non-NULL,
+   points to a block of memory at least `bytesPerRow * height&apos; bytes.
+   If `data&apos; is NULL, the data for context is allocated automatically and freed
+   when the context is deallocated. `bitmapInfo&apos; specifies whether the bitmap
+   should contain an alpha channel and how it&apos;s to be generated, along with
+   whether the components are floating-point or integer. */
+
+CG_EXTERN CGContextRef __nullable CGBitmapContextCreate(void * __nullable data,
+    size_t width, size_t height, size_t bitsPerComponent, size_t bytesPerRow,
+    CGColorSpaceRef cg_nullable space, uint32_t bitmapInfo)
+    CG_AVAILABLE_STARTING(10.0, 2.0);
+
+
+
+
+
+
+/* Return the bits per component of the bitmap context `context&apos;, or 0 if
+   `context&apos; is not a bitmap context. */
+
+CG_EXTERN size_t CGBitmapContextGetBitsPerComponent(CGContextRef cg_nullable context)
+    CG_AVAILABLE_STARTING(10.2, 2.0);
+
+/* Return the bits per pixel of the bitmap context `context&apos;, or 0 if
+   `context&apos; is not a bitmap context. */
+
+CG_EXTERN size_t CGBitmapContextGetBitsPerPixel(CGContextRef cg_nullable context)
+    CG_AVAILABLE_STARTING(10.2, 2.0);
+
+
+
+/* Return the color space of the bitmap context `context&apos;, or NULL if
+   `context&apos; is not a bitmap context. */
+
+CG_EXTERN CGColorSpaceRef __nullable CGBitmapContextGetColorSpace(
+    CGContextRef cg_nullable context)
+    CG_AVAILABLE_STARTING(10.2, 2.0);
+
+/* Return the alpha info of the bitmap context `context&apos;, or
+   &quot;kCGImageAlphaNone&quot; if `context&apos; is not a bitmap context. */
+
+CG_EXTERN CGImageAlphaInfo CGBitmapContextGetAlphaInfo(
+    CGContextRef cg_nullable context)
+    CG_AVAILABLE_STARTING(10.2, 2.0);
+
+
+
+/* Return an image containing a snapshot of the bitmap context `context&apos;. If
+   context is not a bitmap context, or if the image cannot be created for
+   any reason, this function returns NULL. This is a &quot;copy&quot; operation ---
+   subsequent changes to context will not affect the contents of the
+   returned image.
+
+   Note that in some cases the copy will actually follow &quot;copy-on-write&quot;
+   semantics, so that the actual physical copy of the bits will only occur
+   if the underlying data in the bitmap context is modified. As a
+   consequence, you may wish to use the resulting image and release it
+   before performing more drawing into the bitmap context; in this way, the
+   actual physical copy of the data may be avoided. */
+
+CG_EXTERN CGImageRef __nullable CGBitmapContextCreateImage(
+    CGContextRef cg_nullable context)
+    CG_AVAILABLE_STARTING(10.4, 2.0);
+
+CF_ASSUME_NONNULL_END
+
+CF_IMPLICIT_BRIDGING_DISABLED
+
+#endif /* CGBITMAPCONTEXT_H_ */
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-11-27 18:09:24
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> 搜索结果 "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有搜索结果 "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="CGContext.html" class="navigation navigation-next navigation-unique" aria-label="Next page: CGContext">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CGBitmapContext","level":"1.3.4.1","depth":3,"next":{"title":"CGContext","level":"1.3.4.2","depth":3,"path":"iOS开发/CoreGraphics/CGContext.md","ref":"iOS开发/CoreGraphics/CGContext.md","articles":[]},"previous":{"title":"CoreGraphics","level":"1.3.4","depth":2,"ref":"","articles":[{"title":"CGBitmapContext","level":"1.3.4.1","depth":3,"path":"iOS开发/CoreGraphics/CGBitmapContext.md","ref":"iOS开发/CoreGraphics/CGBitmapContext.md","articles":[]},{"title":"CGContext","level":"1.3.4.2","depth":3,"path":"iOS开发/CoreGraphics/CGContext.md","ref":"iOS开发/CoreGraphics/CGContext.md","articles":[]},{"title":"CGPath","level":"1.3.4.3","depth":3,"path":"iOS开发/CoreGraphics/CGPath.md","ref":"iOS开发/CoreGraphics/CGPath.md","articles":[]},{"title":"CoreGraphics","level":"1.3.4.4","depth":3,"path":"iOS开发/CoreGraphics/CoreGraphics.md","ref":"iOS开发/CoreGraphics/CoreGraphics.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"iOS开发/CoreGraphics/CGBitmapContext.md","mtime":"2021-11-27T10:09:24.122Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-30T13:10:32.285Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

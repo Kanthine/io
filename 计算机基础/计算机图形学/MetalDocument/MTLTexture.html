@@ -1,0 +1,2090 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MTLTexture API · 个人博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="苏沫漓">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="MTLSampler.html" />
+    
+    
+    <link rel="prev" href="MTLRegion.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../计算机基础.html">
+            
+                <a href="../../计算机基础.html">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../计算机组成篇/计算机概述篇.html">
+            
+                <a href="../../计算机组成篇/计算机概述篇.html">
+            
+                    
+                    第一部分 计算机的组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../计算机组成篇/计算机组成篇.html">
+            
+                <a href="../../计算机组成篇/计算机组成篇.html">
+            
+                    
+                    计算机组成篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../计算机组成篇/计算机计算篇.html">
+            
+                <a href="../../计算机组成篇/计算机计算篇.html">
+            
+                    
+                    计算机计算篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../操作系统篇/操作系统基础篇.html">
+            
+                <a href="../../操作系统篇/操作系统基础篇.html">
+            
+                    
+                    第二部分 操作系统篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../操作系统篇/进程管理篇.html">
+            
+                <a href="../../操作系统篇/进程管理篇.html">
+            
+                    
+                    进程管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../操作系统篇/内存管理篇.html">
+            
+                <a href="../../操作系统篇/内存管理篇.html">
+            
+                    
+                    内存管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../操作系统篇/文件系统篇.html">
+            
+                <a href="../../操作系统篇/文件系统篇.html">
+            
+                    
+                    文件系统篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../操作系统篇/操作系统提升篇.html">
+            
+                <a href="../../操作系统篇/操作系统提升篇.html">
+            
+                    
+                    操作系统提升篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../计算机网络/网络概述篇.html">
+            
+                <a href="../../计算机网络/网络概述篇.html">
+            
+                    
+                    第三部分 网络篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../计算机网络/计算机物理层.html">
+            
+                <a href="../../计算机网络/计算机物理层.html">
+            
+                    
+                    计算机物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../计算机网络/计算机数据链路层.html">
+            
+                <a href="../../计算机网络/计算机数据链路层.html">
+            
+                    
+                    计算机数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../计算机网络/计算机网络层.html">
+            
+                <a href="../../计算机网络/计算机网络层.html">
+            
+                    
+                    计算机网络层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../计算机网络/计算机传输层.html">
+            
+                <a href="../../计算机网络/计算机传输层.html">
+            
+                    
+                    计算机传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../../计算机网络/计算机应用层.html">
+            
+                <a href="../../计算机网络/计算机应用层.html">
+            
+                    
+                    计算机应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.5.1" data-path="../../计算机网络/HTTP协议.html">
+            
+                <a href="../../计算机网络/HTTP协议.html">
+            
+                    
+                    HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.2" data-path="../../计算机网络/HTTPS协议.html">
+            
+                <a href="../../计算机网络/HTTPS协议.html">
+            
+                    
+                    HTTPS协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    第四部分 图形学基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../矩阵的变换.html">
+            
+                <a href="../矩阵的变换.html">
+            
+                    
+                    矩阵的变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../三维空间的观察.html">
+            
+                <a href="../三维空间的观察.html">
+            
+                    
+                    三维空间的观察
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Metal简介.html">
+            
+                <a href="Metal简介.html">
+            
+                    
+                    Metal API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../iOS开发/Runtime/Objective_C简介.html">
+            
+                <a href="../../../iOS开发/Runtime/Objective_C简介.html">
+            
+                    
+                    Runtime
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../../iOS开发/Runtime/OC之Blocks.html">
+            
+                <a href="../../../iOS开发/Runtime/OC之Blocks.html">
+            
+                    
+                    OC之Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../../iOS开发/Runtime/OC内存管理.html">
+            
+                <a href="../../../iOS开发/Runtime/OC内存管理.html">
+            
+                    
+                    OC内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                <a href="../../../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                    
+                    OC内存管理之引用计数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                <a href="../../../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                    
+                    +load方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../../../iOS开发/Runtime/TaggedPointer.html">
+            
+                <a href="../../../iOS开发/Runtime/TaggedPointer.html">
+            
+                    
+                    TaggedPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../../../iOS开发/Runtime/方法签名.html">
+            
+                <a href="../../../iOS开发/Runtime/方法签名.html">
+            
+                    
+                    消息与方法签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../../../iOS开发/Runtime/OC_方法交换.html">
+            
+                <a href="../../../iOS开发/Runtime/OC_方法交换.html">
+            
+                    
+                    方法交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../../../iOS开发/Runtime/三次补救措施.html">
+            
+                <a href="../../../iOS开发/Runtime/三次补救措施.html">
+            
+                    
+                    方法不被识别的补救
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../../../iOS开发/Runtime/编译objc4.html">
+            
+                <a href="../../../iOS开发/Runtime/编译objc4.html">
+            
+                    
+                    编译objc4备忘录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="../../../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                <a href="../../../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                    
+                    Runtime函数库中关于协议Protocol的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="../../../iOS开发/Runtime/Runtime_Property.html">
+            
+                <a href="../../../iOS开发/Runtime/Runtime_Property.html">
+            
+                    
+                    Runtime函数库中关于属性与变量的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.12" data-path="../../../iOS开发/Runtime/Runtime_Instance.html">
+            
+                <a href="../../../iOS开发/Runtime/Runtime_Instance.html">
+            
+                    
+                    Runtime函数库中关于实例对象的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.13" data-path="../../../iOS开发/Runtime/Runtime_Class.html">
+            
+                <a href="../../../iOS开发/Runtime/Runtime_Class.html">
+            
+                    
+                    Runtime函数库中关于Class的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.14" data-path="../../../iOS开发/Runtime/Runtime_Method.html">
+            
+                <a href="../../../iOS开发/Runtime/Runtime_Method.html">
+            
+                    
+                    Runtime函数库中关于 Class 的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../iOS开发/CoreText/CoteText概述.html">
+            
+                <a href="../../../iOS开发/CoreText/CoteText概述.html">
+            
+                    
+                    CoreText
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                <a href="../../../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                    
+                    CoteText排版与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                <a href="../../../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                    
+                    CTLineRef的函数库及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                <a href="../../../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                    
+                    图文混排的关键：CTRunRef 与 CTRunDelegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    CoreImage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                <a href="../../../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                    
+                    图像特征CIFeature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                <a href="../../../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                    
+                    图片检测CIDetector
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    CoreGraphics
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../../iOS开发/CoreGraphics/CGBitmapContext.html">
+            
+                <a href="../../../iOS开发/CoreGraphics/CGBitmapContext.html">
+            
+                    
+                    CGBitmapContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../../iOS开发/CoreGraphics/CGContext.html">
+            
+                <a href="../../../iOS开发/CoreGraphics/CGContext.html">
+            
+                    
+                    CGContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../../iOS开发/CoreGraphics/CGPath.html">
+            
+                <a href="../../../iOS开发/CoreGraphics/CGPath.html">
+            
+                    
+                    CGPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../../../iOS开发/CoreGraphics/CoreGraphics.html">
+            
+                <a href="../../../iOS开发/CoreGraphics/CoreGraphics.html">
+            
+                    
+                    CoreGraphics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Metal调试.html">
+            
+                <a href="Metal调试.html">
+            
+                    
+                    Metal 实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="Metal的简单计算.html">
+            
+                <a href="Metal的简单计算.html">
+            
+                    
+                    内核计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="Metal绘制三角形.html">
+            
+                <a href="Metal绘制三角形.html">
+            
+                    
+                    绘制三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="简单的纹理贴图.md">
+            
+                <span>
+            
+                    
+                    纹理贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="CPU与GPU协调工作.html">
+            
+                <a href="CPU与GPU协调工作.html">
+            
+                    
+                    CPU与GPU协调工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="深度测试.html">
+            
+                <a href="深度测试.html">
+            
+                    
+                    深度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="读取纹理像素.md">
+            
+                <span>
+            
+                    
+                    线程与线程组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="离屏渲染.html">
+            
+                <a href="离屏渲染.html">
+            
+                    
+                    自定义MTLRenderPassDescriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Metal简介.html">
+            
+                <a href="Metal简介.html">
+            
+                    
+                    Metal API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="MTKView.html">
+            
+                <a href="MTKView.html">
+            
+                    
+                    MTKView API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="MTLDevice.html">
+            
+                <a href="MTLDevice.html">
+            
+                    
+                    MTLDevice API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="MDLMesh.html">
+            
+                <a href="MDLMesh.html">
+            
+                    
+                    MDLMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="MTKModel.html">
+            
+                <a href="MTKModel.html">
+            
+                    
+                    MTKMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="MDLVertexDescriptor.html">
+            
+                <a href="MDLVertexDescriptor.html">
+            
+                    
+                    MDLVertexDescriptor API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="MTLRenderPass.html">
+            
+                <a href="MTLRenderPass.html">
+            
+                    
+                    MTLRenderPass API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="MTLFunction.html">
+            
+                <a href="MTLFunction.html">
+            
+                    
+                    MTLFunction API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.8" data-path="MTLLibrary.html">
+            
+                <a href="MTLLibrary.html">
+            
+                    
+                    MTLLibrary API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.9" data-path="MTLRegion.html">
+            
+                <a href="MTLRegion.html">
+            
+                    
+                    MTLRegion API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6.10" data-path="MTLTexture.html">
+            
+                <a href="MTLTexture.html">
+            
+                    
+                    MTLTexture API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.11" data-path="MTLSampler.html">
+            
+                <a href="MTLSampler.html">
+            
+                    
+                    MTLSampler API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.12" data-path="MTLRenderCommandEncoder.html">
+            
+                <a href="MTLRenderCommandEncoder.html">
+            
+                    
+                    MTLRenderCommandEncoder API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" >
+            
+                <span>
+            
+                    
+                    杂记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="../../../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                <a href="../../../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                    
+                    iOS渲染机制初窥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="../../../iOS开发/杂记/响应链.html">
+            
+                <a href="../../../iOS开发/杂记/响应链.html">
+            
+                    
+                    响应链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3" data-path="../../../iOS开发/杂记/并发编程.html">
+            
+                <a href="../../../iOS开发/杂记/并发编程.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.3.1" data-path="../../../iOS开发/杂记/OC之Thread.html">
+            
+                <a href="../../../iOS开发/杂记/OC之Thread.html">
+            
+                    
+                    线程NSThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3.2" data-path="../../../iOS开发/杂记/OC之NSOperation.html">
+            
+                <a href="../../../iOS开发/杂记/OC之NSOperation.html">
+            
+                    
+                    任务队列NSOperation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3.3" data-path="../../../iOS开发/杂记/OC之GCD.html">
+            
+                <a href="../../../iOS开发/杂记/OC之GCD.html">
+            
+                    
+                    GCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3.4" data-path="../../../iOS开发/杂记/OC之锁.html">
+            
+                <a href="../../../iOS开发/杂记/OC之锁.html">
+            
+                    
+                    锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4" data-path="../../../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                <a href="../../../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                    
+                    OC的深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.5" data-path="../../../其它/sdk_cocoapods.html">
+            
+                <a href="../../../其它/sdk_cocoapods.html">
+            
+                    
+                    iOS 使用 cocoapods 创建组件化库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.6" data-path="../../../iOS开发/杂记/内存优化.html">
+            
+                <a href="../../../iOS开发/杂记/内存优化.html">
+            
+                    
+                    一些内存优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.7" data-path="../../../iOS开发/杂记/内存泄露.html">
+            
+                <a href="../../../iOS开发/杂记/内存泄露.html">
+            
+                    
+                    一些内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.8" data-path="../../../iOS开发/杂记/OC之处理错误.html">
+            
+                <a href="../../../iOS开发/杂记/OC之处理错误.html">
+            
+                    
+                    一些错误处理机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.9" data-path="../../../iOS开发/杂记/刘海屏适配.html">
+            
+                <a href="../../../iOS开发/杂记/刘海屏适配.html">
+            
+                    
+                    刘海屏适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.10" data-path="../../../iOS开发/杂记/获取WIFI信息.html">
+            
+                <a href="../../../iOS开发/杂记/获取WIFI信息.html">
+            
+                    
+                    获取WIFI信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    开发语言
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../../语言篇/C++学习入门篇.html">
+            
+                <a href="../../../语言篇/C++学习入门篇.html">
+            
+                    
+                    C++学习入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../../语言篇/C++学习封装篇.html">
+            
+                <a href="../../../语言篇/C++学习封装篇.html">
+            
+                    
+                    C++学习封装篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../../语言篇/C++学习继承篇.html">
+            
+                <a href="../../../语言篇/C++学习继承篇.html">
+            
+                    
+                    C++学习继承篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../../语言篇/C++学习多态篇.html">
+            
+                <a href="../../../语言篇/C++学习多态篇.html">
+            
+                    
+                    C++学习多态篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    C
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../../语言篇/C数组.html">
+            
+                <a href="../../../语言篇/C数组.html">
+            
+                    
+                    C语言数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../../语言篇/C结构.html">
+            
+                <a href="../../../语言篇/C结构.html">
+            
+                    
+                    C语言结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../../语言篇/C递归.html">
+            
+                <a href="../../../语言篇/C递归.html">
+            
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../../Git体系/Git常用命令.html">
+            
+                <a href="../../../Git体系/Git常用命令.html">
+            
+                    
+                    Git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../../Git体系/Github和SSH密钥.html">
+            
+                <a href="../../../Git体系/Github和SSH密钥.html">
+            
+                    
+                    Github和SSH密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../../Gitbook指导/">
+            
+                <a href="../../../Gitbook指导/">
+            
+                    
+                    GitBook 使用教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../../Gitbook指导/gitbook教程.html">
+            
+                <a href="../../../Gitbook指导/gitbook教程.html">
+            
+                    
+                    GitBook 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../../Gitbook指导/gitbook语法.html">
+            
+                <a href="../../../Gitbook指导/gitbook语法.html">
+            
+                    
+                    GitBook 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.sumoli.work" target="blank" class="gitbook-link">
+            博客主页
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >MTLTexture API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7EB9;&#x7406;-mtltexture"><b></b>&#x7EB9;&#x7406; MTLTexture</a></li><ul><li><span class="title-icon "></span><a href="#mtltexture"><b></b>MTLTexture</a></li></ul></ul></div><h1 id="&#x7EB9;&#x7406;-mtltexture"><a name="&#x7EB9;&#x7406;-mtltexture" class="anchor-navigation-ex-anchor" href="#&#x7EB9;&#x7406;-mtltexture"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EB9;&#x7406; <code>MTLTexture</code></h1>
+<pre><code>// &#x63CF;&#x8FF0;&#x6BCF;&#x4E2A;&#x56FE;&#x50CF;&#x7684;&#x7EF4;&#x5EA6;&#xFF0C;&#x5982;&#x679C;&#x591A;&#x4E2A;&#x56FE;&#x50CF;&#x88AB;&#x5B89;&#x6392;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x6216;&#x7ACB;&#x65B9;&#x4F53;
+typedef NS_ENUM(NSUInteger, MTLTextureType) {
+    MTLTextureType1D = 0,
+    MTLTextureType1DArray = 1,
+    MTLTextureType2D = 2,
+    MTLTextureType2DArray = 3,
+    MTLTextureType2DMultisample = 4,
+    MTLTextureTypeCube = 5,
+    MTLTextureTypeCubeArray = 6,
+    MTLTextureType3D = 7,
+    MTLTextureType2DMultisampleArray = 8,
+    MTLTextureTypeTextureBuffer  = 9
+};
+
+typedef NS_ENUM(uint8_t, MTLTextureSwizzle) {
+    MTLTextureSwizzleZero = 0,
+    MTLTextureSwizzleOne = 1,
+    MTLTextureSwizzleRed = 2,
+    MTLTextureSwizzleGreen = 3,
+    MTLTextureSwizzleBlue = 4,
+    MTLTextureSwizzleAlpha = 5,
+};
+
+typedef struct {
+    MTLTextureSwizzle red;
+    MTLTextureSwizzle green;
+    MTLTextureSwizzle blue;
+    MTLTextureSwizzle alpha;
+} MTLTextureSwizzleChannels;
+
+MTLTextureSwizzleChannels MTLTextureSwizzleChannelsMake(MTLTextureSwizzle r, MTLTextureSwizzle g, MTLTextureSwizzle b, MTLTextureSwizzle a) {
+    MTLTextureSwizzleChannels swizzle;
+    swizzle.red = r;
+    swizzle.green = g;
+    swizzle.blue = b;
+    swizzle.alpha = a;
+    return swizzle;
+}
+
+#define MTLTextureSwizzleChannelsDefault (MTLTextureSwizzleChannelsMake(MTLTextureSwizzleRed, MTLTextureSwizzleGreen, MTLTextureSwizzleBlue, MTLTextureSwizzleAlpha))
+
+/// &#x58F0;&#x660E;&#x7EB9;&#x7406;&#x5728;&#x5176;&#x751F;&#x547D;&#x5468;&#x671F;&#x5185;&#x5C06;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x591A;&#x4E2A;&#x503C;&#x6309;&#x4F4D;&#x7EC4;&#x5408;&#x4F7F;&#x7528;, &#x7A0B;&#x5E8F;&#x53EF;&#x80FD;&#x4F7F;&#x7528;&#x8BE5;&#x4FE1;&#x606F;&#x505A;&#x4E00;&#x4E9B;&#x6027;&#x80FD;&#x4F18;&#x5316;
+typedef NS_OPTIONS(NSUInteger, MTLTextureUsage) {
+    MTLTextureUsageUnknown         = 0x0000, /// &#x7EB9;&#x7406;&#x4F7F;&#x7528;&#x7684;&#x9009;&#x9879;&#x662F;&#x672A;&#x77E5;&#x7684;
+    MTLTextureUsageShaderRead      = 0x0001, /// &#x7740;&#x8272;&#x5668;&#x5728;&#x6E32;&#x67D3;&#x7684;&#x4EFB;&#x4F55;&#x9636;&#x6BB5;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x7EB9;&#x7406;
+    MTLTextureUsageShaderWrite     = 0x0002, /// &#x7EB9;&#x7406;&#x5C06;&#x88AB;&#x8BA1;&#x7B97;&#x7740;&#x8272;&#x5668;&#x5199;&#x5165;
+    MTLTextureUsageRenderTarget    = 0x0004, /// &#x7EB9;&#x7406;&#x5C06;&#x5728;&#x6E32;&#x67D3;&#x901A;&#x9053;&#x4E2D;&#x7528;&#x4F5C;&#x989C;&#x8272;&#x3001;&#x6DF1;&#x5EA6;&#x6216;&#x6A21;&#x677F;&#x6E32;&#x67D3;&#x76EE;&#x6807;
+    MTLTextureUsagePixelFormatView = 0x0010, /// &#x7EB9;&#x7406;&#x5C06;&#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x65B0;&#x7EB9;&#x7406;&#x7684;&#x503C;
+};
+
+typedef NS_ENUM(NSInteger, MTLTextureCompressionType) {
+    MTLTextureCompressionTypeLossless = 0,
+    MTLTextureCompressionTypeLossy = 1,
+};
+
+@interface MTLTextureDescriptor : NSObject &lt;NSCopying&gt;
+
+/*!
+ @method texture2DDescriptorWithPixelFormat:width:height:mipmapped:
+ @abstract Create a TextureDescriptor for a common 2D texture.
+ */
++ (MTLTextureDescriptor*)texture2DDescriptorWithPixelFormat:(MTLPixelFormat)pixelFormat width:(NSUInteger)width height:(NSUInteger)height mipmapped:(BOOL)mipmapped;
+
+/*!
+ @method textureCubeDescriptorWithPixelFormat:size:mipmapped:
+ @abstract Create a TextureDescriptor for a common Cube texture.
+ */
++ (MTLTextureDescriptor*)textureCubeDescriptorWithPixelFormat:(MTLPixelFormat)pixelFormat size:(NSUInteger)size mipmapped:(BOOL)mipmapped;
+
+/*!
+ @method textureBufferDescriptorWithPixelFormat:width:resourceOptions:usage:
+ @abstract Create a TextureDescriptor for a common texture buffer.
+ */
++ (MTLTextureDescriptor*)textureBufferDescriptorWithPixelFormat:(MTLPixelFormat)pixelFormat
+                                                          width:(NSUInteger)width
+                                                resourceOptions:(MTLResourceOptions)resourceOptions
+                                                          usage:(MTLTextureUsage)usage API_AVAILABLE(macos(10.14), ios(12.0));
+
+/*!
+ @property type
+ @abstract The overall type of the texture to be created. The default value is MTLTextureType2D.
+ */
+@property (readwrite, nonatomic) MTLTextureType textureType;
+
+/*!
+ @property pixelFormat
+ @abstract The pixel format to use when allocating this texture. This is also the pixel format that will be used to when the caller writes or reads pixels from this texture. The default value is MTLPixelFormatRGBA8Unorm.
+ */
+@property (readwrite, nonatomic) MTLPixelFormat pixelFormat;
+
+/*!
+ @property width
+ @abstract The width of the texture to create. The default value is 1.
+ */
+@property (readwrite, nonatomic) NSUInteger width;
+
+/*!
+ @property height
+ @abstract The height of the texture to create. The default value is 1.
+ @discussion height If allocating a 1D texture, height must be 1.
+ */
+@property (readwrite, nonatomic) NSUInteger height;
+
+/*!
+ @property depth
+ @abstract The depth of the texture to create. The default value is 1.
+ @discussion depth When allocating any texture types other than 3D, depth must be 1.
+ */
+@property (readwrite, nonatomic) NSUInteger depth;
+
+/*!
+ @property mipmapLevelCount
+ @abstract The number of mipmap levels to allocate. The default value is 1.
+ @discussion When creating Buffer and Multisample textures, mipmapLevelCount must be 1.
+ */
+@property (readwrite, nonatomic) NSUInteger mipmapLevelCount;
+
+/*!
+ @property sampleCount
+ @abstract The number of samples in the texture to create. The default value is 1.
+ @discussion When creating Buffer textures sampleCount must be 1. Implementations may round sample counts up to the next supported value.
+ */
+@property (readwrite, nonatomic) NSUInteger sampleCount;
+
+/*!
+ @property arrayLength
+ @abstract The number of array elements to allocate. The default value is 1.
+ @discussion When allocating any non-Array texture type, arrayLength has to be 1. Otherwise it must be set to something greater than 1 and less than 2048.
+ */
+@property (readwrite, nonatomic) NSUInteger arrayLength;
+
+/*!
+ @property resourceOptions
+ @abstract Options to control memory allocation parameters, etc.
+ @discussion Contains a packed set of the storageMode, cpuCacheMode and hazardTrackingMode properties.
+ */
+@property (readwrite, nonatomic) MTLResourceOptions resourceOptions;
+
+/*!
+ @property cpuCacheMode
+ @abstract Options to specify CPU cache mode of texture resource.
+ */
+@property (readwrite, nonatomic) MTLCPUCacheMode cpuCacheMode API_AVAILABLE(macos(10.11), ios(9.0));
+
+/*!
+ @property storageMode
+ @abstract To specify storage mode of texture resource.
+ */
+@property (readwrite, nonatomic) MTLStorageMode storageMode API_AVAILABLE(macos(10.11), ios(9.0));
+
+
+/*!
+ @property hazardTrackingMode
+ @abstract Set hazard tracking mode for the texture. The default value is MTLHazardTrackingModeDefault.
+ @discussion
+ For resources created from the device, MTLHazardTrackingModeDefault is treated as MTLHazardTrackingModeTracked.
+ For resources created on a heap, MTLHazardTrackingModeDefault is treated as the hazardTrackingMode of the heap itself.
+ In either case, it is possible to opt-out of hazard tracking by setting MTLHazardTrackingModeUntracked.
+ It is not possible to opt-in to hazard tracking on a heap that itself is not hazard tracked.
+ For optimal performance, perform hazard tracking manually through MTLFence or MTLEvent instead.
+ */
+@property (readwrite, nonatomic) MTLHazardTrackingMode hazardTrackingMode API_AVAILABLE(macos(10.15), ios(13.0));
+
+/*!
+ @property usage
+ @abstract Description of texture usage
+ */
+@property (readwrite, nonatomic) MTLTextureUsage usage API_AVAILABLE(macos(10.11), ios(9.0));
+
+/*!
+ @property allowGPUOptimizedContents
+ @abstract Allow GPU-optimization for the contents of this texture. The default value is true.
+ @discussion Useful for opting-out of GPU-optimization when implicit optimization (e.g. RT writes) is regressing CPU-read-back performance. See the documentation for optimizeContentsForGPUAccess: and optimizeContentsForCPUAccess: APIs.
+ */
+@property (readwrite, nonatomic) BOOL allowGPUOptimizedContents API_AVAILABLE(macos(10.14), ios(12.0));
+
+/*!
+ @property compressionType
+ @abstract Controls how the texture contents will be compressed when written to by the GPU. Compression can be used to reduce the bandwidth usage and storage requirements of a texture.
+ @discussion The default compression type is lossless, meaning that no loss of precision will occur when the texture content is modified.
+ Losslessly compressed textures may benefit from reduced bandwidth usage when regions of correlated color values are written, but do not benefit from reduced storage requirements.
+ Enabling lossy compression for textures that can tolerate some precision loss will guarantee both reduced bandwidth usage and reduced storage requirements.
+ The amount of precision loss depends on the color values stored; regions with correlated color values can be represented with limited to no precision loss, whereas regions with unrelated color values suffer more precision loss.
+ Enabling lossy compression requires both storageMode == MTLStorageModePrivate, allowGPUOptimizedContents == YES, and cannot be combined with either MTLTextureUsagePixelFormatView, MTLTextureUsageShaderWrite, MTLTextureType1D(Array) or MTLTextureTypeTextureBuffer.
+ Moreover, not all MTLPixelFormat are supported with lossy compression, verify that the MTLDevice&apos;s GPU family supports the lossy compression feature for the pixelFormat requested.
+ Set allowGPUOptimizedContents to NO to opt out of both lossless and lossy compression; such textures do not benefit from either reduced bandwidth usage or reduced storage requirements, but have predictable CPU readback performance.
+ */
+@property (readwrite, nonatomic) MTLTextureCompressionType compressionType API_AVAILABLE(macos(12.0), ios(15.0));
+
+/*!
+ @property swizzle
+ @abstract Channel swizzle to use when reading or sampling from the texture, the default value is MTLTextureSwizzleChannelsDefault.
+ */
+@property (readwrite, nonatomic) MTLTextureSwizzleChannels swizzle API_AVAILABLE(macos(10.15), ios(13.0));
+
+@end
+</code></pre><h2 id="mtltexture"><a name="mtltexture" class="anchor-navigation-ex-anchor" href="#mtltexture"><i class="fa fa-link" aria-hidden="true"></i></a>MTLTexture</h2>
+<p>&#x7EB9;&#x7406; <code>MTLTexture</code> &#x8868;&#x793A;&#x4E00;&#x7EF4;&#x3001;&#x4E8C;&#x7EF4;&#x6216;&#x8005;&#x4E09;&#x7EF4;&#x56FE;&#x50CF;&#x7684;&#x96C6;&#x5408;:</p>
+<ul>
+<li>&#x8BE5;&#x7EB9;&#x7406;&#x5305;&#x542B;&#x4E00;&#x7EC4; <code>mipmap</code>&#x56FE;&#x50CF;&#xFF1B;</li>
+<li>&#x5982;&#x679C;&#x6709;&#x591A;&#x7EC4;<code>mipmap</code>&#x56FE;&#x50CF;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x7EC4;<code>mipmap</code> &#x90FD;&#x88AB;&#x79F0;&#x4E3A;&#x7EB9;&#x7406;&#x7684;&#x4E00;&#x4E2A;&#x5207;&#x7247; <code>slice</code>;</li>
+</ul>
+<p>&#x7EB9;&#x7406;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x56FE;&#x50CF;&#x90FD;&#x662F; 1D&#x3001;2D&#x3001;2DMultisample&#x6216;3D&#x56FE;&#x50CF;&#xFF1B;1D&#x3001;2D&#x3001;2DMultisample &#x548C; 3D &#x7EB9;&#x7406;&#x90FD;&#x6709;&#x5355;&#x4E2A; <code>slice</code>,&#x6BCF;&#x4E2A; <code>slice</code> &#x90FD;&#x662F;&#x4E00;&#x7EC4;&#x5143;&#x7D20;;</p>
+<p>&#x7ACB;&#x65B9;&#x4F53;&#x7EB9;&#x7406;&#x603B;&#x662F;&#x6709; 6 &#x4E2A;<code>slice</code>&#xFF1B;&#x5728; <code>CubeArray</code> &#x7EB9;&#x7406;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E00;&#x7EC4;6&#x4E2A;&#x5207;&#x7247;&#x90FD;&#x662F;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x5927;&#x591A;&#x6570;&#x5728;&#x7EB9;&#x7406;&#x4E2D;&#x64CD;&#x4F5C;&#x5355;&#x4E2A;&#x56FE;&#x50CF;&#x7684; API &#x90FD;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x5207;&#x7247;&#x7684;&#x5143;&#x7EC4;&#x548C;&#x8BE5;&#x5207;&#x7247;&#x4E2D;&#x7684; MipmapLevel &#x6765;&#x5904;&#x7406;&#x8FD9;&#x4E9B;&#x56FE;&#x50CF;&#x7684;&#x3002;</p>
+<pre><code>@protocol MTLTexture &lt;MTLResource&gt;
+
+/*!
+ @property rootResource
+ @abstract The resource this texture was created from. It may be a texture or a buffer. If this texture is not reusing storage of another MTLResource, then nil is returned.
+ */
+@property (nullable, readonly) id &lt;MTLResource&gt; rootResource;
+
+/*!
+ @property parentTexture
+ @abstract The texture this texture view was created from, or nil if this is not a texture view or it was not created from a texture.
+ */
+@property (nullable, readonly) id &lt;MTLTexture&gt; parentTexture;
+
+/*!
+ @property parentRelativeLevel
+ @abstract The base level of the texture this texture view was created from, or 0 if this is not a texture view.
+ */
+@property (readonly) NSUInteger parentRelativeLevel;
+
+/*!
+ @property parentRelativeSlice
+ @abstract The base slice of the texture this texture view was created from, or 0 if this is not a texture view.
+ */
+@property (readonly) NSUInteger parentRelativeSlice;
+
+/*!
+ @property buffer
+ @abstract The buffer this texture view was created from, or nil if this is not a texture view or it was not created from a buffer.
+ */
+@property (nullable, readonly) id &lt;MTLBuffer&gt; buffer;
+
+/*!
+ @property bufferOffset
+ @abstract The offset of the buffer this texture view was created from, or 0 if this is not a texture view.
+ */
+@property (readonly) NSUInteger bufferOffset;
+
+/// &#x521B;&#x5EFA;&#x7EB9;&#x7406;&#x89C6;&#x56FE;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x7684; bytesPerRow&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x662F;&#x7EB9;&#x7406;&#x89C6;&#x56FE;&#x5219;&#x4E3A; 0
+@property (readonly) NSUInteger bufferBytesPerRow;
+
+
+/*!
+ @property iosurface
+ @abstract If this texture was created from an IOSurface, this returns a reference to that IOSurface. iosurface is nil if this texture was not created from an IOSurface.
+ */
+@property (nullable, readonly) IOSurfaceRef iosurface;
+
+/*!
+ @property iosurfacePlane
+ @abstract If this texture was created from an IOSurface, this returns the plane of the IOSurface from which the texture was created. iosurfacePlane is 0 if this texture was not created from an IOSurface.
+ */
+@property (readonly) NSUInteger iosurfacePlane;
+
+/// &#x7EB9;&#x7406;&#x7C7B;&#x578B;
+@property (readonly) MTLTextureType textureType;
+
+/// &#x7EB9;&#x7406;&#x5185;&#x5BB9;&#x7684;&#x50CF;&#x7D20;&#x683C;&#x5F0F;
+@property (readonly) MTLPixelFormat pixelFormat;
+
+/// MTLTexture&#x5B9E;&#x4F8B;&#x7684;&#x50CF;&#x7D20;&#x5BBD;&#x5EA6;
+@property (readonly) NSUInteger width;
+
+/// MTLTexture&#x5B9E;&#x4F8B;&#x7684;&#x50CF;&#x7D20;&#x9AD8;&#x5EA6;&#xFF1B; &#x5982;&#x679C;&#x7EB9;&#x7406;&#x662F; 1D&#xFF0C;&#x9AD8;&#x5EA6;&#x662F; 1
+@property (readonly) NSUInteger height;
+
+/// MTLTexture&#x5B9E;&#x4F8B;&#x7684;&#x50CF;&#x7D20;&#x6DF1;&#x5EA6;&#xFF1B; &#x5982;&#x679C;&#x7EB9;&#x7406;&#x4E0D;&#x662F; 3D&#xFF0C;&#x6DF1;&#x5EA6;&#x662F; 1
+@property (readonly) NSUInteger depth;
+
+/*!
+ @property mipmapLevelCount
+ @abstract The number of mipmap levels in each slice of this MTLTexture.
+ */
+@property (readonly) NSUInteger mipmapLevelCount;
+
+/*!
+ @property sampleCount
+ @abstract The number of samples in each pixel of this MTLTexture.
+ @discussion If this texture is any type other than 2DMultisample, samples is 1.
+ */
+@property (readonly) NSUInteger sampleCount;
+
+/*!
+ @property arrayLength
+ @abstract The number of array elements in this MTLTexture.
+ @discussion For non-Array texture types, arrayLength is 1.
+ */
+@property (readonly) NSUInteger arrayLength;
+
+/*!
+ @property usage
+ @abstract Description of texture usage.
+ */
+@property (readonly) MTLTextureUsage usage;
+
+
+/*!
+ @property framebufferOnly
+ @abstract If YES, this texture can only be used with a MTLAttachmentDescriptor, and cannot be used as a texture argument for MTLRenderCommandEncoder, MTLBlitCommandEncoder, or MTLComputeCommandEncoder. Furthermore, when this property&apos;s value is YES, readPixels/writePixels may not be used with this texture.
+ @discussion Textures obtained from CAMetalDrawables may have this property set to YES, depending on the value of frameBufferOnly passed to their parent CAMetalLayer. Textures created directly by the application will not have any restrictions.
+ */
+@property (readonly, getter = isFramebufferOnly) BOOL framebufferOnly;
+
+/*!
+ @property firstMipmapInTail
+ @abstract For sparse textures this property returns index of first mipmap that is packed in tail.
+ Mapping this mipmap level will map all subsequent mipmap levels.
+ */
+@property (readonly) NSUInteger firstMipmapInTail;
+
+/*!
+ @property tailSizeInBytes
+ @abstract Amount of memory in bytes required to map sparse texture tail.
+ */
+@property (readonly) NSUInteger tailSizeInBytes;
+
+@property (readonly) BOOL isSparse;
+
+/*!
+ @property allowGPUOptimizedContents
+ @abstract Allow GPU-optimization for the contents texture. The default value is true.
+ @discussion Useful for opting-out of GPU-optimization when implicit optimization (e.g. RT writes) is regressing CPU-read-back performance. See the documentation for optimizeContentsForGPUAccess: and optimizeContentsForCPUAccess: APIs.
+ */
+@property (readonly) BOOL allowGPUOptimizedContents;
+
+/// &#x7EB9;&#x7406;&#x7684;&#x538B;&#x7F29;&#x7C7B;&#x578B;
+@property (readonly) MTLTextureCompressionType compressionType;
+
+/*!
+ @method getBytes:bytesPerRow:bytesPerImage:fromRegion:mipmapLevel:slice:
+ @abstract Copies a block of pixels from a texture slice into the application&apos;s memory.
+ */
+- (void)getBytes:(void *)pixelBytes bytesPerRow:(NSUInteger)bytesPerRow bytesPerImage:(NSUInteger)bytesPerImage fromRegion:(MTLRegion)region mipmapLevel:(NSUInteger)level slice:(NSUInteger)slice;
+
+/*!
+ @method replaceRegion:mipmapLevel:slice:withBytes:bytesPerRow:bytesPerImage:
+ @abstract Copy a block of pixel data from the caller&apos;s pointer into a texture slice.
+ */
+- (void)replaceRegion:(MTLRegion)region mipmapLevel:(NSUInteger)level slice:(NSUInteger)slice withBytes:(const void *)pixelBytes bytesPerRow:(NSUInteger)bytesPerRow bytesPerImage:(NSUInteger)bytesPerImage;
+
+/*!
+ @method getBytes:bytesPerRow:fromRegion:mipmapLevel:
+ @abstract Convenience for getBytes:bytesPerRow:bytesPerImage:fromRegion:mipmapLevel:slice: that doesn&apos;t require slice related arguments
+ */
+- (void)getBytes:(void *)pixelBytes bytesPerRow:(NSUInteger)bytesPerRow fromRegion:(MTLRegion)region mipmapLevel:(NSUInteger)level;
+
+/** &#x5C06;&#x4E00;&#x4E2A;&#x50CF;&#x7D20;&#x5757;&#x62F7;&#x8D1D;&#x5230;&#x7EB9;&#x7406; slice 0 &#x4E2D;
+ * @discussion &#x8BE5;&#x65B9;&#x6CD5;&#x5728; CPU &#x4E0A;&#x8FD0;&#x884C;&#xFF0C;&#x5E76;&#x7ACB;&#x5373;&#x5C06;&#x50CF;&#x7D20;&#x6570;&#x636E;&#x590D;&#x5236;&#x5230;&#x7EB9;&#x7406;&#x4E2D;&#xFF1B;
+ *             &#x6B64;&#x65F6;&#x4E0D;&#x5141;&#x8BB8;&#x4EFB;&#x4F55; GPU &#x540C;&#x6B65;&#x8BBF;&#x95EE;&#x8BE5;&#x7EB9;&#x7406;&#xFF1A;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x7F13;&#x51B2;&#x533A;&#x5305;&#x542B;&#x5BF9;&#x8BE5;&#x7EB9;&#x7406;&#x7684;&#x8BFB;&#x3001;&#x5199;&#x64CD;&#x4F5C;&#xFF0C;&#x5FC5;&#x987B;&#x786E;&#x4FDD;&#x5728;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x4E4B;&#x524D;&#x5B8C;&#x6210;&#x8FD9;&#x4E9B;&#x64CD;&#x4F5C;&#xFF1B;
+ *                   &#x53EF;&#x4EE5;&#x4F7F;&#x7528; -addCompletedHandler: &#x3001;-waitUntilCompleted &#x7B49;&#x65B9;&#x6CD5;&#x6216;&#x81EA;&#x5B9A;&#x4E49;&#x4FE1;&#x53F7;&#x91CF;&#x6765;&#x8868;&#x793A;&#x547D;&#x4EE4;&#x7F13;&#x51B2;&#x533A;&#x5DF2;&#x5B8C;&#x6210;&#x6267;&#x884C;&#xFF1B;
+ * @discussion  &#x5982;&#x679C;&#x7EB9;&#x7406;&#x56FE;&#x50CF;&#x5177;&#x6709;&#x538B;&#x7F29;&#x7684;&#x50CF;&#x7D20;&#x683C;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x5199;&#x5165;&#x5185;&#x5B58;&#x5BF9;&#x9F50;&#x533A;&#x57DF;&#xFF1B;
+ *              &#x5982;&#x679C; region &#x7684;&#x7EF4;&#x5EA6;&#x5927;&#x5C0F;&#x4E0D;&#x662F;&#x5757;&#x5927;&#x5C0F;&#x7684;&#x500D;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x7CFB;&#x7EDF;&#x5185;&#x5B58;&#x4E2D;&#x7684; bytesPerRow &#x5FC5;&#x987B;&#x5305;&#x542B;&#x5B8C;&#x6574;&#x7684;&#x8FB9;&#x7F18;&#x5757;&#xFF0C;&#x4E14;&#x8BE5;&#x7EF4;&#x5EA6;&#x5C0F;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;&#x7EB9;&#x7406;&#x7EF4;&#x5EA6;&#xFF1B;
+ * @discussion  &#x652F;&#x6301;&#x7ECF;&#x8FC7; PowerVR &#x538B;&#x7F29;&#x7684;&#x50CF;&#x7D20;&#x683C;&#x5F0F; PVRTC&#xFF0C;&#x540C;&#x65F6; bytesPerRow &#x4E0E; bytesPerImage &#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x4E3A; 0&#xFF1B;
+ *              &#x4F46;&#x4E0D;&#x652F;&#x6301;&#x590D;&#x5236;&#x5230; PVRTC &#x50CF;&#x7D20;&#x683C;&#x5F0F;&#x7684;&#x7EB9;&#x7406;&#x7684;&#x5B50;&#x533A;&#x57DF;&#x3002;
+ *              &#x5BF9;&#x4E8E;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x50CF;&#x7D20;&#x683C;&#x5F0F;&#xFF0C;&#x538B;&#x7F29;&#x6216;&#x672A;&#x538B;&#x7F29;&#xFF0C;&#x5982;&#x679C; bytesPerRow &#x548C; bytesPerImage &#x4E0D;&#x4F7F;&#x7528;&#xFF0C;&#x5219;&#x5C06;&#x5B83;&#x4EEC;&#x8BBE;&#x7F6E;&#x4E3A; 0
+ *
+ * @note &#x5F53; storageMode = MTLStorageModePrivate &#x65F6;&#xFF0C;&#x4E0D;&#x8BE5;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#xFF1B; 
+ *       &#x6B64;&#x65F6;&#x5148;&#x5C06;&#x6570;&#x636E;&#x590D;&#x5236;&#x5230;&#x5177;&#x6709;&#x975E;&#x79C1;&#x6709;&#x5B58;&#x50A8;&#x6A21;&#x5F0F;&#x7684;&#x7EB9;&#x7406;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;MTLBlitCommandEncoder&#x5C06;&#x6570;&#x636E;&#x590D;&#x5236;&#x5230;&#x79C1;&#x6709;&#x7EB9;&#x7406;&#xFF1B;
+ *
+ * @param region &#x7EB9;&#x7406;&#x4E2D;&#x50CF;&#x7D20;&#x5757;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x5FC5;&#x987B;&#x9650;&#x5236;&#x5728; slice &#x7684;&#x5C3A;&#x5BF8;&#x4E4B;&#x5185;
+ * @param level &#x6307;&#x5B9A; mipmap &#x7EA7;&#x522B;&#xFF1B;&#x5982;&#x679C;&#x4E0D;&#x91C7;&#x7528; mipmap &#x6280;&#x672F;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A; 0 &#x5373;&#x53EF;
+ * @param pixelBytes &#x5F85;&#x590D;&#x5236;&#x50CF;&#x7D20;&#x5757;&#x7684;&#x5185;&#x5B58;&#x6307;&#x9488;
+ * @param bytesPerRow &#x5BF9;&#x4E8E;&#x666E;&#x901A;&#x6216;&#x538B;&#x7F29;&#x50CF;&#x7D20;&#x683C;&#x5F0F;&#xFF0C;&#x6E90;&#x6570;&#x636E;&#x884C;&#x4E4B;&#x95F4;&#x7684;stride &#x4EE5;&#x5B57;&#x8282;&#x4E3A;&#x5355;&#x4F4D;&#xFF1B;&#x5BF9;&#x4E8E;&#x538B;&#x7F29;&#x50CF;&#x7D20;&#x683C;&#x5F0F;&#xFF0C;stride &#x662F;&#x4ECE;&#x4E00;&#x884C;&#x5F00;&#x59CB;&#x5230;&#x4E0B;&#x4E00;&#x884C;&#x5F00;&#x59CB;&#x7684;&#x5B57;&#x8282;&#x6570;
+ *            &#x5C06;&#x50CF;&#x7D20;&#x590D;&#x5236;&#x5230; textureType = MTLTextureType1D || textureType = MTLTextureType1DArray &#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x6307;&#x5B9A;&#x4E3A; 0 &#x503C;&#xFF1B;
+ *            &#x5C06;&#x50CF;&#x7D20;&#x590D;&#x5236;&#x5230; MTLTextureType1D || MTLTextureType1DArray &#x4EE5;&#x5916;&#x7684;&#x7C7B;&#x578B;&#x65F6;&#xFF0C;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x975E; 0 &#x503C;&#xFF1B;
+ *                  &#x8BE5;&#x503C; &gt;= &#x4E00;&#x884C;&#x5BBD;&#x5EA6;&#xFF08; sizeof(&#x50CF;&#x7D20;) * &#x4E00;&#x884C;&#x50CF;&#x7D20; &#xFF09;&amp;&amp; &lt;= 32767 * sizeof(&#x50CF;&#x7D20;)
+ *            &#x5BF9;&#x4E8E;&#x666E;&#x901A;&#x6216;&#x538B;&#x7F29;&#x50CF;&#x7D20;&#x683C;&#x5F0F;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x50CF;&#x7D20;&#x5927;&#x5C0F;&#x7684;&#x500D;&#x6570;;
+ *            &#x5BF9;&#x4E8E;&#x538B;&#x7F29;&#x50CF;&#x7D20;&#x683C;&#x5F0F;, &#x4F7F;&#x7528;&#x538B;&#x7F29;&#x5757;&#x5927;&#x5C0F;&#x7684;&#x500D;&#x6570;;
+ *         &#x5982;&#x679C;&#x6307;&#x5B9A;&#x7684;&#x975E;&#x96F6;&#x503C;&#x5C0F;&#x4E8E;&#x7EB9;&#x7406;&#x7684;&#x5BBD;&#x5EA6;&#xFF0C;&#x6216;&#x8005;&#x4E0D;&#x662F;&#x50CF;&#x7D20;&#x683C;&#x5F0F;&#x5927;&#x5C0F;&#x6216;&#x538B;&#x7F29;&#x5757;&#x5927;&#x5C0F;&#x7684;&#x500D;&#x6570;&#xFF0C;&#x5219;&#x4F1A;&#x53D1;&#x751F;&#x9519;&#x8BEF;;
+ */
+- (void)replaceRegion:(MTLRegion)region mipmapLevel:(NSUInteger)level withBytes:(const void *)pixelBytes bytesPerRow:(NSUInteger)bytesPerRow;
+
+/*!
+ @method newTextureViewWithPixelFormat:
+ @abstract Create a new texture which shares the same storage as the source texture, but with a different (but compatible) pixel format.
+ */
+- (nullable id&lt;MTLTexture&gt;)newTextureViewWithPixelFormat:(MTLPixelFormat)pixelFormat;
+
+/*!
+ @method newTextureViewWithPixelFormat:textureType:levels:slices:
+ @abstract Create a new texture which shares the same storage as the source texture, but with a different (but compatible) pixel format, texture type, levels and slices.
+ */
+- (nullable id&lt;MTLTexture&gt;)newTextureViewWithPixelFormat:(MTLPixelFormat)pixelFormat textureType:(MTLTextureType)textureType levels:(NSRange)levelRange slices:(NSRange)sliceRange API_AVAILABLE(macos(10.11), ios(9.0));
+
+/*!
+ @property swizzle
+ @abstract The channel swizzle used when reading or sampling from this texture
+ */
+@property (readonly, nonatomic) MTLTextureSwizzleChannels swizzle
+
+/*!
+ @method newTextureViewWithPixelFormat:textureType:levels:slices:swizzle:
+ @abstract Create a new texture which shares the same storage as the source texture, but with a different (but compatible) pixel format, texture type, levels, slices and swizzle. 
+ */
+- (nullable id&lt;MTLTexture&gt;)newTextureViewWithPixelFormat:(MTLPixelFormat)pixelFormat textureType:(MTLTextureType)textureType levels:(NSRange)levelRange slices:(NSRange)sliceRange swizzle:(MTLTextureSwizzleChannels)swizzle;
+
+@end
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-11-30 20:51:56
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> 搜索结果 "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有搜索结果 "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="MTLRegion.html" class="navigation navigation-prev " aria-label="Previous page: MTLRegion API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="MTLSampler.html" class="navigation navigation-next " aria-label="Next page: MTLSampler API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MTLTexture API","level":"1.3.6.10","depth":3,"next":{"title":"MTLSampler API","level":"1.3.6.11","depth":3,"path":"计算机基础/计算机图形学/MetalDocument/MTLSampler.md","ref":"计算机基础/计算机图形学/MetalDocument/MTLSampler.md","articles":[]},"previous":{"title":"MTLRegion API","level":"1.3.6.9","depth":3,"path":"计算机基础/计算机图形学/MetalDocument/MTLRegion.md","ref":"计算机基础/计算机图形学/MetalDocument/MTLRegion.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"计算机基础/计算机图形学/MetalDocument/MTLTexture.md","mtime":"2021-11-30T12:51:56.243Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-30T13:10:32.285Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

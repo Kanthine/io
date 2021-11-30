@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "DesignPattern">
+      <FileRef
+         location = "group:&#x5907;&#x5fd8;&#x5f55;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x7b56;&#x7565;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x62bd;&#x8c61;&#x5de5;&#x5382;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x4ee3;&#x7406;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x5355;&#x4f8b;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x8fed;&#x4ee3;&#x5668;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x8bbf;&#x95ee;&#x8005;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x5de5;&#x5382;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x89c2;&#x5bdf;&#x8005;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x5efa;&#x9020;&#x8005;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x89e3;&#x91ca;&#x5668;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x95e8;&#x9762;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x547d;&#x4ee4;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x6a21;&#x677f;&#x65b9;&#x6cd5;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x6865;&#x6881;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x9002;&#x914d;&#x5668;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x4eab;&#x5143;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x539f;&#x578b;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x8d23;&#x4efb;&#x94fe;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x4e2d;&#x4ecb;&#x8005;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x88c5;&#x9970;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x72b6;&#x6001;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x7ec4;&#x5408;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "DesignPrinciples">
+      <FileRef
+         location = "group:&#x5355;&#x4e00;&#x804c;&#x8d23;&#x539f;&#x5219;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x91cc;&#x6c0f;&#x66ff;&#x6362;&#x539f;&#x5219;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x4f9d;&#x8d56;&#x5012;&#x7f6e;&#x539f;&#x5219;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x63a5;&#x53e3;&#x9694;&#x79bb;&#x539f;&#x5219;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x8fea;&#x7c73;&#x7279;&#x539f;&#x5219;.md">
+      </FileRef>
+      <FileRef
+         location = "group:&#x5f00;&#x95ed;&#x539f;&#x5219;.md">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:DesignPattern/DesignPattern.xcodeproj">
+   </FileRef>
+</Workspace>

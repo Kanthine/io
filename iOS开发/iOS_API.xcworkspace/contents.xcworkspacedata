@@ -2,6 +2,22 @@
 <Workspace
    version = "1.0">
    <Group
+      location = "group:CoreGraphics"
+      name = "CoreGraphics">
+      <FileRef
+         location = "group:CGContext.md">
+      </FileRef>
+      <FileRef
+         location = "group:CoreGraphics.md">
+      </FileRef>
+      <FileRef
+         location = "group:CGBitmapContext.md">
+      </FileRef>
+      <FileRef
+         location = "group:CGPath.md">
+      </FileRef>
+   </Group>
+   <Group
       location = "group:&#x7f51;&#x7edc;&#x76f8;&#x5173;"
       name = "&#x7f51;&#x7edc;&#x76f8;&#x5173;">
       <FileRef
@@ -40,6 +56,9 @@
       </FileRef>
       <FileRef
          location = "group:iOS&#x6e32;&#x67d3;&#x673a;&#x5236;&#x521d;&#x7aa5;.md">
+      </FileRef>
+      <FileRef
+         location = "group:CAMediaTiming.md">
       </FileRef>
       <FileRef
          location = "group:&#x5218;&#x6d77;&#x5c4f;&#x9002;&#x914d;.md">
@@ -266,6 +285,9 @@
       </FileRef>
       <FileRef
          location = "group:CoteText&#x6982;&#x8ff0;.md">
+      </FileRef>
+      <FileRef
+         location = "group:CTFont.md">
       </FileRef>
       <Group
          location = "group:assets"
