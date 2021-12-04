@@ -1,0 +1,2470 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MTKMesh API · 个人博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="苏沫漓">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="MDLVertexDescriptor.html" />
+    
+    
+    <link rel="prev" href="MDLMesh.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../计算机基础.html">
+            
+                <a href="../计算机基础.html">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../计算机组成篇/计算机概述篇.html">
+            
+                <a href="../计算机组成篇/计算机概述篇.html">
+            
+                    
+                    第一部分 计算机的组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../计算机组成篇/计算机组成篇.html">
+            
+                <a href="../计算机组成篇/计算机组成篇.html">
+            
+                    
+                    计算机组成篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../计算机组成篇/计算机计算篇.html">
+            
+                <a href="../计算机组成篇/计算机计算篇.html">
+            
+                    
+                    计算机计算篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../操作系统篇/操作系统基础篇.html">
+            
+                <a href="../操作系统篇/操作系统基础篇.html">
+            
+                    
+                    第二部分 操作系统篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../操作系统篇/进程管理篇.html">
+            
+                <a href="../操作系统篇/进程管理篇.html">
+            
+                    
+                    进程管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../操作系统篇/内存管理篇.html">
+            
+                <a href="../操作系统篇/内存管理篇.html">
+            
+                    
+                    内存管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../操作系统篇/文件系统篇.html">
+            
+                <a href="../操作系统篇/文件系统篇.html">
+            
+                    
+                    文件系统篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../操作系统篇/操作系统提升篇.html">
+            
+                <a href="../操作系统篇/操作系统提升篇.html">
+            
+                    
+                    操作系统提升篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../计算机网络/网络概述篇.html">
+            
+                <a href="../计算机网络/网络概述篇.html">
+            
+                    
+                    第三部分 网络篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../计算机网络/计算机物理层.html">
+            
+                <a href="../计算机网络/计算机物理层.html">
+            
+                    
+                    计算机物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../计算机网络/计算机数据链路层.html">
+            
+                <a href="../计算机网络/计算机数据链路层.html">
+            
+                    
+                    计算机数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../计算机网络/计算机网络层.html">
+            
+                <a href="../计算机网络/计算机网络层.html">
+            
+                    
+                    计算机网络层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../计算机网络/计算机传输层.html">
+            
+                <a href="../计算机网络/计算机传输层.html">
+            
+                    
+                    计算机传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../计算机网络/计算机应用层.html">
+            
+                <a href="../计算机网络/计算机应用层.html">
+            
+                    
+                    计算机应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.5.1" data-path="../计算机网络/HTTP协议.html">
+            
+                <a href="../计算机网络/HTTP协议.html">
+            
+                    
+                    HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.2" data-path="../计算机网络/HTTPS协议.html">
+            
+                <a href="../计算机网络/HTTPS协议.html">
+            
+                    
+                    HTTPS协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    第四部分设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../设计模式/单一职责原则.html">
+            
+                <a href="../设计模式/单一职责原则.html">
+            
+                    
+                    单一职责原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../设计模式/里氏替换原则.html">
+            
+                <a href="../设计模式/里氏替换原则.html">
+            
+                    
+                    里氏替换原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../设计模式/依赖倒置原则.html">
+            
+                <a href="../设计模式/依赖倒置原则.html">
+            
+                    
+                    依赖倒置原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../设计模式/接口隔离原则.html">
+            
+                <a href="../设计模式/接口隔离原则.html">
+            
+                    
+                    接口隔离原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../设计模式/迪米特原则.html">
+            
+                <a href="../设计模式/迪米特原则.html">
+            
+                    
+                    迪米特原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../设计模式/开闭原则.html">
+            
+                <a href="../设计模式/开闭原则.html">
+            
+                    
+                    开闭原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    第五部分 图形学基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="矩阵的变换.html">
+            
+                <a href="矩阵的变换.html">
+            
+                    
+                    矩阵的变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="三维空间的观察.html">
+            
+                <a href="三维空间的观察.html">
+            
+                    
+                    三维空间的观察
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    iOS开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../iOS开发/Runtime/Objective_C简介.html">
+            
+                <a href="../../iOS开发/Runtime/Objective_C简介.html">
+            
+                    
+                    Runtime
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../iOS开发/Runtime/OC之Blocks.html">
+            
+                <a href="../../iOS开发/Runtime/OC之Blocks.html">
+            
+                    
+                    OC之Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../iOS开发/Runtime/OC内存管理.html">
+            
+                <a href="../../iOS开发/Runtime/OC内存管理.html">
+            
+                    
+                    OC内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                <a href="../../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                    
+                    OC内存管理之引用计数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                <a href="../../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                    
+                    +load方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../../iOS开发/Runtime/TaggedPointer.html">
+            
+                <a href="../../iOS开发/Runtime/TaggedPointer.html">
+            
+                    
+                    TaggedPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../../iOS开发/Runtime/方法签名.html">
+            
+                <a href="../../iOS开发/Runtime/方法签名.html">
+            
+                    
+                    消息与方法签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../../iOS开发/Runtime/OC_方法交换.html">
+            
+                <a href="../../iOS开发/Runtime/OC_方法交换.html">
+            
+                    
+                    方法交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../../iOS开发/Runtime/三次补救措施.html">
+            
+                <a href="../../iOS开发/Runtime/三次补救措施.html">
+            
+                    
+                    方法不被识别的补救
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../../iOS开发/Runtime/编译objc4.html">
+            
+                <a href="../../iOS开发/Runtime/编译objc4.html">
+            
+                    
+                    编译objc4备忘录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="../../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                    
+                    Runtime函数库中关于协议Protocol的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="../../iOS开发/Runtime/Runtime_Property.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Property.html">
+            
+                    
+                    Runtime函数库中关于属性与变量的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.12" data-path="../../iOS开发/Runtime/Runtime_Instance.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Instance.html">
+            
+                    
+                    Runtime函数库中关于实例对象的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.13" data-path="../../iOS开发/Runtime/Runtime_Class.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Class.html">
+            
+                    
+                    Runtime函数库中关于Class的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.14" data-path="../../iOS开发/Runtime/Runtime_Method.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Method.html">
+            
+                    
+                    Runtime函数库中关于 Class 的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../iOS开发/CoreText/CoteText概述.html">
+            
+                <a href="../../iOS开发/CoreText/CoteText概述.html">
+            
+                    
+                    CoreText
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                <a href="../../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                    
+                    CoteText排版与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                <a href="../../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                    
+                    CTLineRef的函数库及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                <a href="../../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                    
+                    图文混排的关键：CTRunRef 与 CTRunDelegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../../iOS开发/CoreText/CTFont.html">
+            
+                <a href="../../iOS开发/CoreText/CTFont.html">
+            
+                    
+                    CTFont
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    CoreImage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                <a href="../../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                    
+                    图像特征CIFeature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                <a href="../../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                    
+                    图片检测CIDetector
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    CoreGraphics
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../iOS开发/CoreGraphics/CGBitmapContext.html">
+            
+                <a href="../../iOS开发/CoreGraphics/CGBitmapContext.html">
+            
+                    
+                    CGBitmapContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../iOS开发/CoreGraphics/CGContext.html">
+            
+                <a href="../../iOS开发/CoreGraphics/CGContext.html">
+            
+                    
+                    CGContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../iOS开发/CoreGraphics/CGPath.html">
+            
+                <a href="../../iOS开发/CoreGraphics/CGPath.html">
+            
+                    
+                    CGPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../../iOS开发/CoreGraphics/CoreGraphics.html">
+            
+                <a href="../../iOS开发/CoreGraphics/CoreGraphics.html">
+            
+                    
+                    CoreGraphics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Metal调试.html">
+            
+                <a href="Metal调试.html">
+            
+                    
+                    Metal 实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="Metal的简单计算.html">
+            
+                <a href="Metal的简单计算.html">
+            
+                    
+                    内核计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="Metal绘制三角形.html">
+            
+                <a href="Metal绘制三角形.html">
+            
+                    
+                    绘制三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="简单的纹理贴图.md">
+            
+                <span>
+            
+                    
+                    纹理贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="CPU与GPU协调工作.html">
+            
+                <a href="CPU与GPU协调工作.html">
+            
+                    
+                    CPU与GPU协调工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="深度测试.html">
+            
+                <a href="深度测试.html">
+            
+                    
+                    深度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="读取纹理像素.md">
+            
+                <span>
+            
+                    
+                    线程与线程组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="离屏渲染.html">
+            
+                <a href="离屏渲染.html">
+            
+                    
+                    自定义MTLRenderPassDescriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Metal简介.html">
+            
+                <a href="Metal简介.html">
+            
+                    
+                    Metal API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="MTKView.html">
+            
+                <a href="MTKView.html">
+            
+                    
+                    MTKView API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="MTLDevice.html">
+            
+                <a href="MTLDevice.html">
+            
+                    
+                    MTLDevice API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="MDLMesh.html">
+            
+                <a href="MDLMesh.html">
+            
+                    
+                    MDLMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6.4" data-path="MTKModel.html">
+            
+                <a href="MTKModel.html">
+            
+                    
+                    MTKMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="MDLVertexDescriptor.html">
+            
+                <a href="MDLVertexDescriptor.html">
+            
+                    
+                    MDLVertexDescriptor API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="MTLRenderPass.html">
+            
+                <a href="MTLRenderPass.html">
+            
+                    
+                    MTLRenderPass API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="MTLFunction.html">
+            
+                <a href="MTLFunction.html">
+            
+                    
+                    MTLFunction API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.8" data-path="MTLLibrary.html">
+            
+                <a href="MTLLibrary.html">
+            
+                    
+                    MTLLibrary API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.9" data-path="MTLRegion.html">
+            
+                <a href="MTLRegion.html">
+            
+                    
+                    MTLRegion API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.10" data-path="MTLTexture.html">
+            
+                <a href="MTLTexture.html">
+            
+                    
+                    MTLTexture API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.11" data-path="MTLSampler.html">
+            
+                <a href="MTLSampler.html">
+            
+                    
+                    MTLSampler API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.12" data-path="MTLRenderCommandEncoder.html">
+            
+                <a href="MTLRenderCommandEncoder.html">
+            
+                    
+                    MTLRenderCommandEncoder API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" >
+            
+                <span>
+            
+                    
+                    杂记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="../../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                <a href="../../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                    
+                    iOS渲染机制初窥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="../../iOS开发/杂记/CAMediaTiming.html">
+            
+                <a href="../../iOS开发/杂记/CAMediaTiming.html">
+            
+                    
+                    CAMediaTiming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3" data-path="../../iOS开发/杂记/响应链.html">
+            
+                <a href="../../iOS开发/杂记/响应链.html">
+            
+                    
+                    响应链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4" data-path="../../iOS开发/杂记/并发编程.html">
+            
+                <a href="../../iOS开发/杂记/并发编程.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.4.1" data-path="../../iOS开发/杂记/OC之Thread.html">
+            
+                <a href="../../iOS开发/杂记/OC之Thread.html">
+            
+                    
+                    线程NSThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4.2" data-path="../../iOS开发/杂记/OC之NSOperation.html">
+            
+                <a href="../../iOS开发/杂记/OC之NSOperation.html">
+            
+                    
+                    任务队列NSOperation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4.3" data-path="../../iOS开发/杂记/OC之GCD.html">
+            
+                <a href="../../iOS开发/杂记/OC之GCD.html">
+            
+                    
+                    GCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4.4" data-path="../../iOS开发/杂记/OC之锁.html">
+            
+                <a href="../../iOS开发/杂记/OC之锁.html">
+            
+                    
+                    锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.5" data-path="../../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                <a href="../../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                    
+                    OC的深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.6" data-path="../../其它/sdk_cocoapods.html">
+            
+                <a href="../../其它/sdk_cocoapods.html">
+            
+                    
+                    iOS 使用 cocoapods 创建组件化库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.7" data-path="../../iOS开发/杂记/内存优化.html">
+            
+                <a href="../../iOS开发/杂记/内存优化.html">
+            
+                    
+                    一些内存优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.8" data-path="../../iOS开发/杂记/内存泄露.html">
+            
+                <a href="../../iOS开发/杂记/内存泄露.html">
+            
+                    
+                    一些内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.9" data-path="../../iOS开发/杂记/OC之处理错误.html">
+            
+                <a href="../../iOS开发/杂记/OC之处理错误.html">
+            
+                    
+                    一些错误处理机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.10" data-path="../../iOS开发/杂记/刘海屏适配.html">
+            
+                <a href="../../iOS开发/杂记/刘海屏适配.html">
+            
+                    
+                    刘海屏适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.11" data-path="../../iOS开发/杂记/获取WIFI信息.html">
+            
+                <a href="../../iOS开发/杂记/获取WIFI信息.html">
+            
+                    
+                    获取WIFI信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    开发语言
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../语言篇/C++学习入门篇.html">
+            
+                <a href="../../语言篇/C++学习入门篇.html">
+            
+                    
+                    C++学习入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../语言篇/C++学习封装篇.html">
+            
+                <a href="../../语言篇/C++学习封装篇.html">
+            
+                    
+                    C++学习封装篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../../语言篇/C++学习继承篇.html">
+            
+                <a href="../../语言篇/C++学习继承篇.html">
+            
+                    
+                    C++学习继承篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../../语言篇/C++学习多态篇.html">
+            
+                <a href="../../语言篇/C++学习多态篇.html">
+            
+                    
+                    C++学习多态篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    C
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../语言篇/C数组.html">
+            
+                <a href="../../语言篇/C数组.html">
+            
+                    
+                    C语言数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../../语言篇/C结构.html">
+            
+                <a href="../../语言篇/C结构.html">
+            
+                    
+                    C语言结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../../语言篇/C递归.html">
+            
+                <a href="../../语言篇/C递归.html">
+            
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    Swift
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="../../语言篇/Swift/Swift.html">
+            
+                <a href="../../语言篇/Swift/Swift.html">
+            
+                    
+                    Swift基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../../语言篇/Swift/Swift_Optional.html">
+            
+                <a href="../../语言篇/Swift/Swift_Optional.html">
+            
+                    
+                    Swift可选型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="../../语言篇/Swift/Swift_Container.html">
+            
+                <a href="../../语言篇/Swift/Swift_Container.html">
+            
+                    
+                    Swift容器类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="../../语言篇/Swift/Swift_func.html">
+            
+                <a href="../../语言篇/Swift/Swift_func.html">
+            
+                    
+                    Swift函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../Git体系/Git常用命令.html">
+            
+                <a href="../../Git体系/Git常用命令.html">
+            
+                    
+                    Git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../Git体系/Github和SSH密钥.html">
+            
+                <a href="../../Git体系/Github和SSH密钥.html">
+            
+                    
+                    Github和SSH密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../Gitbook指导/">
+            
+                <a href="../../Gitbook指导/">
+            
+                    
+                    GitBook 使用教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../Gitbook指导/gitbook教程.html">
+            
+                <a href="../../Gitbook指导/gitbook教程.html">
+            
+                    
+                    GitBook 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../Gitbook指导/gitbook语法.html">
+            
+                <a href="../../Gitbook指导/gitbook语法.html">
+            
+                    
+                    GitBook 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.sumoli.work" target="blank" class="gitbook-link">
+            博客主页
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >MTKMesh API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7F51;&#x683C;&#x6570;&#x636E;"><b></b>&#x7F51;&#x683C;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#1&#x3001;3d-&#x6A21;&#x578B;"><b></b>1&#x3001;3D &#x6A21;&#x578B;</a></li><ul><li><span class="title-icon "></span><a href="#11&#x3001;obj-&#x6A21;&#x578B;&#x6587;&#x4EF6;"><b></b>1.1&#x3001;Obj &#x6A21;&#x578B;&#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#12&#x3001;obj-&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x7684;&#x52A0;&#x8F7D;"><b></b>1.2&#x3001;Obj &#x6A21;&#x578B;&#x6587;&#x4EF6;&#x7684;&#x52A0;&#x8F7D;</a></li></ul><li><span class="title-icon "></span><a href="#2&#x3001;api"><b></b>2&#x3001;API</a></li><ul><li><span class="title-icon "></span><a href="#21&#x3001;&#x7F13;&#x51B2;&#x533A;&#x5206;&#x914D;&#x5668;-mtkmeshbufferallocator"><b></b>2.1&#x3001;&#x7F13;&#x51B2;&#x533A;&#x5206;&#x914D;&#x5668; MTKMeshBufferAllocator</a></li><li><span class="title-icon "></span><a href="#22&#x3001;&#x7F51;&#x683C;&#x7F13;&#x51B2;&#x533A;-mtkmeshbuffer"><b></b>2.2&#x3001;&#x7F51;&#x683C;&#x7F13;&#x51B2;&#x533A; MTKMeshBuffer</a></li><li><span class="title-icon "></span><a href="#23&#x3001;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;"><b></b>2.3&#x3001;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;</a></li><li><span class="title-icon "></span><a href="#231&#x3001;&#x5185;&#x5B58;&#x5E03;&#x5C40;"><b></b>2.3.1&#x3001;&#x5185;&#x5B58;&#x5E03;&#x5C40;</a></li><li><span class="title-icon "></span><a href="#232&#x3001;&#x5C5E;&#x6027;&#x6620;&#x5C04;"><b></b>2.3.2&#x3001;&#x5C5E;&#x6027;&#x6620;&#x5C04;</a></li><ul><li><span class="title-icon "></span><a href="#233&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><b></b>2.3.3&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;</a></li><li><span class="title-icon "></span><a href="#234&#x3001;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x5982;&#x4F55;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5E03;&#x5C40;"><b></b>2.3.4&#x3001;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x5982;&#x4F55;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5E03;&#x5C40;</a></li><li><span class="title-icon "></span><a href="#235&#x3001;&#x9876;&#x70B9;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x5448;&#x73B0;&#x7ED9;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x7C7B;&#x578B;"><b></b>2.3.5&#x3001;&#x9876;&#x70B9;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x5448;&#x73B0;&#x7ED9;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x7C7B;&#x578B;</a></li></ul><li><span class="title-icon "></span><a href="#23&#x3001;&#x7F51;&#x683C;-mtkmesh"><b></b>2.3&#x3001;&#x7F51;&#x683C; MTKMesh</a></li><li><span class="title-icon "></span><a href="#24&#x3001;&#x5B50;&#x7F51;&#x683C;-mtksubmesh"><b></b>2.4&#x3001;&#x5B50;&#x7F51;&#x683C; MTKSubmesh</a></li><li><span class="title-icon "></span><a href="#25&#x3001;metal-&#x9876;&#x70B9;-&#x4E0E;-model-io-&#x9876;&#x70B9;&#x7684;&#x4E92;&#x76F8;&#x8F6C;&#x6362;"><b></b>2.5&#x3001;Metal &#x9876;&#x70B9; &#x4E0E; Model I/O &#x9876;&#x70B9;&#x7684;&#x4E92;&#x76F8;&#x8F6C;&#x6362;</a></li></ul><li><span class="title-icon "></span><a href="#3&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><b></b>3&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;</a></li><ul><li><span class="title-icon "></span><a href="#31&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x52A0;&#x8F7D;"><b></b>3.1&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x52A0;&#x8F7D;</a></li><li><span class="title-icon "></span><a href="#32&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x7F16;&#x7801;"><b></b>3.2&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x7F16;&#x7801;</a></li></ul></ul></div><h1 id="&#x7F51;&#x683C;&#x6570;&#x636E;"><a name="&#x7F51;&#x683C;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x7F51;&#x683C;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F51;&#x683C;&#x6570;&#x636E;</h1>
+<h1 id="1&#x3001;3d-&#x6A21;&#x578B;"><a name="1&#x3001;3d-&#x6A21;&#x578B;" class="anchor-navigation-ex-anchor" href="#1&#x3001;3d-&#x6A21;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;3D &#x6A21;&#x578B;</h1>
+<p>&#x8981;&#x6E32;&#x67D3;&#x4E09;&#x7EF4;&#x7269;&#x4F53;&#xFF0C;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x7531;&#x7F51;&#x683C;&#x3001;&#x76F8;&#x673A;&#x3001;&#x5149;&#x7EBF;&#x3001;&#x7EB9;&#x7406;&#x7B49;&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x573A;&#x666F;&#xFF1A;</p>
+<ul>
+<li>&#x524D;&#x9762;&#x6848;&#x4F8B;&#x7684; 3D &#x7ACB;&#x65B9;&#x4F53;&#x6216;&#x8005;&#x7403;&#x4F53;&#x91C7;&#x7528; <em>&#x76F4;&#x63A5;&#x7ED9;&#x51FA;&#x9876;&#x70B9;&#x5750;&#x6807;&#x503C;&#x6216;&#x8005;&#x57FA;&#x4E8E;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x7528;&#x7A0B;&#x5E8F;&#x751F;&#x6210;&#x5750;&#x6807;&#x503C;</em> &#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x5728;&#x4E00;&#x4E9B;&#x7B80;&#x5355;&#x7684;&#x573A;&#x666F;&#x4E2D;&#x80AF;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#x4E86;&#xFF1B;</li>
+<li>&#x4F46;&#x5982;&#x679C;&#x6784;&#x5EFA;&#x66F4;&#x52A0;&#x590D;&#x6742;&#x3001;&#x66F4;&#x52A0;&#x903C;&#x771F;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x9700;&#x8981;&#x91C7;&#x7528;&#x7684;&#x7269;&#x4F53;&#x53CA;&#x5176;&#x51E0;&#x4F55;&#x5F62;&#x72B6;&#x53EF;&#x80FD;&#x4F1A;&#x5F88;&#x590D;&#x6742;&#x800C;&#x4E14;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x7528;&#x6570;&#x5B66;&#x516C;&#x5F0F;&#x63CF;&#x8FF0;&#xFF0C;&#x5982;&#x57CE;&#x5E02;&#x6A21;&#x578B;&#x3001;&#x6C7D;&#x8F66;&#x6A21;&#x578B;&#x7B49;&#xFF01;</li>
+</ul>
+<p>&#x8FD9;&#x79CD;&#x590D;&#x6742;&#x7684;&#x4E09;&#x7EF4;&#x573A;&#x666F;&#xFF0C;&#x4E00;&#x822C;&#x4F7F;&#x7528; 3D &#x5EFA;&#x6A21;&#x5DE5;&#x5177;&#xFF08;&#x5982; 3ds Max&#x3001;Maya &#x7B49;&#xFF09;&#x5EFA;&#x7ACB;&#x7269;&#x4F53;&#x6A21;&#x578B;&#xFF0C;&#x7136;&#x540E;&#x5BFC;&#x51FA;&#x6210;&#x7279;&#x5B9A;&#x683C;&#x5F0F;&#x7684;&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x5728;&#x7A0B;&#x5E8F;&#x4E2D;&#x52A0;&#x8F7D;&#x6E32;&#x67D3;&#xFF01;&#x5E38;&#x89C1;&#x7684; 3D &#x6A21;&#x578B;&#x6587;&#x4EF6;&#x6709; obj&#x3001; 3ds&#x3001; fbx &#x7B49;&#xFF01;</p>
+<h2 id="11&#x3001;obj-&#x6A21;&#x578B;&#x6587;&#x4EF6;"><a name="11&#x3001;obj-&#x6A21;&#x578B;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#11&#x3001;obj-&#x6A21;&#x578B;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1&#x3001;Obj &#x6A21;&#x578B;&#x6587;&#x4EF6;</h2>
+<p>Obj &#x6587;&#x4EF6;&#x662F;&#x6700;&#x7B80;&#x5355;&#x7684;&#x4E00;&#x79CD; 3D &#x6A21;&#x578B;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x672C;&#x8D28;&#x5C31;&#x662F;&#x5177;&#x6709;&#x56FA;&#x5B9A;&#x683C;&#x5F0F;&#x7684;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF01;Obj &#x6587;&#x4EF6;&#x4E2D;&#x5C06;&#x9876;&#x70B9;&#x5750;&#x6807;&#x3001;&#x4E09;&#x89D2;&#x5F62;&#x5750;&#x6807;&#x3001;&#x7EB9;&#x7406;&#x5750;&#x6807;&#x7B49;&#x4FE1;&#x606F;&#x5DF2;&#x56FA;&#x5B9A;&#x683C;&#x5F0F;&#x7684;&#x6587;&#x672C;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;&#xFF1A;</p>
+<pre><code>v  649.6328 -5.4034 791.5802
+v  568.9182 -5.4034 851.4427
+# 14291 vertices
+
+vn -0.0000 1.0000 -0.0000
+vn -0.0000 1.0000 0.0000
+# 12848 vertex normals
+
+vt 0.5884 0.3337 0.0000
+vt 0.4619 0.4226 0.0000
+# 2798 texture coords
+
+g cage_stairs_01
+usemtl structure
+s 1
+f 1/1/1 2/2/2 3/3/3
+f 3/3/3 4/4/4 1/1/1
+# 27664 faces
+</code></pre><p>&#x4ECE;&#x4E0A;&#x8FF0; Obj &#x6587;&#x4EF6;&#x7247;&#x6BB5;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x5176;&#x5185;&#x5BB9;&#x662F;&#x4EE5;&#x884C;&#x4E3A;&#x4E3A;&#x57FA;&#x672C;&#x5355;&#x4F4D;&#x8FDB;&#x884C;&#x7EC4;&#x7EC7;&#x7684;&#xFF0C;&#x6BCF;&#x79CD;&#x4E0D;&#x540C;&#x524D;&#x7F00;&#x5F00;&#x5934;&#x7684;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x542B;&#x4E49;&#xFF1A;</p>
+<ul>
+<li><code>#</code> &#x53F7;&#x5F00;&#x5934;&#x7528;&#x4E8E;&#x6CE8;&#x91CA;&#xFF0C;&#x5728;&#x7A0B;&#x5E8F;&#x52A0;&#x8F7D;&#x8FC7;&#x7A0B;&#x4E2D;&#x7565;&#x8FC7;&#xFF1B;</li>
+<li><code>v</code> &#x5F00;&#x5934;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x9876;&#x70B9;&#x5750;&#x6807;&#xFF0C;&#x5176;&#x540E;&#x9762;&#x7684; 3 &#x4E2A;&#x6570;&#x503C;&#x5206;&#x522B;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x9876;&#x70B9;&#x7684; <code>x, y, z</code> &#x5750;&#x6807;&#xFF1B;</li>
+<li><code>vt</code> &#x5F00;&#x5934;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x9876;&#x70B9;&#x7EB9;&#x7406;&#x5750;&#x6807;&#xFF0C;&#x5176;&#x540E;&#x9762;&#x7684; 3 &#x4E2A;&#x6570;&#x503C;&#x5206;&#x522B;&#x8868;&#x793A;&#x7EB9;&#x7406;&#x5750;&#x6807;&#x7684; <code>S, T, P</code> &#x5206;&#x91CF;&#xFF1B;<ul>
+<li><code>S, T</code> &#x5206;&#x91CF;&#x5C31;&#x662F;&#x7EB9;&#x7406;&#x4E8C;&#x7EF4;&#x5750;&#x6807;&#xFF1B;</li>
+<li><code>P</code> &#x5206;&#x91CF;&#x6307;&#x7684;&#x662F;&#x6DF1;&#x5EA6;&#x7EB9;&#x7406;&#x5750;&#x6807;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E; 3D &#x7EB9;&#x7406;&#x7684;&#x91C7;&#x6837;&#xFF01;</li>
+</ul>
+</li>
+<li><code>vn</code> &#x5F00;&#x5934;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x9876;&#x70B9;&#x6CD5;&#x5411;&#x91CF;&#xFF0C;&#x5176;&#x540E;&#x9762;&#x7684; 3 &#x4E2A;&#x6570;&#x503C;&#x5206;&#x522B;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x9876;&#x70B9;&#x7684;&#x6CD5;&#x5411;&#x91CF;&#x5728; <code>X, Y, Z</code> &#x8F74;&#x7684;&#x5206;&#x91CF;&#xFF1B;</li>
+<li><code>g</code> &#x5F00;&#x5934;&#x7684;&#x4E00;&#x884C;&#x8868;&#x793A;&#x4E00;&#x7EC4;&#x7684;&#x5F00;&#x59CB;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E3A;&#x6B64;&#x7EC4;&#x7684;&#x540D;&#x79F0;&#xFF1B;<ul>
+<li>&#x6240;&#x8C13;&#x7EC4;&#x662F;&#x7531;&#x9876;&#x70B9;&#x7EC4;&#x6210;&#x7684;&#x4E00;&#x4E9B;&#x9762;&#x7684;&#x96C6;&#x5408;&#xFF1B;</li>
+<li>&#x53EA;&#x5305;&#x542B; <code>g</code> &#x7684;&#x884C;&#x8868;&#x793A;&#x4E00;&#x7EC4;&#x7684;&#x7ED3;&#x675F;&#xFF0C;&#x4E0E; <code>g</code> &#x5F00;&#x5934;&#x7684;&#x884C;&#x6210;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#xFF1B;</li>
+</ul>
+</li>
+<li><code>f</code> &#x5F00;&#x5934;&#x7684;&#x884C;&#x8868;&#x793A;&#x7EC4;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x9762;&#xFF1B;<ul>
+<li>&#x5982;&#x679C;&#x662F;&#x4E09;&#x89D2;&#x5F62;&#xFF0C;&#x5219;&#x540E;&#x9762;&#x6709; 3 &#x7EC4;&#x7528;&#x7A7A;&#x683C;&#x5206;&#x5272;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4EE3;&#x8868;&#x4E09;&#x89D2;&#x5F62;&#x7684;&#x4E09;&#x4E2A;&#x9876;&#x70B9;&#xFF1B;</li>
+<li>&#x6BCF;&#x7EC4;&#x6570;&#x636E;&#x5305;&#x542B; 3 &#x4E2A;&#x6570;&#x503C;&#xFF0C;&#x7528; <code>/</code> &#x5206;&#x5272;&#xFF0C;&#x4F9D;&#x6B21;&#x8868;&#x793A;&#x9876;&#x70B9;&#x5750;&#x6807;&#x7D22;&#x5F15;&#x3001;&#x9876;&#x70B9;&#x7EB9;&#x7406;&#x7D22;&#x5F15;&#x3001;&#x9876;&#x70B9;&#x6CD5;&#x5411;&#x91CF;&#x7D22;&#x5F15;&#xFF1B;</li>
+</ul>
+</li>
+</ul>
+<p>&#x8BA1;&#x7B97;&#x884C;&#x53F7;&#x65F6;&#xFF0C;&#x5404;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x524D;&#x7F00;&#x662F;&#x72EC;&#x7ACB;&#x8BA1;&#x7B97;&#x7684;&#xFF1A;&#x5982;&#x6587;&#x672C;&#x4E2D;&#x7684;&#x7B2C; 5 &#x884C;&#x4E3A; <code>v</code> &#x5F00;&#x5934;&#x7684;&#x7B2C; 2 &#x884C;!</p>
+<pre><code>f 200/285/300 196/280/399 195/260/350
+/// &#x4E09;&#x89D2;&#x5F62;&#x7684;&#x4E09;&#x4E2A;&#x9876;&#x70B9;&#x5750;&#x6807;&#x5206;&#x522B;&#x6765;&#x81EA; v &#x5F00;&#x5934;&#x7684;&#x7B2C; 200&#x3001;196&#x3001;195 &#x884C;
+/// &#x4E09;&#x4E2A;&#x9876;&#x70B9;&#x7684;&#x7EB9;&#x7406;&#x5750;&#x6807;&#x5206;&#x522B;&#x6765;&#x81EA; vt &#x5F00;&#x5934;&#x7684;&#x7B2C; 285&#x3001;280&#x3001;260 &#x884C;
+/// &#x4E09;&#x4E2A;&#x9876;&#x70B9;&#x7684;&#x6CD5;&#x5411;&#x91CF;&#x5206;&#x522B;&#x6765;&#x81EA; vn &#x5F00;&#x5934;&#x7684;&#x7B2C; 300&#x3001;399&#x3001;350 &#x884C;
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A;Obj &#x6587;&#x4EF6;&#x4E2D;&#x4E00;&#x822C;&#x9876;&#x70B9;&#x5750;&#x6807;&#x4E0E;&#x9762;&#x5750;&#x6807;&#xFF08;&#x7D22;&#x5F15;&#xFF09;&#x7684;&#x6570;&#x636E;&#x662F;&#x5FC5;&#x987B;&#x63D0;&#x4F9B;&#x7684;&#xFF0C;&#x800C;&#x6CD5;&#x5411;&#x91CF;&#x4E0E;&#x7EB9;&#x7406;&#x6570;&#x636E;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF01;</p>
+<h2 id="12&#x3001;obj-&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x7684;&#x52A0;&#x8F7D;"><a name="12&#x3001;obj-&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x7684;&#x52A0;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#12&#x3001;obj-&#x6A21;&#x578B;&#x6587;&#x4EF6;&#x7684;&#x52A0;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2&#x3001;Obj &#x6A21;&#x578B;&#x6587;&#x4EF6;&#x7684;&#x52A0;&#x8F7D;</h2>
+<p>Metal &#x4F7F;&#x7528;&#x6846;&#x67B6; <a href="https://developer.apple.com/documentation/modelio?language=objc" target="_blank">ModelIO</a> &#x52A0;&#x8F7D; <code>Obj</code> &#x6A21;&#x578B;&#x6587;&#x4EF6;&#xFF01;&#x6B64;&#x65F6;&#x52A0;&#x8F7D;&#x7684;&#x8D44;&#x6E90;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5728; Metal &#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x4E00;&#x6B65;&#x6B65;&#x8F6C;&#x4E3A; Metal &#x6240;&#x80FD;&#x7406;&#x89E3;&#x548C;&#x4F7F;&#x7528;&#x7684;&#x8D44;&#x6E90;&#xFF01;</p>
+<ul>
+<li>&#x4F7F;&#x7528;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26; <code>MTLVertexDescriptor</code> &#x6765;&#x5B9A;&#x4E49;&#x9876;&#x70B9;&#x7684;&#x8BFB;&#x53D6;&#x65B9;&#x5F0F;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#xFF1A;&#x5982;&#x4F4D;&#x7F6E;&#xFF0C;&#x7EB9;&#x7406;&#x5750;&#x6807;&#xFF0C;&#x6CD5;&#x7EBF;&#x548C;&#x989C;&#x8272;&#xFF1B; </li>
+<li>&#x5F53; GPU &#x83B7;&#x53D6;&#x9876;&#x70B9;&#x7F13;&#x51B2;&#x533A;&#x65F6;&#xFF0C;<code>MTLRenderCommandEncoder</code> &#x4F1A;&#x544A;&#x77E5; GPU &#x662F;&#x5426;&#x5BF9;&#x7F13;&#x51B2;&#x533A;&#x5EFA;&#x7ACB;&#x7D22;&#x5F15;&#xFF1B; </li>
+<li>&#x5982;&#x679C;&#x7F13;&#x51B2;&#x533A;&#x672A;&#x7F16;&#x5165;&#x7D22;&#x5F15;&#xFF0C;&#x5219;GPU&#x5047;&#x5B9A;&#x7F13;&#x51B2;&#x533A;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5E76;&#x6309;&#x987A;&#x5E8F;&#x4E00;&#x6B21;&#x8BFB;&#x5165;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x3002;</li>
+<li>&#x6B64;&#x7D22;&#x5F15;&#x5F88;&#x91CD;&#x8981;&#xFF0C;&#x56E0;&#x4E3A;&#x9876;&#x70B9;&#x88AB;&#x7F13;&#x5B58;&#x4EE5;&#x4F9B;&#x91CD;&#x7528;&#xFF1A;&#x4F8B;&#x5982;&#xFF0C;&#x7ACB;&#x65B9;&#x4F53;&#x6709;&#x5341;&#x4E8C;&#x4E2A;&#x4E09;&#x89D2;&#x5F62;&#x548C;&#x516B;&#x4E2A;&#x9876;&#x70B9;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8FDB;&#x884C;&#x7D22;&#x5F15;&#xFF0C;&#x5219;&#x5FC5;&#x987B;&#x4E3A;&#x6BCF;&#x4E2A;&#x4E09;&#x89D2;&#x5F62;&#x6307;&#x5B9A;&#x9876;&#x70B9;&#x5E76;&#x5411;GPU&#x53D1;&#x9001;&#x4E09;&#x5341;&#x516D;&#x4E2A;&#x9876;&#x70B9;&#x3002; &#x8FD9;&#x53EF;&#x80FD;&#x542C;&#x8D77;&#x6765;&#x4E0D;&#x662F;&#x5F88;&#x591A;&#xFF0C;&#x4F46;&#x5728;&#x5177;&#x6709;&#x51E0;&#x5343;&#x4E2A;&#x9876;&#x70B9;&#x7684;&#x6A21;&#x578B;&#x4E2D;&#xFF0C;&#x9876;&#x70B9;&#x7F13;&#x5B58;&#x5F88;&#x91CD;&#x8981;&#xFF01;</li>
+<li>&#x8FD8;&#x6709;&#x7528;&#x4E8E;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x7F13;&#x5B58;&#xFF0C;&#x4EE5;&#x4FBF;&#x591A;&#x6B21;&#x8BBF;&#x95EE;&#x7684;&#x9876;&#x70B9;&#x4EC5;&#x88AB;&#x7740;&#x8272;&#x4E00;&#x6B21;&#x3002;&#x7740;&#x8272;&#x9876;&#x70B9;&#x662F;&#x5DF2;&#x5E94;&#x7528;&#x989C;&#x8272;&#x7684;&#x9876;&#x70B9;&#x3002;&#x4F46;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x53D1;&#x751F;&#x5728;&#x4E0B;&#x4E00;&#x9636;&#x6BB5;&#x3002;</li>
+<li>&#x4E00;&#x4E2A;&#x540D;&#x4E3A;Scheduler&#x7684;&#x7279;&#x6B8A;&#x786C;&#x4EF6;&#x5355;&#x5143;&#x5C06;&#x9876;&#x70B9;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x53D1;&#x9001;&#x5230;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#xFF1B;</li>
+</ul>
+<h1 id="2&#x3001;api"><a name="2&#x3001;api" class="anchor-navigation-ex-anchor" href="#2&#x3001;api"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;API</h1>
+<h2 id="21&#x3001;&#x7F13;&#x51B2;&#x533A;&#x5206;&#x914D;&#x5668;-mtkmeshbufferallocator"><a name="21&#x3001;&#x7F13;&#x51B2;&#x533A;&#x5206;&#x914D;&#x5668;-mtkmeshbufferallocator" class="anchor-navigation-ex-anchor" href="#21&#x3001;&#x7F13;&#x51B2;&#x533A;&#x5206;&#x914D;&#x5668;-mtkmeshbufferallocator"><i class="fa fa-link" aria-hidden="true"></i></a>2.1&#x3001;&#x7F13;&#x51B2;&#x533A;&#x5206;&#x914D;&#x5668; <code>MTKMeshBufferAllocator</code></h2>
+<p>&#x5206;&#x914D;&#x5668; <a href="https://developer.apple.com/documentation/metalkit/mtkmeshbufferallocator?language=objc" target="_blank">MTKMeshBufferAllocator</a> &#x7528;&#x4E8E;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x521B;&#x5EFA;&#xFF1A;&#x5206;&#x914D;&#x4E00;&#x5757;&#x5185;&#x5B58;&#x4F20;&#x9012;&#x7ED9; <code>MDLAsset</code>&#xFF0C;&#x5C06;&#x9876;&#x70B9;&#x6570;&#x636E;&#x548C;&#x7D22;&#x5F15;&#x6570;&#x636E;&#x52A0;&#x8F7D;&#x5230; Metal &#x7F13;&#x51B2;&#x533A;&#x3002;</p>
+<pre><code>@interface MTKMeshBufferAllocator : NSObject
+&lt;MDLMeshBufferAllocator&gt;
+
+- (nonnull instancetype)init NS_UNAVAILABLE;
+
+/// &#x521D;&#x59CB;&#x5316;&#x5206;&#x914D;&#x5668;&#xFF1A;&#x7528;&#x4E8E;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x521B;&#x5EFA;
+- (nonnull instancetype)initWithDevice:(nonnull id&lt;MTLDevice&gt;) device;
+
+@property (nonatomic, readonly, nonnull) id&lt;MTLDevice&gt; device;
+
+@end
+</code></pre><h4 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><a name="&#x4EE3;&#x7801;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h4>
+<pre><code>{
+    /// &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5206;&#x914D;&#x5668;
+    MTKMeshBufferAllocator *bufferAllocator = [[MTKMeshBufferAllocator alloc] initWithDevice:device];
+
+    /// &#x4F7F;&#x7528;&#x5206;&#x914D;&#x5668;&#x5C06;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x7684;&#x6587;&#x4EF6;&#x52A0;&#x8F7D;&#x5230;&#x4E00;&#x5757;&#x5185;&#x5B58;&#x4E2D;
+    MDLAsset *asset = [[MDLAsset alloc] initWithURL:url
+                                   vertexDescriptor:nil
+                                    bufferAllocator:bufferAllocator];
+    NSAssert(asset, @&quot;&#x65E0;&#x6CD5;&#x6253;&#x5F00;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x7684;&#x6A21;&#x578B;&#x6587;&#x4EF6;: %@&quot;, url.absoluteString);
+}
+</code></pre><h2 id="22&#x3001;&#x7F51;&#x683C;&#x7F13;&#x51B2;&#x533A;-mtkmeshbuffer"><a name="22&#x3001;&#x7F51;&#x683C;&#x7F13;&#x51B2;&#x533A;-mtkmeshbuffer" class="anchor-navigation-ex-anchor" href="#22&#x3001;&#x7F51;&#x683C;&#x7F13;&#x51B2;&#x533A;-mtkmeshbuffer"><i class="fa fa-link" aria-hidden="true"></i></a>2.2&#x3001;&#x7F51;&#x683C;&#x7F13;&#x51B2;&#x533A; <code>MTKMeshBuffer</code></h2>
+<p>&#x5F53; Model I/O &#x9700;&#x8981;&#x5B58;&#x50A8;&#x9876;&#x70B9;&#x6570;&#x636E;&#x6216;&#x7D22;&#x5F15;&#x6570;&#x636E;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x5206;&#x914D;&#x5668; <code>MTKMeshBufferAllocator</code> &#x5206;&#x914D;&#x7684;&#x7F51;&#x683C;&#x7F13;&#x51B2;&#x533A; <a href="https://developer.apple.com/documentation/metalkit/mtkmeshbuffer?language=objc" target="_blank"><code>MTKMeshBuffer</code></a>&#x3002;</p>
+<p>&#x8FD9;&#x4E9B;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x5185;&#x5B58;&#x652F;&#x6301; Metal &#x7F13;&#x51B2;&#x533A;&#xFF1B;Model I/O &#x5C06;&#x4ECE;&#x6A21;&#x578B;&#x8D44;&#x6E90;&#x4E2D;&#x76F4;&#x63A5;&#x52A0;&#x8F7D;&#x7D22;&#x5F15;&#x6570;&#x636E;&#x548C;&#x9876;&#x70B9;&#x6570;&#x636E;&#x5230; Metal &#x7F13;&#x51B2;&#x533A;&#x3002;</p>
+<pre><code>@interface MTKMeshBuffer : NSObject 
+&lt;MDLMeshBuffer, MDLNamed&gt;
+
+- (nonnull instancetype)init NS_UNAVAILABLE;
+
+/// &#x7F13;&#x51B2;&#x533A;&#x5206;&#x914D;&#x7684;&#x5B57;&#x8282;&#x5927;&#x5C0F;
+@property (nonatomic, readonly) NSUInteger length;
+
+/** &#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x6B64;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x5206;&#x914D;&#x5668;
+ * &#x6301;&#x6709;&#x8BE5;&#x5206;&#x914D;&#x5668;&#xFF0C;&#x4EE5;&#x4FBF; Model I/O &#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5B83;&#x8FDB;&#x884C;&#x590D;&#x5236;&#x548C;&#x8F6C;&#x53D1;&#x64CD;&#x4F5C;(&#x4F8B;&#x5982;&#x5F53;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#x88AB;&#x5E94;&#x7528;&#x5230;&#x9876;&#x70B9;&#x7F13;&#x51B2;&#x533A;&#x65F6;)&#x3002;
+ */
+@property (nonatomic, readonly,  nonnull)  MTKMeshBufferAllocator *allocator;
+
+/** &#x521B;&#x5EFA;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x5185;&#x5B58;&#x5757;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x662F;&#x4ECE;&#x4E00;&#x4E2A;&#x533A;&#x57DF;&#x521B;&#x5EFA;&#x7684;
+ * &#x4E3A;&#x6BCF;&#x4E2A;&#x533A;&#x57DF;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684; MetalBuffer&#xFF1B;&#x6BCF;&#x4E2A;&#x533A;&#x57DF;&#x53EF;&#x4EE5;&#x6709;&#x8BB8;&#x591A; MTKMeshBuffers&#xFF0C;&#x6BCF;&#x4E2A;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x504F;&#x79FB;&#x91CF;&#x3002;
+ * &#x5982;&#x679C;&#x4F7F;&#x7528; MTKMeshBufferAllocator&#xFF0C;Model I/O &#x5C06;&#x5C1D;&#x8BD5;&#x5C06;&#x5355;&#x4E2A;&#x7F51;&#x683C;&#x7684;&#x6240;&#x6709;&#x9876;&#x70B9;&#x548C;&#x7D22;&#x5F15;&#x6570;&#x636E;&#x52A0;&#x8F7D;&#x5230;&#x5355;&#x4E2A;&#x533A;&#x57DF;&#x3002;
+ * &#x8FD9;&#x5141;&#x8BB8; GPU &#x5728;&#x7ED8;&#x5236;&#x7F51;&#x683C;&#x65F6;&#x83B7;&#x5F97;&#x66F4;&#x9AD8;&#x7684;&#x7F13;&#x5B58;&#x547D;&#x4E2D;&#x7387;&#xFF1B;&#x56E0;&#x6B64;&#xFF0C;&#x5C3D;&#x7BA1;&#x4E00;&#x4E2A; Model &#x53EF;&#x80FD;&#x6709;&#x8BB8;&#x591A; MTKMeshBuffers&#xFF0C;&#x4F46;&#x5B83;&#x4EEC;&#x5C06;&#x7531;&#x76F8;&#x540C;&#x7684;&#x76F8;&#x90BB;&#x7684; MetalBuffer &#x652F;&#x6301;&#x3002;
+ */
+@property (nonatomic, readonly, nullable) id&lt;MDLMeshBufferZone&gt; zone;
+
+/** Metal &#x7F13;&#x51B2;&#x533A;&#xFF1A;&#x652F;&#x6301;&#x9876;&#x70B9;&#x6570;&#x636E;&#x4E0E;&#x7D22;&#x5F15;&#x6570;&#x636E;&#xFF1B;
+ *  &#x9876;&#x70B9;&#x6570;&#x636E;&#x4E0E;&#x7D22;&#x5F15;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x5728;&#x4E24;&#x4E2A;&#x7F13;&#x51B2;&#x533A;&#xFF1B;&#x4E5F;&#x53EF;&#x4EE5;&#x5B58;&#x50A8;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7F13;&#x51B2;&#x533A;&#xFF0C;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x504F;&#x79FB;&#x91CF;&#x6765;&#x533A;&#x5206;&#xFF01;
+ */
+@property (nonatomic, readonly, nonnull) id&lt;MTLBuffer&gt; buffer;
+
+/// Metal &#x7F13;&#x51B2;&#x533A;&#x5185;&#x6570;&#x636E;&#x7684;&#x5B57;&#x8282;&#x504F;&#x79FB;&#x91CF;
+@property (nonatomic, readonly) NSUInteger offset;
+
+/// &#x7F13;&#x51B2;&#x533A;&#x7684;&#x9884;&#x671F;&#x7C7B;&#x578B;
+@property (nonatomic, readonly) MDLMeshBufferType type;
+
+@end
+</code></pre><h4 id="&#x4EE3;&#x7801;&#x793A;&#x4F8B;_1"><a name="&#x4EE3;&#x7801;&#x793A;&#x4F8B;_1" class="anchor-navigation-ex-anchor" href="#&#x4EE3;&#x7801;&#x793A;&#x4F8B;_1"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h4>
+<p><strong>&#x7F51;&#x683C;&#x7F13;&#x51B2;&#x533A;&#x7531;&#x7CFB;&#x7EDF;&#x5206;&#x914D;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EA;&#x9700;&#x5173;&#x6CE8;&#x5B83;&#x7684;&#x67D0;&#x4E9B;&#x5C5E;&#x6027;&#x5373;&#x53EF;</strong>&#xFF01;</p>
+<pre><code>- (void)drawInMTKView:(nonnull MTKView *)view {
+    ...
+
+    for (MTKMesh *mesh in _meshes) {
+
+        // &#x8BBE;&#x7F6E;&#x7F51;&#x683C;&#x7684;&#x9876;&#x70B9;&#x7F13;&#x51B2;&#x533A;&#x6570;&#x636E;
+        for (NSUInteger bufferIndex = 0; bufferIndex &lt; mesh.vertexBuffers.count; bufferIndex++) {
+
+            /// &#x83B7;&#x53D6;&#x7F51;&#x683C;&#x67D0;&#x4E2A;&#x9876;&#x70B9;&#x7684;&#x7F13;&#x51B2;&#x533A;
+            MTKMeshBuffer *vertexBuffer = mesh.vertexBuffers[bufferIndex];
+
+            if((NSNull*)vertexBuffer != [NSNull null]) {
+
+                /// &#x5C06;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x6570;&#x636E;&#x3001;&#x504F;&#x79FB;&#x91CF;&#x7F16;&#x7801;
+                [renderEncoder setVertexBuffer:vertexBuffer.buffer
+                                        offset:vertexBuffer.offset
+                                       atIndex:bufferIndex];
+            }
+        }
+
+        ...        
+    }
+}
+</code></pre><h2 id="23&#x3001;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;"><a name="23&#x3001;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;" class="anchor-navigation-ex-anchor" href="#23&#x3001;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3&#x3001;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;</h2>
+<p>&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26; <a href="https://developer.apple.com/documentation/metal/mtlvertexdescriptor?language=objc" target="_blank">MTLVertexDescriptor</a> &#x63CF;&#x8FF0; <em>&#x5982;&#x4F55;&#x5C06;&#x5B58;&#x50A8;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x9876;&#x70B9;&#x6570;&#x636E;&#x6620;&#x5C04;&#x5230;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x4E0A;</em>&#x3002;</p>
+<pre><code>@interface MTLVertexDescriptor : NSObject &lt;NSCopying&gt;
+
+/// &#x521B;&#x5EFA;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;
++ (MTLVertexDescriptor *)vertexDescriptor;
+
+/// &#x63CF;&#x8FF0;&#x5F53;&#x6E32;&#x67D3;&#x56FE;&#x5143;&#x65F6;&#xFF0C;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x6570;&#x636E;
+@property (readonly) MTLVertexBufferLayoutDescriptorArray *layouts;
+
+/// &#x63CF;&#x8FF0;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x5982;&#x4F55;&#x5B58;&#x50A8;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x5E76;&#x6620;&#x5C04;&#x5230;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x5BF9;&#x5E94;&#x53C2;&#x6570;
+@property (readonly) MTLVertexAttributeDescriptorArray *attributes;
+
+/// &#x91CD;&#x7F6E;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#x7684;&#x9ED8;&#x8BA4;&#x72B6;&#x6001;
+/// &#x91CD;&#x7F6E;&#x540E;&#xFF0C;&#x6570;&#x7EC4; attributes &#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x63CF;&#x8FF0;&#x7B26;
+///       &#x6570;&#x7EC4; layouts &#x7684;&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x9ED8;&#x8BA4;&#x7684;&#x9876;&#x70B9;&#x7F13;&#x51B2;&#x533A;&#x5E03;&#x5C40;&#x63CF;&#x8FF0;&#x7B26;
+- (void)reset;
+
+@end
+</code></pre><h2 id="231&#x3001;&#x5185;&#x5B58;&#x5E03;&#x5C40;"><a name="231&#x3001;&#x5185;&#x5B58;&#x5E03;&#x5C40;" class="anchor-navigation-ex-anchor" href="#231&#x3001;&#x5185;&#x5B58;&#x5E03;&#x5C40;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.1&#x3001;&#x5185;&#x5B58;&#x5E03;&#x5C40;</h2>
+<p><a href="https://developer.apple.com/documentation/metal/mtlvertexbufferlayoutdescriptor?language=objc" target="_blank">MTLVertexBufferLayoutDescriptor</a> &#x7528;&#x4E8E;&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x7BA1;&#x9053;&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x8981;&#x53D1;&#x9001;&#x7ED9;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x6570;&#x636E;! </p>
+<pre><code>/// &#x7528;&#x4E8E;&#x914D;&#x7F6E;&#x6E32;&#x67D3;&#x7BA1;&#x9053;&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x8981;&#x53D1;&#x9001;&#x7ED9;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x6570;&#x636E;
+@interface MTLVertexBufferLayoutDescriptor : NSObject &lt;NSCopying&gt;
+
+/// &#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x4E24;&#x4E2A;&#x9876;&#x70B9;&#x7684;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x4E4B;&#x95F4;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;&#x4EE5;&#x5B57;&#x8282;&#x4E3A;&#x5355;&#x4F4D;
+/// &#x5FC5;&#x987B;&#x662F;4&#x5B57;&#x8282;&#x7684;&#x500D;&#x6570;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;0
+@property (assign, nonatomic) NSUInteger stride;
+
+/// &#x9876;&#x70B9;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x5448;&#x73B0;&#x7ED9;&#x7740;&#x8272;&#x5668;&#x7684;&#x60C5;&#x51B5;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; MTLVertexStepFunctionPerVertex
+@property (assign, nonatomic) MTLVertexStepFunction stepFunction;
+
+/// &#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x5904;&#x7406;&#x9876;&#x70B9;&#x6570;&#x636E;&#x7684;&#x9891;&#x7387;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 1
+/// stepRate &#x4E0E; stepFunction &#x5171;&#x540C;&#x51B3;&#x5B9A;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x83B7;&#x53D6;&#x65B0;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x7684;&#x9891;&#x7387;&#x3002;
+/// &#x5F53; stepFunction=MTLVertexStepFunctionPerInstance&#x65F6;&#xFF0C;&#x53D6;&#x51B3;&#x4E8E; stepRate &#x53D6;&#x503C;
+///     &#x5982;&#x679C; stepRate=1&#xFF0C;&#x5219;&#x4E3A;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;&#x83B7;&#x53D6;&#x65B0;&#x5C5E;&#x6027;&#x6570;&#x636E;;
+///     &#x5982;&#x679C; stepRate=2&#xFF0C;&#x5219;&#x6BCF;&#x4E24;&#x4E2A;&#x5B9E;&#x4F8B;&#x5C31;&#x4F1A;&#x83B7;&#x53D6;&#x65B0;&#x7684;&#x5C5E;&#x6027;&#x6570;&#x636E;
+///     ... &#x4EE5;&#x6B64;&#x7C7B;&#x63A8;
+@property (assign, nonatomic) NSUInteger stepRate;
+
+@end
+
+/// &#x6E32;&#x67D3;&#x7BA1;&#x9053;&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x53D1;&#x9001;&#x7ED9;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x6570;&#x636E;&#x7684;&#x4E00;&#x7EC4;&#x914D;&#x7F6E;
+@interface MTLVertexBufferLayoutDescriptorArray : NSObject
+/// &#x6839;&#x636E;&#x7D22;&#x5F15;&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x5E03;&#x5C40;&#x4FE1;&#x606F;
+- (MTLVertexBufferLayoutDescriptor *)objectAtIndexedSubscript:(NSUInteger)index;
+
+/// &#x6839;&#x636E;&#x7D22;&#x5F15;&#x8BBE;&#x7F6E;&#x7F6E;&#x4F4D;&#x7F6E;&#x7684;&#x7D22;&#x5F15;
+- (void)setObject:(nullable MTLVertexBufferLayoutDescriptor *)bufferDesc atIndexedSubscript:(NSUInteger)index;
+
+@end
+</code></pre><h2 id="232&#x3001;&#x5C5E;&#x6027;&#x6620;&#x5C04;"><a name="232&#x3001;&#x5C5E;&#x6027;&#x6620;&#x5C04;" class="anchor-navigation-ex-anchor" href="#232&#x3001;&#x5C5E;&#x6027;&#x6620;&#x5C04;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.2&#x3001;&#x5C5E;&#x6027;&#x6620;&#x5C04;</h2>
+<p><a href="https://developer.apple.com/documentation/metal/mtlvertexattributedescriptor?language=objc" target="_blank">MTLVertexAttributeDescriptor</a> &#x63CF;&#x8FF0;&#x4E86; <em>&#x5982;&#x4F55;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5B58;&#x50A8;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x5E76;&#x5C06;&#x5176;&#x6620;&#x5C04;&#x5230;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x53C2;&#x6570;&#x4E2D;</em>&#xFF01; </p>
+<p>&#x63CF;&#x8FF0;&#x7B26;&#x5C06;&#x5185;&#x5B58;&#x4F4D;&#x7F6E;&#x6620;&#x5C04;&#x5230;&#x5C5E;&#x6027;&#x4F4D;&#x7F6E;&#xFF1A;&#x5B83;&#x652F;&#x6301;&#x5BF9;&#x591A;&#x4E2A;&#x5C5E;&#x6027;(&#x5982;&#x9876;&#x70B9;&#x5750;&#x6807;&#x3001;UV &#x6CD5;&#x7EBF;&#x548C;&#x7EB9;&#x7406;&#x5750;&#x6807;)&#x7684;&#x8BBF;&#x95EE;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x4EA4;&#x53C9;&#x5206;&#x5E03;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#xFF01;</p>
+<pre><code>/// &#x5982;&#x4F55;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5B58;&#x50A8;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x5E76;&#x5C06;&#x5176;&#x6620;&#x5C04;&#x5230;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x53C2;&#x6570;&#x4E2D;&#xFF1B;
+/// &#x63CF;&#x8FF0;&#x7B26;&#x5C06;&#x5185;&#x5B58;&#x4F4D;&#x7F6E;&#x6620;&#x5C04;&#x5230;&#x5C5E;&#x6027;&#x4F4D;&#x7F6E;&#xFF1A;&#x5B83;&#x652F;&#x6301;&#x5BF9;&#x591A;&#x4E2A;&#x5C5E;&#x6027;(&#x5982;&#x9876;&#x70B9;&#x5750;&#x6807;&#x3001;UV &#x6CD5;&#x7EBF;&#x548C;&#x7EB9;&#x7406;&#x5750;&#x6807;)&#x7684;&#x8BBF;&#x95EE;&#xFF0C;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x4EA4;&#x53C9;&#x5206;&#x5E03;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#xFF1B;
+@interface MTLVertexAttributeDescriptor : NSObject &lt;NSCopying&gt;
+
+/// &#x6307;&#x5B9A;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;&#x5BF9;&#x5E94;&#x4E8E;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x8F93;&#x5165;&#x53C2;&#x6570;
+@property (assign, nonatomic) MTLVertexFormat format;
+
+/// &#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x5728;&#x9876;&#x70B9;&#x6570;&#x636E;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x7531;&#x5B57;&#x8282;&#x504F;&#x79FB;&#x91CF;&#x51B3;&#x5B9A;&#xFF1B;&#x504F;&#x79FB;&#x91CF;&#x5FC5;&#x987B;&#x662F; 4 &#x7684;&#x500D;&#x6570;&#xFF1B;
+@property (assign, nonatomic) NSUInteger offset;
+
+/// &#x5173;&#x8054;&#x9876;&#x70B9;&#x7F13;&#x51B2;&#x533A;&#x53C2;&#x6570;&#x8868;&#x4E2D;&#x7684;&#x7D22;&#x5F15;
+@property (assign, nonatomic) NSUInteger bufferIndex;
+
+@end
+
+@interface MTLVertexAttributeDescriptorArray : NSObject
+- (MTLVertexAttributeDescriptor *)objectAtIndexedSubscript:(NSUInteger)index;
+- (void)setObject:(nullable MTLVertexAttributeDescriptor *)attributeDesc atIndexedSubscript:(NSUInteger)index;
+@end
+</code></pre><h3 id="233&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><a name="233&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#233&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.3&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h3>
+<p><code>MTLRenderPipelineDescriptor</code> &#x5C01;&#x88C5;&#x4E86;&#x56FE;&#x5F62;&#x6E32;&#x67D3;&#x7BA1;&#x9053;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x5305;&#x62EC;&#x7740;&#x8272;&#x5668;&#x3001;&#x6DF7;&#x5408;&#x3001;&#x591A;&#x6B21;&#x91C7;&#x6837;&#x548C;&#x53EF;&#x89C1;&#x6027;&#x6D4B;&#x8BD5;&#x7B49;&#xFF1B;</p>
+<ul>
+<li>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x6E32;&#x67D3;&#x7BA1;&#x9053;&#xFF0C;&#x4EC5;&#x6301;&#x6709;&#x4E00;&#x4E2A;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#xFF1B;</li>
+<li>&#x5982;&#x679C;&#x5728;&#x6E32;&#x67D3;&#x7BA1;&#x9053;&#x63CF;&#x8FF0;&#x7B26; <code>MTLRenderPipelineDescriptor</code> &#x4E0A;&#x914D;&#x7F6E;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#xFF0C;&#x90A3;&#x4E48;&#x6784;&#x5EFA;&#x7684;&#x9876;&#x70B9;&#x5185;&#x5B58;&#x5E03;&#x5C40;&#x5C31;&#x4F1A;&#x5E94;&#x7528;&#x4E8E;&#x6E32;&#x67D3;&#x7BA1;&#x9053;&#x76F8;&#x5173;&#x7684;&#x51FD;&#x6570;&#x4E2D;&#x53BB;&#xFF1B;</li>
+</ul>
+<pre><code>/// &#x9876;&#x70B9;&#x5C5E;&#x6027;&#x7684;&#x7D22;&#x5F15;
+typedef enum VertexAttribute {
+    VertexAttributePosition  = 0, /// &#x9876;&#x70B9;&#x7684;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;
+    VertexAttributeTexcoord  = 1, /// &#x9876;&#x70B9;&#x7684;&#x7EB9;&#x7406;&#x4FE1;&#x606F;
+} MeshVertexAttribute;
+</code></pre><h4 id="&#x914D;&#x7F6E;&#x9876;&#x70B9;&#x63CF;&#x8FF0;"><a name="&#x914D;&#x7F6E;&#x9876;&#x70B9;&#x63CF;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;&#x9876;&#x70B9;&#x63CF;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;&#x9876;&#x70B9;&#x63CF;&#x8FF0;</h4>
+<pre><code>{
+    /// &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;
+    MTLVertexDescriptor *vertexDescriptor = [[MTLVertexDescriptor alloc] init];
+
+    /// &#x9876;&#x70B9;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#xFF1A;&#x4E09;&#x7EF4;&#x5750;&#x6807;&#x9700;&#x8981; Float3
+    vertexDescriptor.attributes[VertexAttributePosition].format       = MTLVertexFormatFloat3;
+    vertexDescriptor.attributes[VertexAttributePosition].offset       = 0; /// &#x5185;&#x5B58;&#x504F;&#x79FB;&#x91CF;&#x4E3A; 0
+    vertexDescriptor.attributes[VertexAttributePosition].bufferIndex  = 0;
+
+    /// &#x9876;&#x70B9;&#x7EB9;&#x7406;&#x4FE1;&#x606F;&#xFF1A;&#x7EB9;&#x7406;&#x7A7A;&#x95F4;&#x5750;&#x6807;&#x4E3A;&#x4E8C;&#x7EF4;&#x5750;&#x6807; Float2
+    vertexDescriptor.attributes[VertexAttributeTexcoord].format       = MTLVertexFormatFloat2;
+    vertexDescriptor.attributes[VertexAttributeTexcoord].offset       = 12; /// &#x5185;&#x5B58;&#x504F;&#x79FB;&#x91CF; 4&#x5B57;&#x8282; * 3&#x4E2A; = 12&#x5B57;&#x8282;
+    vertexDescriptor.attributes[VertexAttributeTexcoord].bufferIndex  = 0;
+
+    /// &#x8BBE;&#x7F6E;&#x5E03;&#x5C40;&#x4FE1;&#x606F;
+    vertexDescriptor.layouts[0].stride = 20; /// &#x4E00;&#x4E2A;&#x9876;&#x70B9;&#x7684;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#xFF1A;&#x4F4D;&#x7F6E;+&#x7EB9;&#x7406; = 12 + 8 = 20
+
+    /// &#x89C4;&#x5B9A;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x6BCF;&#x6B21;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x9876;&#x70B9;&#x6570;&#x636E;
+    vertexDescriptor.layouts[0].stepRate = 1; 
+    vertexDescriptor.layouts[0].stepFunction = MTLVertexStepFunctionPerVertex;
+}
+</code></pre><h4 id="&#x7740;&#x8272;&#x5668;"><a name="&#x7740;&#x8272;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x7740;&#x8272;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7740;&#x8272;&#x5668;</h4>
+<p>&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#x89C4;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;&#x6570;&#x636E;&#x4E0E;&#x7EB9;&#x7406;&#x6570;&#x636E;&#xFF0C;&#x5FC5;&#x987B;&#x4E0E;&#x7740;&#x8272;&#x5668;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x6570;&#x636E;&#x4E0E;&#x7EB9;&#x7406;&#x6570;&#x636E;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#xFF01;</p>
+<pre><code>struct Vertex {
+    float3 position  [[attribute(VertexAttributePosition)]];
+    float2 texCoord  [[attribute(VertexAttributeTexcoord)]];
+};
+
+struct ColorInOut {
+    float4 position [[position]];
+    float2 texCoord;
+};
+
+/// &#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;
+/// &#x4F7F;&#x7528; [[ stage_in ]] &#x63A5;&#x6536;&#x6BCF;&#x4E2A;&#x9876;&#x70B9;&#x6570;&#x636E;&#xFF1A;&#x53EF;&#x4EE5;&#x8BFB;&#x53D6;&#x9876;&#x70B9;&#x7684; &#x4F4D;&#x7F6E;&#x5750;&#x6807;&#x3001;&#x7EB9;&#x7406;&#x5750;&#x6807;
+vertex ColorInOut vertexShader(const Vertex in [[ stage_in ]]) {
+    ColorInOut out;
+    float4 position = vector_float4(in.position, 1.0);
+    out.position = position;
+    out.texCoord = in.texCoord;
+    return out;
+}
+</code></pre><h4 id="&#x7740;&#x8272;&#x5668;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;"><a name="&#x7740;&#x8272;&#x5668;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x7740;&#x8272;&#x5668;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7740;&#x8272;&#x5668;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;</h4>
+<p>&#x9664;&#x4E86;&#x9876;&#x70B9;&#x6570;&#x636E;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4E0B;&#x8FF0;&#x65B9;&#x6CD5;&#x5411;&#x7740;&#x8272;&#x5668;&#x4E2D;&#x4F20;&#x9001;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x6570;&#x636E;&#x8D44;&#x6E90;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x7EB9;&#x7406;&#x3001;&#x5176;&#x4ED6;&#x6570;&#x636E;&#x7F13;&#x51B2;&#x3001;&#x91C7;&#x6837;&#x5668;&#x7B49;&#x7B49;&#x3002;</p>
+<pre><code>@protocol MTLRenderCommandEncoder &lt;MTLCommandEncoder&gt;
+
+- (void)setVertexBuffer:(nullable id &lt;MTLBuffer&gt;)buffer offset:(NSUInteger)offset atIndex:(NSUInteger)index;
+- (void)setFragmentBufferOffset:(NSUInteger)offset atIndex:(NSUInteger)index;
+- (void)setFragmentTexture:(nullable id &lt;MTLTexture&gt;)texture atIndex:(NSUInteger)index;
+
+@end
+</code></pre><p><code>Argument Tables</code> &#x5C31;&#x662F;&#x5404;&#x79CD;&#x8D44;&#x6E90;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x6BCF;&#x4E2A;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x548C;&#x7247;&#x6BB5;&#x7740;&#x8272;&#x5668;&#x90FD;&#x5BF9;&#x5E94;&#x4E00;&#x4E2A;&#x8FD9;&#x6837;&#x7684;&#x8D44;&#x6E90;&#x5217;&#x8868;&#xFF0C;&#x901A;&#x8FC7;&#x4E0A;&#x8FF0;&#x65B9;&#x6CD5;&#x4F20;&#x5165;&#x3002;</p>
+<p><img src="assets/Metal_Shader_ParamLists.jpeg" alt="&#x7740;&#x8272;&#x5668;&#x7684;&#x53C2;&#x6570;&#x5217;&#x8868;"></p>
+<h3 id="234&#x3001;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x5982;&#x4F55;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5E03;&#x5C40;"><a name="234&#x3001;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x5982;&#x4F55;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5E03;&#x5C40;" class="anchor-navigation-ex-anchor" href="#234&#x3001;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x5982;&#x4F55;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5E03;&#x5C40;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.4&#x3001;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x5982;&#x4F55;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5E03;&#x5C40;</h3>
+<p><code>MTLVertexFormat</code> &#x6307;&#x5B9A;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;&#x5BF9;&#x5E94;&#x4E8E;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x8F93;&#x5165;&#x53C2;&#x6570;&#xFF1B;&#x53EF;&#x4EE5;&#x5728;&#x4EE5;&#x4E0B;&#x6307;&#x5B9A;&#x7684;&#x9650;&#x5236;&#x6761;&#x4EF6;&#x4E0B;&#x8F6C;&#x6362;&#x4E3A;&#x7740;&#x8272;&#x5668;&#x53C2;&#x6570;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;&#x65E0;&#x6548;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x4F1A;&#x5BFC;&#x81F4;&#x7F16;&#x8BD1;&#x9519;&#x8BEF;&#xFF09;</p>
+<ul>
+<li>&#x5BF9;&#x4E0D;&#x540C;&#x957F;&#x5EA6;&#x7684;&#x5411;&#x91CF;&#x8FDB;&#x884C;&#x8F6C;&#x6362;&#x662F;&#x6709;&#x6548;&#x7684;&#xFF1A;<ul>
+<li>&#x5411;&#x91CF;&#x957F;&#x5EA6;&#x53EF;&#x4EE5;&#x7F29;&#x77ED;&#xFF1A;&#x4F8B;&#x5982;&#xFF0C;<code>MTLVertexFormatInt4</code> &#x6570;&#x636E;&#x5728;&#x7740;&#x8272;&#x5668;&#x53C2;&#x6570;&#x4E2D;&#x88AB;&#x7B80;&#x5316;&#x4E3A;&#x4E00;&#x4E2A; <code>int</code>&#xFF0C;&#x5E76;&#x4E14;&#x5411;&#x91CF;&#x7684;&#x6700;&#x540E;&#x4E09;&#x4E2A;&#x503C;&#x88AB;&#x4E22;&#x5F03;&#xFF1B;</li>
+<li>&#x5411;&#x91CF;&#x53EF;&#x4EE5;&#x5C55;&#x5F00;&#xFF1A;&#x4F8B;&#x5982;&#xFF0C;&#x6269;&#x5C55; <code>MTLVertexFormatInt</code> &#x5230;&#x4E00;&#x4E2A; <code>int4</code> &#x7740;&#x8272;&#x5668;&#x53C2;&#x6570;&#x662F;&#x6709;&#x6548;&#x7684;&#xFF1B;&#x5C55;&#x5F00;&#x65F6;&#xFF0C;&#x7528; <code>(0,0,0,1)</code> &#x5BF9;&#x5E94;&#x7684;&#x5206;&#x91CF;&#x586B;&#x5145;&#x591A;&#x4F59;&#x7684;&#x5206;&#x91CF;&#x3002;</li>
+</ul>
+</li>
+<li>&#x6574;&#x6570; <code>MTLVertexFormat</code> &#x7684;&#x7B26;&#x53F7;&#x4E0D;&#x80FD;&#x88AB;&#x8F6C;&#x6362;&#x4E3A;&#x5177;&#x6709;&#x4E0D;&#x540C;&#x7B26;&#x53F7;&#x7684;&#x6574;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x7740;&#x8272;&#x5668;&#x53C2;&#x6570;&#x3002;
+&#x4F8B;&#x5982;&#xFF0C;&#x5C06;&#x6709;&#x7B26;&#x53F7;&#x7684; <code>MTLVertexFormatInt</code> &#x4E0E;&#x65E0;&#x7B26;&#x53F7;&#x7684; <code>MTLVertexFormatUInt</code> &#x4E92;&#x76F8;&#x8F6C;&#x6362;&#x5747;&#x662F;&#x65E0;&#x6548;&#x7684;&#xFF1B;</li>
+<li>&#x4E0D;&#x652F;&#x6301;&#x6574;&#x6570;&#x622A;&#x65AD;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5C06; <code>MTLVertexFormatInt</code> &#x8F6C;&#x6362;&#x4E3A; <code>short</code> &#x662F;&#x65E0;&#x6548;&#x7684;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5C06; <code>MTLVertexFormatShort2</code> &#x8F6C;&#x6362;&#x4E3A; <code>int</code> &#x503C;&#x7684;&#x5411;&#x91CF;&#x662F;&#x6709;&#x6548;&#x7684;&#x3002;</li>
+<li>&#x5F3A;&#x5236;&#x8F6C;&#x6362;&#x89C4;&#x8303;&#x5316;&#x7684; <code>MTLVertexFormat</code> &#x7C7B;&#x578B;(&#x4F8B;&#x5982; <code>MTLVertexFormatShort2Normalized</code> )&#x4EC5;&#x5BF9; <code>float</code> &#x6216; <code>half</code> &#x6709;&#x6548;&#xFF1B;</li>
+</ul>
+<pre><code>/// &#x6307;&#x5B9A;&#x9876;&#x70B9;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x5982;&#x4F55;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5E03;&#x5C40;
+typedef NS_ENUM(NSUInteger, MTLVertexFormat) {
+    MTLVertexFormatInvalid = 0,
+
+    MTLVertexFormatUChar2 = 1,
+    MTLVertexFormatUChar3 = 2,
+    MTLVertexFormatUChar4 = 3,
+
+    MTLVertexFormatChar2 = 4,
+    MTLVertexFormatChar3 = 5,
+    MTLVertexFormatChar4 = 6,
+
+    MTLVertexFormatUChar2Normalized = 7,
+    MTLVertexFormatUChar3Normalized = 8,
+    MTLVertexFormatUChar4Normalized = 9,
+
+    MTLVertexFormatChar2Normalized = 10,
+    MTLVertexFormatChar3Normalized = 11,
+    MTLVertexFormatChar4Normalized = 12,
+
+    MTLVertexFormatUShort2 = 13,
+    MTLVertexFormatUShort3 = 14,
+    MTLVertexFormatUShort4 = 15,
+
+    MTLVertexFormatShort2 = 16,
+    MTLVertexFormatShort3 = 17,
+    MTLVertexFormatShort4 = 18,
+
+    MTLVertexFormatUShort2Normalized = 19,
+    MTLVertexFormatUShort3Normalized = 20,
+    MTLVertexFormatUShort4Normalized = 21,
+
+    MTLVertexFormatShort2Normalized = 22,
+    MTLVertexFormatShort3Normalized = 23,
+    MTLVertexFormatShort4Normalized = 24,
+
+    MTLVertexFormatHalf2 = 25,
+    MTLVertexFormatHalf3 = 26,
+    MTLVertexFormatHalf4 = 27,
+
+    MTLVertexFormatFloat = 28,
+    MTLVertexFormatFloat2 = 29,
+    MTLVertexFormatFloat3 = 30,
+    MTLVertexFormatFloat4 = 31,
+
+    MTLVertexFormatInt = 32,
+    MTLVertexFormatInt2 = 33,
+    MTLVertexFormatInt3 = 34,
+    MTLVertexFormatInt4 = 35,
+
+    MTLVertexFormatUInt = 36,
+    MTLVertexFormatUInt2 = 37,
+    MTLVertexFormatUInt3 = 38,
+    MTLVertexFormatUInt4 = 39,
+
+    MTLVertexFormatInt1010102Normalized = 40,
+    MTLVertexFormatUInt1010102Normalized = 41,
+
+    MTLVertexFormatUChar4Normalized_BGRA API_AVAILABLE(macos(10.13), ios(11.0)) = 42,
+
+    MTLVertexFormatUChar API_AVAILABLE(macos(10.13), ios(11.0)) = 45,
+    MTLVertexFormatChar API_AVAILABLE(macos(10.13), ios(11.0)) = 46,
+    MTLVertexFormatUCharNormalized API_AVAILABLE(macos(10.13), ios(11.0)) = 47,
+    MTLVertexFormatCharNormalized API_AVAILABLE(macos(10.13), ios(11.0)) = 48,
+
+    MTLVertexFormatUShort API_AVAILABLE(macos(10.13), ios(11.0)) = 49,
+    MTLVertexFormatShort API_AVAILABLE(macos(10.13), ios(11.0)) = 50,
+    MTLVertexFormatUShortNormalized API_AVAILABLE(macos(10.13), ios(11.0)) = 51,
+    MTLVertexFormatShortNormalized API_AVAILABLE(macos(10.13), ios(11.0)) = 52,
+
+    MTLVertexFormatHalf API_AVAILABLE(macos(10.13), ios(11.0)) = 53,
+
+} API_AVAILABLE(macos(10.11), ios(8.0));
+</code></pre><h3 id="235&#x3001;&#x9876;&#x70B9;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x5448;&#x73B0;&#x7ED9;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x7C7B;&#x578B;"><a name="235&#x3001;&#x9876;&#x70B9;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x5448;&#x73B0;&#x7ED9;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#235&#x3001;&#x9876;&#x70B9;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x5448;&#x73B0;&#x7ED9;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.5&#x3001;&#x9876;&#x70B9;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x5448;&#x73B0;&#x7ED9;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x7C7B;&#x578B;</h3>
+<pre><code>/// &#x9876;&#x70B9;&#x53CA;&#x5176;&#x5C5E;&#x6027;&#x5448;&#x73B0;&#x7ED9;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x7684;&#x7C7B;&#x578B;
+typedef NS_ENUM(NSUInteger, MTLVertexStepFunction) {
+
+    /// &#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x53EA;&#x83B7;&#x53D6;&#x4E00;&#x6B21;&#x5C5E;&#x6027;&#x6570;&#x636E;&#xFF0C;&#x8BE5;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x7528;&#x4E8E;&#x6BCF;&#x4E2A;&#x9876;&#x70B9;&#xFF1B;stepRate &#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x4E3A; 0
+    MTLVertexStepFunctionConstant = 0,
+
+    /// &#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x5C06;&#x57FA;&#x4E8E;&#x5C5E;&#x6027;&#x9650;&#x5B9A;&#x7B26; [[vertex_id]] &#x83B7;&#x53D6;&#x65B0;&#x7684;&#x5C5E;&#x6027;&#x6570;&#x636E;
+    /// &#x6BCF;&#x5F53;&#x5904;&#x7406;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x9876;&#x70B9;&#x65F6;&#xFF0C;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x90FD;&#x4F1A;&#x83B7;&#x53D6;&#x65B0;&#x7684;&#x5C5E;&#x6027;&#x6570;&#x636E;
+    /// stepRate &#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x4E3A; 1
+    MTLVertexStepFunctionPerVertex = 1, 
+
+    /// &#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#x5C06;&#x6839;&#x636E;&#x5C5E;&#x6027;&#x9650;&#x5B9A;&#x7B26; [[instance_id]] &#x83B7;&#x53D6;&#x65B0;&#x7684;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x3002;
+    /// &#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;stepRate &#x5FC5;&#x987B;&#x5927;&#x4E8E;0&#xFF0C;stepRate &#x51B3;&#x5B9A;&#x4E86; &#x9876;&#x70B9;&#x7740;&#x8272;&#x5668; &#x83B7;&#x53D6;&#x65B0;&#x5C5E;&#x6027;&#x6570;&#x636E;&#x7684;&#x9891;&#x7387;
+    MTLVertexStepFunctionPerInstance = 2,
+    MTLVertexStepFunctionPerPatch = 3,
+    MTLVertexStepFunctionPerPatchControlPoint API_AVAILABLE(macos(10.12), ios(10.0)) = 4,
+};
+</code></pre><h2 id="23&#x3001;&#x7F51;&#x683C;-mtkmesh"><a name="23&#x3001;&#x7F51;&#x683C;-mtkmesh" class="anchor-navigation-ex-anchor" href="#23&#x3001;&#x7F51;&#x683C;-mtkmesh"><i class="fa fa-link" aria-hidden="true"></i></a>2.3&#x3001;&#x7F51;&#x683C; <code>MTKMesh</code></h2>
+<p><a href="https://developer.apple.com/documentation/metalkit/mtkmesh?language=objc" target="_blank">MTKMesh</a> &#x5BF9;&#x9876;&#x70B9;&#x6570;&#x636E;&#x7684;&#x5C01;&#x88C5;</p>
+<p>&#x6A21;&#x578B; I/O &#x7F51;&#x683C;&#x9876;&#x70B9;&#x6570;&#x636E;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x9002;&#x7528;&#x4E8E; Metal &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;
+&#x7528;&#x4E8E;&#x6E32;&#x67D3;&#x7F51;&#x683C;&#x548C;&#x5B50;&#x7F51;&#x683C;&#x7684;&#x9876;&#x70B9;&#x6570;&#x636E;&#x7684;&#x5BB9;&#x5668;&#x3002;</p>
+<pre><code>@interface MTKMesh : NSObject
+
+- (nonnull instancetype)init NS_UNAVAILABLE;
+
+/** &#x521D;&#x59CB;&#x5316;&#x7F51;&#x683C;&#x548C;&#x5B83;&#x7684;&#x5B50;&#x7F51;&#x683C;
+ * @param mesh &#x7ED9;&#x5B9A;&#x7684; Model I/O &#x7F51;&#x683C;&#x6570;&#x636E;&#xFF0C;&#x4ECE;&#x800C;&#x751F;&#x6210; Metal &#x7F51;&#x683C;
+ * @param device &#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x7F51;&#x683C;&#x8D44;&#x6E90;&#x7684; Metal &#x8BBE;&#x5907;
+ * @discussion &#x8FD9;&#x5E76;&#x4E0D;&#x521D;&#x59CB;&#x5316; Model I/O &#x7F51;&#x683C;&#x7684;&#x4EFB;&#x4F55;&#x5B50;&#x7F51;&#x683C;&#xFF0C;&#x53EA;&#x521D;&#x59CB;&#x5316;&#x7ED9;&#x5B9A;&#x7F51;&#x683C;&#x7684;&#x90E8;&#x5206;&#x5B50;&#x7F51;&#x683C;&#x3002;
+ *     &#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x7F51;&#x683C;&#x4E2D;&#x7684;vertexBuffer &#x548C;&#x5B50;&#x7F51;&#x683C;&#x7684; indexBuffer &#x6CA1;&#x6709;&#x4F7F;&#x7528; MTKMeshBufferAllocator &#x521B;&#x5EFA;&#xFF0C;&#x5219;&#x4F1A;&#x5F15;&#x53D1;&#x5F02;&#x5E38;&#x3002;
+ *     &#x5982;&#x679C;&#x4F7F;&#x7528;&#x4E86;&#x4F7F;&#x7528;MDLGeometryTypeQuads&#x6216;MDLGeometryTypeTopology&#x7684;&#x5B50;&#x7F51;&#x683C;&#xFF0C;&#x8BE5;&#x5B50;&#x7F51;&#x683C;&#x5C06;&#x88AB;&#x590D;&#x5236;&#xFF0C;
+ *          &#x5E76;&#x5728;&#x6B64;&#x4F8B;&#x7A0B;&#x521B;&#x5EFA; MTKSubmesh &#x4E4B;&#x524D;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x4EE5;&#x4F7F;&#x7528; MDLGeometryTypeTriangles 
+ */
+- (nullable instancetype)initWithMesh:(nonnull MDLMesh *)mesh
+                               device:(nonnull id&lt;MTLDevice&gt;)device
+                                error:(NSError * __nullable * __nullable)error;
+
+/** &#x521D;&#x59CB;&#x5316; Model I/O &#x8D44;&#x6E90;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x7F51;&#x683C;
+ * @param asset &#x751F;&#x6210; Metal &#x7F51;&#x683C;&#x7684; Model I/O &#x8D44;&#x6E90;
+ * @param device &#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x7F51;&#x683C;&#x8D44;&#x6E90;&#x7684; Metal &#x8BBE;&#x5907;
+ * @param sourceMeshes &#x53CC;&#x6307;&#x9488;&#x6570;&#x7EC4;&#xFF0C;&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684; Model I/O &#x7F51;&#x683C;
+ * @discussion &#x4ECE; Model I/O  &#x8D44;&#x6E90;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A; MDLMesh &#x521B;&#x5EFA; MTKMesh&#x3002;
+ *             MDLMesh &#x4ECE;&#x53C2;&#x6570; sourceMeshes &#x4F20;&#x56DE;&#xFF0C;&#x800C; MTKMesh &#x4ECE;&#x8FD4;&#x56DE;&#x503C;&#x8FD4;&#x56DE;&#xFF1B;
+ *              &#x8D44;&#x6E90;&#x4E2D;&#x6BCF;&#x4E2A; MDLMesh &#x7684; vertexBuffer &#x548C;&#x5B83;&#x7684;&#x5B50;&#x7F51;&#x683C;&#x7684; indexBuffer &#x5FC5;&#x987B;&#x4F7F;&#x7528; MTKMeshBufferAllocator &#x521B;&#x5EFA;
+ */
++ (nullable NSArray&lt;MTKMesh*&gt;*)newMeshesFromAsset:(nonnull MDLAsset *)asset
+                                           device:(nonnull id&lt;MTLDevice&gt;)device
+                                     sourceMeshes:(NSArray&lt;MDLMesh*&gt;* __nullable * __nullable)sourceMeshes
+                                            error:(NSError * __nullable * __nullable)error;
+
+/** &#x5B50;&#x7F51;&#x683C;&#xFF1A;&#x7528;&#x4E8E;&#x6E32;&#x67D3;&#x7F51;&#x683C;&#x9876;&#x70B9;
+ * &#x5B50;&#x7F51;&#x683C;&#x8FD8;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x5728;&#x6E32;&#x67D3;&#x7F51;&#x683C;&#x5BF9;&#x8C61;&#x65F6;&#x5E94;&#x7528;&#x7684;&#x7EB9;&#x7406;
+ */
+@property (nonatomic, readonly, nonnull) NSArray&lt;MTKSubmesh *&gt; *submeshes;
+
+/** &#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#xFF1A;&#x6307;&#x5B9A;&#x9876;&#x70B9;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x5E03;&#x5C40;
+ * @discussion &#x901A;&#x8FC7;&#x8BFB;&#x53D6;&#x8BE5;&#x4FE1;&#x606F;&#x6765;&#x786E;&#x5B9A;&#x6E32;&#x67D3;&#x72B6;&#x6001;&#xFF0C;&#x6216;&#x8005;&#x63CF;&#x8FF0; vertexBuffers &#x4E2D;&#x7684;&#x6570;&#x636E;&#x5E03;&#x5C40;
+ * @note &#x6539;&#x53D8;&#x8BE5;&#x63CF;&#x8FF0;&#x7B26;&#x7684;&#x4FE1;&#x606F;&#x4E0D;&#x80FD;&#x8FBE;&#x5230;&#x66F4;&#x6539;&#x6570;&#x636E;&#x5E03;&#x5C40;&#x7684;&#x9884;&#x671F;&#xFF01;&#x53EA;&#x80FD;&#x5728;&#x521B;&#x5EFA; MDLVertexDescriptor &#x65F6;&#x786E;&#x5B9A;&#x6570;&#x636E;&#x5E03;&#x5C40;
+ */
+@property (nonatomic, readonly, nonnull) MDLVertexDescriptor *vertexDescriptor;
+
+/** &#x9876;&#x70B9;&#x6570;&#x636E;&#x6240;&#x5728;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x6570;&#x7EC4;&#xFF1A;&#x4F7F;&#x7528; vertexDescriptor &#x63CF;&#x8FF0;&#x7684;&#x5E03;&#x5C40;&#x586B;&#x5145;&#x7F13;&#x51B2;&#x533A;&#x6570;&#x636E;
+ *  &#x5982;&#x679C;vertexDescriptor&#x6CA1;&#x6709;&#x4E3A;&#x7ED9;&#x5B9A;&#x7684;&#x7D22;&#x5F15;&#x6307;&#x5B9A;buffer&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x53EF;&#x4EE5;&#x662F; [NSNull null]
+ */
+@property (nonatomic, readonly, nonnull) NSArray&lt;MTKMeshBuffer *&gt; *vertexBuffers;
+
+/// &#x9876;&#x70B9;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x9876;&#x70B9;&#x6570;&#x91CF;
+@property (nonatomic, readonly) NSUInteger vertexCount;
+
+/// &#x6807;&#x8BC6;&#x7B26;&#xFF1A;&#x7528;&#x4E8E;&#x5728;&#x5404;&#x79CD;&#x573A;&#x666F;&#x3001;&#x4E16;&#x754C;&#x3001;&#x6E32;&#x67D3;&#x5668;&#x7B49;&#x8C03;&#x8BD5;
+@property (nonatomic, copy, nonnull) NSString *name;
+
+@end
+</code></pre><h2 id="24&#x3001;&#x5B50;&#x7F51;&#x683C;-mtksubmesh"><a name="24&#x3001;&#x5B50;&#x7F51;&#x683C;-mtksubmesh" class="anchor-navigation-ex-anchor" href="#24&#x3001;&#x5B50;&#x7F51;&#x683C;-mtksubmesh"><i class="fa fa-link" aria-hidden="true"></i></a>2.4&#x3001;&#x5B50;&#x7F51;&#x683C; <code>MTKSubmesh</code></h2>
+<p>&#x5B50;&#x7F51;&#x683C; <a href="">MTKSubmesh</a> &#x5C5E;&#x4E8E;&#x7F51;&#x683C;&#x7684;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x5305;&#x542B;&#x7528;&#x6765;&#x6E32;&#x67D3;&#x8BE5;&#x90E8;&#x5206;&#x7684;&#x5C5E;&#x6027;&#xFF01;</p>
+<p>&#x53EF;&#x4EE5;&#x5728;&#x5355;&#x4E2A;&#x7ED8;&#x5236;&#x8C03;&#x7528;&#x4E2D;&#x6E32;&#x67D3;&#x6570;&#x636E;&#x7684;&#x5BB9;&#x5668;&#xFF0C; 1:1&#x6620;&#x5C04;&#x5230;MDLSubmesh &#x3002;
+&#x6BCF;&#x4E2A;&#x5B50;&#x7F51;&#x683C;&#x90FD;&#x5305;&#x542B;&#x4E00;&#x4E2A; indexBuffer &#xFF0C;&#x7236;&#x7F51;&#x683C;&#x6570;&#x636E;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x6765;&#x6E32;&#x67D3;&#x3002;
+&#x5B9E;&#x9645;&#x7684;&#x9876;&#x70B9;&#x6570;&#x636E;&#x9A7B;&#x7559;&#x5728;&#x7236;&#x7F51;&#x683C; MTKMesh &#x4E2D;&#x3002;</p>
+<pre><code>@interface MTKSubmesh : NSObject
+
+- (nonnull instancetype)init NS_UNAVAILABLE;
+
+/// &#x56FE;&#x5143;&#x7C7B;&#x578B;&#xFF1A;&#x7528;&#x4E8E; [MTLRenderCommandEncoder drawIndexedPrimitives] &#x8C03;&#x7528;&#x4E2D;&#x4F20;&#x9012;&#xFF1B;
+@property (nonatomic, readonly) MTLPrimitiveType primitiveType;
+
+/// &#x7D22;&#x5F15;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x7D22;&#x5F15;&#x7C7B;&#x578B;&#xFF1B;&#x7528;&#x4E8E; [MTLRenderCommandEncoder drawIndexedPrimitives] &#x8C03;&#x7528;&#x4E2D;&#x4F20;&#x9012;&#xFF1B;
+@property (nonatomic, readonly) MTLIndexType indexType;
+
+/// &#x7D22;&#x5F15;&#x7F13;&#x51B2;&#x533A;&#xFF1B;&#x7528;&#x4E8E; [MTLRenderCommandEncoder drawIndexedPrimitives] &#x8C03;&#x7528;&#x4E2D;&#x4F20;&#x9012;&#xFF1B;
+@property (nonatomic, readonly, nonnull) MTKMeshBuffer *indexBuffer;
+
+/// &#x7D22;&#x5F15;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x7D22;&#x5F15;&#x4E2A;&#x6570;; &#x7528;&#x4E8E; [MTLRenderCommandEncoder drawIndexedPrimitives] &#x8C03;&#x7528;&#x4E2D;&#x4F20;&#x9012;&#xFF1B;
+@property (nonatomic, readonly) NSUInteger indexCount;
+
+/// &#x7236;&#x7F51;&#x683C;&#xFF1A;&#x5305;&#x542B;&#x9876;&#x70B9;&#x6570;&#x636E;&#xFF1B;&#x5728;&#x8C03;&#x7528; [MTLRenderCommandEncoder drawIndexedPrimitives] &#x4E4B;&#x524D;&#x5E94;&#x8BE5;&#x5728;&#x7F16;&#x7801;&#x5668;&#x4E2D;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;&#x7236;&#x7F51;&#x683C;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x3002;
+@property (nonatomic, readonly, weak, nullable) MTKMesh *mesh;
+
+/// &#x6E90;&#x81EA; MDLSubmesh &#x7684;&#x540D;&#x79F0;&#xFF1B;&#x7528;&#x4E8E;&#x8BC6;&#x522B; renderer/scene/world.
+@property (nonatomic, copy, nonnull) NSString *name;
+
+@end
+</code></pre><h2 id="25&#x3001;metal-&#x9876;&#x70B9;-&#x4E0E;-model-io-&#x9876;&#x70B9;&#x7684;&#x4E92;&#x76F8;&#x8F6C;&#x6362;"><a name="25&#x3001;metal-&#x9876;&#x70B9;-&#x4E0E;-model-io-&#x9876;&#x70B9;&#x7684;&#x4E92;&#x76F8;&#x8F6C;&#x6362;" class="anchor-navigation-ex-anchor" href="#25&#x3001;metal-&#x9876;&#x70B9;-&#x4E0E;-model-io-&#x9876;&#x70B9;&#x7684;&#x4E92;&#x76F8;&#x8F6C;&#x6362;"><i class="fa fa-link" aria-hidden="true"></i></a>2.5&#x3001;Metal &#x9876;&#x70B9; &#x4E0E; Model I/O &#x9876;&#x70B9;&#x7684;&#x4E92;&#x76F8;&#x8F6C;&#x6362;</h2>
+<pre><code>/** &#x5C06; Metal &#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#x8F6C;&#x6362;&#x4E3A; Model I/O &#x7684;&#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;
+ * @param error &#x5982;&#x679C;&#x975E;&#x7A7A;&#xFF0C;&#x5219;&#x6253;&#x5370;&#x8BE6;&#x7EC6;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;
+ * @discussion &#x901A;&#x8FC7;&#x8BE5;&#x51FD;&#x6570;&#x83B7;&#x53D6;&#x7684; Model I/O &#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#x53EA;&#x80FD;&#x8BBE;&#x7F6E; &#x9876;&#x70B9;&#x683C;&#x5F0F;&#x3001;&#x504F;&#x79FB;&#x91CF;&#x3001;bufferIndex&#x3001;stride&#x4FE1;&#x606F;&#xFF1B;&#x4E0D;&#x80FD;&#x6DFB;&#x52A0; attributes &#x7B49;&#x8BED;&#x4E49;&#x4FE1;&#x606F;&#xFF1B;
+ *             Names &#x9700;&#x8981;&#x5728;&#x83B7;&#x53D6;&#x7684; Model I/O &#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#x8BBE;&#x7F6E;&#xFF0C;&#x7136;&#x540E;&#x5E94;&#x7528;&#x5230;&#x7F51;&#x683C; 
+ */
+MDLVertexDescriptor* __nonnull MTKModelIOVertexDescriptorFromMetal(MTLVertexDescriptor* __nonnull metalDescriptor);
+MDLVertexDescriptor* __nonnull MTKModelIOVertexDescriptorFromMetalWithError(MTLVertexDescriptor* __nonnull metalDescriptor, NSError * __nullable * __nullable error);
+
+/** &#x5C06; Model I/O &#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#x8F6C;&#x6362; &#x4E3A;Metal &#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;
+ * @discussion &#x901A;&#x8FC7;&#x8BE5;&#x51FD;&#x6570;&#x83B7;&#x53D6;&#x7684; Metal &#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#x53EA;&#x80FD;&#x8BBE;&#x7F6E; &#x9876;&#x70B9;&#x683C;&#x5F0F;&#x3001;&#x504F;&#x79FB;&#x91CF;&#x3001;bufferIndex&#x3001;stride&#x4FE1;&#x606F;&#xFF1B;&#x5B83;&#x53EA;&#x662F;&#x5C06;&#x5C5E;&#x6027; 1 &#x590D;&#x5236;&#x4E3A; 1&#xFF1B;
+ *             &#x56E0;&#x6B64;&#xFF0C;&#x7ED9;&#x5B9A; Model I/O &#x9876;&#x70B9;&#x63CF;&#x8FF0;&#x7B26;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x5FC5;&#x987B;&#x6309;&#x7167;&#x6B63;&#x786E;&#x7684;&#x987A;&#x5E8F;&#x6392;&#x5217;&#xFF0C;&#x4EE5;&#x4FBF;&#x6700;&#x7EC8;&#x63CF;&#x8FF0;&#x7B26;&#x80FD;&#x591F;&#x6B63;&#x786E;&#x5730;&#x5C06;&#x7F51;&#x683C;&#x6570;&#x636E;&#x6620;&#x5C04;&#x5230;&#x9876;&#x70B9;&#x7740;&#x8272;&#x5668;&#xFF1B;
+ *             MTLVertexDescriptor &#x7684;&#x5E03;&#x5C40;&#x51FD;&#x6570; stepFunction &#x4E0E; stepRates &#x4E5F;&#x5FC5;&#x987B;&#x7531;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x3002;
+ */
+MTLVertexDescriptor* __nullable MTKMetalVertexDescriptorFromModelIO(MDLVertexDescriptor* __nonnull modelIODescriptor);
+MTLVertexDescriptor* __nullable MTKMetalVertexDescriptorFromModelIOWithError(MDLVertexDescriptor* __nonnull modelIODescriptor, NSError * __nullable * __nullable error);
+
+/// &#x5C06; Metal &#x9876;&#x70B9;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x4E3A;&#x6A21;&#x578B;I/O&#x9876;&#x70B9;&#x683C;&#x5F0F;;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x5339;&#x914D;&#x7684;&#x6A21;&#x578B;I/O&#x9876;&#x70B9;&#x683C;&#x5F0F;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; MDLVertexFormatInvalid
+MDLVertexFormat MTKModelIOVertexFormatFromMetal(MTLVertexFormat vertexFormat);
+
+/// &#x5C06;&#x6A21;&#x578B;I/O&#x9876;&#x70B9;&#x683C;&#x5F0F;&#x8F6C;&#x6362;&#x4E3A; Metal &#x9876;&#x70B9;&#x683C;&#x5F0F;&#xFF1B;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x5339;&#x914D;&#x7684; Metal &#x9876;&#x70B9;&#x683C;&#x5F0F;&#xFF0C;&#x5219;&#x8FD4;&#x56DE; MTLVertexFormatInvalid
+MTLVertexFormat MTKMetalVertexFormatFromModelIO(MDLVertexFormat vertexFormat);
+</code></pre><h1 id="3&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><a name="3&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h1>
+<h2 id="31&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x52A0;&#x8F7D;"><a name="31&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x52A0;&#x8F7D;" class="anchor-navigation-ex-anchor" href="#31&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x52A0;&#x8F7D;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x52A0;&#x8F7D;</h2>
+<p>&#x4ECE;&#x672C;&#x5730;&#x7684; <code>.obj</code> &#x6587;&#x4EF6;&#x52A0;&#x8F7D;&#x4E00;&#x7EC4;&#x7F51;&#x683C;&#x6570;&#x636E;</p>
+<pre><code>NSArray&lt;MTKMesh *&gt; *_meshes;
+
+- (void)loadAssetsWithMetalKitView:(nonnull MTKView*)mtkView {
+
+    MDLVertexDescriptor *modelIOVertexDescriptor = MTKModelIOVertexDescriptorFromMetal(_vertexDescriptor);
+    modelIOVertexDescriptor.attributes[VertexAttributePosition].name  = MDLVertexAttributePosition;
+    modelIOVertexDescriptor.attributes[VertexAttributeTexcoord].name  = MDLVertexAttributeTextureCoordinate;
+
+    NSURL *modelFileURL = [[NSBundle mainBundle] URLForResource:@&quot;Temple.obj&quot; withExtension:nil];
+    NSAssert(modelFileURL,@&quot;Could not find model file (%@) in bundle&quot;,modelFileURL.absoluteString);
+
+    MTKMeshBufferAllocator *bufferAllocator = [[MTKMeshBufferAllocator alloc] initWithDevice:mtkView.device];
+
+    MDLAsset *asset = [[MDLAsset alloc] initWithURL:modelFileURL
+                                   vertexDescriptor:nil
+                                    bufferAllocator:bufferAllocator];                               
+    NSAssert(asset, @&quot;Failed to open model file with given URL: %@&quot;, url.absoluteString);
+
+    MTKTextureLoader *textureLoader = [[MTKTextureLoader alloc] initWithDevice:mtkView.device];
+    NSMutableArray&lt;MTKMesh *&gt; *newMeshes = [[NSMutableArray alloc] init];
+
+    for(MDLObject* object in asset) {
+        NSMutableArray&lt;MTKMesh *&gt; *assetMeshes = [[NSMutableArray alloc] init];
+
+        if ([object isKindOfClass:[MDLMesh class]]) {
+            MDLMesh* mesh = (MDLMesh*)object;
+
+            ...
+
+            [newMeshes addObject:newMesh];
+        }
+
+
+
+        [newMeshes addObjectsFromArray:assetMeshes];
+    }
+
+
+    _meshes = newMeshes;
+    NSAssert(_meshes, @&quot;Could not create sphere meshes: %@&quot;, error);
+}
+</code></pre><h2 id="32&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x7F16;&#x7801;"><a name="32&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x7F16;&#x7801;" class="anchor-navigation-ex-anchor" href="#32&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x7F16;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2&#x3001;&#x7F51;&#x683C;&#x6570;&#x636E;&#x7684;&#x7F16;&#x7801;</h2>
+<pre><code>NSArray&lt;MTKMesh *&gt; *_meshes;
+
+- (void)drawInMTKView:(nonnull MTKView *)view {
+    MTLRenderPassDescriptor *descriptor = view.currentRenderPassDescriptor;
+    if (descriptor == nil) return;
+
+    id&lt;MTLCommandBuffer&gt; commandBuffer = [_commandQueue commandBuffer];
+    commandBuffer.label = @&quot;&#x547D;&#x4EE4;&#x7F13;&#x51B2;&#x533A;&quot;;
+
+    id&lt;MTLRenderCommandEncoder&gt; renderEncoder = [commandBuffer renderCommandEncoderWithDescriptor:descriptor];
+    renderEncoder.label = @&quot;&#x547D;&#x4EE4;&#x7F16;&#x7801;&#x5668;&quot;;
+    [renderEncoder setRenderPipelineState:_renderPipeline];
+    [renderEncoder setCullMode:MTLCullModeBack];
+
+    for (MTKMesh *metalKitMesh in _meshes) {
+
+        // 1&#x3001;&#x8BBE;&#x7F6E;&#x7236;&#x7F51;&#x683C;&#x7684;&#x9876;&#x70B9;&#x7F13;&#x51B2;&#x533A;&#x6570;&#x636E;
+        for (NSUInteger bufferIndex = 0; bufferIndex &lt; metalKitMesh.vertexBuffers.count; bufferIndex++) {
+            MTKMeshBuffer *vertexBuffer = metalKitMesh.vertexBuffers[bufferIndex];
+            if((NSNull*)vertexBuffer != [NSNull null]) {
+                [renderEncoder setVertexBuffer:vertexBuffer.buffer
+                                        offset:vertexBuffer.offset
+                                       atIndex:bufferIndex];
+            }
+        }
+
+        //&#x7ED8;&#x5236;&#x7236;&#x7F51;&#x683C;&#x4E0B;&#x7684;&#x6BCF;&#x4E2A;&#x5B50;&#x7F51;&#x683C;
+        for(MTKSubmesh *submesh in metalKitMesh.submeshes) {
+
+            /// 2&#x3001;&#x4ECE;&#x6E32;&#x67D3;&#x7BA1;&#x9053;&#x8BFB;&#x53D6;/&#x91C7;&#x6837;&#x7684;&#x7EB9;&#x7406;
+            [renderEncoder setFragmentTexture:submesh.textures[TextureIndexBaseColor] atIndex:TextureIndexBaseColor];
+            [renderEncoder setFragmentTexture:submesh.textures[TextureIndexNormal] atIndex:TextureIndexNormal];
+            [renderEncoder setFragmentTexture:submesh.textures[TextureIndexSpecular] atIndex:TextureIndexSpecular];
+
+            /// 3&#x3001;&#x4F7F;&#x7528;&#x5B50;&#x7F51;&#x683C;&#x7684;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x7F16;&#x7801;&#x56FE;&#x5143;
+            [renderEncoder drawIndexedPrimitives:submesh.primitiveType
+                                      indexCount:submesh.indexCount
+                                       indexType:submesh.indexType
+                                     indexBuffer:submesh.indexBuffer.buffer
+                               indexBufferOffset:submesh.indexBuffer.offset];
+        }
+    }
+
+    [renderEncoder endEncoding];
+    [commandBuffer presentDrawable:view.currentDrawable];
+    [commandBuffer commit];
+}
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-12-03 23:47:08
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> 搜索结果 "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有搜索结果 "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="MDLMesh.html" class="navigation navigation-prev " aria-label="Previous page: MDLMesh API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="MDLVertexDescriptor.html" class="navigation navigation-next " aria-label="Next page: MDLVertexDescriptor API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MTKMesh API","level":"1.3.6.4","depth":3,"next":{"title":"MDLVertexDescriptor API","level":"1.3.6.5","depth":3,"path":"计算机基础/计算机图形学/MDLVertexDescriptor.md","ref":"计算机基础/计算机图形学/MDLVertexDescriptor.md","articles":[]},"previous":{"title":"MDLMesh API","level":"1.3.6.3","depth":3,"path":"计算机基础/计算机图形学/MDLMesh.md","ref":"计算机基础/计算机图形学/MDLMesh.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"计算机基础/计算机图形学/MTKModel.md","mtime":"2021-12-03T15:47:08.384Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-04T08:46:11.974Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

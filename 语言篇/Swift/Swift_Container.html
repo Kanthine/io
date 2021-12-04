@@ -1,0 +1,2074 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Swift容器类 · 个人博客</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="苏沫漓">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Swift_func.html" />
+    
+    
+    <link rel="prev" href="Swift_Optional.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../计算机基础/计算机基础.html">
+            
+                <a href="../../计算机基础/计算机基础.html">
+            
+                    
+                    计算机基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机概述篇.html">
+            
+                    
+                    第一部分 计算机的组成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机组成篇.html">
+            
+                    
+                    计算机组成篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                <a href="../../计算机基础/计算机组成篇/计算机计算篇.html">
+            
+                    
+                    计算机计算篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/操作系统基础篇.html">
+            
+                    
+                    第二部分 操作系统篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../计算机基础/操作系统篇/进程管理篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/进程管理篇.html">
+            
+                    
+                    进程管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../计算机基础/操作系统篇/内存管理篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/内存管理篇.html">
+            
+                    
+                    内存管理篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="../../计算机基础/操作系统篇/文件系统篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/文件系统篇.html">
+            
+                    
+                    文件系统篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="../../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                <a href="../../计算机基础/操作系统篇/操作系统提升篇.html">
+            
+                    
+                    操作系统提升篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../计算机基础/计算机网络/网络概述篇.html">
+            
+                <a href="../../计算机基础/计算机网络/网络概述篇.html">
+            
+                    
+                    第三部分 网络篇
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../../计算机基础/计算机网络/计算机物理层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机物理层.html">
+            
+                    
+                    计算机物理层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机数据链路层.html">
+            
+                    
+                    计算机数据链路层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../../计算机基础/计算机网络/计算机网络层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机网络层.html">
+            
+                    
+                    计算机网络层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="../../计算机基础/计算机网络/计算机传输层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机传输层.html">
+            
+                    
+                    计算机传输层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="../../计算机基础/计算机网络/计算机应用层.html">
+            
+                <a href="../../计算机基础/计算机网络/计算机应用层.html">
+            
+                    
+                    计算机应用层
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.5.1" data-path="../../计算机基础/计算机网络/HTTP协议.html">
+            
+                <a href="../../计算机基础/计算机网络/HTTP协议.html">
+            
+                    
+                    HTTP协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5.2" data-path="../../计算机基础/计算机网络/HTTPS协议.html">
+            
+                <a href="../../计算机基础/计算机网络/HTTPS协议.html">
+            
+                    
+                    HTTPS协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" >
+            
+                <span>
+            
+                    
+                    第四部分设计模式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../../计算机基础/设计模式/单一职责原则.html">
+            
+                <a href="../../计算机基础/设计模式/单一职责原则.html">
+            
+                    
+                    单一职责原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../../计算机基础/设计模式/里氏替换原则.html">
+            
+                <a href="../../计算机基础/设计模式/里氏替换原则.html">
+            
+                    
+                    里氏替换原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.3" data-path="../../计算机基础/设计模式/依赖倒置原则.html">
+            
+                <a href="../../计算机基础/设计模式/依赖倒置原则.html">
+            
+                    
+                    依赖倒置原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.4" data-path="../../计算机基础/设计模式/接口隔离原则.html">
+            
+                <a href="../../计算机基础/设计模式/接口隔离原则.html">
+            
+                    
+                    接口隔离原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.5" data-path="../../计算机基础/设计模式/迪米特原则.html">
+            
+                <a href="../../计算机基础/设计模式/迪米特原则.html">
+            
+                    
+                    迪米特原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.6" data-path="../../计算机基础/设计模式/开闭原则.html">
+            
+                <a href="../../计算机基础/设计模式/开闭原则.html">
+            
+                    
+                    开闭原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" >
+            
+                <span>
+            
+                    
+                    第五部分 图形学基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../../计算机基础/计算机图形学/矩阵的变换.html">
+            
+                <a href="../../计算机基础/计算机图形学/矩阵的变换.html">
+            
+                    
+                    矩阵的变换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../../计算机基础/计算机图形学/三维空间的观察.html">
+            
+                <a href="../../计算机基础/计算机图形学/三维空间的观察.html">
+            
+                    
+                    三维空间的观察
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    iOS开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../iOS开发/Runtime/Objective_C简介.html">
+            
+                <a href="../../iOS开发/Runtime/Objective_C简介.html">
+            
+                    
+                    Runtime
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../iOS开发/Runtime/OC之Blocks.html">
+            
+                <a href="../../iOS开发/Runtime/OC之Blocks.html">
+            
+                    
+                    OC之Blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../iOS开发/Runtime/OC内存管理.html">
+            
+                <a href="../../iOS开发/Runtime/OC内存管理.html">
+            
+                    
+                    OC内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                <a href="../../iOS开发/Runtime/OC内存管理之引用计数.html">
+            
+                    
+                    OC内存管理之引用计数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                <a href="../../iOS开发/Runtime/+load方法的调用历程.html">
+            
+                    
+                    +load方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../../iOS开发/Runtime/TaggedPointer.html">
+            
+                <a href="../../iOS开发/Runtime/TaggedPointer.html">
+            
+                    
+                    TaggedPointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../../iOS开发/Runtime/方法签名.html">
+            
+                <a href="../../iOS开发/Runtime/方法签名.html">
+            
+                    
+                    消息与方法签名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../../iOS开发/Runtime/OC_方法交换.html">
+            
+                <a href="../../iOS开发/Runtime/OC_方法交换.html">
+            
+                    
+                    方法交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../../iOS开发/Runtime/三次补救措施.html">
+            
+                <a href="../../iOS开发/Runtime/三次补救措施.html">
+            
+                    
+                    方法不被识别的补救
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../../iOS开发/Runtime/编译objc4.html">
+            
+                <a href="../../iOS开发/Runtime/编译objc4.html">
+            
+                    
+                    编译objc4备忘录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="../../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Protocol.html">
+            
+                    
+                    Runtime函数库中关于协议Protocol的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="../../iOS开发/Runtime/Runtime_Property.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Property.html">
+            
+                    
+                    Runtime函数库中关于属性与变量的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.12" data-path="../../iOS开发/Runtime/Runtime_Instance.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Instance.html">
+            
+                    
+                    Runtime函数库中关于实例对象的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.13" data-path="../../iOS开发/Runtime/Runtime_Class.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Class.html">
+            
+                    
+                    Runtime函数库中关于Class的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.14" data-path="../../iOS开发/Runtime/Runtime_Method.html">
+            
+                <a href="../../iOS开发/Runtime/Runtime_Method.html">
+            
+                    
+                    Runtime函数库中关于 Class 的函数使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../iOS开发/CoreText/CoteText概述.html">
+            
+                <a href="../../iOS开发/CoreText/CoteText概述.html">
+            
+                    
+                    CoreText
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                <a href="../../iOS开发/CoreText/CoteText排版与布局.html">
+            
+                    
+                    CoteText排版与布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                <a href="../../iOS开发/CoreText/CTLineRef的函数库及使用.html">
+            
+                    
+                    CTLineRef的函数库及使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                <a href="../../iOS开发/CoreText/CTRunRef与CTRunDelegate.html">
+            
+                    
+                    图文混排的关键：CTRunRef 与 CTRunDelegate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../../iOS开发/CoreText/CTFont.html">
+            
+                <a href="../../iOS开发/CoreText/CTFont.html">
+            
+                    
+                    CTFont
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    CoreImage
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                <a href="../../iOS开发/CoreImage/图像特征CIFeature.html">
+            
+                    
+                    图像特征CIFeature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                <a href="../../iOS开发/CoreImage/图片检测CIDetector.html">
+            
+                    
+                    图片检测CIDetector
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" >
+            
+                <span>
+            
+                    
+                    CoreGraphics
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../iOS开发/CoreGraphics/CGBitmapContext.html">
+            
+                <a href="../../iOS开发/CoreGraphics/CGBitmapContext.html">
+            
+                    
+                    CGBitmapContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.2" data-path="../../iOS开发/CoreGraphics/CGContext.html">
+            
+                <a href="../../iOS开发/CoreGraphics/CGContext.html">
+            
+                    
+                    CGContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../../iOS开发/CoreGraphics/CGPath.html">
+            
+                <a href="../../iOS开发/CoreGraphics/CGPath.html">
+            
+                    
+                    CGPath
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../../iOS开发/CoreGraphics/CoreGraphics.html">
+            
+                <a href="../../iOS开发/CoreGraphics/CoreGraphics.html">
+            
+                    
+                    CoreGraphics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../计算机基础/计算机图形学/Metal调试.html">
+            
+                <a href="../../计算机基础/计算机图形学/Metal调试.html">
+            
+                    
+                    Metal 实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../../计算机基础/计算机图形学/Metal的简单计算.html">
+            
+                <a href="../../计算机基础/计算机图形学/Metal的简单计算.html">
+            
+                    
+                    内核计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../../计算机基础/计算机图形学/Metal绘制三角形.html">
+            
+                <a href="../../计算机基础/计算机图形学/Metal绘制三角形.html">
+            
+                    
+                    绘制三角形
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.3" data-path="../../计算机基础/计算机图形学/简单的纹理贴图.md">
+            
+                <span>
+            
+                    
+                    纹理贴图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.4" data-path="../../计算机基础/计算机图形学/CPU与GPU协调工作.html">
+            
+                <a href="../../计算机基础/计算机图形学/CPU与GPU协调工作.html">
+            
+                    
+                    CPU与GPU协调工作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.5" data-path="../../计算机基础/计算机图形学/深度测试.html">
+            
+                <a href="../../计算机基础/计算机图形学/深度测试.html">
+            
+                    
+                    深度测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.6" data-path="../../计算机基础/计算机图形学/读取纹理像素.md">
+            
+                <span>
+            
+                    
+                    线程与线程组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.7" data-path="../../计算机基础/计算机图形学/离屏渲染.html">
+            
+                <a href="../../计算机基础/计算机图形学/离屏渲染.html">
+            
+                    
+                    自定义MTLRenderPassDescriptor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../../计算机基础/计算机图形学/Metal简介.html">
+            
+                <a href="../../计算机基础/计算机图形学/Metal简介.html">
+            
+                    
+                    Metal API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.6.1" data-path="../../计算机基础/计算机图形学/MTKView.html">
+            
+                <a href="../../计算机基础/计算机图形学/MTKView.html">
+            
+                    
+                    MTKView API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.2" data-path="../../计算机基础/计算机图形学/MTLDevice.html">
+            
+                <a href="../../计算机基础/计算机图形学/MTLDevice.html">
+            
+                    
+                    MTLDevice API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.3" data-path="../../计算机基础/计算机图形学/MDLMesh.html">
+            
+                <a href="../../计算机基础/计算机图形学/MDLMesh.html">
+            
+                    
+                    MDLMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.4" data-path="../../计算机基础/计算机图形学/MTKModel.html">
+            
+                <a href="../../计算机基础/计算机图形学/MTKModel.html">
+            
+                    
+                    MTKMesh API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.5" data-path="../../计算机基础/计算机图形学/MDLVertexDescriptor.html">
+            
+                <a href="../../计算机基础/计算机图形学/MDLVertexDescriptor.html">
+            
+                    
+                    MDLVertexDescriptor API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.6" data-path="../../计算机基础/计算机图形学/MTLRenderPass.html">
+            
+                <a href="../../计算机基础/计算机图形学/MTLRenderPass.html">
+            
+                    
+                    MTLRenderPass API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.7" data-path="../../计算机基础/计算机图形学/MTLFunction.html">
+            
+                <a href="../../计算机基础/计算机图形学/MTLFunction.html">
+            
+                    
+                    MTLFunction API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.8" data-path="../../计算机基础/计算机图形学/MTLLibrary.html">
+            
+                <a href="../../计算机基础/计算机图形学/MTLLibrary.html">
+            
+                    
+                    MTLLibrary API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.9" data-path="../../计算机基础/计算机图形学/MTLRegion.html">
+            
+                <a href="../../计算机基础/计算机图形学/MTLRegion.html">
+            
+                    
+                    MTLRegion API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.10" data-path="../../计算机基础/计算机图形学/MTLTexture.html">
+            
+                <a href="../../计算机基础/计算机图形学/MTLTexture.html">
+            
+                    
+                    MTLTexture API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.11" data-path="../../计算机基础/计算机图形学/MTLSampler.html">
+            
+                <a href="../../计算机基础/计算机图形学/MTLSampler.html">
+            
+                    
+                    MTLSampler API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6.12" data-path="../../计算机基础/计算机图形学/MTLRenderCommandEncoder.html">
+            
+                <a href="../../计算机基础/计算机图形学/MTLRenderCommandEncoder.html">
+            
+                    
+                    MTLRenderCommandEncoder API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" >
+            
+                <span>
+            
+                    
+                    杂记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.1" data-path="../../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                <a href="../../iOS开发/杂记/iOS渲染机制初窥.html">
+            
+                    
+                    iOS渲染机制初窥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.2" data-path="../../iOS开发/杂记/CAMediaTiming.html">
+            
+                <a href="../../iOS开发/杂记/CAMediaTiming.html">
+            
+                    
+                    CAMediaTiming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.3" data-path="../../iOS开发/杂记/响应链.html">
+            
+                <a href="../../iOS开发/杂记/响应链.html">
+            
+                    
+                    响应链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4" data-path="../../iOS开发/杂记/并发编程.html">
+            
+                <a href="../../iOS开发/杂记/并发编程.html">
+            
+                    
+                    并发编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.7.4.1" data-path="../../iOS开发/杂记/OC之Thread.html">
+            
+                <a href="../../iOS开发/杂记/OC之Thread.html">
+            
+                    
+                    线程NSThread
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4.2" data-path="../../iOS开发/杂记/OC之NSOperation.html">
+            
+                <a href="../../iOS开发/杂记/OC之NSOperation.html">
+            
+                    
+                    任务队列NSOperation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4.3" data-path="../../iOS开发/杂记/OC之GCD.html">
+            
+                <a href="../../iOS开发/杂记/OC之GCD.html">
+            
+                    
+                    GCD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.4.4" data-path="../../iOS开发/杂记/OC之锁.html">
+            
+                <a href="../../iOS开发/杂记/OC之锁.html">
+            
+                    
+                    锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.5" data-path="../../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                <a href="../../iOS开发/杂记/OC的深拷贝与浅拷贝.html">
+            
+                    
+                    OC的深拷贝与浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.6" data-path="../../其它/sdk_cocoapods.html">
+            
+                <a href="../../其它/sdk_cocoapods.html">
+            
+                    
+                    iOS 使用 cocoapods 创建组件化库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.7" data-path="../../iOS开发/杂记/内存优化.html">
+            
+                <a href="../../iOS开发/杂记/内存优化.html">
+            
+                    
+                    一些内存优化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.8" data-path="../../iOS开发/杂记/内存泄露.html">
+            
+                <a href="../../iOS开发/杂记/内存泄露.html">
+            
+                    
+                    一些内存泄漏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.9" data-path="../../iOS开发/杂记/OC之处理错误.html">
+            
+                <a href="../../iOS开发/杂记/OC之处理错误.html">
+            
+                    
+                    一些错误处理机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.10" data-path="../../iOS开发/杂记/刘海屏适配.html">
+            
+                <a href="../../iOS开发/杂记/刘海屏适配.html">
+            
+                    
+                    刘海屏适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7.11" data-path="../../iOS开发/杂记/获取WIFI信息.html">
+            
+                <a href="../../iOS开发/杂记/获取WIFI信息.html">
+            
+                    
+                    获取WIFI信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    开发语言
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    C++
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../C++学习入门篇.html">
+            
+                <a href="../C++学习入门篇.html">
+            
+                    
+                    C++学习入门篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../C++学习封装篇.html">
+            
+                <a href="../C++学习封装篇.html">
+            
+                    
+                    C++学习封装篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.3" data-path="../C++学习继承篇.html">
+            
+                <a href="../C++学习继承篇.html">
+            
+                    
+                    C++学习继承篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.4" data-path="../C++学习多态篇.html">
+            
+                <a href="../C++学习多态篇.html">
+            
+                    
+                    C++学习多态篇
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" >
+            
+                <span>
+            
+                    
+                    C
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../C数组.html">
+            
+                <a href="../C数组.html">
+            
+                    
+                    C语言数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" data-path="../C结构.html">
+            
+                <a href="../C结构.html">
+            
+                    
+                    C语言结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.3" data-path="../C递归.html">
+            
+                <a href="../C递归.html">
+            
+                    
+                    递归
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" >
+            
+                <span>
+            
+                    
+                    Swift
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="Swift.html">
+            
+                <a href="Swift.html">
+            
+                    
+                    Swift基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="Swift_Optional.html">
+            
+                <a href="Swift_Optional.html">
+            
+                    
+                    Swift可选型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3.3" data-path="Swift_Container.html">
+            
+                <a href="Swift_Container.html">
+            
+                    
+                    Swift容器类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="Swift_func.html">
+            
+                <a href="Swift_func.html">
+            
+                    
+                    Swift函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    其它
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../Git体系/Git常用命令.html">
+            
+                <a href="../../Git体系/Git常用命令.html">
+            
+                    
+                    Git常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../Git体系/Github和SSH密钥.html">
+            
+                <a href="../../Git体系/Github和SSH密钥.html">
+            
+                    
+                    Github和SSH密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../Gitbook指导/">
+            
+                <a href="../../Gitbook指导/">
+            
+                    
+                    GitBook 使用教程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../Gitbook指导/gitbook教程.html">
+            
+                <a href="../../Gitbook指导/gitbook教程.html">
+            
+                    
+                    GitBook 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../Gitbook指导/gitbook语法.html">
+            
+                <a href="../../Gitbook指导/gitbook语法.html">
+            
+                    
+                    GitBook 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.sumoli.work" target="blank" class="gitbook-link">
+            博客主页
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Swift容器类</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#swift-&#x5BB9;&#x5668;&#x7C7B;"><b></b>Swift &#x5BB9;&#x5668;&#x7C7B;</a></li><li><span class="title-icon "></span><a href="#1&#x3001;swift-&#x6570;&#x7EC4;-array"><b></b>1&#x3001;Swift &#x6570;&#x7EC4; Array</a></li><ul><li><span class="title-icon "></span><a href="#11&#x3001;&#x6570;&#x7EC4;&#x7684;&#x58F0;&#x660E;"><b></b>1.1&#x3001;&#x6570;&#x7EC4;&#x7684;&#x58F0;&#x660E;</a></li><li><span class="title-icon "></span><a href="#12&#x3001;&#x6570;&#x7EC4;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;"><b></b>1.2&#x3001;&#x6570;&#x7EC4;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#13&#x3001;&#x6570;&#x7EC4;&#x7684;&#x589E;&#x5220;&#x67E5;&#x6539;"><b></b>1.3&#x3001;&#x6570;&#x7EC4;&#x7684;&#x589E;&#x5220;&#x67E5;&#x6539;</a></li><li><span class="title-icon "></span><a href="#14&#x3001;&#x591A;&#x7EF4;&#x6570;&#x7EC4;"><b></b>1.4&#x3001;&#x591A;&#x7EF4;&#x6570;&#x7EC4;</a></li><li><span class="title-icon "></span><a href="#15&#x3001;nsarray"><b></b>1.5&#x3001;NSArray</a></li></ul><li><span class="title-icon "></span><a href="#2&#x3001;&#x5B57;&#x5178;-dictionary"><b></b>2&#x3001;&#x5B57;&#x5178; Dictionary</a></li><ul><li><span class="title-icon "></span><a href="#21&#x3001;&#x5B57;&#x5178;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;"><b></b>2.1&#x3001;&#x5B57;&#x5178;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#22&#x3001;&#x5B57;&#x5178;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;"><b></b>2.2&#x3001;&#x5B57;&#x5178;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#23&#x3001;&#x5B57;&#x5178;&#x7684;&#x589E;&#x5220;&#x6539;"><b></b>2.3&#x3001;&#x5B57;&#x5178;&#x7684;&#x589E;&#x5220;&#x6539;</a></li></ul><li><span class="title-icon "></span><a href="#3&#x3001;&#x96C6;&#x5408;-set"><b></b>3&#x3001;&#x96C6;&#x5408; Set</a></li><ul><li><span class="title-icon "></span><a href="#31&#x3001;&#x96C6;&#x5408;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;"><b></b>3.1&#x3001;&#x96C6;&#x5408;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#32&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;"><b></b>3.2&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#33&#x3001;&#x96C6;&#x5408;&#x7684;&#x589E;&#x5220;&#x6539;"><b></b>3.3&#x3001;&#x96C6;&#x5408;&#x7684;&#x589E;&#x5220;&#x6539;</a></li><li><span class="title-icon "></span><a href="#34&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E76;&#x96C6;&#x3001;&#x4EA4;&#x96C6;&#x3001;&#x8865;&#x96C6;&#x7B49;"><b></b>3.4&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E76;&#x96C6;&#x3001;&#x4EA4;&#x96C6;&#x3001;&#x8865;&#x96C6;&#x7B49;</a></li></ul></ul></div><h1 id="swift-&#x5BB9;&#x5668;&#x7C7B;"><a name="swift-&#x5BB9;&#x5668;&#x7C7B;" class="anchor-navigation-ex-anchor" href="#swift-&#x5BB9;&#x5668;&#x7C7B;"><i class="fa fa-link" aria-hidden="true"></i></a>Swift &#x5BB9;&#x5668;&#x7C7B;</h1>
+<p>Swift &#x4E2D;&#x6709;&#x4E09;&#x4E2A;&#x5BB9;&#x5668;&#x7C7B;&#xFF1A;</p>
+<ul>
+<li>&#x6570;&#x7EC4; <code>Array</code>: &#x6709;&#x5E8F;&#x96C6;&#x5408;</li>
+<li>&#x5B57;&#x5178; <code>Dictionary</code>&#xFF1A;&#x952E;-&#x503C;&#x6570;&#x636E;&#x5BF9;</li>
+<li>&#x96C6;&#x5408;&#xFF1A;&#x65E0;&#x5E8F;&#x3001;&#x552F;&#x4E00;&#x6027;&#x3001;&#x63D0;&#x4F9B;&#x96C6;&#x5408;&#x64CD;&#x4F5C;&#x3001;&#x5FEB;&#x901F;&#x67E5;&#x627E;</li>
+</ul>
+<h1 id="1&#x3001;swift-&#x6570;&#x7EC4;-array"><a name="1&#x3001;swift-&#x6570;&#x7EC4;-array" class="anchor-navigation-ex-anchor" href="#1&#x3001;swift-&#x6570;&#x7EC4;-array"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;Swift &#x6570;&#x7EC4; <code>Array</code></h1>
+<h2 id="11&#x3001;&#x6570;&#x7EC4;&#x7684;&#x58F0;&#x660E;"><a name="11&#x3001;&#x6570;&#x7EC4;&#x7684;&#x58F0;&#x660E;" class="anchor-navigation-ex-anchor" href="#11&#x3001;&#x6570;&#x7EC4;&#x7684;&#x58F0;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1&#x3001;&#x6570;&#x7EC4;&#x7684;&#x58F0;&#x660E;</h2>
+<p>Swift &#x662F;&#x4E00;&#x95E8;&#x5F3A;&#x7C7B;&#x578B;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x5BF9;&#x53D8;&#x91CF;&#x7C7B;&#x578B;&#x6709;&#x7740;&#x4E25;&#x683C;&#x7684;&#x89C4;&#x5B9A;&#xFF1A; &#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#x5FC5;&#x987B;&#x4E00;&#x81F4;&#xFF01;</p>
+<pre><code>let numbers = [1, 2, 3, 4, 5, 6]
+
+/// &#x663E;&#x793A;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;
+let numbers : [Int] = [1, 2, 3, 4, 5, 6]
+
+/// &#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x7A7A;&#x6570;&#x7EC4;&#xFF08;&#x901A;&#x8FC7;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF09;
+let numbers = [Int]()
+
+/// &#x4F7F;&#x7528;&#x6CDB;&#x578B;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;
+let numbers : Array&lt;Int&gt; = []
+let numbers = Array&lt;Int&gt;()
+
+/// &#x58F0;&#x660E;&#x5E76;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF1A;&#x5305;&#x542B; 1000 &#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x6BCF;&#x4E2A;&#x5143;&#x7EC4;&#x7684;&#x521D;&#x503C;&#x4E3A; 1
+let numbers = Array&lt;Int&gt;(repeating: 1, count: 1000)
+</code></pre><h2 id="12&#x3001;&#x6570;&#x7EC4;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;"><a name="12&#x3001;&#x6570;&#x7EC4;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#12&#x3001;&#x6570;&#x7EC4;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2&#x3001;&#x6570;&#x7EC4;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;</h2>
+<pre><code>let numbers : [Int] = [1, 2, 3, 4, 5, 6]
+numbers.count   /// &#x83B7;&#x53D6;&#x5143;&#x7D20;&#x6570;&#x91CF;
+numbers.isEmpty /// &#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x7A7A;&#x6570;&#x7EC4;
+numbers[0]      /// &#x6839;&#x636E;&#x7D22;&#x5F15;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x5143;&#x7D20;
+numbers.first   /// &#x83B7;&#x53D6;&#x9996;&#x5143;&#x7D20;
+numbers.last    /// &#x83B7;&#x53D6;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;
+numbers.min()   /// &#x83B7;&#x53D6;&#x6700;&#x5C0F;&#x503C;
+numbers.max()   /// &#x83B7;&#x53D6;&#x6700;&#x5927;&#x503C;
+numbers[0...3]  /// &#x901A;&#x8FC7;&#x4E0B;&#x6807;&#xFF0C;&#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x5B50;&#x6570;&#x7EC4;
+numbers[1..&lt;numbers.count] 
+
+/// &#x904D;&#x5386;&#x6570;&#x7EC4;&#xFF0C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7D22;&#x5F15; 
+for (index, value) in numbers.enumerated() {
+    print(index,value)
+}
+
+/// &#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x6570;&#x7EC4; 
+let number1 : [Int] = [1, 2, 3, 4, 5, 6]
+let number2 : [Int] = [2, 3, 4, 5, 6, 7]
+number1 == number2 /// &#x6570;&#x7EC4;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#xFF0C;&#x6545;&#x800C;&#x8FD4;&#x56DE; false
+
+numbers.sort() /// &#x53D8;&#x91CF;&#x6570;&#x7EC4;&#x7684;&#x6392;&#x5E8F;
+</code></pre><h2 id="13&#x3001;&#x6570;&#x7EC4;&#x7684;&#x589E;&#x5220;&#x67E5;&#x6539;"><a name="13&#x3001;&#x6570;&#x7EC4;&#x7684;&#x589E;&#x5220;&#x67E5;&#x6539;" class="anchor-navigation-ex-anchor" href="#13&#x3001;&#x6570;&#x7EC4;&#x7684;&#x589E;&#x5220;&#x67E5;&#x6539;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3&#x3001;&#x6570;&#x7EC4;&#x7684;&#x589E;&#x5220;&#x67E5;&#x6539;</h2>
+<pre><code>var numbers : [Int] = [1, 2, 3, 4, 5, 6]
+
+/// &#x589E;&#x52A0;&#x64CD;&#x4F5C;
+numbers.append(7)
+numbers += [8, 9]        /// &#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;
+numbers.insert(0, at: 0) /// &#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x503C;&#x5230;&#x6307;&#x5B9A;&#x7D22;&#x5F15;
+
+/// &#x5220;&#x9664;&#x64CD;&#x4F5C;
+numbers.removeFirst()
+numbers.removeLast()
+numbers.remove(at: numbers.count - 1)
+numbers.removeSubrange(0...3)    /// &#x5220;&#x9664;&#x67D0;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x5143;&#x7D20;
+numbers.removeAll()
+
+/// &#x4FEE;&#x6539;&#x64CD;&#x4F5C;
+numbers[0] += 10    /// &#x4FEE;&#x6539;&#x67D0;&#x4E2A;&#x5143;&#x7D20;
+numbers[0...3] = [10, 11, 12, 14] /// &#x4FEE;&#x6539;&#x5B50;&#x96C6;
+</code></pre><h2 id="14&#x3001;&#x591A;&#x7EF4;&#x6570;&#x7EC4;"><a name="14&#x3001;&#x591A;&#x7EF4;&#x6570;&#x7EC4;" class="anchor-navigation-ex-anchor" href="#14&#x3001;&#x591A;&#x7EF4;&#x6570;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4&#x3001;&#x591A;&#x7EF4;&#x6570;&#x7EC4;</h2>
+<pre><code>var origin = [[1, 1], [2, 2], [3,3]]
+origin.first?.first
+
+/// &#x663E;&#x793A;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;
+var origin: [[Int]] = [[1, 1], [2, 2], [3,3]]
+
+/// Swift &#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x957F;&#x5EA6;&#x53EF;&#x4EE5;&#x4E0D;&#x540C;
+var origin: Array&lt;Array&lt;Int&gt;&gt; = [[1], [1, 2], [1, 2, 3]]
+
+origin += [[1, 2, 3, 4]]
+</code></pre><h2 id="15&#x3001;nsarray"><a name="15&#x3001;nsarray" class="anchor-navigation-ex-anchor" href="#15&#x3001;nsarray"><i class="fa fa-link" aria-hidden="true"></i></a>1.5&#x3001;<code>NSArray</code></h2>
+<p><code>NSArray</code> &#x4E0E; Swift &#x4E2D;&#x7684; <code>Array</code> &#x7684;&#x6700;&#x5927;&#x4E0D;&#x540C;&#x662F;&#xFF1A;<code>NSArray</code>&#x53EF;&#x4EE5;&#x627F;&#x8F7D;&#x4E0D;&#x540C;&#x7684;&#x5143;&#x7D20;&#x7C7B;&#x578B;&#xFF01; </p>
+<ul>
+<li><code>NSArray</code> &#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;Swift &#x4E2D;&#x7684; <code>Array</code> &#x662F;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#xFF1B;</li>
+<li>&#x4E00;&#x4E2A;&#x4F7F;&#x7528;&#x503C;&#x7684;&#x65B9;&#x5F0F;&#x4F20;&#x9012;&#xFF1B;&#x4E00;&#x4E2A;&#x91C7;&#x7528;&#x5F15;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x4F20;&#x9012;&#xFF1B;</li>
+<li>&#x867D;&#x7136;&#x90FD;&#x662F;&#x6570;&#x7EC4;&#xFF0C;&#x4F46;&#x6709;&#x7740;&#x672C;&#x8D28;&#x7684;&#x4E0D;&#x540C;&#xFF01;</li>
+</ul>
+<pre><code>var rects : NSArray = [1, true, 3.5, &quot;4&quot;]
+</code></pre><h1 id="2&#x3001;&#x5B57;&#x5178;-dictionary"><a name="2&#x3001;&#x5B57;&#x5178;-dictionary" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x5B57;&#x5178;-dictionary"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x5B57;&#x5178; <code>Dictionary</code></h1>
+<h2 id="21&#x3001;&#x5B57;&#x5178;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;"><a name="21&#x3001;&#x5B57;&#x5178;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#21&#x3001;&#x5B57;&#x5178;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1&#x3001;&#x5B57;&#x5178;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;</h2>
+<pre><code>let dict = [&quot;key1&quot;:&quot;value1&quot;,&quot;key2&quot;:&quot;value2&quot;,&quot;key3&quot;:&quot;value3&quot;]
+
+let dict : [String: String] = [&quot;key1&quot;:&quot;value1&quot;,&quot;key2&quot;:&quot;value2&quot;,&quot;key3&quot;:&quot;value3&quot;]
+let dict = [Int: String]()
+
+/// &#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x7A7A;&#x5B57;&#x5178;
+let dict : Dictionary&lt;String, String&gt; = [:]
+let dict = Dictionary&lt;String, Int&gt;()
+</code></pre><h2 id="22&#x3001;&#x5B57;&#x5178;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;"><a name="22&#x3001;&#x5B57;&#x5178;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#22&#x3001;&#x5B57;&#x5178;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2&#x3001;&#x5B57;&#x5178;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;</h2>
+<pre><code>/// &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x578B;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x53EF;&#x80FD;&#x4E3A; nil
+if let value = dict[&quot;key&quot;] {
+
+}
+
+dict.count
+dict.isEmpty
+Array(dict.keys)    /// &#x5B57;&#x5178;&#x7684;&#x6240;&#x6709;&#x952E;
+Array(dict.values)  /// &#x5B57;&#x5178;&#x7684;&#x6240;&#x6709;&#x503C;
+
+for key in dict.keys {
+    print(key)
+}
+
+/// &#x6253;&#x5370;&#x952E;&#x503C;&#x5BF9;
+for (key, value) in dict {
+    print(key,value)
+}
+
+//// &#x5B57;&#x5178;&#x7684;&#x76F8;&#x7B49;&#x6027;&#x6BD4;&#x8F83;&#xFF1A;&#x5B57;&#x5178;&#x662F;&#x65E0;&#x5E8F;&#x7684;
+dict1 == dict2
+</code></pre><h2 id="23&#x3001;&#x5B57;&#x5178;&#x7684;&#x589E;&#x5220;&#x6539;"><a name="23&#x3001;&#x5B57;&#x5178;&#x7684;&#x589E;&#x5220;&#x6539;" class="anchor-navigation-ex-anchor" href="#23&#x3001;&#x5B57;&#x5178;&#x7684;&#x589E;&#x5220;&#x6539;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3&#x3001;&#x5B57;&#x5178;&#x7684;&#x589E;&#x5220;&#x6539;</h2>
+<pre><code>var dict : [String: String] = [&quot;key1&quot;:&quot;value1&quot;,&quot;key2&quot;:&quot;value2&quot;,&quot;key3&quot;:&quot;value3&quot;]
+
+/// &#x4FEE;&#x6539;&#x64CD;&#x4F5C;
+dict[&quot;key1&quot;] = &quot;value1.1&quot;
+dict.updateValue(&quot;value1.2&quot;, forKey: &quot;key1&quot;) /// &#x8FD4;&#x56DE;&#x65E7;&#x503C;
+
+/// &#x53EF;&#x4EE5;&#x6839;&#x636E;&#x8FD4;&#x56DE;&#x7684;&#x65E7;&#x503C;&#x505A;&#x4E00;&#x4E9B;&#x903B;&#x8F91;&#x64CD;&#x4F5C;
+if let oldPwd = dict.updateValue(&quot;Hello&quot;, forKey: &quot;password&quot;),
+   let newPwd = dict[&quot;password&quot;], oldPwd == newPwd {
+    print(&quot;oldPwd: \(oldPwd) == newPwd: \(newPwd), &#x53EF;&#x80FD;&#x5F15;&#x53D1;&#x5B89;&#x5168;&#x95EE;&#x9898;&quot;)
+}
+
+/// &#x6DFB;&#x52A0;&#x64CD;&#x4F5C;
+dict[&quot;key4&quot;] = &quot;value4&quot;
+dict.updateValue(&quot;value5&quot;, forKey: &quot;key5&quot;) /// &#x53EF;&#x4EE5;&#x7528;&#x6765;&#x6DFB;&#x52A0;&#x65B0;&#x503C;
+
+/// &#x5220;&#x9664;&#x64CD;&#x4F5C;
+dict[&quot;key5&quot;] = nil
+dict.removeValue(forKey: &quot;key4&quot;)  /// &#x8FD4;&#x56DE;&#x88AB;&#x5220;&#x9664;&#x7684;&#x503C;
+dict.removeAll()
+</code></pre><h1 id="3&#x3001;&#x96C6;&#x5408;-set"><a name="3&#x3001;&#x96C6;&#x5408;-set" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x96C6;&#x5408;-set"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x96C6;&#x5408; <code>Set</code></h1>
+<p><code>Set</code> &#x662F;&#x4E00;&#x4E2A;&#x65E0;&#x5E8F;&#x3001;&#x65E0;&#x91CD;&#x590D;&#x7684;&#x6570;&#x636E;&#x96C6;&#xFF01;</p>
+<h2 id="31&#x3001;&#x96C6;&#x5408;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;"><a name="31&#x3001;&#x96C6;&#x5408;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#31&#x3001;&#x96C6;&#x5408;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1&#x3001;&#x96C6;&#x5408;&#x7684;&#x4E00;&#x4E9B;&#x58F0;&#x660E;&#x65B9;&#x6CD5;</h2>
+<pre><code>/// &#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x96C6;&#x5408;&#xFF1A;&#x901A;&#x8FC7;&#x663E;&#x793A;&#x58F0;&#x660E;&#x4E3A; Set
+var names : Set&lt;String&gt; = [&quot;Tom&quot;, &quot;John&quot;, &quot;Tom&quot;] /// &#x7CFB;&#x7EDF;&#x4F1A;&#x81EA;&#x52A8;&#x5254;&#x9664;&#x4E00;&#x4E2A; &quot;Tom&quot;
+
+var ages : Set&lt;Int&gt; = []
+var heights = Set&lt;Double&gt;()
+
+/// &#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#x5F3A;&#x5236;&#x8F6C;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x96C6;&#x5408;
+var names = Set([&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;A&quot;, &quot;B&quot;, &quot;C&quot;])
+</code></pre><h2 id="32&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;"><a name="32&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#32&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E38;&#x7528;&#x7528;&#x6CD5;</h2>
+<pre><code>var names = Set([&quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;A&quot;, &quot;B&quot;, &quot;C&quot;])
+
+names.count /// names.count = 3
+names.isEmpty
+names.first /// &#x968F;&#x673A;&#x53D6;&#x51FA;&#x7684;&#x5143;&#x7D20;
+
+names.contains(&quot;A&quot;) /// &#x662F;&#x5426;&#x5305;&#x542B;
+
+set1 == set2 /// &#x5224;&#x65AD;&#x76F8;&#x7B49;&#x6027;
+</code></pre><h2 id="33&#x3001;&#x96C6;&#x5408;&#x7684;&#x589E;&#x5220;&#x6539;"><a name="33&#x3001;&#x96C6;&#x5408;&#x7684;&#x589E;&#x5220;&#x6539;" class="anchor-navigation-ex-anchor" href="#33&#x3001;&#x96C6;&#x5408;&#x7684;&#x589E;&#x5220;&#x6539;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3&#x3001;&#x96C6;&#x5408;&#x7684;&#x589E;&#x5220;&#x6539;</h2>
+<p>&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x6CA1;&#x6709;&#x4FEE;&#x6539;&#x7684; API&#xFF01;</p>
+<pre><code>var names = Set([&quot;A&quot;, &quot;B&quot;, &quot;C&quot;])
+
+/// &#x6DFB;&#x52A0;&#x64CD;&#x4F5C;
+names.insert(&quot;D&quot;) /// &#x8FD4;&#x56DE; true
+names.insert(&quot;D&quot;) /// &#x518D;&#x6B21;&#x6DFB;&#x52A0;&#xFF0C;&#x8FD4;&#x56DE; false
+
+/// &#x5220;&#x9664;&#x64CD;&#x4F5C;
+names.remove(&quot;A&quot;) /// &#x8FD4;&#x56DE;&#x88AB;&#x5220;&#x9664;&#x7684;&#x5143;&#x7D20;
+names.remove(&quot;F&quot;) /// &#x5220;&#x9664;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x8FD4;&#x56DE; nil
+</code></pre><h2 id="34&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E76;&#x96C6;&#x3001;&#x4EA4;&#x96C6;&#x3001;&#x8865;&#x96C6;&#x7B49;"><a name="34&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E76;&#x96C6;&#x3001;&#x4EA4;&#x96C6;&#x3001;&#x8865;&#x96C6;&#x7B49;" class="anchor-navigation-ex-anchor" href="#34&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E76;&#x96C6;&#x3001;&#x4EA4;&#x96C6;&#x3001;&#x8865;&#x96C6;&#x7B49;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4&#x3001;&#x96C6;&#x5408;&#x7684;&#x5E76;&#x96C6;&#x3001;&#x4EA4;&#x96C6;&#x3001;&#x8865;&#x96C6;&#x7B49;</h2>
+<pre><code>var set1 : Set = [1, 2, 3, 4]
+var set2 : Set = [3, 4, 5, 6]
+
+/// &#x8BA1;&#x7B97;&#x5E76;&#x96C6;
+var set3 = set1.union(set2) /// &#x539F;&#x96C6;&#x5408;&#x4E0D;&#x88AB;&#x6539;&#x53D8;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x96C6;&#x5408;
+set1.formUnion(set2) /// &#x7C7B;&#x4F3C;&#x4E8E; += &#x64CD;&#x4F5C;&#xFF0C;&#x5C06;&#x96C6;&#x5408; set2 &#x7684;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5230; set1&#xFF0C;&#x96C6;&#x5408; set1 &#x88AB;&#x6539;&#x53D8;
+set1.formUnion([10,11,12]) /// &#x5C06;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x96C6;&#x5408;
+
+/// &#x8BA1;&#x7B97;&#x4EA4;&#x96C6;
+var set4 = set1.intersection(set2) /// &#x539F;&#x96C6;&#x5408;&#x4E0D;&#x88AB;&#x6539;&#x53D8;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x96C6;&#x5408;
+set1.formIntersection(set2) /// &#x96C6;&#x5408; set1 &#x88AB;&#x6539;&#x53D8;
+
+/// &#x8BA1;&#x7B97;&#x8865;&#x96C6; : &#x8FD4;&#x56DE; set1 &#x72EC;&#x6709;&#x800C; set2 &#x4E0D;&#x5177;&#x5907;&#x7684;&#x5143;&#x7D20;
+var set5 = set1.subtracting(set2) /// &#x539F;&#x96C6;&#x5408;&#x4E0D;&#x88AB;&#x6539;&#x53D8;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x96C6;&#x5408;
+
+set1.isSubset(of: set2)       /// set1 &#x662F;&#x5426;&#x662F; set2 &#x7684;&#x5B50;&#x96C6;
+set1.isStrictSubset(of: set2) /// set1 &#x662F;&#x5426;&#x662F; set2 &#x7684;&#x771F;&#x5B50;&#x96C6;
+
+set1.isSuperset(of: set2)    ///  set1 &#x662F;&#x5426;&#x662F; set2 &#x7684;&#x8D85;&#x96C6;
+set1.isStrictSuperset(of: set2)  /// set1 &#x662F;&#x5426;&#x662F; set2 &#x7684;&#x771F;&#x8D85;&#x96C6;
+
+/// &#x662F;&#x5426;&#x76F8;&#x79BB;&#xFF1A;&#x6CA1;&#x6709;&#x516C;&#x5171;&#x5143;&#x7D20;
+set1.isDisjoint(with: set2)
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-12-03 23:47:10
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> 搜索结果 "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">没有搜索结果 "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Swift_Optional.html" class="navigation navigation-prev " aria-label="Previous page: Swift可选型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Swift_func.html" class="navigation navigation-next " aria-label="Next page: Swift函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Swift容器类","level":"1.4.3.3","depth":3,"next":{"title":"Swift函数","level":"1.4.3.4","depth":3,"path":"语言篇/Swift/Swift_func.md","ref":"语言篇/Swift/Swift_func.md","articles":[]},"previous":{"title":"Swift可选型","level":"1.4.3.2","depth":3,"path":"语言篇/Swift/Swift_Optional.md","ref":"语言篇/Swift/Swift_Optional.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"语言篇/Swift/Swift_Container.md","mtime":"2021-12-03T15:47:10.023Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-04T08:46:11.974Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
