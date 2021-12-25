@@ -149,7 +149,7 @@
                 <a href="../计算机组成篇/计算机概述篇.html">
             
                     
-                    第一部分 计算机的组成
+                    第一部分 计算机组成
             
                 </a>
             
@@ -194,7 +194,7 @@
                 <a href="../操作系统篇/操作系统基础篇.html">
             
                     
-                    第二部分 操作系统篇
+                    第二部分 操作系统
             
                 </a>
             
@@ -265,7 +265,7 @@
                 <a href="../计算机网络/网络概述篇.html">
             
                     
-                    第三部分 网络篇
+                    第三部分 计算机网络
             
                 </a>
             
@@ -381,7 +381,7 @@
                 <span>
             
                     
-                    第四部分设计模式
+                    第四部分 设计模式
             
                 </span>
             
@@ -506,6 +506,19 @@
             
                     
                     三维空间的观察
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="卷绕和背面裁剪.html">
+            
+                <a href="卷绕和背面裁剪.html">
+            
+                    
+                    卷绕和背面裁剪
             
                 </a>
             
@@ -1573,6 +1586,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.4.2.4" data-path="../../语言篇/C指针.html">
+            
+                <a href="../../语言篇/C指针.html">
+            
+                    
+                    C指针
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -1676,6 +1702,19 @@
             
                     
                     Swift结构体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.8" data-path="../../语言篇/Swift/Swift_Class.html">
+            
+                <a href="../../语言篇/Swift/Swift_Class.html">
+            
+                    
+                    Swift类、属性、构造函数
             
                 </a>
             
@@ -1885,6 +1924,23 @@ typedef NS_ENUM(NSInteger, MTLTextureCompressionType) {
     MTLTextureCompressionTypeLossless = 0,
     MTLTextureCompressionTypeLossy = 1,
 };
+
+
+
+/** &#x63CF;&#x8FF0; MTLTexture &#x7684;&#x5185;&#x5B58;&#x4F4D;&#x7F6E;&#x548C; CPU &#x6620;&#x5C04;
+ * @constant MTLStorageModeShared &#x8D44;&#x6E90;&#x5B58;&#x50A8;&#x5728;&#x7CFB;&#x7EDF;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;CPU&#x548C;GPU&#x5747;&#x53EF;&#x8BBF;&#x95EE;&#xFF1B;&#x5728; iOS &#x4E2D;&#x8FD9;&#x662F; MTLBuffer &#x5BF9;&#x8C61;&#x7684;&#x9ED8;&#x8BA4;&#x5B58;&#x50A8;&#x6A21;&#x5F0F;
+ *           &#x5F53;CPU&#x6216;GPU&#x6539;&#x53D8;&#x8D44;&#x6E90;&#x5185;&#x5BB9;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x8D1F;&#x8D23;&#x4ECE;&#x5176;&#x4ED6;&#x53C2;&#x4E0E;&#x8005;&#x540C;&#x6B65;&#x5BF9;&#x7EB9;&#x7406;&#x7684;&#x8BBF;&#x95EE;
+ * @constant MTLStorageModeManaged
+ * @constant MTLStorageModePrivate &#x7EB9;&#x7406;&#x8D44;&#x6E90;&#x5B8C;&#x5168;&#x4FDD;&#x5B58;&#x5728; GPU &#x7684;&#x79C1;&#x6709;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x4E0D;&#x88AB; CPU &#x8BBF;&#x95EE;&#xFF1B;Metal &#x5BF9;&#x8BE5;&#x8D44;&#x6E90;&#x505A;&#x4E86;&#x989D;&#x5916;&#x4F18;&#x5316;
+ * @constant MTLStorageModeMemoryless &#x4EC5;&#x4EC5;&#x88AB; GPU &#x8BBF;&#x95EE;&#xFF0C;&#x5E76;&#x4E14;&#x5728;&#x6E32;&#x67D3;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F5C;&#x4E3A;&#x4E34;&#x65F6;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x77ED;&#x6682;&#x5B58;&#x5728;
+ *                                  &#x4F8B;&#x5982;&#x6DF1;&#x5EA6;&#x7EB9;&#x7406;&#x3001;&#x6A21;&#x677F;&#x7EB9;&#x7406;&#x7B49;&#x4EC5;&#x7528;&#x4F5C;&#x4E34;&#x65F6;&#x6E32;&#x67D3;&#x76EE;&#x6807;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8BE5;&#x6A21;&#x5F0F;
+ */
+typedef NS_ENUM(NSUInteger, MTLStorageMode) {
+    MTLStorageModeShared  = 0,
+    MTLStorageModeManaged API_AVAILABLE(macos(10.11), macCatalyst(13.0)) API_UNAVAILABLE(ios) = 1,
+    MTLStorageModePrivate = 2,
+    MTLStorageModeMemoryless API_AVAILABLE(macos(11.0), macCatalyst(14.0), ios(10.0)) = 3,
+} API_AVAILABLE(macos(10.11), ios(9.0));
 </code></pre><h2 id="mtltexturedescriptor"><a name="mtltexturedescriptor" class="anchor-navigation-ex-anchor" href="#mtltexturedescriptor"><i class="fa fa-link" aria-hidden="true"></i></a>MTLTextureDescriptor</h2>
 <p>&#x901A;&#x8FC7; <a href="https://developer.apple.com/documentation/metal/mtltexturedescriptor?language=objc" target="_blank">MTLTextureDescriptor</a> &#x6765;&#x914D;&#x7F6E;Metal&#x7EB9;&#x7406; <code>MTLTexture</code>&#x3002;</p>
 <p>&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7EB9;&#x7406;&#xFF1A;</p>
@@ -2192,7 +2248,7 @@ typedef NS_ENUM(NSInteger, MTLTextureCompressionType) {
 
 @end
 </code></pre><footer class="page-footer"><span class="copyright">Copyright &#x82CF;&#x6CAB;&#x79BB; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-12-11 00:00:28
+2019-12-18 11:37:58
 </span></footer>
                                 
                                 </section>
@@ -2236,7 +2292,7 @@ typedef NS_ENUM(NSInteger, MTLTextureCompressionType) {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"MTLTexture API","level":"1.3.6.10","depth":3,"next":{"title":"MTLSampler API","level":"1.3.6.11","depth":3,"path":"计算机基础/计算机图形学/MTLSampler.md","ref":"计算机基础/计算机图形学/MTLSampler.md","articles":[]},"previous":{"title":"MTLRegion API","level":"1.3.6.9","depth":3,"path":"计算机基础/计算机图形学/MTLRegion.md","ref":"计算机基础/计算机图形学/MTLRegion.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"计算机基础/计算机图形学/MTLTexture.md","mtime":"2021-12-10T16:00:28.654Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-10T16:02:12.050Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"MTLTexture API","level":"1.3.6.10","depth":3,"next":{"title":"MTLSampler API","level":"1.3.6.11","depth":3,"path":"计算机基础/计算机图形学/MTLSampler.md","ref":"计算机基础/计算机图形学/MTLSampler.md","articles":[]},"previous":{"title":"MTLRegion API","level":"1.3.6.9","depth":3,"path":"计算机基础/计算机图形学/MTLRegion.md","ref":"计算机基础/计算机图形学/MTLRegion.md","articles":[]},"dir":"ltr"},"config":{"plugins":["highlight","-search","-lunr","search-pro","-sharing","splitter","expandable-chapters-small","expandable-chapters","code","back-to-top-button","anchor-navigation-ex","tbfed-pagefooter"],"root":"./","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright 苏沫离","modify_label":"修订时间：","modify_format":"2019-MM-DD HH:mm:ss"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"苏莫离","pdf":{"pageNumbers":true,"fontSize":17,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":0,"left":0,"top":0,"bottom":0}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"个人博客","gitbook":"*","description":"苏莫离的个人博客","direction":"ltr"},"file":{"path":"计算机基础/计算机图形学/MTLTexture.md","mtime":"2021-12-18T03:37:58.827Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-25T03:57:49.789Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

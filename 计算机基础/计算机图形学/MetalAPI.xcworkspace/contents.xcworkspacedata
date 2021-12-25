@@ -34,6 +34,9 @@
       <FileRef
          location = "group:Metal&#x7ed8;&#x5236;&#x4e09;&#x89d2;&#x5f62;.md">
       </FileRef>
+      <FileRef
+         location = "group:&#x5377;&#x7ed5;&#x548c;&#x80cc;&#x9762;&#x88c1;&#x526a;.md">
+      </FileRef>
    </Group>
    <Group
       location = "container:"

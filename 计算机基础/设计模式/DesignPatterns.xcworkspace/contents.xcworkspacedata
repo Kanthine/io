@@ -78,6 +78,9 @@
       location = "container:"
       name = "DesignPrinciples">
       <FileRef
+         location = "group:&#x8bbe;&#x8ba1;&#x6a21;&#x5f0f;.md">
+      </FileRef>
+      <FileRef
          location = "group:&#x5355;&#x4e00;&#x804c;&#x8d23;&#x539f;&#x5219;.md">
       </FileRef>
       <FileRef
